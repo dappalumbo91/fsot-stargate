@@ -63,7 +63,7 @@ so the cap sits under the mix, and the mix sits under the blend. Cabin `(1, 1)` 
 
 The metric shift is `g_tx = -v S(r)` along the boost direction. `v` is the requested speed.
 
-`lean/WarpMix.lean` proves those identities. It does not evaluate the Einstein tensor. The energy conditions are the Warp Factory witness in `data/dial_mix.txt`.
+`lean/WarpMix.lean` proves those identities. `lean/WarpLedger.lean` proves the compactness mass, the bend-window chord and plateau, the payment identity, the printed clean and fail lines, and the ship-scale ledger. Neither file evaluates the Einstein tensor. The energy conditions are the Warp Factory witness in `data/dial_mix.txt`.
 
 ## The score
 

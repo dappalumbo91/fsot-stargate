@@ -41,3 +41,7 @@ That is a confirmation of the record. It is not a lighter shell and not a new sp
 ## What this is
 
 Inside this Eulerian Warp Factory test, the FSOT wall at 20 m is clean at 0.10c, five times the published Fuchs 0.02c pass, at 1.5 times that mass. Their cabin is clean at 0.04c. The run is a coast at constant speed. It is not a built device, and it is not faster than light.
+
+## Lean stamp, 2026-11-01
+
+Lean 4.31.0 and Mathlib v4.31.0 accept `lean/WarpMix.lean` and `lean/WarpLedger.lean` from the FSOT-2.1-Lean checkout. The second file checks the compactness mass, the bend window, the printed clean and fail lines, and the ship-scale ledger. The one-g film target in that ledger is absorption 2.50×10⁻⁴, the 0.25 g cruise scaled with the same 2E/c. The proofs do not evaluate the Einstein tensor. The sail figures and the tidal radii are not Warp Factory scores.

@@ -147,7 +147,7 @@ Two perfect sails, momentum 2E/c, plant at home, 10 tonne ship:
 
 Reaching 0.04c on a sail is 1.80×10¹⁹ J. A 15 TW beam takes 14 days and 48 AU. At 1 µm a 100 m sail needs a 3.8 m aperture at the Moon and a 73 km aperture at 49 AU.
 
-Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading would need absorption 1.25×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
+Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading, with the same 2E/c, would need absorption 2.50×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
 
 ## Audit of the 20 m shell
 
