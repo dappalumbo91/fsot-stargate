@@ -222,3 +222,37 @@ The corrected 0.10c line on the 83.4 m grid is null 1.971×10⁻⁷, weak 4.006�
 The same restoration at 0.11c on the 166.8 m grid finds no cell inside the ball. The failure stays at r = 7,766.92 m, dominant ratio 0.1746, serious fraction 0.0119, energy 4.0623×10³⁰ kg. Log `data/dial_flatball_11.txt`.
 
 On the 83.4 m grid the same 0.11c join restores the four flat-ball cells and still fails. Dominant ratio 0.177 at r = 7,719.54 m, null ratio 3.549×10⁻² at r = 7,727.65 m, serious fraction 0.0111, energy 4.0628×10³⁰ kg, shift 0.11. Log `data/dial_flatball_11_fine.txt`. The wall break is stable under the finer grid.
+
+## Coasts on the two clean shapes
+
+Dated 2026-11-02. Log `data/dial_coast_stack.txt`. Same N = 120 grid, spacing 0.455 m. The shapes are the stored ones. The half-compact wall keeps the mix. The one-sixth window keeps the bend-window placement: mass 2.244×10²⁷ kg, peak density 0.627 of the half-compact wall, slope at 12.967 m, strongest bend at 15.711 m, window end at 18.454 m. Only the shift amplitude changes. Every line has serious fraction 0 and shift equal to the requested speed.
+
+| Shape | Speed | Energy | Null | Weak | Strong | Dominant |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Half wall | 0 | 8.3144×10²⁷ kg | 1.081×10⁻⁵ | 2.185×10⁻⁵ | 1.081×10⁻⁵ | 1.947×10⁻⁵ |
+| Half wall | 0.02c | 8.3133×10²⁷ kg | 1.080×10⁻⁵ | 2.184×10⁻⁵ | 1.080×10⁻⁵ | 1.946×10⁻⁵ |
+| Half wall | 0.04c | 8.3100×10²⁷ kg | 1.079×10⁻⁵ | 2.181×10⁻⁵ | 1.079×10⁻⁵ | 1.943×10⁻⁵ |
+| Half wall | 0.06c | 8.3045×10²⁷ kg | 1.076×10⁻⁵ | 2.176×10⁻⁵ | 1.076×10⁻⁵ | 1.938×10⁻⁵ |
+| Half wall | 0.08c | 8.2967×10²⁷ kg | 1.072×10⁻⁵ | 2.168×10⁻⁵ | 1.072×10⁻⁵ | 1.931×10⁻⁵ |
+| Half wall | 0.10c | 8.2868×10²⁷ kg | 1.067×10⁻⁵ | 2.158×10⁻⁵ | 1.067×10⁻⁵ | 1.923×10⁻⁵ |
+| Bend window | 0 | 2.3822×10²⁷ kg | 6.780×10⁻⁵ | 6.780×10⁻⁵ | 1.888×10⁻⁴ | 1.604×10⁻⁴ |
+| Bend window | 0.02c | 2.3815×10²⁷ kg | 6.782×10⁻⁵ | 6.782×10⁻⁵ | 1.888×10⁻⁴ | 1.604×10⁻⁴ |
+| Bend window | 0.04c | 2.3794×10²⁷ kg | 6.785×10⁻⁵ | 6.785×10⁻⁵ | 1.889×10⁻⁴ | 1.605×10⁻⁴ |
+
+All nine lines are clean. The half-wall endpoints match `data/dial_audit_bar.txt`. The 0.04c window matches `data/dial_sixth_bend.txt`. The speeds between those anchors do not cross the bar. This is not a new boundary. 0.11c on the half wall and 0.06c on the light window stay the stored failures.
+
+## The ship and the beam
+
+Dated 2026-11-02. Log `data/dial_ship_beam.txt`. Minkowski grid, hand-built contravariant stress-energy, the same energy-condition function, 48 angular samples and 8 time samples. The tensors are order 1. They are not kilogram densities, and this is not an Einstein-equation shell. On a uniform tensor the map's minimum and maximum are the same number, because the function stores the worst observer at each point.
+
+| Case | Null, weak, strong | Dominant | Floor |
+| --- | ---: | ---: | ---: |
+| Dust | 0.5000000 | 0.7071068 | 0 |
+| Forward null flux | 1.025620×10⁻⁴ | −0.0 | 0 |
+| Dust plus that flux | 0.5001026 | 0.7171626 | 0 |
+
+All three are clean against a floor of −1×10⁻⁶. The null flux is marginal in the forward direction. The angular grid never sits on the exact forward ray, and 1.03×10⁻⁴ is that gap. Dominant −0.0 is the margin. A 10 tonne ship plus a beam is ordinary matter plus a null flux on flat space. It does not replace the shell score.
+
+## The film held to 0.04c
+
+The 0.25 g film already in the ledger, 20 tonnes, acceleration 2.45 m/s², reaches 0.04c in 56.6 days and covers 196 AU on that one leg. Accel and stop is two legs: about 113 days and 392 AU. The round-trip beam energy is 7.19×10¹⁹ J, which is 20000 × (c/25) × c. Lean places the one-leg time between 56.5 and 56.7 days, the one-leg distance between 195.5 and 196.5 AU, and that energy between 7.185×10¹⁹ J and 7.195×10¹⁹ J, and it checks that two legs are twice one leg. The lunar trip is the same acceleration on the short range. This is kinematics. It is not a Warp Factory flight. The Eulerian light shell remains the one-sixth bend window at 0.04c. The 0.10c shell remains compactness 1/2.

@@ -1,0 +1,16 @@
+coast stack. ell=0.8573494832025231 R2=20.000 R1=2.853 N=120 h=0.45455
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.00 E=8.3144e+27 null=1.081e-05 weak=2.185e-05 strong=1.081e-05 dom=1.947e-05 ser=0.0000 shift=0.000e+00 CLEAN 12.6s
+half v=0.02 E=8.3133e+27 null=1.080e-05 weak=2.184e-05 strong=1.080e-05 dom=1.946e-05 ser=0.0000 shift=2.000e-02 CLEAN 9.5s
+half v=0.04 E=8.3100e+27 null=1.079e-05 weak=2.181e-05 strong=1.079e-05 dom=1.943e-05 ser=0.0000 shift=4.000e-02 CLEAN 10.1s
+half v=0.06 E=8.3045e+27 null=1.076e-05 weak=2.176e-05 strong=1.076e-05 dom=1.938e-05 ser=0.0000 shift=6.000e-02 CLEAN 9.9s
+half v=0.08 E=8.2967e+27 null=1.072e-05 weak=2.168e-05 strong=1.072e-05 dom=1.931e-05 ser=0.0000 shift=8.000e-02 CLEAN 10.0s
+half v=0.10 E=8.2868e+27 null=1.067e-05 weak=2.158e-05 strong=1.067e-05 dom=1.923e-05 ser=0.0000 shift=1.000e-01 CLEAN 10.0s
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.627 rSlope=12.967 rCurv=15.711 rEnd=18.454 pay=0.9446
+sixth v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 CLEAN 9.2s
+sixth v=0.02 E=2.3815e+27 null=6.782e-05 weak=6.782e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=2.000e-02 CLEAN 9.2s
+sixth v=0.04 E=2.3794e+27 null=6.785e-05 weak=6.785e-05 strong=1.889e-04 dom=1.605e-04 ser=0.0000 shift=4.000e-02 CLEAN 9.2s
+coast stack done

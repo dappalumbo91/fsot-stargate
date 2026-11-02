@@ -993,6 +993,36 @@ theorem moon_equal_distance_prints :
       field_simp
     linarith
 
+/- One acceleration. The lunar trip is the short range. 0.04c is the same film held longer. -/
+
+theorem film_reaches_point04_days :
+    (565 / 10 : ℚ) < ((1 / 25) * cLight) / filmAccel / 86400 ∧
+      ((1 / 25) * cLight) / filmAccel / 86400 < (567 / 10 : ℚ) := by
+  unfold filmAccel filmIncident sigmaSB cLight
+  norm_num
+
+theorem film_reaches_point04_au :
+    (1955 / 10 : ℚ) < ((1 / 25) * cLight) ^ 2 / (2 * filmAccel) / astronomicalUnit ∧
+      ((1 / 25) * cLight) ^ 2 / (2 * filmAccel) / astronomicalUnit < (1965 / 10 : ℚ) := by
+  unfold filmAccel filmIncident sigmaSB cLight astronomicalUnit
+  norm_num
+
+theorem film_round_trip_energy :
+    (7185 * 10 ^ 16 : ℚ) < 20000 * ((1 / 25) * cLight) * cLight ∧
+      20000 * ((1 / 25) * cLight) * cLight < (7195 * 10 ^ 16 : ℚ) := by
+  unfold cLight
+  norm_num
+
+theorem film_round_trip_is_two_legs :
+    2 * (((1 / 25) * cLight) / filmAccel / 86400) =
+      ((1 / 25) * cLight) / filmAccel / 43200 ∧
+    2 * (((1 / 25) * cLight) ^ 2 / (2 * filmAccel) / astronomicalUnit) =
+      ((1 / 25) * cLight) ^ 2 / filmAccel / astronomicalUnit := by
+  constructor
+  · field_simp
+    ring
+  · field_simp
+
 end
 
 end WarpLedger

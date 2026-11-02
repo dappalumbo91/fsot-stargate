@@ -1,0 +1,24 @@
+ship beam. Minkowski dust plus +x null flux. Not a shell score.
+clean: every sampled observer stays above -1e-6 on a tensor of order 1
+
+-- dust
+Null min=5.000000e-01 max=5.000000e-01 0.04s
+Weak min=5.000000e-01 max=5.000000e-01 0.07s
+Strong min=5.000000e-01 max=5.000000e-01 0.10s
+Dominant min=7.071068e-01 max=7.071068e-01 0.03s
+dust CLEAN floor=0.000000e+00
+
+-- beam
+Null min=1.025620e-04 max=1.025620e-04 0.02s
+Weak min=1.025620e-04 max=1.025620e-04 0.06s
+Strong min=1.025620e-04 max=1.025620e-04 0.09s
+Dominant min=-0.000000e+00 max=-0.000000e+00 0.03s
+beam CLEAN floor=0.000000e+00
+
+-- dust+beam
+Null min=5.001026e-01 max=5.001026e-01 0.02s
+Weak min=5.001026e-01 max=5.001026e-01 0.06s
+Strong min=5.001026e-01 max=5.001026e-01 0.09s
+Dominant min=7.171626e-01 max=7.171626e-01 0.03s
+dust+beam CLEAN floor=0.000000e+00
+ship beam done

@@ -45,3 +45,13 @@ Inside this Eulerian Warp Factory test, the FSOT wall at 20 m is clean at 0.10c,
 ## Lean stamp, 2026-11-01
 
 Lean 4.31.0 and Mathlib v4.31.0 accept `lean/WarpMix.lean` and `lean/WarpLedger.lean` from the FSOT-2.1-Lean checkout. The second file checks the compactness mass, the bend window, the printed clean and fail lines, and the ship-scale ledger. The one-g film target in that ledger is absorption 2.50×10⁻⁴, the 0.25 g cruise scaled with the same 2E/c. The proofs do not evaluate the Einstein tensor. The sail figures and the tidal radii are not Warp Factory scores.
+
+## Coast stack, ship beam, and the film hold, 2026-11-02
+
+`data/dial_coast_stack.txt` repeats the stored anchors and scores the tabulated speeds between shift off and the clean speed. The half-compact wall at 0.10c matches this audit: energy 8.2868×10²⁷ kg, null and strong 1.067×10⁻⁵, weak 2.158×10⁻⁵, dominant 1.923×10⁻⁵, serious fraction 0, shift 0.10. The parked half wall matches: energy 8.3144×10²⁷ kg, dominant 1.947×10⁻⁵. The one-sixth window at 0.04c matches `data/dial_sixth_bend.txt`: energy 2.3794×10²⁷ kg, null and weak 6.785×10⁻⁵, strong 1.889×10⁻⁴, dominant 1.605×10⁻⁴, shift 0.04. The coasts at 0.02, 0.04, 0.06, and 0.08 on the half wall, and at 0 and 0.02 on the window, are clean on the same bar. No speed was inserted between those steps. 0.11c was not rerun.
+
+`data/dial_ship_beam.txt` scores order-1 Minkowski tensors in the same energy-condition function. Dust, a forward null flux, and both together stay at or above zero for every sampled Eulerian observer. The null flux prints dominant −0.0, which is the margin, and null 1.026×10⁻⁴, because the angular grid does not land on the exact forward ray. This is not a shell mass.
+
+`lean/WarpLedger.lean` also checks the film hold. One leg to 0.04c lies between 56.5 and 56.7 days and between 195.5 and 196.5 AU. The round-trip energy 20000 × (c/25) × c lies between 7.185×10¹⁹ J and 7.195×10¹⁹ J. Two legs equal twice one leg. Lean 4.31.0 accepted the file on 2026-11-02 from the FSOT-2.1-Lean checkout. The proof does not evaluate the Einstein tensor. The public rounding is 56.6 days, 196 AU, and 7.19×10¹⁹ J.
+
+The Octave frame transfer still implements only the Eulerian observer. A second observer family was not scored.
