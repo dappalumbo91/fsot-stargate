@@ -54,4 +54,8 @@ Lean 4.31.0 and Mathlib v4.31.0 accept `lean/WarpMix.lean` and `lean/WarpLedger.
 
 `lean/WarpLedger.lean` also checks the film hold. One leg to 0.04c lies between 56.5 and 56.7 days and between 195.5 and 196.5 AU. The round-trip energy 20000 × (c/25) × c lies between 7.185×10¹⁹ J and 7.195×10¹⁹ J. Two legs equal twice one leg. Lean 4.31.0 accepted the file on 2026-11-02 from the FSOT-2.1-Lean checkout. The proof does not evaluate the Einstein tensor. The public rounding is 56.6 days, 196 AU, and 7.19×10¹⁹ J.
 
-The Octave frame transfer still implements only the Eulerian observer. A second observer family was not scored.
+The Octave frame transfer still implements only the Eulerian observer.
+
+## Every observer, 2026-11-02
+
+`data/dial_observers.txt` scores the half-compact wall at 0 and 0.10c and the one-sixth bend window at 0 and 0.04c. The sampled lines match the coast anchors above, including energy, the four ratios, the serious fraction, and the shift. The exact weak ratio on the parked half wall is −2.185×10⁻⁵, the same figure as the sampled weak ratio. The exact strong ratio on the 0.04c window is −1.889×10⁻⁴, the same figure as the sampled strong ratio. The rest-frame dominant slack is −3.716×10⁻⁵ on the parked half wall and −3.670×10⁻⁵ at 0.10c, both at 26.2 m on the back. On the window it is −1.356×10⁻⁴ at 0 and −1.357×10⁻⁴ at 0.04c, both at 23.9 m on the side. All 13,456 midplane cells are Type I. Serious fraction 0. The tail by itself carries those worst cells and stays under the bar. The check does not add a second frame. It minimizes over every direction in the Eulerian frame this port already builds.

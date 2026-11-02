@@ -1,0 +1,24 @@
+observers. ell=0.8573494832025231 R2=20.000 R1=2.853 N=120 h=0.45455
+exact: null, weak, and strong are minima over every direction. dominant is the rest-frame slack.
+clean: all four exact ratios > -1e-3, serious fraction 0, and the sampled line still matches its coast.
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.00 sample E=8.3144e+27 null=1.081e-05 weak=2.185e-05 strong=1.081e-05 dom=1.947e-05 ser=0.0000 shift=0.000e+00 CLEAN 10.5s
+half v=0.00 exact qN=-2.167e-05 qW=-2.185e-05 qS=-2.167e-05 dec=-3.716e-05 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 4.6s
+  worst null r=26.216 ang=180.0 weak r=26.216 ang=180.0 strong r=26.216 ang=180.0 dec r=26.161 ang=180.0 type=1
+half v=0.00 tail n=7364 qN=-2.167e-05 qW=-2.185e-05 qS=-2.167e-05 dec=-3.716e-05 ser=0.0000 type4=0 dec r=26.161 ang=180.0 CLEAN
+half v=0.10 sample E=8.2868e+27 null=1.067e-05 weak=2.158e-05 strong=1.067e-05 dom=1.923e-05 ser=0.0000 shift=1.000e-01 CLEAN 10.6s
+half v=0.10 exact qN=-2.141e-05 qW=-2.158e-05 qS=-2.141e-05 dec=-3.670e-05 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 49.1s
+  worst null r=26.216 ang=180.0 weak r=26.216 ang=180.0 strong r=26.216 ang=180.0 dec r=26.161 ang=180.0 type=1
+half v=0.10 tail n=7364 qN=-2.141e-05 qW=-2.158e-05 qS=-2.141e-05 dec=-3.670e-05 ser=0.0000 type4=0 dec r=26.161 ang=180.0 CLEAN
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.627 rSlope=12.967 rCurv=15.711 rEnd=18.454 pay=0.9446
+sixth v=0.00 sample E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 CLEAN 10.5s
+sixth v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 4.3s
+  worst null r=23.917 ang=90.0 weak r=23.917 ang=90.0 strong r=23.542 ang=90.0 dec r=23.917 ang=90.0 type=1
+sixth v=0.00 tail n=7364 qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type4=0 dec r=23.917 ang=90.0 CLEAN
+sixth v=0.04 sample E=2.3794e+27 null=6.785e-05 weak=6.785e-05 strong=1.889e-04 dom=1.605e-04 ser=0.0000 shift=4.000e-02 CLEAN 10.2s
+sixth v=0.04 exact qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 51.1s
+  worst null r=23.917 ang=90.0 weak r=23.917 ang=90.0 strong r=23.542 ang=90.0 dec r=23.917 ang=90.0 type=1
+sixth v=0.04 tail n=7364 qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04 ser=0.0000 type4=0 dec r=23.917 ang=90.0 CLEAN
+observers done

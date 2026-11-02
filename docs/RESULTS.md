@@ -256,3 +256,16 @@ All three are clean against a floor of −1×10⁻⁶. The null flux is marginal
 ## The film held to 0.04c
 
 The 0.25 g film already in the ledger, 20 tonnes, acceleration 2.45 m/s², reaches 0.04c in 56.6 days and covers 196 AU on that one leg. Accel and stop is two legs: about 113 days and 392 AU. The round-trip beam energy is 7.19×10¹⁹ J, which is 20000 × (c/25) × c. Lean places the one-leg time between 56.5 and 56.7 days, the one-leg distance between 195.5 and 196.5 AU, and that energy between 7.185×10¹⁹ J and 7.195×10¹⁹ J, and it checks that two legs are twice one leg. The lunar trip is the same acceleration on the short range. This is kinematics. It is not a Warp Factory flight. The Eulerian light shell remains the one-sixth bend window at 0.04c. The 0.10c shell remains compactness 1/2.
+
+## Every observer
+
+Dated 2026-11-02. Log `data/dial_observers.txt`. Same two shapes, same N = 120 grid. The sampled lines reproduce the coast anchors: half-wall energy 8.3144×10²⁷ kg with the shift off and 8.2868×10²⁷ kg at 0.10c, window energy 2.3822×10²⁷ kg with the shift off and 2.3794×10²⁷ kg at 0.04c. The exact columns are signed ratios of the minimum contraction to the peak Eulerian density. A negative number is the depth of the dip. The dominant column is the rest-frame slack ρ − |p|.
+
+| Shape | Speed | Exact null | Exact weak | Exact strong | Rest-frame dominant | Worst cell |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Half wall | 0 | −2.17×10⁻⁵ | −2.19×10⁻⁵ | −2.17×10⁻⁵ | −3.72×10⁻⁵ | tail, 26.2 m, back |
+| Half wall | 0.10c | −2.14×10⁻⁵ | −2.16×10⁻⁵ | −2.14×10⁻⁵ | −3.67×10⁻⁵ | tail, 26.2 m, back |
+| Bend window | 0 | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, side |
+| Bend window | 0.04c | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, side |
+
+All four are clean on the campaign bar. Serious fraction 0. All 13,456 midplane cells are Type I, so each has a rest frame. No cell passes the exact weak bar and fails the rest-frame dominant bar. The tail, r > 20 m, holds the worst cell in every row, and the tail by itself is clean at those same ratios. The exact weak ratio on the half wall equals the sampled weak ratio. The exact strong ratio on the window equals the sampled strong ratio. The extra directions deepen the null ratio by about a factor of two and leave it under the bar. Turning the shift on does not move the cell.
