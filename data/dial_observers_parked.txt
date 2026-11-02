@@ -1,0 +1,24 @@
+parked. ell=0.8573494832025231 R2=20.000 R1=2.853 N=120 h=0.45455
+half wall at 0.11c, one-sixth window at 0.06c. place is the cell: 0 nose, 90 side, 180 back. dir is the worst null vector.
+clean would require all four exact ratios > -1e-3, serious fraction 0, and no Type II or Type IV cell. A marked failure is the result.
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.11 sample E=8.2811e+27 null=3.567e-02 weak=3.567e-02 strong=3.567e-02 dom=1.771e-01 ser=0.0119 shift=1.100e-01 FAIL 11.6s
+  sample null r=15.723 place=85.9 signed=-3.567e-02
+  sample weak r=15.723 place=85.9 signed=-3.567e-02
+  sample strong r=15.723 place=85.9 signed=-3.567e-02
+  sample dominant r=15.697 place=87.5 signed=-1.771e-01
+half v=0.11 exact qN=-7.523e-02 qW=-7.523e-02 qS=-7.523e-02 dec=-3.660e-05 ser=0.0134 type1=13272 type2=0 type4=184 decMiss=0 FAIL 45.2s
+  worst null r=15.683 place=89.2 dir=179.1 type=4 weak r=15.683 place=89.2 dir=179.1 type=4 strong r=15.683 place=89.2 dir=179.1 type=4 dec r=26.161 place=87.5 dir=180.0 type=1
+half v=0.11 tail n=7364 qN=-2.135e-05 qW=-2.153e-05 qS=-2.135e-05 dec=-3.660e-05 ser=0.0000 type4=0 dec r=26.161 place=87.5 dir=180.0 CLEAN
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.627 rSlope=12.967 rCurv=15.711 rEnd=18.454 pay=0.9446
+sixth v=0.06 sample E=2.3758e+27 null=1.023e-01 weak=1.023e-01 strong=1.023e-01 dom=2.223e-01 ser=0.0758 shift=6.000e-02 FAIL 10.6s
+  sample null r=16.215 place=84.4 signed=-1.023e-01
+  sample weak r=16.215 place=84.4 signed=-1.023e-01
+  sample strong r=16.215 place=84.4 signed=-1.023e-01
+  sample dominant r=16.138 place=90.8 signed=-2.223e-01
+sixth v=0.06 exact qN=-2.051e-01 qW=-2.051e-01 qS=-2.051e-01 dec=-1.359e-04 ser=0.0764 type1=12428 type2=0 type4=1028 decMiss=0 FAIL 45.8s
+  worst null r=16.215 place=84.4 dir=173.7 type=4 weak r=16.215 place=84.4 dir=173.7 type=4 strong r=16.215 place=84.4 dir=173.7 type=4 dec r=23.917 place=3.8 dir=90.0 type=1
+sixth v=0.06 tail n=7364 qN=-1.359e-04 qW=-1.359e-04 qS=-1.891e-04 dec=-1.359e-04 ser=0.0000 type4=0 dec r=23.917 place=3.8 dir=90.0 CLEAN
+observers done

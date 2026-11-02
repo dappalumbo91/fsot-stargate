@@ -1,0 +1,41 @@
+fine. ell=0.8573494832025231 R2=20.000 R1=2.853 N=240 h=0.22727 smoothFactor=4000
+same physical box as N=120. The radial smooth is the 1e5-point array. Only the Cartesian stencil changes.
+N=120 tail: half0 qW=-2.185e-05 dec=-3.716e-05; half0.10 qW=-2.158e-05 dec=-3.670e-05; sixth0 qN=-1.356e-04 qS=-1.888e-04; sixth0.04 qN=-1.357e-04 qS=-1.889e-04
+place is the cell: 0 nose, 90 side, 180 back. dir is the worst null vector.
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.00 sample E=8.3155e+27 null=1.100e-03 weak=2.493e-03 strong=1.100e-03 dom=1.593e-06 ser=0.0001 shift=0.000e+00 FAIL 108.5s
+  sample null r=0.161 place=45.0 signed=-1.100e-03
+  sample weak r=0.161 place=45.0 signed=-2.493e-03
+  sample strong r=0.161 place=45.0 signed=-1.100e-03
+  sample dominant r=26.534 place=69.7 signed=-1.593e-06
+half v=0.00 exact qN=-2.204e-03 qW=-2.493e-03 qS=-2.204e-03 dec=-3.231e-03 ser=0.0001 type1=55696 type2=0 type4=0 decMiss=0 FAIL 16.3s
+  worst null r=0.161 place=45.0 dir=180.0 type=1 weak r=0.161 place=45.0 dir=180.0 type=1 strong r=0.161 place=45.0 dir=180.0 type=1 dec r=0.161 place=135.0 dir=180.0 type=1
+half v=0.00 tail n=31352 qN=-1.465e-06 qW=-1.482e-06 qS=-1.465e-06 dec=-2.182e-06 ser=0.0000 type4=0 dec r=26.478 place=179.8 dir=180.0 CLEAN
+half v=0.10 sample E=8.2879e+27 null=1.245e-03 weak=2.484e-03 strong=1.245e-03 dom=1.573e-06 ser=0.0001 shift=1.000e-01 FAIL 100.0s
+  sample null r=0.161 place=135.0 signed=-1.245e-03
+  sample weak r=0.161 place=135.0 signed=-2.484e-03
+  sample strong r=0.161 place=135.0 signed=-1.245e-03
+  sample dominant r=26.534 place=69.7 signed=-1.573e-06
+half v=0.10 exact qN=-2.494e-03 qW=-2.602e-03 qS=-2.494e-03 dec=-3.143e-03 ser=0.0001 type1=55696 type2=0 type4=0 decMiss=0 FAIL 158.8s
+  worst null r=0.161 place=135.0 dir=17.2 type=1 weak r=0.161 place=135.0 dir=17.2 type=1 strong r=0.161 place=135.0 dir=17.2 type=1 dec r=0.161 place=135.0 dir=17.2 type=1
+half v=0.10 tail n=31352 qN=-1.447e-06 qW=-1.464e-06 qS=-1.447e-06 dec=-2.155e-06 ser=0.0000 type4=0 dec r=26.478 place=179.8 dir=180.0 CLEAN
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.626 rSlope=12.967 rCurv=15.710 rEnd=18.453 pay=0.9448
+sixth v=0.00 sample E=2.3817e+27 null=4.243e-04 weak=9.806e-04 strong=4.243e-04 dom=3.382e-01 ser=0.0009 shift=0.000e+00 FAIL 99.7s
+  sample null r=0.161 place=45.0 signed=-4.243e-04
+  sample weak r=0.161 place=45.0 signed=-9.806e-04
+  sample strong r=0.161 place=45.0 signed=-4.243e-04
+  sample dominant r=12.962 place=62.3 signed=-3.382e-01
+sixth v=0.00 exact qN=-8.504e-04 qW=-9.806e-04 qS=-8.504e-04 dec=-3.060e-01 ser=0.0009 type1=55696 type2=0 type4=0 decMiss=52 FAIL 15.4s
+  worst null r=0.161 place=135.0 dir=180.0 type=1 weak r=0.161 place=45.0 dir=180.0 type=1 strong r=0.161 place=135.0 dir=180.0 type=1 dec r=12.962 place=62.3 dir=180.0 type=1
+sixth v=0.00 tail n=31352 qN=-1.160e-04 qW=-1.160e-04 qS=-1.644e-04 dec=-1.160e-04 ser=0.0000 type4=0 dec r=23.947 place=82.6 dir=90.0 CLEAN
+sixth v=0.04 sample E=2.3789e+27 null=7.255e-03 weak=7.255e-03 strong=7.255e-03 dom=3.554e-01 ser=0.0009 shift=4.000e-02 FAIL 103.2s
+  sample null r=12.962 place=152.3 signed=-7.255e-03
+  sample weak r=12.962 place=152.3 signed=-7.255e-03
+  sample strong r=12.962 place=152.3 signed=-7.255e-03
+  sample dominant r=12.962 place=152.3 signed=-3.554e-01
+sixth v=0.04 exact qN=-1.616e-02 qW=-1.616e-02 qS=-1.616e-02 dec=-3.469e-01 ser=0.0009 type1=55688 type2=0 type4=8 decMiss=44 FAIL 160.2s
+  worst null r=12.962 place=152.3 dir=16.5 type=4 weak r=12.962 place=152.3 dir=16.5 type=4 strong r=12.962 place=152.3 dir=16.5 type=4 dec r=12.962 place=62.3 dir=23.7 type=1
+sixth v=0.04 tail n=31352 qN=-1.160e-04 qW=-1.160e-04 qS=-1.645e-04 dec=-1.160e-04 ser=0.0000 type4=0 dec r=23.947 place=82.6 dir=90.0 CLEAN
+observers done

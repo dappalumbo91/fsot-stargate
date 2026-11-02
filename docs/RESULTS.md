@@ -263,9 +263,44 @@ Dated 2026-11-02. Log `data/dial_observers.txt`. Same two shapes, same N = 120 g
 
 | Shape | Speed | Exact null | Exact weak | Exact strong | Rest-frame dominant | Worst cell |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| Half wall | 0 | −2.17×10⁻⁵ | −2.19×10⁻⁵ | −2.17×10⁻⁵ | −3.72×10⁻⁵ | tail, 26.2 m, back |
-| Half wall | 0.10c | −2.14×10⁻⁵ | −2.16×10⁻⁵ | −2.14×10⁻⁵ | −3.67×10⁻⁵ | tail, 26.2 m, back |
-| Bend window | 0 | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, side |
-| Bend window | 0.04c | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, side |
+| Half wall | 0 | −2.17×10⁻⁵ | −2.19×10⁻⁵ | −2.17×10⁻⁵ | −3.72×10⁻⁵ | tail, 26.2 m, direction 180° |
+| Half wall | 0.10c | −2.14×10⁻⁵ | −2.16×10⁻⁵ | −2.14×10⁻⁵ | −3.67×10⁻⁵ | tail, 26.2 m, direction 180° |
+| Bend window | 0 | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, direction 90° |
+| Bend window | 0.04c | −1.36×10⁻⁴ | −1.36×10⁻⁴ | −1.89×10⁻⁴ | −1.36×10⁻⁴ | tail, 23.9 m, direction 90° |
 
-All four are clean on the campaign bar. Serious fraction 0. All 13,456 midplane cells are Type I, so each has a rest frame. No cell passes the exact weak bar and fails the rest-frame dominant bar. The tail, r > 20 m, holds the worst cell in every row, and the tail by itself is clean at those same ratios. The exact weak ratio on the half wall equals the sampled weak ratio. The exact strong ratio on the window equals the sampled strong ratio. The extra directions deepen the null ratio by about a factor of two and leave it under the bar. Turning the shift on does not move the cell.
+All four are clean on the campaign bar. Serious fraction 0. All 13,456 midplane cells are Type I, so each has a rest frame. No cell passes the exact weak bar and fails the rest-frame dominant bar. The tail, r > 20 m, holds the worst cell in every row, and the tail by itself is clean at those same ratios. The exact weak ratio on the half wall equals the sampled weak ratio. The exact strong ratio on the window equals the sampled strong ratio. The extra directions deepen the null ratio by about a factor of two and leave it under the bar. Turning the shift on does not move the cell. The angle in the table is the direction of the worst contraction: 0 looks toward the nose, 90 looks to the side, 180 looks backward. Where the cell sits is in the passenger log, on this same grid. At 0.10c the half-wall null cell is at 26.216 m and 4.5° off the nose, and the rest-frame cell is at 26.161 m and 87.5° off the nose. On the window the null cell is at 23.917 m and 3.8° off the nose, and the strong cell is at 23.542 m and 96.1° off the nose.
+
+## The parked failures
+
+Dated 2026-11-02. Log `data/dial_observers_parked.txt`. Same builders, same N = 120 grid. The speeds are the stored failures, 0.11c on the half wall and 0.06c on the one-sixth window. The sampled cells match the stored lines: dominant ratio 0.177 at 15.697 m on the half wall, and dominant ratio 0.222 at 16.138 m on the window.
+
+| Shape | Speed | Sample dominant | Exact contraction | Cell | Place | Rest frame | Type IV cells |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| Half wall | 0.11c | 0.177 at 15.697 m | −7.523×10⁻² | 15.683 m | 89.2° | none | 184 |
+| Bend window | 0.06c | 0.222 at 16.138 m | −0.2051 | 16.215 m | 84.4° | none | 1,028 |
+
+Both are failures. Serious fraction 0.0134 on the half wall and 0.0764 on the window. No Type II cell. The rest-frame slack that does exist is the smoothing tail, −3.660×10⁻⁵ on the half wall and −1.359×10⁻⁴ on the window, and that tail passes. The break is the outer wall, on the side, in cells that have no rest frame.
+
+## Half the spacing
+
+Dated 2026-11-02. Log `data/dial_observers_fine.txt`. Same two clean shapes. smoothFactor stays 4000. Spacing is half, h = 0.227 m, N = 240, and the five z layers stay. The shell integrals stay on the stored masses: 8.3155×10²⁷ kg and 8.2879×10²⁷ kg on the half wall, 2.3817×10²⁷ kg and 2.3789×10²⁷ kg on the window.
+
+| Shape | Speed | N = 120 tail | N = 240 tail | Tail verdict |
+| --- | ---: | ---: | ---: | --- |
+| Half wall | 0 | weak −2.185×10⁻⁵, dominant −3.716×10⁻⁵ | weak −1.482×10⁻⁶, dominant −2.182×10⁻⁶ | fell about 15 times |
+| Half wall | 0.10c | weak −2.158×10⁻⁵, dominant −3.670×10⁻⁵ | weak −1.464×10⁻⁶, dominant −2.155×10⁻⁶ | fell about 15 times |
+| Bend window | 0 | null −1.356×10⁻⁴, strong −1.888×10⁻⁴ | null −1.160×10⁻⁴, strong −1.644×10⁻⁴ | moved about 15 percent |
+| Bend window | 0.04c | null −1.357×10⁻⁴, strong −1.889×10⁻⁴ | null −1.160×10⁻⁴, strong −1.645×10⁻⁴ | moved about 15 percent |
+
+Every one of those tails passes, and every tail cell has a rest frame. The half-wall drop is the fourth-order stencil. The window tail holds, so that one is the join. The finer grid's worst cell is not the tail. On the half wall it is the diagonal sample at 0.161 m, weak ratio −2.493×10⁻³ with the shift off and −2.602×10⁻³ at 0.10c, Type I, serious fraction 0.0001. On the window it is the steepest slope at 12.962 m: rest-frame dominant −0.3060 with the shift off, and −0.3469 at 0.04c. At 0.04c eight cells there have no rest frame, and the exact contraction on that cell is −1.616×10⁻². The N = 120 clean lines stay the record. This spacing was not fed back into the shape.
+
+## Ten tonnes in the cavity
+
+Dated 2026-11-02. Log `data/dial_passenger.txt`. The metric is the clean half wall at 0.10c and the clean window at 0.04c. Dust at rest in the ship is added to the coordinate stress-energy after the metric is built, and the frame transfer moves the sum. The 2 m ball is the part the slab contains. The midplane ring integral of the dust is scaled to 10,000 kg.
+
+| Shape | Shell integral | Recovered dust | Dust density | Exact ratios after the dust |
+| --- | ---: | ---: | ---: | --- |
+| Half wall, 0.10c | 8.2868×10²⁷ kg | 10,000.000 kg | 297.2505 kg/m³ | −2.141×10⁻⁵, −2.158×10⁻⁵, −2.141×10⁻⁵, −3.670×10⁻⁵ |
+| Bend window, 0.04c | 2.3794×10²⁷ kg | 10,000.000 kg | 297.2902 kg/m³ | −1.357×10⁻⁴, −1.357×10⁻⁴, −1.889×10⁻⁴, −1.357×10⁻⁴ |
+
+Both stay clean. All 13,456 midplane cells stay Type I. The tail cells stay the cells in the clean observer log. The dust is 1.457×10⁻²¹ of the half-wall peak and 2.049×10⁻²¹ of the window peak. At the center the shell smoother already reads 1.157×10²¹ kg/m³ on the half wall and 3.772×10²⁰ kg/m³ on the window, so the sum prints those same digits. The passenger leaves the tail where it was and opens no new violation. The shell mass is the shell integral above.

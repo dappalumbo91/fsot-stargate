@@ -1,0 +1,32 @@
+passenger. ell=0.8573494832025231 R2=20.000 R1=2.853 N=120 h=0.45455 ball=2 m mass=10000 kg
+comoving dust, u^i=0, added after the metric is built. The shell integral is the shell mass. This is not a mass reduction.
+place is the cell: 0 nose, 90 side, 180 back. dir is the worst null vector.
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.10 shell E=8.2868e+27 null=1.067e-05 weak=2.158e-05 strong=1.067e-05 dom=1.923e-05 ser=0.0000 shift=1.000e-01 11.5s
+half v=0.10 passenger recovered=10000.000000 kg nMask=268 nMid=60 g00=[-0.322579, -0.322443] dustMax=2.972505e+02 kg/m3 dust/pk=1.457e-21
+half v=0.10 center r=0.321 shell=1.157367e+21 dust=2.972505e+02 kg/m3 | near1 r=0.964 shell=1.946498e+22 dust=2.972501e+02 kg/m3
+  sample null r=26.216 place=85.5 signed=-1.067e-05
+  sample weak r=26.216 place=4.5 signed=-2.158e-05
+  sample strong r=26.216 place=85.5 signed=-1.067e-05
+  sample dominant r=26.467 place=110.6 signed=-1.923e-05
+half v=0.10 with-passenger sample E=8.2868e+27 null=1.067e-05 weak=2.158e-05 strong=1.067e-05 dom=1.923e-05 ser=0.0000 CLEAN 6.6s
+half v=0.10 center-sum r=0.321 rho=1.157367e+21 kg/m3 | near1-sum rho=1.946498e+22 kg/m3
+half v=0.10 with-passenger exact qN=-2.141e-05 qW=-2.158e-05 qS=-2.141e-05 dec=-3.670e-05 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 47.1s
+  worst null r=26.216 place=4.5 dir=180.0 type=1 weak r=26.216 place=4.5 dir=180.0 type=1 strong r=26.216 place=4.5 dir=180.0 type=1 dec r=26.161 place=87.5 dir=180.0 type=1
+half v=0.10 tail n=7364 qN=-2.141e-05 qW=-2.158e-05 qS=-2.141e-05 dec=-3.670e-05 ser=0.0000 type4=0 dec r=26.161 place=87.5 dir=180.0 CLEAN
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.627 rSlope=12.967 rCurv=15.711 rEnd=18.454 pay=0.9446
+sixth v=0.04 shell E=2.3794e+27 null=6.785e-05 weak=6.785e-05 strong=1.889e-04 dom=1.605e-04 ser=0.0000 shift=4.000e-02 10.7s
+sixth v=0.04 passenger recovered=10000.000000 kg nMask=268 nMid=60 g00=[-0.741137, -0.741055] dustMax=2.972902e+02 kg/m3 dust/pk=2.049e-21
+sixth v=0.04 center r=0.321 shell=3.772404e+20 dust=2.972902e+02 kg/m3 | near1 r=0.964 shell=6.342199e+21 dust=2.972902e+02 kg/m3
+  sample null r=23.917 place=93.8 signed=-6.785e-05
+  sample weak r=23.917 place=93.8 signed=-6.785e-05
+  sample strong r=23.542 place=96.1 signed=-1.889e-04
+  sample dominant r=23.647 place=166.1 signed=-1.605e-04
+sixth v=0.04 with-passenger sample E=2.3794e+27 null=6.785e-05 weak=6.785e-05 strong=1.889e-04 dom=1.605e-04 ser=0.0000 CLEAN 6.3s
+sixth v=0.04 center-sum r=0.321 rho=3.772404e+20 kg/m3 | near1-sum rho=6.342199e+21 kg/m3
+sixth v=0.04 with-passenger exact qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 46.0s
+  worst null r=23.917 place=3.8 dir=90.0 type=1 weak r=23.917 place=3.8 dir=90.0 type=1 strong r=23.542 place=96.1 dir=90.0 type=1 dec r=23.917 place=3.8 dir=90.0 type=1
+sixth v=0.04 tail n=7364 qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04 ser=0.0000 type4=0 dec r=23.917 place=3.8 dir=90.0 CLEAN
+passenger done

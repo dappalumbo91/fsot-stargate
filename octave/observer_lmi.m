@@ -7,6 +7,8 @@
 % form the sampled observer field contracts, over the sphere and the ball.
 % The dominant margin is the invariant rest-frame slack when a rest frame
 % exists. A tensor with no rest frame is reported as such.
+% a* is the direction of the worst null vector. p* is where the cell sits:
+% 0 at the nose (+x), 90 on the side, 180 at the back (-x).
 
 function R = observer_lmi(Te, x, y, R2, pk)
 if nargin == 1 && ischar(Te) && strcmp(Te, "test")
@@ -22,9 +24,11 @@ dS = zeros(nx, ny);
 typ = zeros(nx, ny);
 ang = zeros(nx, ny);
 rad = hypot(x, y);
+azi = atan2(abs(y), x);
 for i = 1:nx
   if mod(i, 30) == 0
     fprintf('observer row %d/%d\n', i, nx);
+    fflush(stdout);
   end
   for j = 1:ny
     T = zeros(4);
@@ -42,8 +46,8 @@ for i = 1:nx
     ang(i, j) = atan2(hypot(sN(2), sN(3)), sN(1));
   end
 end
-R = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, rad >= 0);
-R.tail = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, rad > R2);
+R = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, rad >= 0, azi);
+R.tail = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, rad > R2, azi);
 end
 
 function Tc = raise_to_covariant(Tup)
@@ -320,7 +324,7 @@ if abs(got - want) > 1e-8
 end
 end
 
-function R = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, mask)
+function R = pack_region(qN, qW, qS, dS, typ, rad, ang, pk, mask, azi)
 qN = qN(mask);
 qW = qW(mask);
 qS = qS(mask);
@@ -328,6 +332,7 @@ dS = dS(mask);
 typ = typ(mask);
 rad = rad(mask);
 ang = ang(mask);
+azi = azi(mask);
 R.n = numel(qN);
 R.qNull = min(qN) / pk;
 R.qWeak = min(qW) / pk;
@@ -354,12 +359,19 @@ else
 end
 R.rNull = rad(iN);
 R.aNull = ang(iN) * 180 / pi;
+R.pNull = azi(iN) * 180 / pi;
+R.tNull = typ(iN);
 R.rWeak = rad(iW);
 R.aWeak = ang(iW) * 180 / pi;
+R.pWeak = azi(iW) * 180 / pi;
+R.tWeak = typ(iW);
 R.rStrong = rad(iS);
 R.aStrong = ang(iS) * 180 / pi;
+R.pStrong = azi(iS) * 180 / pi;
+R.tStrong = typ(iS);
 R.rDec = rad(iD);
 R.aDec = ang(iD) * 180 / pi;
+R.pDec = azi(iD) * 180 / pi;
 R.tDec = typ(iD);
 vals = [R.qNull, R.qWeak, R.qStrong];
 if isfinite(R.dec)
