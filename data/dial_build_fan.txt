@@ -1,0 +1,90 @@
+build fan. same book. inner buildup follows the thickness. outer slack stays. R2=20.000 R1=2.853
+mass and lapse stay.
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+M=2.244318e+27 (1.182 Mjup) rhoUni=6.716892e+22 rhoHalf=2.015068e+23
+mix max |dS|=1.32691e-01 /m at r=12.967
+strongest bend r=15.711 d2S=3.82436e-02  window end r=18.454 |dS|=3.06264e-03
+r  |dS|  chord  weight/|dS|
+  9.78  8.17479e-02  2.07981e-01  1.000
+ 12.00  1.26107e-01  1.55537e-01  1.000
+ 14.00  1.23439e-01  1.08291e-01  1.000
+ 15.70  7.07156e-02  6.81311e-02  1.000
+ 16.67  3.58721e-02  4.52165e-02  1.260
+ 17.52  1.43627e-02  2.51367e-02  1.750
+ 19.00  8.19107e-04 -9.82581e-03  1.000
+rCross=8.165 rFlip=12.968 excess/M=0.0184 pay/M=0.3327
+payment scale=0.9446 M(end)/M before trim=0.999998
+inner mass peak rho=1.263867e+23 at r=12.968  peak/rhoHalf=0.627 peak/rhoUni=1.882
+r  rho/rhoHalf  rho/rhoUni
+  2.85  0.1594  0.4783
+  9.78  0.4424  1.3272
+ 12.00  0.5859  1.7577
+ 15.70  0.4124  1.2373
+ 17.52  0.2015  0.6045
+mass fraction 0.0-8.0 m = 0.056
+mass fraction 8.0-13.0 m = 0.322
+mass fraction 13.0-18.0 m = 0.538
+mass fraction 18.0-27.0 m = 0.084
+M(end)/M=1.0000 min(1-Rs/r)=0.8302
+inner buildup r=6.866 to crest 12.967  strongest steepening r=9.917 d2S=-2.32819e-02
+inner |dS| endpoints 3.38798e-02 to 1.32691e-01 /m
+outer slack stays. crest r=12.967 window end r=18.454
+|dS| endpoints 1.32691e-01 to 3.06264e-03 /m  thickness 4.40693e+23
+bend scale fixed by those endpoints 2.94146e-25  crest recovery 3.51178e-02 /m^2
+S(crest) new=0.43300 old=0.38409
+S(rEnd) new=0.14444 old=0.00120 residual=1.43243e-01
+peak |d2S| on the buildup old=2.32819e-02 new=2.20687e-02
+peak |d2S| on the recovery old=3.82436e-02 new=3.71754e-02
+shift stayed positive through the window
+r  S_old  S_build  dS_old  dS_build  d2_old  d2_build  rho/peak
+  2.85  0.9948  0.9948 -8.84382e-03 -8.84382e-03 -1.05012e-02 -1.05012e-02  0.254
+  8.00  0.8567  0.8554 -4.60741e-02 -4.70074e-02 -1.44608e-02 -1.16379e-02  0.519
+  9.78  0.7452  0.7520 -8.17479e-02 -7.05173e-02 -2.32350e-02 -1.58268e-02  0.705
+ 12.00  0.5102  0.5514 -1.26107e-01 -1.12182e-01 -1.27114e-02 -2.09599e-02  0.934
+ 12.97  0.3837  0.4326 -1.32691e-01 -1.32576e-01  4.47978e-05  3.71733e-02  1.000
+ 14.00  0.2502  0.3155 -1.23439e-01 -9.54072e-02  1.84000e-02  3.44697e-02  0.927
+ 15.70  0.0802  0.1989 -7.07156e-02 -4.46132e-02  3.82427e-02  2.44446e-02  0.658
+ 16.14  0.0527  0.1815 -5.41006e-02 -3.45476e-02  3.67751e-02  2.12994e-02  0.573
+ 17.52  0.0084  0.1510 -1.43627e-02 -1.17958e-02  1.87580e-02  1.19416e-02  0.321
+ 18.45  0.0012  0.1445 -3.09078e-03 -3.09200e-03  6.38998e-03  7.01873e-03  0.189
+ 19.00  0.0002  0.1435 -8.19107e-04 -8.18576e-04  2.31149e-03  2.31032e-03  0.130
+build v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 r=23.647 CLEAN 12.2s
+  side r rho T0x Txx
+    8.00  0.4414  0.0000  0.0311
+    9.78  0.6140  0.0000  0.0241
+   12.00  0.8127  0.0000  0.0212
+   14.00  0.8058  0.0000  0.0192
+   15.70  0.5724  0.0000  0.0118
+   16.14  0.4988  0.0000  0.0093
+   17.52  0.2798  0.0000  0.0020
+   18.45  0.1648  0.0000 -0.0011
+build v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 5.9s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04
+build v=0.04 E=2.3804e+27 null=5.543e-04 weak=5.543e-04 strong=5.902e-04 dom=5.434e-04 ser=0.0000 shift=4.000e-02 r=23.153 CLEAN 12.1s
+  side r rho T0x Txx
+    8.00  0.4412  0.1318  0.0205
+    9.78  0.6134  0.1697  0.0126
+   12.00  0.8108  0.2108  0.0124
+   14.00  0.8047 -0.2229  0.0270
+   15.70  0.5723 -0.1599  0.0150
+   16.14  0.4988 -0.1395  0.0117
+   17.52  0.2800 -0.0791  0.0031
+   18.45  0.1648 -0.0437 -0.0005
+build v=0.04 exact qN=-1.113e-03 qW=-1.113e-03 qS=-1.113e-03 dec=5.934e-05 ser=0.0253 type1=7864 type2=0 type4=5592 decMiss=0 FAIL 124.4s
+  worst null r=24.319 place=179.5 dir=0.9 dec r=22.748 place=111.7 dir=145.0 type=1
+  tail qN=-1.113e-03 qW=-1.113e-03 qS=-1.113e-03 dec=5.934e-05
+build v=0.06 E=2.3780e+27 null=4.656e-02 weak=4.656e-02 strong=4.656e-02 dom=1.046e-01 ser=0.0051 shift=6.000e-02 r=2.963 FAIL 13.1s
+  side r rho T0x Txx
+    8.00  0.4410  0.1977  0.0072
+    9.78  0.6126  0.2546 -0.0017
+   12.00  0.8086  0.3165  0.0015
+   14.00  0.8033 -0.3344  0.0369
+   15.70  0.5723 -0.2400  0.0189
+   16.14  0.4989 -0.2093  0.0148
+   17.52  0.2801 -0.1188  0.0044
+   18.45  0.1649 -0.0656  0.0002
+build v=0.06 exact qN=-9.522e-02 qW=-9.522e-02 qS=-9.522e-02 dec=1.105e-04 ser=0.1671 type1=7668 type2=0 type4=5788 decMiss=0 FAIL 90.0s
+  worst null r=2.963 place=94.4 dir=2.2 dec r=22.584 place=69.4 dir=143.9 type=1
+  tail qN=-1.719e-03 qW=-1.719e-03 qS=-1.719e-03 dec=1.105e-04
+build fan done

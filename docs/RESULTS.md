@@ -432,3 +432,15 @@ Dated 2026-11-03. Log `data/dial_slack_fan.txt`. Same one-sixth book, same mass,
 | 0.06c | dominant 0.2002 at 9.321 m | −0.1427, 5,964 cells | 5,964 | 2.3774×10²⁷ kg |
 
 At 0.04c the side flux over peak is −0.222 at 14 m, −0.139 at 16.14 m, −0.079 at 17.52 m, and −0.043 at 18.45 m. The 12 m page holds at +0.155. The exact worst cell is at 24.319 m, place 179.5°, direction 1.0°. The tail contraction is −7.214×10⁻⁴. Serious fraction is 0. The cells with no rest frame are the trail of the leftover shift. At 0.06c the side flux is +0.358 at 9.78 m, +0.232 at 12 m, −0.333 at 14 m, −0.208 at 16.14 m, −0.118 at 17.52 m, and −0.065 at 18.45 m. The exact worst cell is at 9.321 m, place 88.6°, direction 0.7°. The tail contraction is −1.100×10⁻³. The thin pages are quieter than the chord left them. The leftover shift and the inner shoulder keep the run failed. The thickness slack is not adopted.
+
+## The inner buildup
+
+Dated 2026-11-03. Log `data/dial_build_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. The outer recovery is the thickness slack. The inner window is 6.866 m to the crest at 12.967 m, the same span construction centered on the strongest steepening at 9.917 m. The climb of |dS| follows the placed density, from 0.03388 per meter to 0.132691 per meter. The crest shift is 0.4330. The mix crest is 0.3841. The shift at the window end is 0.1444.
+
+| Speed | Sample | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | dominant 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | all four under 5.91×10⁻⁴, clean | −1.113×10⁻³, Type I 7,864 | 5,592 | 2.3804×10²⁷ kg |
+| 0.06c | dominant 0.1046 at 2.963 m | −0.09522, 5,788 cells | 5,788 | 2.3780×10²⁷ kg |
+
+At 0.06c the side flux over peak is +0.198 at 8 m, +0.255 at 9.78 m against density 0.613, and +0.317 at 12 m against density 0.809. On the thickness slack those fluxes were +0.358 at 9.78 m and +0.232 at 12 m. The outer side is unchanged at the level of the slack: −0.334 at 14 m, −0.209 at 16.14 m, −0.119 at 17.52 m. The exact worst cell is at 2.963 m, place 94.4°, direction 2.2°. The tail contraction is −1.719×10⁻³. At 0.04c the exact worst cell is at 24.319 m, place 179.5°, direction 0.9°, and the tail contraction is −1.113×10⁻³, with serious fraction 0.0253. The gentler climb leaves a higher crest, and the leftover slide in the trail gets larger. The inner buildup is not adopted.
