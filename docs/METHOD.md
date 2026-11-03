@@ -100,3 +100,5 @@ The lighter 20 m runs keep that mix and that lapse and lower the compactness, so
 `octave/dial_level_fan.m` keeps that same book, that mass, and that hydrostatic lapse. The shift is rebuilt from the placed density. It stays 1 inside the inner half-peak shoulder and falls to 0 at the outer half-peak shoulder, with zero slope at both shoulders. Past that outer shoulder the shift is 0. The log is `data/dial_level_fan.txt`.
 
 `octave/dial_ease_fan.m` keeps that same book, that mass, and that hydrostatic lapse. Inside the slope crest the shift is the mix. From the crest at 12.967 m to the window end at 18.454 m the slope is the straight chord of |dS| already used as the mass weight. Past the window the old slope continues from the value the chord arrives at. The log is `data/dial_ease_fan.txt`.
+
+`octave/dial_slack_fan.m` keeps that same book, that mass, and that hydrostatic lapse. Inside the slope crest the shift is the mix. From the crest to the window end the recovery follows the placed density. The scale is fixed by the mix slope at the crest and the mix slope at the window end. Past the window the old slope continues. The log is `data/dial_slack_fan.txt`.

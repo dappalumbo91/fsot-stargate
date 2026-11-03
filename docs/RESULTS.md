@@ -420,3 +420,15 @@ Dated 2026-11-03. Log `data/dial_ease_fan.txt`. Same one-sixth book, same mass, 
 | 0.06c | 0.2002 at 9.321 m | −0.2739, 5,688 cells | 5,688 | 2.3763×10²⁷ kg |
 
 At 0.06c the side flux over peak is −0.219 at 16.14 m, where the density is 0.498 of peak and the old flux was −0.358. At 17.52 m the flux is −0.230, where the old flux was −0.185. At 12 m the flux is +0.232 and that page holds. The exact worst cell at 0.06c is at 18.071 m, place 96.5°, direction 173.9°. At 0.04c it is at 18.128 m, place 82.1°, direction 172.9°. The tail stays under the bar, −1.76×10⁻⁴ at 0.04c and −1.97×10⁻⁴ at 0.06c. The steady recovery quiets the sharp bend and keeps bending where the book is thinner. The 0.04c shell fails there. The eased recovery is not adopted.
+
+## The thickness slack
+
+Dated 2026-11-03. Log `data/dial_slack_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. Inside the slope crest at 12.967 m the shift is the mix. From the crest to the window end at 18.454 m the recovery follows the placed density. The scale is fixed by the mix slopes at those two stations, 0.132691 per meter and 0.003063 per meter. The crest recovery is 3.512×10⁻² per square meter. The corner on that join peaks at 3.718×10⁻² per square meter. The old peak recovery is 3.824×10⁻² per square meter at 15.711 m. At 17.52 m the recovery is 1.194×10⁻² per square meter. The shift arrives at 0.0955. The old shift there is 0.0012.
+
+| Speed | Sample | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | dominant 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | all four under 4.03×10⁻⁴, clean | −7.214×10⁻⁴, Type I 7,976 | 5,480 | 2.3801×10²⁷ kg |
+| 0.06c | dominant 0.2002 at 9.321 m | −0.1427, 5,964 cells | 5,964 | 2.3774×10²⁷ kg |
+
+At 0.04c the side flux over peak is −0.222 at 14 m, −0.139 at 16.14 m, −0.079 at 17.52 m, and −0.043 at 18.45 m. The 12 m page holds at +0.155. The exact worst cell is at 24.319 m, place 179.5°, direction 1.0°. The tail contraction is −7.214×10⁻⁴. Serious fraction is 0. The cells with no rest frame are the trail of the leftover shift. At 0.06c the side flux is +0.358 at 9.78 m, +0.232 at 12 m, −0.333 at 14 m, −0.208 at 16.14 m, −0.118 at 17.52 m, and −0.065 at 18.45 m. The exact worst cell is at 9.321 m, place 88.6°, direction 0.7°. The tail contraction is −1.100×10⁻³. The thin pages are quieter than the chord left them. The leftover shift and the inner shoulder keep the run failed. The thickness slack is not adopted.
