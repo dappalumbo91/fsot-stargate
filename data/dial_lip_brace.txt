@@ -1,0 +1,56 @@
+lip brace. same window, same mass. face q_i q_j/rho on Eulerian matter. R2=20.000 R1=2.853
+metric unchanged. sample maps are the unbraced rebuild. exact observer scores the face.
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+M=2.244318e+27 (1.182 Mjup) rhoUni=6.716892e+22 rhoHalf=2.015068e+23
+mix max |dS|=1.32691e-01 /m at r=12.967
+strongest bend r=15.711 d2S=3.82436e-02  window end r=18.454 |dS|=3.06264e-03
+r  |dS|  chord  weight/|dS|
+  9.78  8.17479e-02  2.07981e-01  1.000
+ 12.00  1.26107e-01  1.55537e-01  1.000
+ 14.00  1.23439e-01  1.08291e-01  1.000
+ 15.70  7.07156e-02  6.81311e-02  1.000
+ 16.67  3.58721e-02  4.52165e-02  1.260
+ 17.52  1.43627e-02  2.51367e-02  1.750
+ 19.00  8.19107e-04 -9.82581e-03  1.000
+rCross=8.165 rFlip=12.968 excess/M=0.0184 pay/M=0.3327
+payment scale=0.9446 M(end)/M before trim=0.999998
+inner mass peak rho=1.263867e+23 at r=12.968  peak/rhoHalf=0.627 peak/rhoUni=1.882
+r  rho/rhoHalf  rho/rhoUni
+  2.85  0.1594  0.4783
+  9.78  0.4424  1.3272
+ 12.00  0.5859  1.7577
+ 15.70  0.4124  1.2373
+ 17.52  0.2015  0.6045
+mass fraction 0.0-8.0 m = 0.056
+mass fraction 8.0-13.0 m = 0.322
+mass fraction 13.0-18.0 m = 0.538
+mass fraction 18.0-27.0 m = 0.084
+M(end)/M=1.0000 min(1-Rs/r)=0.8302
+bare v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 r=23.647 CLEAN 16.7s
+  side r rho T0x Txx_face face/pk
+    9.78  0.6140  0.0000  0.0241  0.0000
+   12.00  0.8127  0.0000  0.0212  0.0000
+   16.14  0.4988  0.0000  0.0093  0.0000
+   17.52  0.2798  0.0000  0.0020  0.0000
+face v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 7.6s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04
+bare v=0.04 E=2.3794e+27 null=6.785e-05 weak=6.785e-05 strong=1.889e-04 dom=1.605e-04 ser=0.0000 shift=4.000e-02 r=23.647 CLEAN 16.3s
+  side r rho T0x Txx_face face/pk
+    9.78  0.6132  0.2388  0.1014  0.0930
+   12.00  0.8104  0.1547  0.0462  0.0295
+   16.14  0.4987 -0.2384  0.1248  0.1140
+   17.52  0.2800 -0.1233  0.0564  0.0543
+face v=0.04 exact qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 87.9s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.357e-04 qW=-1.357e-04 qS=-1.889e-04 dec=-1.357e-04
+bare v=0.06 E=2.3758e+27 null=1.023e-01 weak=1.023e-01 strong=1.023e-01 dom=2.223e-01 ser=0.0758 shift=6.000e-02 r=16.138 FAIL 18.6s
+  side r rho T0x Txx_face face/pk
+    9.78  0.6122  0.3585  0.1986  0.2099
+   12.00  0.8076  0.2324  0.0779  0.0669
+   16.14  0.4986 -0.3580  0.2699  0.2570
+   17.52  0.2802 -0.1851  0.1246  0.1222
+face v=0.06 exact qN=-1.359e-04 qW=-1.359e-04 qS=-1.891e-04 dec=-1.359e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 76.7s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.359e-04 qW=-1.359e-04 qS=-1.891e-04 dec=-1.359e-04
+lip brace done

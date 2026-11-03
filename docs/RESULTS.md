@@ -370,3 +370,15 @@ Dated 2026-11-02. Log `data/dial_adm_lapse.txt`. Same hydrostatic lapse, same mi
 | Bend window | 0.06c | 0.2275 at 16.138 m, 90.8° | −0.2114, 956 cells | 956 | 2.3758×10²⁷ kg |
 
 The 0.04c exact ratios are −1.357×10⁻⁴, −1.357×10⁻⁴, −1.889×10⁻⁴, and −1.357×10⁻⁴. At 0.10c the outer side station is flux −0.5282, longitudinal stress 0.0748 of peak, margin −0.0044. The inner station is flux +0.4830, longitudinal stress 0.1672, margin +0.0888. At 0.11c those stations are margin +0.0369 at 9.78 m and −0.0594 at 15.70 m, with longitudinal stress 0.1620 and 0.0711. The 0.06c tail stays Type I at 23.917 m, slack −1.359×10⁻⁴. The shift square moves stress onto the inner shoulder and off the outer shoulder. The 0.10c pass belongs to the hydrostatic time-time component without that square.
+
+## The carrier face
+
+Dated 2026-11-03. Log `data/dial_lip_brace.txt`. Same one-sixth window. The metric is unchanged. The Eulerian spatial stress gains q_i q_j/ρ where the energy density is above 10⁻⁸ of peak. Sample rows are the unbraced rebuild. Exact rows score the face.
+
+| Speed | Unbraced sample | Exact, with the face | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, −1.356×10⁻⁴, −1.888×10⁻⁴, −1.356×10⁻⁴ | 0 | 2.3822×10²⁷ kg |
+| 0.04c | 1.605×10⁻⁴ at 23.647 m, clean | −1.357×10⁻⁴, −1.357×10⁻⁴, −1.889×10⁻⁴, −1.357×10⁻⁴ | 0 | 2.3794×10²⁷ kg |
+| 0.06c | 0.2223 at 16.138 m, serious 0.0758 | −1.359×10⁻⁴, −1.359×10⁻⁴, −1.891×10⁻⁴, −1.359×10⁻⁴ | 0 | 2.3758×10²⁷ kg |
+
+All 13,456 midplane cells are Type I on each exact row. The 0.06c worst cell is the tail at 23.917 m, place 3.8°, direction 90°, Type I. Side stations at 0.06c, faced longitudinal stress over peak: 0.1986 at 9.78 m, 0.0779 at 12 m, 0.2699 at 16.14 m, 0.1246 at 17.52 m. The rush at 16.14 m is −0.3580 and the density is 0.4986 of peak. With the shift off the face is zero. The curvature of this metric still produces the soft skin. The pass belongs to the faced matter.
