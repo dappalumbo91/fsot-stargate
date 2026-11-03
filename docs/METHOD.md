@@ -108,3 +108,5 @@ The lighter 20 m runs keep that mix and that lapse and lower the compactness, so
 `octave/dial_wall_fan.m` keeps that outer slack, that mass, and that hydrostatic lapse. The climb runs from the cavity wall to the crest. |dS| follows the placed density, the crest slope stays the mix slope, and the scale is fixed so the crest height stays the mix. The log is `data/dial_wall_fan.txt`.
 
 `octave/dial_cabin_fan.m` keeps that outer slack, that mass, and that hydrostatic lapse. The climb runs from the cavity wall to the crest. |dS| follows the cumulative thickness, the slope at the wall stays the mix slope, the crest slope stays the mix slope, and the exponent is fixed so the crest height stays the mix. The log is `data/dial_cabin_fan.txt`.
+
+`octave/dial_cell_fan.m` keeps that outer slack, that mass, that hydrostatic lapse, and the cabin shift. From the cavity wall out to the corner of the fourth-order difference, |dS| stays at the mix slope. Past that corner |dS| follows the cumulative thickness, the crest slope stays the mix slope, and the exponent is fixed so the crest height stays the mix. The log is `data/dial_cell_fan.txt`.
