@@ -1,0 +1,75 @@
+level fan. same book. shift ends on the thick shoulder. R2=20.000 R1=2.853
+mass and lapse stay. the thin edge is level.
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+M=2.244318e+27 (1.182 Mjup) rhoUni=6.716892e+22 rhoHalf=2.015068e+23
+mix max |dS|=1.32691e-01 /m at r=12.967
+strongest bend r=15.711 d2S=3.82436e-02  window end r=18.454 |dS|=3.06264e-03
+r  |dS|  chord  weight/|dS|
+  9.78  8.17479e-02  2.07981e-01  1.000
+ 12.00  1.26107e-01  1.55537e-01  1.000
+ 14.00  1.23439e-01  1.08291e-01  1.000
+ 15.70  7.07156e-02  6.81311e-02  1.000
+ 16.67  3.58721e-02  4.52165e-02  1.260
+ 17.52  1.43627e-02  2.51367e-02  1.750
+ 19.00  8.19107e-04 -9.82581e-03  1.000
+rCross=8.165 rFlip=12.968 excess/M=0.0184 pay/M=0.3327
+payment scale=0.9446 M(end)/M before trim=0.999998
+inner mass peak rho=1.263867e+23 at r=12.968  peak/rhoHalf=0.627 peak/rhoUni=1.882
+r  rho/rhoHalf  rho/rhoUni
+  2.85  0.1594  0.4783
+  9.78  0.4424  1.3272
+ 12.00  0.5859  1.7577
+ 15.70  0.4124  1.2373
+ 17.52  0.2015  0.6045
+mass fraction 0.0-8.0 m = 0.056
+mass fraction 8.0-13.0 m = 0.322
+mass fraction 13.0-18.0 m = 0.538
+mass fraction 18.0-27.0 m = 0.084
+M(end)/M=1.0000 min(1-Rs/r)=0.8302
+thick book r=8.244 to 16.520  half peak rho=6.319337e+22
+old peak |dS|=1.32691e-01 /m  level peak |dS|=3.91692e+00 /m
+r  S_old  S_level  dS_level  rho/peak
+  2.85  0.9948  1.0000  0.00000e+00  0.254
+  8.00  0.8567  1.0000  0.00000e+00  0.519
+  9.78  0.7452  0.9621 -5.04022e-02  0.705
+ 12.00  0.5102  0.7287 -1.60426e-01  0.934
+ 12.97  0.3837  0.5557 -2.15808e-01  1.000
+ 14.00  0.2502  0.3298 -2.14877e-01  0.927
+ 15.70  0.0802  0.0423 -9.96727e-02  0.658
+ 16.14  0.0527  0.0094 -4.87831e-02  0.573
+ 17.52  0.0084  0.0000  0.00000e+00  0.321
+ 19.00  0.0002  0.0000  0.00000e+00  0.130
+level v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 r=23.647 CLEAN 9.8s
+  side r rho T0x Txx
+    9.78  0.6140  0.0000  0.0241
+   12.00  0.8127  0.0000  0.0212
+   14.00  0.8058  0.0000  0.0192
+   15.70  0.5724  0.0000  0.0118
+   16.14  0.4988  0.0000  0.0093
+   17.52  0.2798  0.0000  0.0020
+level v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 4.0s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04
+level v=0.04 E=2.3764e+27 null=6.202e-01 weak=6.202e-01 strong=6.202e-01 dom=6.174e-01 ser=0.0831 shift=4.000e-02 r=16.138 FAIL 9.9s
+  side r rho T0x Txx
+    9.78  0.6149  0.3789 -0.0101
+   12.00  0.8099  0.4114 -0.0022
+   14.00  0.7999 -0.1083  0.0298
+   15.70  0.5721 -0.7250  0.0162
+   16.14  0.4996 -0.8763  0.0104
+   17.52  0.2805  0.0000  0.0020
+level v=0.04 exact qN=-1.248e+00 qW=-1.248e+00 qS=-1.248e+00 dec=-1.359e-04 ser=0.0844 type1=12320 type2=0 type4=1136 decMiss=0 FAIL 28.3s
+  worst null r=16.151 place=92.4 dir=177.8 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.359e-04 qW=-1.359e-04 qS=-1.892e-04 dec=-1.359e-04
+level v=0.06 E=2.3691e+27 null=1.060e+00 weak=1.060e+00 strong=1.060e+00 dom=9.317e-01 ser=0.1391 shift=6.000e-02 r=16.138 FAIL 10.6s
+  side r rho T0x Txx
+    9.78  0.6160  0.5693 -0.0528
+   12.00  0.8064  0.6191 -0.0316
+   14.00  0.7926 -0.1624  0.0432
+   15.70  0.5717 -1.0905  0.0217
+   16.14  0.5005 -1.3181  0.0117
+   17.52  0.2813  0.0000  0.0020
+level v=0.06 exact qN=-2.132e+00 qW=-2.132e+00 qS=-2.132e+00 dec=-1.363e-04 ser=0.1394 type1=11576 type2=0 type4=1880 decMiss=0 FAIL 27.2s
+  worst null r=16.138 place=89.2 dir=179.3 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.363e-04 qW=-1.363e-04 qS=-1.898e-04 dec=-1.363e-04
+level fan done

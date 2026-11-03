@@ -396,3 +396,15 @@ The knob check in `data/dial_face_curv.txt` separates the handles. At 16.14 m, p
 | Bells 0.75 m, every 1 m | linear miss 0.172, not scored | 0.203 | 9.73×10⁻⁴ | — | — |
 
 Shift off, both scored passes sit on the stored clean line: energy 2.3822×10²⁷ kg, exact ratios −1.356×10⁻⁴, Type I 13,456, Type IV 0. The density along the side stays within 10⁻⁴ of the unbraced ray. On the whole-side pass the 0.06c sample cell is at 3.870 m, place 86.6°, longitudinal stress −0.269 of peak, against a local face of 0.072. The tight pass pulls −0.094 of peak at 14 m and −0.092 at 18.97 m. A bend in the side clock raises the squeeze at one radius and lowers it at the next. The face is a squeeze at every radius where the rush is strong. The side lapse is not adopted.
+
+## The level fan
+
+Dated 2026-11-03. Log `data/dial_level_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. The shift stays 1 until the inner half-peak shoulder at 8.244 m and is 0 from the outer half-peak shoulder at 16.520 m outward. The thin edge is level: at 17.52 m the shift is 0 and the flux is 0.
+
+| Speed | Sample dominant | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | 0.6174 at 16.138 m | −1.248, 1,136 cells | 1,136 | 2.3764×10²⁷ kg |
+| 0.06c | 0.9317 at 16.138 m | −2.132, 1,880 cells | 1,880 | 2.3691×10²⁷ kg |
+
+The tail stays on the stored line, about −1.36×10⁻⁴. At 0.06c the side flux over peak is −1.318 at 16.14 m, where the density is 0.501 of peak and the shift has already fallen to 0.009. The old shift there was 0.053 and the flux was −0.358. Closing the leftover step gathers the slide onto the shoulder. The 0.04c shell, which held with the old shift, fails there. The level fan is not adopted.
