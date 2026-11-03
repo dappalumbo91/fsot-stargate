@@ -480,3 +480,15 @@ Dated 2026-11-03. Log `data/dial_cell_fan.txt`. Same one-sixth book, same mass, 
 | 0.06c | dominant 8.384×10⁻² at 8.437 m | −0.06953, 5,716 cells | 5,716 | 2.3775×10²⁷ kg |
 
 At 0.06c the side flux over peak is +0.130 at 2.51 m against density 0.188, +0.094 at 2.75 m against density 0.212, +0.058 at 3 m against density 0.236, +0.019 at 3.76 m, +0.092 at 4.14 m, +0.156 at 4.50 m, +0.216 at 6.14 m against density 0.433, +0.230 at 8 m against density 0.441, +0.273 at 9.78 m against density 0.612, and +0.265 at 12 m. On the cabin-edge climb the 3 m flux is +0.120 and the exact contraction is −0.0652 at 2.510 m. The outer side matches the slack: −0.333 at 14 m, −0.208 at 16.14 m, −0.118 at 17.52 m. The exact worst cell at 0.04c is at 24.319 m, place 179.5°, direction 1.0°. The tail is the slack tail, −7.214×10⁻⁴ at 0.04c and −1.100×10⁻³ at 0.06c. At 0.06c the exact worst cell is at 2.510 m, place 95.2°, direction 2.6°. The cabin-cell hold is not adopted.
+
+## The flat cabin
+
+Dated 2026-11-03. Log `data/dial_flat_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. The shift is held at 1, and the slope at 0, from the center through 4.139 m, the corner of the fourth-order difference. That page at 2.51 m was still the mix on the cabin-cell hold. From 4.139 m to the crest, |dS| follows the cumulative thickness from 0 up to the mix crest slope 0.132691 per meter. The front exponent is 1.560986, fixed by the drop 0.61591 from a full shift down to the mix crest. A straight climb from 0 to that crest slope would spend 0.49263. The crest shift stays 0.38409. The shift at the window end is 0.09553. At 2.51 m, 2.75 m, 2.85 m, 3.00 m, and 3.76 m the shift is 1, the slope is 0, and the steepening is 0. The radial peak |d²S| on the buildup is 2.734×10⁻² per square meter.
+
+| Speed | Sample | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | dominant 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | all four under 4.024×10⁻⁴, clean | −7.214×10⁻⁴, Type I 7,976 | 5,480 | 2.3800×10²⁷ kg |
+| 0.06c | dominant 0.1406 at 8.338 m | −0.09377, 6,008 cells | 6,008 | 2.3772×10²⁷ kg |
+
+At 0.06c the side flux over peak is −0.0080 at 2.51 m against density 0.188, −0.0091 at 2.75 m against density 0.212, −0.0102 at 3 m against density 0.236, −0.0098 at 3.76 m against density 0.305, +0.0885 at 4.14 m against density 0.336, +0.175 at 4.50 m against density 0.361, +0.253 at 6.14 m against density 0.433, +0.262 at 8 m against density 0.440, +0.293 at 9.78 m against density 0.611, and +0.226 at 12 m. On the cabin-cell hold the 2.51 m flux is +0.130 and the exact contraction is −0.0695 at 2.510 m. The outer side matches the slack: −0.333 at 14 m, −0.208 at 16.14 m, −0.118 at 17.52 m. The exact worst cell at 0.04c is at 24.319 m, place 179.5°, direction 1.0°. The tail is the slack tail, −7.214×10⁻⁴ at 0.04c and −1.100×10⁻³ at 0.06c. At 0.06c the exact worst cell is at 8.437 m, place 62.7°, direction 6.9°. The flat cabin is not adopted.
