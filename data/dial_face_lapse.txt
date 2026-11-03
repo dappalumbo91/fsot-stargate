@@ -1,0 +1,72 @@
+face curvature probe. same window. R2=20.000 R1=2.853
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+M=2.244318e+27 (1.182 Mjup) rhoUni=6.716892e+22 rhoHalf=2.015068e+23
+mix max |dS|=1.32691e-01 /m at r=12.967
+strongest bend r=15.711 d2S=3.82436e-02  window end r=18.454 |dS|=3.06264e-03
+r  |dS|  chord  weight/|dS|
+  9.78  8.17479e-02  2.07981e-01  1.000
+ 12.00  1.26107e-01  1.55537e-01  1.000
+ 14.00  1.23439e-01  1.08291e-01  1.000
+ 15.70  7.07156e-02  6.81311e-02  1.000
+ 16.67  3.58721e-02  4.52165e-02  1.260
+ 17.52  1.43627e-02  2.51367e-02  1.750
+ 19.00  8.19107e-04 -9.82581e-03  1.000
+rCross=8.165 rFlip=12.968 excess/M=0.0184 pay/M=0.3327
+payment scale=0.9446 M(end)/M before trim=0.999998
+inner mass peak rho=1.263867e+23 at r=12.968  peak/rhoHalf=0.627 peak/rhoUni=1.882
+r  rho/rhoHalf  rho/rhoUni
+  2.85  0.1594  0.4783
+  9.78  0.4424  1.3272
+ 12.00  0.5859  1.7577
+ 15.70  0.4124  1.2373
+ 17.52  0.2015  0.6045
+mass fraction 0.0-8.0 m = 0.056
+mass fraction 8.0-13.0 m = 0.322
+mass fraction 13.0-18.0 m = 0.538
+mass fraction 18.0-27.0 m = 0.084
+M(end)/M=1.0000 min(1-Rs/r)=0.8302
+baseline 0.06 tensor 2.8s pk=1.3028e+40
+side r rho T0x Txx Tyy face
+    9.78  0.6122  0.3585 -0.0113  0.0176  0.2099
+   12.00  0.8076  0.2324  0.0107  0.0178  0.0673
+   15.70  0.5715 -0.3684  0.0176  0.0093  0.2375
+   16.14  0.4986 -0.3580  0.0129  0.0075  0.2570
+   17.52  0.2802 -0.1851  0.0023  0.0037  0.1224
+lapse bumps. eps=1.0e-03 sig=1.60
+  bump r=8.0 lip dTxx/deps/pk=8.172e-10 5.0s
+  bump r=10.0 lip dTxx/deps/pk=2.270e-03 8.5s
+  bump r=12.0 lip dTxx/deps/pk=3.628e+00 11.2s
+  bump r=14.0 lip dTxx/deps/pk=9.889e+01 13.3s
+  bump r=15.5 lip dTxx/deps/pk=-1.495e+02 16.1s
+  bump r=16.5 lip dTxx/deps/pk=-2.013e+02 19.1s
+  bump r=17.5 lip dTxx/deps/pk=6.254e+01 20.7s
+  bump r=19.0 lip dTxx/deps/pk=5.580e+01 22.7s
+cond=2.248e+01 max |da|=5.8530e-03
+r alpha_bump da
+    8.0 -3.4103e-03 -4.3197e-03
+   10.0 -4.3026e-03 -5.8342e-03
+   12.0 -3.8687e-03 -5.4271e-03
+   14.0 -3.0173e-03 -4.7930e-03
+   15.5 -2.0388e-03 -4.3400e-03
+   16.5 -1.1510e-03 -3.5185e-03
+   17.5 -1.1593e-03 -2.1026e-03
+   19.0  6.9359e-04  9.4834e-05
+solved side r rho T0x Txx Tyy face dTxx dRho
+    9.78  0.6122  0.3609  0.2372  0.0376  0.2099  0.2485 -0.0000
+   12.00  0.8076  0.2331  0.1140  0.0680  0.0673  0.1034 -0.0001
+   15.70  0.5715 -0.3704  0.1695  0.0486  0.2375  0.1518 -0.0000
+   16.14  0.4986 -0.3599  0.2037  0.0527  0.2570  0.1909 -0.0000
+   17.52  0.2802 -0.1857  0.1310  0.0677  0.1224  0.1287 -0.0000
+curv v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 r=23.647 CLEAN 18.9s
+curv v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 6.0s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04
+curv v=0.04 E=2.3794e+27 null=4.002e-02 weak=4.002e-02 strong=1.064e-01 dom=1.049e-01 ser=0.0742 shift=4.000e-02 r=18.974 FAIL 19.2s
+curv v=0.04 exact qN=-8.005e-02 qW=-8.005e-02 qS=-1.076e-01 dec=-6.484e-02 ser=0.0859 type1=13268 type2=0 type4=188 decMiss=464 FAIL 88.8s
+  worst null r=19.029 place=97.5 dir=172.6 dec r=19.320 place=89.3 dir=179.4 type=1
+  tail qN=-1.265e-02 qW=-1.265e-02 qS=-3.699e-02 dec=-1.188e-02
+curv v=0.06 E=2.3758e+27 null=1.479e-01 weak=1.479e-01 strong=3.663e-01 dom=3.692e-01 ser=0.1819 shift=6.000e-02 r=6.141 FAIL 17.0s
+curv v=0.06 exact qN=-2.960e-01 qW=-2.960e-01 qS=-3.894e-01 dec=-2.553e-01 ser=0.1932 type1=12752 type2=0 type4=704 decMiss=1100 FAIL 83.5s
+  worst null r=18.974 place=96.2 dir=173.9 dec r=19.320 place=89.3 dir=179.4 type=1
+  tail qN=-8.615e-02 qW=-8.615e-02 qS=-1.114e-01 dec=-8.514e-02
+face lapse done

@@ -382,3 +382,17 @@ Dated 2026-11-03. Log `data/dial_lip_brace.txt`. Same one-sixth window. The metr
 | 0.06c | 0.2223 at 16.138 m, serious 0.0758 | −1.359×10⁻⁴, −1.359×10⁻⁴, −1.891×10⁻⁴, −1.359×10⁻⁴ | 0 | 2.3758×10²⁷ kg |
 
 All 13,456 midplane cells are Type I on each exact row. The 0.06c worst cell is the tail at 23.917 m, place 3.8°, direction 90°, Type I. Side stations at 0.06c, faced longitudinal stress over peak: 0.1986 at 9.78 m, 0.0779 at 12 m, 0.2699 at 16.14 m, 0.1246 at 17.52 m. The rush at 16.14 m is −0.3580 and the density is 0.4986 of peak. With the shift off the face is zero. The curvature of this metric still produces the soft skin. The pass belongs to the faced matter.
+
+## The side lapse
+
+Dated 2026-11-03. Logs `data/dial_face_lapse.txt`, `data/dial_face_lapse_ray.txt`, and `data/dial_face_lapse_tight.txt`. Same window, same mix, same mass. The hydrostatic time-time component is multiplied by exp(2 δa), with δa side-weighted and scaled by (v/0.06)². The radial profile is the least-squares inverse of the lapse response against the carrier face.
+
+The knob check in `data/dial_face_curv.txt` separates the handles. At 16.14 m, per unit step over peak, a g_xx strain moves density by +84 and longitudinal stress by −0.0025. A traceless strain moves density by +41 and longitudinal stress by +42. The lapse moves density by +0.002 and longitudinal stress by −169. Shallowing the side clock raises that stress. The nose stays on the hydrostatic lapse.
+
+| Pass | What was solved | Lip rise / face 0.257 | max \|δa\| | 0.04c exact | 0.06c exact |
+| --- | --- | ---: | ---: | --- | --- |
+| Bells 1.6 m, 8–19 m | side stations 9–18 m | 0.191 | 5.85×10⁻³ | −0.0801, Type IV 188 | −0.296, Type IV 704 |
+| Bells 1.6 m, whole side | one residual pass, step 1.2×10⁻⁵ | 0.179 | 4.76×10⁻³ | −0.0172, Type IV 16 | −0.256, Type IV 856 |
+| Bells 0.75 m, every 1 m | linear miss 0.172, not scored | 0.203 | 9.73×10⁻⁴ | — | — |
+
+Shift off, both scored passes sit on the stored clean line: energy 2.3822×10²⁷ kg, exact ratios −1.356×10⁻⁴, Type I 13,456, Type IV 0. The density along the side stays within 10⁻⁴ of the unbraced ray. On the whole-side pass the 0.06c sample cell is at 3.870 m, place 86.6°, longitudinal stress −0.269 of peak, against a local face of 0.072. The tight pass pulls −0.094 of peak at 14 m and −0.092 at 18.97 m. A bend in the side clock raises the squeeze at one radius and lowers it at the next. The face is a squeeze at every radius where the rush is strong. The side lapse is not adopted.
