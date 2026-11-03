@@ -1,0 +1,32 @@
+slope ray. ell=0.8573494832025231 R2=20.000 R1=2.853 N=240 h=0.22727 smoothFactor=4000
+shift off. same window as the z-matched grid. slope cells are not zeroed.
+window grid xy h=0.22727 z hz=0.45455 worldSize=38.4195
+sixth bend m=2.244318e+27 peak/rhoHalf=0.626 rSlope=12.967 rCurv=15.710 rEnd=18.453 pay=0.9449
+continuum min (rho-|P|/c2)/rhoPk=-1.8315e-06 at r=25.2516 rho=1.241158e+17 P/c2=3.552388e+17
+continuum at slope r=12.9667 rho=1.261923e+23 P/c2=2.466896e+21 P/(rho c2)=0.0195 margin/rhoPk=9.8045e-01
+continuum first rhoB>0 at r=0.1784 rho=1.139716e+10 Ph4min=0.000000e+00
+anchor v=0 sample E=2.3817e+27 null=8.320e-04 weak=1.797e-03 strong=8.320e-04 dom=3.400e-01 ser=0.0009 116.7s
+worst dominant r=12.962 place=117.7 dom/pk=-3.3997e-01 rhoCart=3.723080e+22 rhoB=1.192595e+23 P/c2=2.469374e+21
+  stresses/c2 Txx=2.014303e+21 Tyy=2.334605e+21 Tzz=8.931030e+22 T0x=-0.000000e+00
+dominant under bar n=48 inside ball 0 outside 48 rOut=[12.954 12.981]
+ring |r-rSlope|<0.25 n=788 dom/pk min=-3.3997e-01 med=5.4260e-01 max=6.8898e-01
+  ring rhoCart/rhoPk min=2.9503e-01 max=1.3218e+00 rhoB/rhoPk min=9.4506e-01 max=9.9969e-01
+plus-x y=0.114
+  r=12.160 rhoCart=1.1876e+23 rhoB=1.1876e+23 P/c2=2.8371e+21 dom/pk=5.0328e-01
+  r=12.387 rhoCart=1.1953e+23 rhoB=1.1953e+23 P/c2=2.7363e+21 dom/pk=5.0655e-01
+  r=12.614 rhoCart=1.1926e+23 rhoB=1.1981e+23 P/c2=2.6326e+21 dom/pk=5.0536e-01
+  r=12.841 rhoCart=1.2224e+23 rhoB=1.1959e+23 P/c2=2.5264e+21 dom/pk=5.1806e-01
+  r=13.069 rhoCart=1.2232e+23 rhoB=1.2577e+23 P/c2=2.4181e+21 dom/pk=5.1817e-01
+  r=13.296 rhoCart=1.2512e+23 rhoB=1.2445e+23 P/c2=2.3081e+21 dom/pk=5.3026e-01
+  r=13.523 rhoCart=1.2259e+23 rhoB=1.2259e+23 P/c2=2.1968e+21 dom/pk=5.1952e-01
+  r=13.750 rhoCart=1.2021e+23 rhoB=1.2021e+23 P/c2=2.0847e+21 dom/pk=5.0942e-01
+  r=13.978 rhoCart=1.1732e+23 rhoB=1.1732e+23 P/c2=1.9724e+21 dom/pk=4.9720e-01
+flat ball r < 0.1784 nFlat=4 rhoCart min=-2.9975e+20 rhoB max=0.0000e+00
+  flat null r=23.947 place=97.4 signed=-5.798e-05
+  flat weak r=23.947 place=97.4 signed=-5.798e-05
+  flat strong r=23.556 place=93.0 signed=-1.644e-04
+  flat dominant r=12.962 place=117.7 signed=-3.400e-01
+flat sample E=2.3817e+27 null=5.798e-05 weak=5.798e-05 strong=1.644e-04 dom=3.400e-01 ser=0.0009
+flat exact qN=-1.160e-04 qW=-1.160e-04 qS=-1.644e-04 dec=-3.122e-01 ser=0.0009 type1=55696 type2=0 type4=0 decMiss=48 FAIL 23.0s
+  worst null r=23.980 place=179.2 dir=90.9 type=1 dec r=12.962 place=117.7 dir=180.0 type=1
+slope ray done

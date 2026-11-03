@@ -1,0 +1,54 @@
+refine-close. ell=0.8573494832025231 R2=20.000 R1=2.853 N=240 h=0.22727 smoothFactor=4000
+half wall: flat-ball restoration on the N=240 grid. window: xy at this h, z spacing back to N=120.
+place is the cell: 0 nose, 90 side, 180 back. dir is the worst null vector.
+
+-- half wall C=1/2 m=6.732955e+27 S(0)=1.00000
+half v=0.00 sample E=8.3155e+27 null=1.100e-03 weak=2.493e-03 strong=1.100e-03 dom=1.593e-06 ser=0.0001 shift=0.000e+00 FAIL 113.7s
+  sample null r=0.161 place=45.0 signed=-1.100e-03
+  sample weak r=0.161 place=45.0 signed=-2.493e-03
+  sample strong r=0.161 place=45.0 signed=-1.100e-03
+  sample dominant r=26.534 place=69.7 signed=-1.593e-06
+half v=0.00 flat ball r < 0.1784 m nFlat=4
+  flat null r=26.478 place=89.8 signed=-7.304e-07
+  flat weak r=26.478 place=179.8 signed=-1.482e-06
+  flat strong r=26.478 place=89.8 signed=-7.304e-07
+  flat dominant r=26.534 place=69.7 signed=-1.593e-06
+half v=0.00 flat sample E=8.3155e+27 null=7.304e-07 weak=1.482e-06 strong=7.304e-07 dom=1.593e-06 ser=0.0000 CLEAN
+half v=0.00 flat exact qN=-1.465e-06 qW=-1.482e-06 qS=-1.465e-06 dec=-2.182e-06 ser=0.0000 type1=55696 type2=0 type4=0 decMiss=0 CLEAN 17.4s
+  worst null r=26.478 place=0.2 dir=180.0 type=1 weak r=26.478 place=179.8 dir=180.0 type=1 strong r=26.478 place=0.2 dir=180.0 type=1 dec r=26.478 place=179.8 dir=180.0 type=1
+half v=0.00 tail n=31352 qN=-1.465e-06 qW=-1.482e-06 qS=-1.465e-06 dec=-2.182e-06 ser=0.0000 type4=0 dec r=26.478 place=179.8 dir=180.0 CLEAN
+half v=0.10 sample E=8.2879e+27 null=1.245e-03 weak=2.484e-03 strong=1.245e-03 dom=1.573e-06 ser=0.0001 shift=1.000e-01 FAIL 107.6s
+  sample null r=0.161 place=135.0 signed=-1.245e-03
+  sample weak r=0.161 place=135.0 signed=-2.484e-03
+  sample strong r=0.161 place=135.0 signed=-1.245e-03
+  sample dominant r=26.534 place=69.7 signed=-1.573e-06
+half v=0.10 flat ball r < 0.1784 m nFlat=4
+  flat null r=26.478 place=89.8 signed=-7.212e-07
+  flat weak r=26.478 place=179.8 signed=-1.464e-06
+  flat strong r=26.478 place=89.8 signed=-7.212e-07
+  flat dominant r=26.534 place=69.7 signed=-1.573e-06
+half v=0.10 flat sample E=8.2879e+27 null=7.212e-07 weak=1.464e-06 strong=7.212e-07 dom=1.573e-06 ser=0.0000 CLEAN
+half v=0.10 flat exact qN=-1.447e-06 qW=-1.464e-06 qS=-1.447e-06 dec=-2.155e-06 ser=0.0000 type1=55696 type2=0 type4=0 decMiss=0 CLEAN 168.7s
+  worst null r=26.478 place=0.2 dir=180.0 type=1 weak r=26.478 place=179.8 dir=180.0 type=1 strong r=26.478 place=0.2 dir=180.0 type=1 dec r=26.478 place=179.8 dir=180.0 type=1
+half v=0.10 tail n=31352 qN=-1.447e-06 qW=-1.464e-06 qS=-1.447e-06 dec=-2.155e-06 ser=0.0000 type4=0 dec r=26.478 place=179.8 dir=180.0 CLEAN
+
+window grid xy h=0.22727 z hz=0.45455 worldSize=38.4195
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.626 rSlope=12.967 rCurv=15.710 rEnd=18.453 pay=0.9449
+sixth v=0.00 sample E=2.3817e+27 null=8.320e-04 weak=1.797e-03 strong=8.320e-04 dom=3.400e-01 ser=0.0009 shift=0.000e+00 FAIL 114.1s
+  sample null r=0.161 place=45.0 signed=-8.320e-04
+  sample weak r=0.161 place=45.0 signed=-1.797e-03
+  sample strong r=0.161 place=45.0 signed=-8.320e-04
+  sample dominant r=12.962 place=117.7 signed=-3.400e-01
+sixth v=0.00 exact qN=-1.667e-03 qW=-1.797e-03 qS=-1.667e-03 dec=-3.122e-01 ser=0.0009 type1=55696 type2=0 type4=0 decMiss=48 FAIL 17.8s
+  worst null r=0.161 place=45.0 dir=180.0 type=1 weak r=0.161 place=45.0 dir=180.0 type=1 strong r=0.161 place=45.0 dir=180.0 type=1 dec r=12.962 place=117.7 dir=180.0 type=1
+sixth v=0.00 tail n=31352 qN=-1.160e-04 qW=-1.160e-04 qS=-1.644e-04 dec=-1.160e-04 ser=0.0000 type4=0 dec r=23.980 place=179.2 dir=90.9 CLEAN
+sixth v=0.04 sample E=2.3789e+27 null=1.070e-02 weak=1.070e-02 strong=1.070e-02 dom=3.570e-01 ser=0.0009 shift=4.000e-02 FAIL 119.6s
+  sample null r=12.962 place=152.3 signed=-1.070e-02
+  sample weak r=12.962 place=152.3 signed=-1.070e-02
+  sample strong r=12.962 place=152.3 signed=-1.070e-02
+  sample dominant r=12.962 place=152.3 signed=-3.570e-01
+sixth v=0.04 exact qN=-2.304e-02 qW=-2.304e-02 qS=-2.304e-02 dec=-3.539e-01 ser=0.0009 type1=55688 type2=0 type4=8 decMiss=40 FAIL 230.9s
+  worst null r=12.962 place=152.3 dir=17.3 type=4 weak r=12.962 place=152.3 dir=17.3 type=4 strong r=12.962 place=152.3 dir=17.3 type=4 dec r=12.962 place=117.7 dir=26.5 type=1
+sixth v=0.04 tail n=31352 qN=-1.161e-04 qW=-1.161e-04 qS=-1.645e-04 dec=-1.161e-04 ser=0.0000 type4=0 dec r=23.980 place=179.2 dir=90.9 CLEAN
+refine close done

@@ -304,3 +304,29 @@ Dated 2026-11-02. Log `data/dial_passenger.txt`. The metric is the clean half wa
 | Bend window, 0.04c | 2.3794×10²⁷ kg | 10,000.000 kg | 297.2902 kg/m³ | −1.357×10⁻⁴, −1.357×10⁻⁴, −1.889×10⁻⁴, −1.357×10⁻⁴ |
 
 Both stay clean. All 13,456 midplane cells stay Type I. The tail cells stay the cells in the clean observer log. The dust is 1.457×10⁻²¹ of the half-wall peak and 2.049×10⁻²¹ of the window peak. At the center the shell smoother already reads 1.157×10²¹ kg/m³ on the half wall and 3.772×10²⁰ kg/m³ on the window, so the sum prints those same digits. The passenger leaves the tail where it was and opens no new violation. The shell mass is the shell integral above.
+
+## The fine-grid centers and the slope ring
+
+Dated 2026-11-02. Logs `data/dial_refine_close.txt` and `data/dial_slope_ray.txt`. Same shapes. smoothFactor stays 4000.
+
+On the half wall at N = 240 the builder density is zero for r < 0.1784 m. Four midplane cells sit there, at 0.161 m. Setting them back to zero leaves the exterior tail as the worst cell. All 55,696 midplane cells are Type I. Serious fraction 0.
+
+| Shape | Speed | Exact ratios after the restoration | Energy |
+| --- | ---: | --- | ---: |
+| Half wall | 0 | −1.465×10⁻⁶, −1.482×10⁻⁶, −1.465×10⁻⁶, −2.182×10⁻⁶ | 8.3155×10²⁷ kg |
+| Half wall | 0.10c | −1.447×10⁻⁶, −1.464×10⁻⁶, −1.447×10⁻⁶, −2.155×10⁻⁶ | 8.2879×10²⁷ kg |
+
+Those ratios are the fine-grid tail. The half wall at this spacing is clean.
+
+The window keeps the half xy spacing and uses z spacing 0.45455 m. World size 38.4195 m. The bend stations print rSlope = 12.967 m, rCurv = 15.710 m, rEnd = 18.453 m, payment 0.9449.
+
+| Speed | Sample dominant | Exact rest-frame slack | Exact contraction | Type IV | Tail |
+| ---: | --- | --- | --- | ---: | --- |
+| 0 | 0.340 at 12.962 m, place 117.7° | −0.3122, decMiss 48 | −1.667×10⁻³ at 0.161 m | 0 | clean, strong −1.644×10⁻⁴ |
+| 0.04c | 0.357 at 12.962 m, place 152.3° | −0.3539, decMiss 40 | −2.304×10⁻², Type IV | 8 | clean, strong −1.645×10⁻⁴ |
+
+Energies 2.3817×10²⁷ kg and 2.3789×10²⁷ kg. On the thinner z slab the rest-frame figures at this station were −0.3060 and −0.3469.
+
+`data/dial_slope_ray.txt` is the shift-off window set against the placed matter. The anchor sample matches the row above. At 12.967 m the placed density is 1.261923×10²³ kg/m³, P/(ρc²) = 0.0195, and (ρ − |P|/c²)/ρ_peak = 0.98045. The minimum of that margin on the radial profile is −1.8315×10⁻⁶ at 25.2516 m. Placed density is first nonzero at 0.1784 m. Along the grid axis, from 12.160 m to 13.978 m, the Cartesian density tracks the placed density and the dominant ratio runs from +0.497 to +0.530. The 48 cells under the dominant bar lie from 12.954 m to 12.981 m, and none of them is inside the empty ball. On the worst cell, place 117.7°, the Cartesian density is 3.723080×10²² kg/m³, the placed density is 1.192595×10²³ kg/m³, and the z stress is 8.931030×10²² kg/m³. The flux component is zero. The ring within 0.25 m of the slope has 788 cells, median dominant ratio +0.543, minimum −0.340.
+
+The four center cells read a Cartesian density down to −2.9975×10²⁰ kg/m³, and the placed density there is zero. Setting them back to zero moves null and weak to −5.798×10⁻⁵ at 23.947 m and strong to −1.644×10⁻⁴ at 23.556 m. The exact ratios become −1.160×10⁻⁴, −1.160×10⁻⁴, −1.644×10⁻⁴, and −0.3122. Type I count 55,696. Type IV count 0. decMiss stays 48. The rest-frame cell stays at 12.962 m, place 117.7°, direction 180°. The N = 120 window remains the clean record. The slope cells stay on the Cartesian difference.
