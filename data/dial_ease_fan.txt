@@ -1,0 +1,78 @@
+ease fan. same book. outer recovery follows the |dS| chord. R2=20.000 R1=2.853
+mass and lapse stay. the crest and the cabin stay.
+clean: all four worst/peak < 1e-3, serious fraction 0, E>0, finite peak, shift = speed
+M=2.244318e+27 (1.182 Mjup) rhoUni=6.716892e+22 rhoHalf=2.015068e+23
+mix max |dS|=1.32691e-01 /m at r=12.967
+strongest bend r=15.711 d2S=3.82436e-02  window end r=18.454 |dS|=3.06264e-03
+r  |dS|  chord  weight/|dS|
+  9.78  8.17479e-02  2.07981e-01  1.000
+ 12.00  1.26107e-01  1.55537e-01  1.000
+ 14.00  1.23439e-01  1.08291e-01  1.000
+ 15.70  7.07156e-02  6.81311e-02  1.000
+ 16.67  3.58721e-02  4.52165e-02  1.260
+ 17.52  1.43627e-02  2.51367e-02  1.750
+ 19.00  8.19107e-04 -9.82581e-03  1.000
+rCross=8.165 rFlip=12.968 excess/M=0.0184 pay/M=0.3327
+payment scale=0.9446 M(end)/M before trim=0.999998
+inner mass peak rho=1.263867e+23 at r=12.968  peak/rhoHalf=0.627 peak/rhoUni=1.882
+r  rho/rhoHalf  rho/rhoUni
+  2.85  0.1594  0.4783
+  9.78  0.4424  1.3272
+ 12.00  0.5859  1.7577
+ 15.70  0.4124  1.2373
+ 17.52  0.2015  0.6045
+mass fraction 0.0-8.0 m = 0.056
+mass fraction 8.0-13.0 m = 0.322
+mass fraction 13.0-18.0 m = 0.538
+mass fraction 18.0-27.0 m = 0.084
+M(end)/M=1.0000 min(1-Rs/r)=0.8302
+ease the outer recovery onto the chord. crest r=12.967 window end r=18.454
+chord |dS| from 1.32691e-01 to 3.06264e-03 /m  constant recovery 2.36233e-02 /m^2
+S(rEnd) new=0.01166 old=0.00120 residual=1.04597e-02
+peak |d2S| on the recovery old=3.82436e-02 new=2.36233e-02
+shift stayed positive through the window
+r  S_old  S_ease  dS_old  dS_ease  d2_old  d2_ease  rho/peak
+  2.85  0.9948  0.9948 -8.84382e-03 -8.84382e-03 -1.05012e-02 -1.05012e-02  0.254
+  8.00  0.8567  0.8567 -4.60741e-02 -4.60741e-02 -1.44608e-02 -1.44608e-02  0.519
+  9.78  0.7452  0.7452 -8.17479e-02 -8.17479e-02 -2.32350e-02 -2.32350e-02  0.705
+ 12.00  0.5102  0.5102 -1.26107e-01 -1.26107e-01 -1.27114e-02 -1.27114e-02  0.934
+ 12.97  0.3837  0.3837 -1.32691e-01 -1.32617e-01  4.47978e-05  2.36233e-02  1.000
+ 14.00  0.2502  0.2596 -1.23439e-01 -1.08285e-01  1.84000e-02  2.36233e-02  0.927
+ 15.70  0.0802  0.1097 -7.07156e-02 -6.81257e-02  3.82427e-02  2.36233e-02  0.658
+ 16.14  0.0527  0.0820 -5.41006e-02 -5.77314e-02  3.67751e-02  2.36233e-02  0.573
+ 17.52  0.0084  0.0248 -1.43627e-02 -2.51313e-02  1.87580e-02  2.36233e-02  0.321
+ 19.00  0.0002  0.0107 -8.19107e-04 -8.18576e-04  2.31149e-03  2.31032e-03  0.130
+ease v=0.00 E=2.3822e+27 null=6.780e-05 weak=6.780e-05 strong=1.888e-04 dom=1.604e-04 ser=0.0000 shift=0.000e+00 r=23.647 CLEAN 13.2s
+  side r rho T0x Txx
+    9.78  0.6140  0.0000  0.0241
+   12.00  0.8127  0.0000  0.0212
+   14.00  0.8058  0.0000  0.0192
+   15.70  0.5724  0.0000  0.0118
+   16.14  0.4988  0.0000  0.0093
+   17.52  0.2798  0.0000  0.0020
+ease v=0.00 exact qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04 ser=0.0000 type1=13456 type2=0 type4=0 decMiss=0 CLEAN 6.1s
+  worst null r=23.917 place=3.8 dir=90.0 dec r=23.917 place=3.8 dir=90.0 type=1
+  tail qN=-1.356e-04 qW=-1.356e-04 qS=-1.888e-04 dec=-1.356e-04
+ease v=0.04 E=2.3796e+27 null=5.734e-02 weak=5.734e-02 strong=5.734e-02 dom=1.084e-01 ser=0.0199 shift=4.000e-02 r=18.071 FAIL 13.0s
+  side r rho T0x Txx
+    9.78  0.6131  0.2388  0.0084
+   12.00  0.8103  0.1546  0.0165
+   14.00  0.8043 -0.1370  0.0244
+   15.70  0.5720 -0.1445  0.0140
+   16.14  0.4986 -0.1462  0.0109
+   17.52  0.2799 -0.1531  0.0024
+ease v=0.04 exact qN=-1.148e-01 qW=-1.148e-01 qS=-1.148e-01 dec=-1.670e-04 ser=0.0199 type1=8660 type2=0 type4=4796 decMiss=0 FAIL 127.9s
+  worst null r=18.128 place=82.1 dir=172.9 dec r=23.917 place=3.8 dir=83.2 type=1
+  tail qN=-1.760e-04 qW=-1.760e-04 qS=-1.938e-04 dec=-1.670e-04
+ease v=0.06 E=2.3763e+27 null=1.368e-01 weak=1.368e-01 strong=1.368e-01 dom=2.002e-01 ser=0.0713 shift=6.000e-02 r=9.321 FAIL 12.3s
+  side r rho T0x Txx
+    9.78  0.6121  0.3584 -0.0113
+   12.00  0.8075  0.2323  0.0106
+   14.00  0.8025 -0.2056  0.0308
+   15.70  0.5715 -0.2169  0.0167
+   16.14  0.4983 -0.2194  0.0129
+   17.52  0.2800 -0.2298  0.0030
+ease v=0.06 exact qN=-2.739e-01 qW=-2.739e-01 qS=-2.739e-01 dec=-1.784e-04 ser=0.0719 type1=7768 type2=0 type4=5688 decMiss=0 FAIL 124.9s
+  worst null r=18.071 place=96.5 dir=173.9 dec r=23.891 place=34.1 dir=113.9 type=1
+  tail qN=-1.965e-04 qW=-1.965e-04 qS=-2.001e-04 dec=-1.784e-04
+ease fan done

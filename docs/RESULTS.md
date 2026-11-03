@@ -408,3 +408,15 @@ Dated 2026-11-03. Log `data/dial_level_fan.txt`. Same one-sixth book, same mass,
 | 0.06c | 0.9317 at 16.138 m | −2.132, 1,880 cells | 1,880 | 2.3691×10²⁷ kg |
 
 The tail stays on the stored line, about −1.36×10⁻⁴. At 0.06c the side flux over peak is −1.318 at 16.14 m, where the density is 0.501 of peak and the shift has already fallen to 0.009. The old shift there was 0.053 and the flux was −0.358. Closing the leftover step gathers the slide onto the shoulder. The 0.04c shell, which held with the old shift, fails there. The level fan is not adopted.
+
+## The eased recovery
+
+Dated 2026-11-03. Log `data/dial_ease_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. Inside the slope crest at 12.967 m the shift is the mix. From the crest to the window end at 18.454 m the slope is the straight chord of |dS| the mass weight already uses, from 0.1327 per meter to 0.00306 per meter. The recovery is constant at 2.362×10⁻² per square meter. The old peak recovery is 3.824×10⁻² per square meter at 15.711 m. The shift arrives at 0.0117 at the window end. The old shift there is 0.0012.
+
+| Speed | Sample dominant | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | 0.1084 at 18.071 m | −0.1148, 4,796 cells | 4,796 | 2.3796×10²⁷ kg |
+| 0.06c | 0.2002 at 9.321 m | −0.2739, 5,688 cells | 5,688 | 2.3763×10²⁷ kg |
+
+At 0.06c the side flux over peak is −0.219 at 16.14 m, where the density is 0.498 of peak and the old flux was −0.358. At 17.52 m the flux is −0.230, where the old flux was −0.185. At 12 m the flux is +0.232 and that page holds. The exact worst cell at 0.06c is at 18.071 m, place 96.5°, direction 173.9°. At 0.04c it is at 18.128 m, place 82.1°, direction 172.9°. The tail stays under the bar, −1.76×10⁻⁴ at 0.04c and −1.97×10⁻⁴ at 0.06c. The steady recovery quiets the sharp bend and keeps bending where the book is thinner. The 0.04c shell fails there. The eased recovery is not adopted.
