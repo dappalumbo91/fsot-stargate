@@ -355,3 +355,18 @@ The flow fraction bottoms at −0.9598. The lapse is built with P = π ρ c². T
 | Bend window | 0.06c | 0.911 | 10.230 m, 91.3° | 0.5758 | 2.3764×10²⁷ kg |
 
 Every row fails. With the shift off, the side of the half wall reads −0.453 at 9.78 m and −0.473 at 15.70 m. At 0.11c those stations read −1.160 and −0.651. The hydrostatic lapse at these same speeds is the stored record: the half wall is clean through 0.10c, and the window is clean through 0.04c. The tension opens the break on its own.
+
+## The shift square
+
+Dated 2026-11-02. Log `data/dial_adm_lapse.txt`. Same hydrostatic lapse, same mix. The time-time component gains γ^{xx} (S v)². Ship speed stays the shift amplitude.
+
+| Shape | Speed | Sample dominant | Exact contraction | Type IV | Energy |
+| --- | ---: | --- | --- | ---: | ---: |
+| Half wall | 0 | 1.947×10⁻⁵ at 26.467 m | stored clean line | 0 | 8.3144×10²⁷ kg |
+| Half wall | 0.10c | 0.0535 at 15.697 m, 87.5° | −8.911×10⁻³, 16 cells | 16 | 8.2867×10²⁷ kg |
+| Half wall | 0.11c | 0.2286 at 15.683 m, 90.8° | −0.1189, 168 cells | 168 | 8.2809×10²⁷ kg |
+| Bend window | 0 | 1.604×10⁻⁴ at 23.647 m | stored clean line | 0 | 2.3822×10²⁷ kg |
+| Bend window | 0.04c | 1.605×10⁻⁴ at 23.647 m | −1.357×10⁻⁴, Type I 13,456 | 0 | 2.3794×10²⁷ kg |
+| Bend window | 0.06c | 0.2275 at 16.138 m, 90.8° | −0.2114, 956 cells | 956 | 2.3758×10²⁷ kg |
+
+The 0.04c exact ratios are −1.357×10⁻⁴, −1.357×10⁻⁴, −1.889×10⁻⁴, and −1.357×10⁻⁴. At 0.10c the outer side station is flux −0.5282, longitudinal stress 0.0748 of peak, margin −0.0044. The inner station is flux +0.4830, longitudinal stress 0.1672, margin +0.0888. At 0.11c those stations are margin +0.0369 at 9.78 m and −0.0594 at 15.70 m, with longitudinal stress 0.1620 and 0.0711. The 0.06c tail stays Type I at 23.917 m, slack −1.359×10⁻⁴. The shift square moves stress onto the inner shoulder and off the outer shoulder. The 0.10c pass belongs to the hydrostatic time-time component without that square.
