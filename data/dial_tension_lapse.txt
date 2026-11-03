@@ -1,0 +1,19 @@
+tension lapse. mu=0.332824 ell=0.8573494832025231 R2=20.000 R1=2.853 N=120 h=0.45455
+P = piFlow * rho * c^2. piFlow from the mix, ship speed not in the shape.
+piFlow min=-0.9598 max=0.0000 at 9.78 m -0.8120 at 15.70 m -0.4726
+half wall g00 center=-0.5726  Pten/rho c2 at 15.70 m=-0.4747
+half v=0.00 E=8.3144e+27 null=1.095e-01 weak=1.095e-01 strong=1.150e+00 dom=6.174e-01 ser=0.2108 shift=0.000e+00 FAIL 12.5s
+  dominant r=16.417 place=68.1 signed=-6.174e-01 side9.78=-4.530e-01 side15.70=-4.734e-01
+half v=0.10 E=8.2924e+27 null=5.712e-01 weak=5.712e-01 strong=1.273e+00 dom=1.137e+00 ser=0.3239 shift=1.000e-01 FAIL 12.5s
+  dominant r=10.230 place=91.3 signed=-1.137e+00 side9.78=-1.109e+00 side15.70=-6.270e-01
+half v=0.11 E=8.2878e+27 null=6.208e-01 weak=6.208e-01 strong=1.300e+00 dom=1.188e+00 ser=0.3343 shift=1.100e-01 FAIL 13.0s
+  dominant r=10.230 place=91.3 signed=-1.188e+00 side9.78=-1.160e+00 side15.70=-6.506e-01
+
+-- sixth bend m=2.244318e+27 peak/rhoHalf=0.627 rSlope=12.967 pay=0.9446
+sixth v=0.00 E=2.3822e+27 null=1.580e-01 weak=1.580e-01 strong=9.042e-01 dom=4.943e-01 ser=0.4587 shift=0.000e+00 FAIL 13.7s
+  dominant r=9.984 place=48.7 signed=-4.943e-01
+sixth v=0.04 E=2.3796e+27 null=3.874e-01 weak=3.874e-01 strong=9.454e-01 dom=7.893e-01 ser=0.5360 shift=4.000e-02 FAIL 13.3s
+  dominant r=10.230 place=91.3 signed=-7.893e-01
+sixth v=0.06 E=2.3764e+27 null=5.083e-01 weak=5.083e-01 strong=9.994e-01 dom=9.112e-01 ser=0.5758 shift=6.000e-02 FAIL 13.5s
+  dominant r=10.230 place=91.3 signed=-9.112e-01
+tension lapse done

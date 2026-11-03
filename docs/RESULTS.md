@@ -330,3 +330,28 @@ Energies 2.3817×10²⁷ kg and 2.3789×10²⁷ kg. On the thinner z slab the re
 `data/dial_slope_ray.txt` is the shift-off window set against the placed matter. The anchor sample matches the row above. At 12.967 m the placed density is 1.261923×10²³ kg/m³, P/(ρc²) = 0.0195, and (ρ − |P|/c²)/ρ_peak = 0.98045. The minimum of that margin on the radial profile is −1.8315×10⁻⁶ at 25.2516 m. Placed density is first nonzero at 0.1784 m. Along the grid axis, from 12.160 m to 13.978 m, the Cartesian density tracks the placed density and the dominant ratio runs from +0.497 to +0.530. The 48 cells under the dominant bar lie from 12.954 m to 12.981 m, and none of them is inside the empty ball. On the worst cell, place 117.7°, the Cartesian density is 3.723080×10²² kg/m³, the placed density is 1.192595×10²³ kg/m³, and the z stress is 8.931030×10²² kg/m³. The flux component is zero. The ring within 0.25 m of the slope has 788 cells, median dominant ratio +0.543, minimum −0.340.
 
 The four center cells read a Cartesian density down to −2.9975×10²⁰ kg/m³, and the placed density there is zero. Setting them back to zero moves null and weak to −5.798×10⁻⁵ at 23.947 m and strong to −1.644×10⁻⁴ at 23.556 m. The exact ratios become −1.160×10⁻⁴, −1.160×10⁻⁴, −1.644×10⁻⁴, and −0.3122. Type I count 55,696. Type IV count 0. decMiss stays 48. The rest-frame cell stays at 12.962 m, place 117.7°, direction 180°. The N = 120 window remains the clean record. The slope cells stay on the Cartesian difference.
+
+## The flow's tension
+
+Dated 2026-11-02. Logs `data/dial_shoulder_pressure.txt` and `data/dial_tension_lapse.txt`. Same mix. Ship speed is not in the pressure. The balance is μ d²S/dx² − S dS/dx = dπ/dx on x = r/R2, with μ = 0.332824, π(R2) = 0.
+
+| r | S | π flow | π hydrostatic |
+| ---: | ---: | ---: | ---: |
+| 2.85 m | 0.9945 | −0.5573 | +0.2468 |
+| 9.78 m | 0.7382 | −0.8120 | +0.1932 |
+| 12.99 m | 0.3787 | −0.9445 | +0.1449 |
+| 15.70 m | 0.0801 | −0.4726 | +0.0957 |
+| 17.52 m | 0.0084 | −0.0956 | +0.0649 |
+
+The flow fraction bottoms at −0.9598. The lapse is built with P = π ρ c². The mass and the mix shift stay.
+
+| Shape | Speed | Dominant ratio | Worst cell | Serious fraction | Energy |
+| --- | ---: | ---: | --- | ---: | ---: |
+| Half wall | 0 | 0.617 | 16.417 m, 68.1° | 0.2108 | 8.3144×10²⁷ kg |
+| Half wall | 0.10c | 1.137 | 10.230 m, 91.3° | 0.3239 | 8.2924×10²⁷ kg |
+| Half wall | 0.11c | 1.188 | 10.230 m, 91.3° | 0.3343 | 8.2878×10²⁷ kg |
+| Bend window | 0 | 0.494 | 9.984 m, 48.7° | 0.4587 | 2.3822×10²⁷ kg |
+| Bend window | 0.04c | 0.789 | 10.230 m, 91.3° | 0.5360 | 2.3796×10²⁷ kg |
+| Bend window | 0.06c | 0.911 | 10.230 m, 91.3° | 0.5758 | 2.3764×10²⁷ kg |
+
+Every row fails. With the shift off, the side of the half wall reads −0.453 at 9.78 m and −0.473 at 15.70 m. At 0.11c those stations read −1.160 and −0.651. The hydrostatic lapse at these same speeds is the stored record: the half wall is clean through 0.10c, and the window is clean through 0.04c. The tension opens the break on its own.
