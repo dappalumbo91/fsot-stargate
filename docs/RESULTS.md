@@ -444,3 +444,15 @@ Dated 2026-11-03. Log `data/dial_build_fan.txt`. Same one-sixth book, same mass,
 | 0.06c | dominant 0.1046 at 2.963 m | −0.09522, 5,788 cells | 5,788 | 2.3780×10²⁷ kg |
 
 At 0.06c the side flux over peak is +0.198 at 8 m, +0.255 at 9.78 m against density 0.613, and +0.317 at 12 m against density 0.809. On the thickness slack those fluxes were +0.358 at 9.78 m and +0.232 at 12 m. The outer side is unchanged at the level of the slack: −0.334 at 14 m, −0.209 at 16.14 m, −0.119 at 17.52 m. The exact worst cell is at 2.963 m, place 94.4°, direction 2.2°. The tail contraction is −1.719×10⁻³. At 0.04c the exact worst cell is at 24.319 m, place 179.5°, direction 0.9°, and the tail contraction is −1.113×10⁻³, with serious fraction 0.0253. The gentler climb leaves a higher crest, and the leftover slide in the trail gets larger. The inner buildup is not adopted.
+
+## The wall buildup
+
+Dated 2026-11-03. Log `data/dial_wall_fan.txt`. Same one-sixth book, same mass, same hydrostatic lapse. The outer recovery is the thickness slack. The climb runs from the cavity wall at 2.853 m to the crest. |dS| follows the placed density. The crest slope stays 0.132691 per meter, and the scale keeps the crest shift at the mix value 0.38409. The shift at the window end is 0.09553, the thickness-slack value. The slope at the wall is 0.011052 per meter. The mix slope there is 0.008879 per meter.
+
+| Speed | Sample | Exact contraction | Type IV | Energy |
+| --- | --- | --- | ---: | ---: |
+| 0 | dominant 1.604×10⁻⁴ at 23.647 m, clean | −1.356×10⁻⁴, Type I 13,456 | 0 | 2.3822×10²⁷ kg |
+| 0.04c | null 3.800×10⁻³ at 2.746 m | −9.008×10⁻³, Type I 7,972 | 5,484 | 2.3802×10²⁷ kg |
+| 0.06c | dominant 0.1213 at 2.746 m | −0.1384, 5,640 cells | 5,640 | 2.3777×10²⁷ kg |
+
+At 0.06c the side flux over peak is +0.173 at 3 m against density 0.236, +0.136 at 3.87 m, +0.184 at 6.14 m, +0.242 at 9.78 m against density 0.612, and +0.293 at 12 m. On the mix the 3 m flux is +0.164 and the 6.14 m flux is +0.098. On the thickness slack the 9.78 m flux is +0.358. The outer side matches the slack: −0.333 at 14 m, −0.208 at 16.14 m, −0.118 at 17.52 m. The exact worst cell at both speeds is at 2.746 m, place 65.6°. The tail is the slack tail, −7.214×10⁻⁴ at 0.04c and −1.100×10⁻³ at 0.06c. The shift at 3 m stays 0.993. The wall buildup is not adopted.

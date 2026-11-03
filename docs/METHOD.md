@@ -104,3 +104,5 @@ The lighter 20 m runs keep that mix and that lapse and lower the compactness, so
 `octave/dial_slack_fan.m` keeps that same book, that mass, and that hydrostatic lapse. Inside the slope crest the shift is the mix. From the crest to the window end the recovery follows the placed density. The scale is fixed by the mix slope at the crest and the mix slope at the window end. Past the window the old slope continues. The log is `data/dial_slack_fan.txt`.
 
 `octave/dial_build_fan.m` keeps that outer slack, that mass, and that hydrostatic lapse. The inner window runs from 6.866 m to the crest. It is the same span construction the outer bend uses, centered on the strongest steepening at 9.917 m. Between those edges the climb of |dS| follows the placed density, with the mix slopes at the two edges. The log is `data/dial_build_fan.txt`.
+
+`octave/dial_wall_fan.m` keeps that outer slack, that mass, and that hydrostatic lapse. The climb runs from the cavity wall to the crest. |dS| follows the placed density, the crest slope stays the mix slope, and the scale is fixed so the crest height stays the mix. The log is `data/dial_wall_fan.txt`.
