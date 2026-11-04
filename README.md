@@ -1,5 +1,7 @@
 # FSOT warp shell
 
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 **Author:** Damian Arthur Palumbo  
 **License:** Apache-2.0  
 **Pin:** FSOT 2.1 AEB2AD, from [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)
