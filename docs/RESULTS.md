@@ -147,6 +147,26 @@ Two perfect sails, momentum 2E/c, plant at home, 10 tonne ship:
 
 Dated 2026-11-09. The table is a straight accel and a stop across 384,400 km. The wells are left out. Thrust is 2P/c. Hover against one g on 10 tonnes is 14.7 TW. The 15 TW row is 1.02 g. Every weaker row stays on the pad. From a 200 km orbit the spiral to a circular orbit at the Moon's distance is the difference of the circular speeds, 6.770 km/s. A perfect reflector spends ½mcΔv on that leg, 1.015×10¹⁶ J for 10 tonnes, at any power. At 1 GW the spiral takes 117 days. At 10 GW, 11.7 days. At 100 GW, 28.2 hours. At 1 TW, 2.82 hours. At 15 TW, 11.3 minutes. The straight 1 GW profile budgets 1.01 km/s and 1.52×10¹⁵ J, short of this spiral. A soft landing that removes the Moon's escape speed, 2.376 km/s, adds 3.56×10¹⁵ J. At 100 W per kilogram of station, 100 GW is 1.0×10⁶ tonnes on the ground. This is kinematics. It is not a Warp Factory grid.
 
+Dated 2026-11-09. The same reflector and the same 10 tonnes, from the same 200 km orbit. Another planet is three differences of circular speed. The circular speed at infinity is zero, so leaving that orbit costs the whole 7.788 km/s. The solar leg is the difference of the circular speeds on the two semimajor axes. Capture is a circular orbit 200 km above the destination. Mars uses the volumetric mean radius, 3,389.5 km. Jupiter and Neptune use the equatorial 1-bar radius, 71,492 km and 24,764 km, so the orbit clears the limb. The semimajor axes are 227.956, 778.479, and 4,514.953 million km, against Earth's 149.598 million km. The solar gravitational parameter is 1.32712440018×10²⁰ m³/s². Rotation is left out of the capture speed. The spiral times are the beam time for that speed change. Power changes the time. Energy stays ½mcΔv.
+
+| Leg | Mars | Jupiter | Neptune |
+| --- | ---: | ---: | ---: |
+| Solar spiral | 5.656 km/s | 16.728 km/s | 24.363 km/s |
+| Capture, 200 km | 3.454 km/s | 42.037 km/s | 16.547 km/s |
+| Stack with the 7.788 km/s departure | 16.898 km/s | 66.553 km/s | 48.698 km/s |
+| Energy, 10 tonnes | 2.533×10¹⁶ J | 9.976×10¹⁶ J | 7.300×10¹⁶ J |
+| 1 GW | 293 days | 1155 days | 845 days |
+| 10 GW | 29.3 days | 115.5 days | 84.5 days |
+| 100 GW | 70.4 hours | 11.5 days | 8.45 days |
+| 1 TW | 7.04 hours | 27.7 hours | 20.3 hours |
+| 15 TW | 28.1 minutes | 1.85 hours | 1.35 hours |
+
+Jupiter's capture is the large term. Neptune is farther, and the stack is smaller. A return to the 200 km Earth orbit spends the stack again. Setting down on Mars removes the escape speed, 5.027 km/s, in place of the 3.454 km/s capture. That stack is 18.471 km/s and 2.769×10¹⁶ J. The Jupiter and Neptune stops are the capture orbits. The straight Earth–Moon 1 GW budget, 1.52×10¹⁵ J, is short of all three. From the same 200 km orbit the 0.25 g film takes 1.91 hours to the Mars orbit, 7.54 hours to the Jupiter orbit, and 5.52 hours to the Neptune orbit.
+
+A straight accel and a stop across the circular-orbit separation leaves the wells out and finishes at rest in the frame of Earth's orbit. The separations are 0.524 AU, 4.20 AU, and 29.2 AU. On that chord the time scales as 1/√power and the peak speed scales as √power. At 100 GW the peaks are 72.3 km/s, 205 km/s, and 540 km/s, and the trips are 25.1 days, 71.1 days, and 187 days. Thrust on 10 tonnes equals the Sun's gravity at Earth's orbit at 8.89 GW. The 1 GW row is under that pull. The 10 GW row is 1.12 times that pull. Solar escape from Earth's orbit is 42.1 km/s. The 100 GW Mars peak, the 10 GW Jupiter peak, and the 1 GW Neptune peak are already above it.
+
+Already on the clean coast, the hold across that separation is the separation divided by the coast speed. At 0.04c the holds are 1.82 hours, 14.6 hours, and 4.21 days. At 0.10c they are 43.6 minutes, 5.83 hours, and 1.69 days. The light clean shell remains the one-sixth window at 0.04c. The 0.10c shell remains compactness 1/2. This is kinematics. It is not a Warp Factory grid.
+
 Reaching 0.04c on a sail is 1.80×10¹⁹ J. A 15 TW beam takes 14 days and 48 AU. At 1 µm a 100 m sail needs a 3.8 m aperture at the Moon and a 73 km aperture at 49 AU.
 
 Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. That film stays on the pad. From a 200 km orbit its spiral takes 46 minutes and 2.030×10¹⁶ J. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading, with the same 2E/c, would need absorption 2.50×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
