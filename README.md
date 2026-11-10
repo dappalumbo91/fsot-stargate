@@ -103,7 +103,11 @@ Three bodies ride that coast. A person is 0.50 m across, a crate is 1.00 m acros
 
 ## The throw
 
-A person thrown feet-first is 1.80 m along the crossing and 0.50 m across. On axis at 10 m/s the exit is 7.1889773931309735 s on the one-sixth mouth and 7.815551629331567 s on the half-compact mouth. The side-to-side load is 0.11458333333333352 m/s² and 0.09375000000000012 m/s². That load reaches one standard gravity, 9.80665 m/s², at 92.51232841676241 m/s and 102.27622728017819 m/s. Turned sideways, the 1.80 m width reaches that load at 48.75827824041468 m/s and 53.90430478240188 m/s. A feet-first shoulder reaches the 20 m circle at a centerline aim of 19.75 m. At 10 m/s the shoulder lag stays under 0.1 s inside an aim of 11.778371943352136 m on the one-sixth mouth. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+A person thrown feet-first is 1.80 m along the crossing and 0.50 m across. On axis at 10 m/s the exit is 7.1889773931309735 s on the one-sixth mouth and 7.815551629331567 s on the half-compact mouth. The side-to-side load is 0.11458333333333352 m/s² and 0.09375000000000012 m/s². That load reaches one standard gravity, 9.80665 m/s², at 92.51232841676241 m/s and 102.27622728017819 m/s. Turned sideways, the 1.80 m width reaches that load at 48.75827824041468 m/s and 53.90430478240188 m/s. A feet-first shoulder reaches the 20 m circle at a centerline aim of 19.75 m. At 10 m/s the shoulder lag stays under 0.1 s inside an aim of 11.778371943352136 m on the one-sixth mouth. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The walk is the next section.
+
+## The walk
+
+A person walks the mouth upright. The height is 1.80 m and the shoulders are 0.50 m, both across the crossing. On axis at 1.4 m/s the 40 m face takes 51.349838522364095 s on the one-sixth mouth and 55.82536878093977 s on the half-compact mouth. The head-to-foot load is 0.008085000000000002 m/s² and 0.006614999999999999 m/s². Proper acceleration at rest is 0, and a deck at rest has tidal load 0. One meter of proper distance reaches 20.02290394948242 m and 20.018742194287782 m. A stop stays at the station where the speed was left. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

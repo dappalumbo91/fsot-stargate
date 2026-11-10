@@ -772,7 +772,72 @@ The shoulder lag below is the far shoulder minus the near shoulder, at 10 m/s. I
 
 The aim where that lag is 0.1 s is 11.778371943352136 m on the one-sixth mouth and 11.265559053460796 m on the half-compact mouth. The aim where it is 1 s is 18.91976097503131 m and 18.815487243901792 m. The far shoulder reaches the 20 m circle at a centerline aim of 19.75 m, and that shoulder does not finish. Sideways, the 0.1 s aim is 4.782652749992801 m and 4.418092341016779 m, the 1 s aim is 16.316758159976914 m and 16.011878337010213 m, and the cut is at 19.1 m.
 
-A feet-first throw on axis at 10 m/s exits whole on either mouth, with the load in the first table. The same throw at 30 m/s exits in 2.3963257977103245 s on the one-sixth mouth carrying 1.0312500000000107 m/s². A feet-first throw faster than 92.51232841676241 m/s on the one-sixth mouth, a sideways throw faster than 48.75827824041468 m/s there, and a centerline aim past the cut, are the three ways out of that exit.
+A feet-first throw on axis at 10 m/s exits whole on either mouth, with the load in the first table. The same throw at 30 m/s exits in 2.3963257977103245 s on the one-sixth mouth carrying 1.0312500000000107 m/s². A feet-first throw faster than 92.51232841676241 m/s on the one-sixth mouth, a sideways throw faster than 48.75827824041468 m/s there, and a centerline aim past the cut, are the three ways out of that exit. The walk is the next section.
+
+## The walk, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The person walks upright. The height, 1.80 m, and the shoulders, 0.50 m, both lie across the crossing. The extent along the crossing meets a radial gap acceleration of 0. The gaits supplied with the person are 1.0 m/s, 1.4 m/s, and 1.8 m/s. Every exit below sits on the steady flux 0.10948671535321428.
+
+Proper acceleration of a body at rest is 0. A deck at rest has tidal load 0. The step pushes on that deck. On axis the speed stays at the gait supplied with the person. Leaving that speed at 0 leaves the person at that station.
+
+The proper length sits in the flare. The throat stays at 20 m. The radii below are stations on the recorded shape.
+
+| Station | One-sixth length | One-sixth through | Half-compact length | Half-compact through |
+| --- | ---: | ---: | ---: | ---: |
+| 21 m | 6.68532745794824 m | 13.37065491589648 m | 7.383512404100603 m | 14.767024808201207 m |
+| 22 m | 9.565527262401151 m | 19.131054524802302 m | 10.554128118829958 m | 21.108256237659916 m |
+| 25 m | 15.63828538572051 m | 31.27657077144102 m | 17.20558386144248 m | 34.41116772288496 m |
+| 30 m | 23.272497878775976 m | 46.54499575755195 m | 25.49306144334055 m | 50.9861228866811 m |
+| 40 m | 35.94488696565487 m | 71.88977393130973 m | 39.077758146657835 m | 78.15551629331567 m |
+
+| Proper length | One-sixth radius | Half-compact radius |
+| --- | ---: | ---: |
+| 1 m | 20.02290394948242 m | 20.018742194287782 m |
+| 2 m | 20.091463874141354 m | 20.074875432992116 m |
+| 5 m | 20.5651756145747 m | 20.463970531450123 m |
+| 10 m | 22.17692395093939 m | 21.803004621563588 m |
+
+At 1.4 m/s the through-lengths above take the following times.
+
+| Station | One-sixth walk | Half-compact walk |
+| --- | ---: | ---: |
+| 21 m | 9.550467797068915 s | 10.547874863000862 s |
+| 22 m | 13.665038946287359 s | 15.077325884042798 s |
+| 25 m | 22.340407693886444 s | 24.5794055163464 s |
+| 30 m | 33.246425541108536 s | 36.41865920477222 s |
+| 40 m | 51.349838522364095 s | 55.82536878093977 s |
+
+On the 40 m face the side-to-side load is the throat κ times v² times the width. The head-to-foot width is 1.80 m. The shoulder width is 0.50 m.
+
+| Gait | One-sixth time | One-sixth head load | One-sixth shoulder load | Half-compact time | Half-compact head load | Half-compact shoulder load |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1.0 m/s | 71.88977393130973 s | 0.004125000000000001 m/s² | 0.0011458333333333336 m/s² | 78.15551629331567 s | 0.003375 m/s² | 0.0009375 m/s² |
+| 1.4 m/s | 51.349838522364095 s | 0.008085000000000002 m/s² | 0.0022458333333333336 m/s² | 55.82536878093977 s | 0.006614999999999999 m/s² | 0.0018374999999999997 m/s² |
+| 1.8 m/s | 39.93876329517207 s | 0.013365000000000004 m/s² | 0.003712500000000001 m/s² | 43.41973127406426 s | 0.010935 m/s² | 0.0030375 m/s² |
+
+Divided by 9.80665 m/s², the one-sixth head loads are 0.0004206329378533955, 0.0008244405581926553, and 0.0013628507186450014. The half-compact head loads are 0.0003441542218800508, 0.0006745422748848995, and 0.0011150596788913646. The one-sixth shoulder loads are 0.00011684248273705431, 0.00022901126616462644, and 0.000378569644068056. The half-compact shoulder loads are 9.559839496668077×10⁻⁵, 0.0001873728541346943, and 0.0003097387996920457.
+
+The head and the feet sit on the 0.90 m fiber. The shoulders sit on the 0.25 m fiber. The lag is that fiber minus the on-axis time.
+
+| Gait | One-sixth head lag | One-sixth shoulder lag | Half-compact head lag | Half-compact shoulder lag |
+| --- | ---: | ---: | ---: | ---: |
+| 1.0 m/s | 0.044140805049792675 s | 0.0034025478529429165 s | 0.04822479546292868 s | 0.0037173440837250382 s |
+| 1.4 m/s | 0.031529146465985036 s | 0.002430391323635206 s | 0.03444628247400061 s | 0.002655245773226511 s |
+| 1.8 m/s | 0.024522669472133884 s | 0.0018903043633926586 s | 0.026791553035089066 s | 0.0020651911569871118 s |
+
+At 1.4 m/s the one-sixth head fiber exits in 51.38136766883008 s and the shoulder fiber in 51.35226891368773 s. On the half-compact mouth those fibers exit in 55.85981506341377 s and 55.828024026712995 s.
+
+A horizontal miss puts the spine at the aim and the head or a foot at the hypotenuse of the aim and 0.90 m. The lags below are at 1.4 m/s, measured from the on-axis walk.
+
+| Aim | Far fiber | One-sixth far lag | One-sixth spine lag | Half-compact far lag | Half-compact spine lag |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 0.5 m | 1.0295630140987 m | 0.04127408025318857 s | 0.009723982176268464 s | 0.045092890759079296 s | 0.01062363421778656 s |
+| 1.0 m | 1.3453624047073711 m | 0.07054781632442797 s | 0.038934705124155755 s | 0.07707540842532268 s | 0.04253705670604546 s |
+| 2.0 m | 2.193171219946131 m | 0.18823065012553286 s | 0.15636313555224035 s | 0.20565012350432 s | 0.1708328071575167 s |
+
+The far fiber at a 2 m aim exits in 51.53806917248963 s on the one-sixth mouth and 56.03101890444409 s on the half-compact mouth.
+
+An upright walk on axis at 1.4 m/s exits whole on either mouth. The 40 m face takes 51.349838522364095 s on the one-sixth mouth, carrying 0.008085000000000002 m/s² from head to foot, and 55.82536878093977 s on the half-compact mouth, carrying 0.006614999999999999 m/s². The head lags the spine by 0.031529146465985036 s and 0.03444628247400061 s. A 2 m miss stays inside the 20 m circle. The head or a foot meets that circle at a centerline aim of 19.1 m. A station at 22 m is still a through-length of 19.131054524802302 m and 21.108256237659916 m, which at 1.4 m/s takes 13.665038946287359 s and 15.077325884042798 s. Proper acceleration at rest is 0, a deck at rest has tidal load 0, and a stop stays at the station where the speed was left.
 
 ## Audit of the 20 m shell
 
