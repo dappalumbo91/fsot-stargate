@@ -345,4 +345,12 @@ An on-axis conduit time is the recorded through-distance divided by the supplied
 
 The pace page keeps the passage coast v(r) = √(a / (κ(r) W)). The crossing time is the integral of dl / v(r) on both sides, 400000 steps of the square-root substitution. For W = 10 m, a = 9.80665 m/s², and the 40 m face, the integral differs from the passage ship time by 0.
 
-The stations are the walk-page marks at 21 m, 22 m, 25 m, 30 m, and 40 m. The half-tide radii are the passage values, and the proper lengths inside them reproduce 27.25019714723869 m and 31.24363785379133 m. A beam change and a cap change each scale v(r) by the same factor at every radius, so the time scales as √(W / a). The factor 1.1 on the schedule multiplies the load by 1.21. The 2 m beam at the 22 m station uses the same integral. The far-fiber cut is 20 m minus half the beam. The reading is in [RESULTS.md](RESULTS.md).
+The stations are the walk-page marks at 21 m, 22 m, 25 m, 30 m, and 40 m. The half-tide radii are the passage values, and the proper lengths inside them reproduce 27.25019714723869 m and 31.24363785379133 m. A beam change and a cap change each scale v(r) by the same factor at every radius, so the time scales as √(W / a). The factor 1.1 on the schedule multiplies the load by 1.21. The 2 m beam at the 22 m station uses the same integral. The far-fiber cut is 20 m minus half the beam. The reading is in [RESULTS.md](RESULTS.md). The dash is the next section.
+
+## The dash, 2026-11-10
+
+The dash page keeps the pace coast and adds the acceleration along the path. On v(r) = √(a / (κ(r) W)) that acceleration is v dv/dl, with dl the proper distance. The value is evaluated from dκ/dr and from dr/dl = √(1 − b(r)/r).
+
+The coast that holds both accelerations at 9.80665 m/s² passes the throat at the throat speed. At proper distance σ from the throat its speed is the minimum of the pace speed and √(v_throat² + 2 × 9.80665 × σ). The crossing time is twice the integral of dσ/v. A start and a stop use the minimum of that pace speed, √(2 × 9.80665 × λ) from the start, and √(2 × 9.80665 × λ) to the end.
+
+The one-meter stations are the walk-page radii. The light-matching length is a bisection of the pace integral against the haul's outside light time, 0.04333083088431372 s, confirmed at 400000 steps. The outside lane is v/a and v²/(2a) at the face speed. The reading is in [RESULTS.md](RESULTS.md).

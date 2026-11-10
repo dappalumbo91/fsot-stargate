@@ -917,7 +917,25 @@ A 2 m beam at the 22 m station, with the cap held at 9.80665 m/s², crosses in 0
 
 The same 2 m beam at the same station with the cap raised to 2 × 9.80665 m/s² crosses in 0.2746383246544163 s and 0.27518207535420425 s. The throat speeds are 65.41609476684964 m/s and 72.32021386399056 m/s.
 
-The 10 m ship at 9.80665 m/s² on the 40 m face keeps the passage time. The same ship at the 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam at that station takes 0.3883972434737016 s and 0.3891662230878983 s. A coast faster than v(r) at the chosen cap raises the load by the square of that factor.
+The 10 m ship at 9.80665 m/s² on the 40 m face keeps the passage time. The same ship at the 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam at that station takes 0.3883972434737016 s and 0.3891662230878983 s. A coast faster than v(r) at the chosen cap raises the load by the square of that factor. The dash is the next section.
+
+## The dash, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The pace coast holds the side-to-side load and leaves the acceleration along the path free. On the 10 m ship at 9.80665 m/s² that along-path acceleration is 253.10812582079262 m/s² at the one-sixth 40 m face and 217.0794515126316 m/s² at the half-compact 40 m face, 25.809845953591964 and 22.13594362117865 times standard gravity. The throat stays at 20 m. Every exit sits on the steady flux 0.10948671535321428. The coast is supplied with the ship.
+
+Holding both accelerations at 9.80665 m/s², the 10 m ship still passes the throat at 20.686385509666625 m/s and 22.869659668069687 m/s. It enters at 33.65894230352877 m/s and 35.90912317506827 m/s. The crossing takes 2.673195444892207 s and 2.6834241126491603 s. The along-path cap is the one that binds outside a proper distance 9.340142770185938 m from the throat on the one-sixth mouth, at coordinate radius 21.9107943805 m, and outside 10.09020077697393 m on the half-compact mouth, at 21.834453306125 m. Against the haul's 250 m/s outside clock those crossings are shorter by 19437.795052077894 and 19363.702124844272.
+
+The same two caps, with the ship starting at rest and stopping at rest, take 5.514085761277835 s and 5.711451292756002 s on the 40 m face. Against the same outside clock the ratios are 9423.325541444145 and 9097.692080096449.
+
+A station one proper meter off the throat is the walk-page mark, r = 20.02290394948242 m and r = 20.018742194287782 m. A 2 m beam on the pace coast crosses it in 0.04320524692748453 s and 0.03908739043758741 s. The constant throat-speed time on the one-sixth mouth is 0.04323748054400105 s, longer by 3.223361651651796×10⁻⁵ s. The outside light time is 0.04333083088431372 s. This ship clock is shorter than that light time, and it is 180173.15212680562 times the one-sixth null ray.
+
+The one-sided proper length at which the pace coast ties that outside light time is 1.0029110552317038 m for a 2 m beam on the one-sixth mouth, at r = 20.02303741840325 m, time 0.04333083049908825 s. The along-path acceleration there is 9.632918845651544 m/s². On the half-compact mouth the length is 1.1087082641010984 m, at r = 20.02303634556896 m, time 0.043330830559741115 s, and the along-path acceleration at that face is 9.986373679021494 m/s². For the 10 m beam the lengths are 0.4482463535078379 m and 0.49555037829601223 m, at r = 20.00460401265253 m and r = 20.00460396979684 m, times 0.04333083656987223 s and 0.043330832848155205 s. The along-path accelerations are 0.8595575699804451 m/s² and 0.8912952093776273 m/s².
+
+On those short stations a start and a stop at 9.80665 m/s² never reaches the side-to-side cap. The 2 m beam on the one-meter mark takes 0.9032102305964355 s and 0.9032100746123153 s and is moving at 4.428690551393092 m/s at the throat. The 10 m beam on its light-matching station takes 0.604755252118227 s and 0.635830838410086 s. A lane outside the door that brings the 10 m ship up to the one-sixth face speed is 21.83782198614123 m and 2.110373480471837 s, and the two lanes plus the corridor are 4.264077797513546 s. The start and the stop inside the short corridor are the shorter door-to-door.
+
+The beam that brings the full 40 m face down to the outside light time, on the pace coast, is 0.004140566355019132 m on the one-sixth mouth and 0.004006572075869195 m on the half-compact mouth.
+
+The 10 m ship that keeps both accelerations at 9.80665 m/s² crosses the 40 m face in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The 2 m beam one proper meter off the throat crosses in 0.04320524692748453 s when it arrives at speed, and starts and stops in 0.9032102305964355 s.
 
 ## Audit of the 20 m shell
 

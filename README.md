@@ -115,7 +115,11 @@ One mouth sits at John F. Kennedy International, 40°38'23.741"N, 73°46'43.292"
 
 ## The pace
 
-The coast that holds a chosen side-to-side load at every radius is v(r) = √(a / (κ(r) W)). For the 10 m ship at 9.80665 m/s² the 40 m face stays 2.1294485057269195 s and 2.1647639000180656 s. The same ship meeting the corridor at the 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam at that station takes 0.3883972434737016 s and 0.3891662230878983 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The coast that holds a chosen side-to-side load at every radius is v(r) = √(a / (κ(r) W)). For the 10 m ship at 9.80665 m/s² the 40 m face stays 2.1294485057269195 s and 2.1647639000180656 s. The same ship meeting the corridor at the 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam at that station takes 0.3883972434737016 s and 0.3891662230878983 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The dash is the next section.
+
+## The dash
+
+The pace schedule on the 10 m ship reaches 253.10812582079262 m/s² along the path at the 40 m face. Holding the along-path acceleration at 9.80665 m/s² as well, that ship crosses in 2.673195444892207 s and 2.6834241126491603 s. A 2 m beam at the station one proper meter off the throat crosses in 0.04320524692748453 s and 0.03908739043758741 s. A start and a stop on that station, at the same acceleration, takes 0.9032102305964355 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

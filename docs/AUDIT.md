@@ -356,4 +356,8 @@ The reference points convert to 40.63992805555556, −73.77869222222222 and 22.3
 
 ## The pace, 2026-11-10
 
-The scheduled 10 m ship at 9.80665 m/s² on the 40 m face differs from the passage time by 0 on both mouths. The proper length inside the published half-tide radius reproduces 27.25019714723869 m and 31.24363785379133 m, and the scheduled time inside it is 1.170276325142076 s and 1.2132042400169751 s. The 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam there takes 0.3883972434737016 s and 0.3891662230878983 s. The 1 m beam on the 40 m face reproduces the passage crate, 0.6733907438139346 s and 0.6845584520566416 s. A coast faster by 1.1 holds 11.8660465 m/s².
+The scheduled 10 m ship at 9.80665 m/s² on the 40 m face differs from the passage time by 0 on both mouths. The proper length inside the published half-tide radius reproduces 27.25019714723869 m and 31.24363785379133 m, and the scheduled time inside it is 1.170276325142076 s and 1.2132042400169751 s. The 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam there takes 0.3883972434737016 s and 0.3891662230878983 s. The 1 m beam on the 40 m face reproduces the passage crate, 0.6733907438139346 s and 0.6845584520566416 s. A coast faster by 1.1 holds 11.8660465 m/s². The dash is the next section.
+
+## The dash, 2026-11-10
+
+The along-path acceleration of the pace coast at the 40 m face is 253.10812582079262 m/s² and 217.0794515126316 m/s². With both accelerations held at 9.80665 m/s² the 10 m ship crosses in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The walk-page one-meter station on a 2 m beam takes 0.04320524692748453 s and 0.03908739043758741 s. The one-sixth length that ties the outside light time for that beam is 1.0029110552317038 m, time 0.04333083049908825 s. The one-meter start-and-stop takes 0.9032102305964355 s.
