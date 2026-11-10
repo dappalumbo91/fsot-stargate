@@ -360,4 +360,8 @@ The scheduled 10 m ship at 9.80665 m/s² on the 40 m face differs from the passa
 
 ## The dash, 2026-11-10
 
-The along-path acceleration of the pace coast at the 40 m face is 253.10812582079262 m/s² and 217.0794515126316 m/s². With both accelerations held at 9.80665 m/s² the 10 m ship crosses in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The walk-page one-meter station on a 2 m beam takes 0.04320524692748453 s and 0.03908739043758741 s. The one-sixth length that ties the outside light time for that beam is 1.0029110552317038 m, time 0.04333083049908825 s. The one-meter start-and-stop takes 0.9032102305964355 s.
+The along-path acceleration of the pace coast at the 40 m face is 253.10812582079262 m/s² and 217.0794515126316 m/s². With both accelerations held at 9.80665 m/s² the 10 m ship crosses in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The walk-page one-meter station on a 2 m beam takes 0.04320524692748453 s and 0.03908739043758741 s. The one-sixth length that ties the outside light time for that beam is 1.0029110552317038 m, time 0.04333083049908825 s. The one-meter start-and-stop takes 0.9032102305964355 s. The buffer is the next section.
+
+## The buffer, 2026-11-10
+
+The along-path acceleration at the 40 m face reproduces 253.10812582079262 m/s² and 217.0794515126316 m/s², and it is 0 at the throat. At 22 m it is 22.00303553476865 m/s² and 22.324466255983335 m/s². The constant throat-speed times are 3.4752216088072063 s and 3.4174324160335168 s. The start-and-stop with the side-to-side load removed is 5.4150592988470425 s and 5.646111833747349 s. The 250 m/s widths are 0.06846824727272725 m and 0.08368341333333333 m. The upright 1.80 m constant coast takes 1.4744116594281595 s and 1.449893781374416 s.

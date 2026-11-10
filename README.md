@@ -119,7 +119,11 @@ The coast that holds a chosen side-to-side load at every radius is v(r) = √(a 
 
 ## The dash
 
-The pace schedule on the 10 m ship reaches 253.10812582079262 m/s² along the path at the 40 m face. Holding the along-path acceleration at 9.80665 m/s² as well, that ship crosses in 2.673195444892207 s and 2.6834241126491603 s. A 2 m beam at the station one proper meter off the throat crosses in 0.04320524692748453 s and 0.03908739043758741 s. A start and a stop on that station, at the same acceleration, takes 0.9032102305964355 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The pace schedule on the 10 m ship reaches 253.10812582079262 m/s² along the path at the 40 m face. Holding the along-path acceleration at 9.80665 m/s² as well, that ship crosses in 2.673195444892207 s and 2.6834241126491603 s. A 2 m beam at the station one proper meter off the throat crosses in 0.04320524692748453 s and 0.03908739043758741 s. A start and a stop on that station, at the same acceleration, takes 0.9032102305964355 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The buffer is the next section.
+
+## The buffer
+
+The 253.10812582079262 m/s² figure is the pace coast at the 40 m face. The same coast is at 22.00303553476865 m/s² at the 22 m station and at 0 at the throat. Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width that holds 9.80665 m/s² at the throat at 250 m/s is 0.06846824727272725 m and 0.08368341333333333 m, and that coast crosses in 0.2875590957252389 s and 0.3126220651732627 s. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

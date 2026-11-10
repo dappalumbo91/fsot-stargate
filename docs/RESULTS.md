@@ -935,7 +935,23 @@ On those short stations a start and a stop at 9.80665 m/s² never reaches the si
 
 The beam that brings the full 40 m face down to the outside light time, on the pace coast, is 0.004140566355019132 m on the one-sixth mouth and 0.004006572075869195 m on the half-compact mouth.
 
-The 10 m ship that keeps both accelerations at 9.80665 m/s² crosses the 40 m face in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The 2 m beam one proper meter off the throat crosses in 0.04320524692748453 s when it arrives at speed, and starts and stops in 0.9032102305964355 s.
+The 10 m ship that keeps both accelerations at 9.80665 m/s² crosses the 40 m face in 2.673195444892207 s and 2.6834241126491603 s, and starts and stops in 5.514085761277835 s and 5.711451292756002 s. The 2 m beam one proper meter off the throat crosses in 0.04320524692748453 s when it arrives at speed, and starts and stops in 0.9032102305964355 s. The buffer is the next section.
+
+## The buffer, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The pace coast's along-path acceleration is largest at the 40 m face. It is 0 at the throat. On the 10 m ship the one-sixth stations read 14.069717013642277 m/s² at 21 m, 22.00303553476865 m/s² at 22 m, 45.87164828870266 m/s² at 25 m, and 96.2325878483992 m/s² at 30 m. The half-compact stations read 14.430630446166475 m/s², 22.324466255983335 m/s², 45.09837216895797 m/s², and 90.06107142857141 m/s². The 40 m values stay 253.10812582079262 m/s² and 217.0794515126316 m/s². The throat stays at 20 m. Every exit sits on the steady flux 0.10948671535321428. The coast is supplied with the ship. The redshift derivative stays 0, so this acceleration is the ship's.
+
+Holding the throat speed from door to door takes 3.4752216088072063 s and 3.4174324160335168 s. The dash coast is shorter because, past the throat, the side-to-side cap loosens and the ship speeds up from 20.686385509666625 m/s and 22.869659668069687 m/s to the dash entry speeds 33.65894230352877 m/s and 35.90912317506827 m/s.
+
+A side-to-side load brought to zero, with the ship still starting and stopping at 9.80665 m/s², takes 5.4150592988470425 s and 5.646111833747349 s. The dash start-and-stop is longer by 0.0990264624307926 s and 0.06533945900865312 s. Crossing at the dash entry speed the whole way, with that side load at zero, takes 2.135829857130504 s and 2.1764807765503758 s.
+
+The width that holds 9.80665 m/s² at the throat is 9.80665 / (κ(r₀) v²). At 100 m/s it is 0.42792654545454534 m and 0.5230213333333333 m, and the constant-speed crossing takes 0.7188977393130973 s and 0.7815551629331567 s. At 250 m/s the widths are 0.06846824727272725 m and 0.08368341333333333 m, and the times are 0.2875590957252389 s and 0.3126220651732627 s. At 1000 m/s the widths are 0.004279265454545453 m and 0.005230213333333333 m, and the times are 0.07188977393130973 s and 0.07815551629331567 s. At 10000 m/s the widths are 4.279265454545453×10⁻⁵ m and 5.230213333333333×10⁻⁵ m, and the times are 0.007188977393130973 s and 0.007815551629331566 s. At 10000 m/s, γ² − 1 is 1.112650194201592×10⁻⁹.
+
+An upright body 1.80 m across, held at its throat speed, crosses in 1.4744116594281595 s and 1.449893781374416 s at 48.75827824041468 m/s and 53.90430478240188 m/s.
+
+The compactness mass at an outer radius of 2 m is one tenth of each shape-page mouth mass, 2.2443182025001816×10²⁶ kg and 6.732954607500545×10²⁶ kg. κ(r) on the corridor is unchanged.
+
+Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width for 250 m/s at 9.80665 m/s² is 0.06846824727272725 m and 0.08368341333333333 m. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s.
 
 ## Audit of the 20 m shell
 

@@ -353,4 +353,12 @@ The dash page keeps the pace coast and adds the acceleration along the path. On 
 
 The coast that holds both accelerations at 9.80665 m/s² passes the throat at the throat speed. At proper distance σ from the throat its speed is the minimum of the pace speed and √(v_throat² + 2 × 9.80665 × σ). The crossing time is twice the integral of dσ/v. A start and a stop use the minimum of that pace speed, √(2 × 9.80665 × λ) from the start, and √(2 × 9.80665 × λ) to the end.
 
-The one-meter stations are the walk-page radii. The light-matching length is a bisection of the pace integral against the haul's outside light time, 0.04333083088431372 s, confirmed at 400000 steps. The outside lane is v/a and v²/(2a) at the face speed. The reading is in [RESULTS.md](RESULTS.md).
+The one-meter stations are the walk-page radii. The light-matching length is a bisection of the pace integral against the haul's outside light time, 0.04333083088431372 s, confirmed at 400000 steps. The outside lane is v/a and v²/(2a) at the face speed. The reading is in [RESULTS.md](RESULTS.md). The buffer is the next section.
+
+## The buffer, 2026-11-10
+
+The buffer page keeps the pace coast and reads v dv/dl at 21 m, 22 m, 25 m, and 30 m. At the throat dr/dl = 0, so that acceleration is 0. The constant throat-speed time is the through-distance divided by √(9.80665 / (κ(r₀) W)).
+
+The start-and-stop with the side-to-side load removed is 2 √(D / 9.80665), where D is the through-distance. The crossing at the dash entry speed with that load removed is D divided by the entry speed.
+
+The width at a stated throat speed is 9.80665 / (κ(r₀) v²), and the constant-speed time is D / v. The factor γ² on a constant coast is 1 / (1 − v²/c²). The 2 m masses are the shape-page mouth masses times 2/20. The reading is in [RESULTS.md](RESULTS.md).
