@@ -52,6 +52,22 @@ PASS throat_limit_sixth got 6.6057825907581638e+00 want 6.6057825907581638e+00 r
 PASS throat_limit_half got 7.3029674334022152e+00 want 7.3029674334022152e+00 residual 0.000e+00
 PASS throat_approach_sixth got 2.7328243401569807e-07 upper 9.9999999999999995e-07 margin 7.267e-07
 PASS throat_approach_half got 3.0212509916083263e-07 upper 9.9999999999999995e-07 margin 6.979e-07
+PASS coordinate_ratio_sixth got -5.0000000000000000e+00 want -5.0000000000000000e+00 residual 0.000e+00
+PASS coordinate_ratio_half got -1.0000000000000000e+00 want -1.0000000000000000e+00 residual 0.000e+00
+PASS coordinate_side_sixth got -1.1221591012500907e+28 want -1.1221591012500907e+28 residual 0.000e+00
+PASS coordinate_side_half got -6.7329546075005447e+27 want -6.7329546075005447e+27 residual 0.000e+00
+PASS coordinate_mouth_sixth got -2.2443182025001813e+28 want -2.2443182025001813e+28 residual 0.000e+00
+PASS coordinate_mouth_half got -1.3465909215001089e+28 want -1.3465909215001089e+28 residual 0.000e+00
+PASS coordinate_pair_sixth got -4.4886364050003627e+28 want -4.4886364050003627e+28 residual 0.000e+00
+PASS coordinate_pair_half got -2.6931818430002179e+28 want -2.6931818430002179e+28 residual 0.000e+00
+PASS proper_side_sixth got -1.8190171650206053e+28 want -1.8190171650206053e+28 residual 0.000e+00
+PASS proper_side_half got -1.1720993350853233e+28 want -1.1720993350853233e+28 residual 0.000e+00
+PASS proper_mouth_sixth got -3.6380343300412106e+28 want -3.6380343300412106e+28 residual 0.000e+00
+PASS proper_mouth_half got -2.3441986701706466e+28 want -2.3441986701706466e+28 residual 0.000e+00
+PASS proper_pair_sixth got -7.2760686600824212e+28 want -7.2760686600824212e+28 residual 0.000e+00
+PASS proper_pair_half got -4.6883973403412932e+28 want -4.6883973403412932e+28 residual 0.000e+00
+PASS cosh_sixth got 8.1049877998325359e-02 want 8.1049877998325345e-02 residual 1.388e-17
+PASS cosh_half got 8.7041975136710331e-02 want 8.7041975136710331e-02 residual 0.000e+00
 NOTE h is absent from this stamp. No value is supplied.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the depth-5 open/closed pair stays unseated.

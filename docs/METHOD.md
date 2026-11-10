@@ -377,4 +377,32 @@ The fill extends the same two checkers. `GateLedger.lean` adds the printed ell, 
 
 The open page calls the pin and does not edit it. `kappa_domains` is in `fsot_scale_interconnects.py`. `coupling_kappa`, `SECTOR_NODES`, `SECTOR_EDGES`, and `coupled_equilibrium` are in `fsot_complex_interaction.py`. `scalar_at_D`, `scalar_transport_rhs`, `momentum_rhs`, `gr_weak_field_metric_factor`, and `acoustic_metric_factor` are in `fsot_dynamics.py`. `matter_unobserved_S` is in `fsot_matter_antimatter.py`. `domain_scalar` and the domain table are in `fsot_compute.py`. `linear_potential` and `area_law_sigma` are in `fsot_uniqueness_confinement.py`.
 
-γ = |CHAOS| + PSI_CON · POOF = 0.4280434460598068. For equilibria E₁ and E₂ the steady difference is [γ / (2κ + γ)] (E₁ − E₂), and the flux is κ times that difference. The steady scalars are E₁ − (κ/γ) Δ∞ and E₂ + (κ/γ) Δ∞. The seated order is quantum optics then quantum computing. The transport call uses the steady optics scalar, velocity 0, both derivatives 0, the optics depth, and the optics domain scalar as the equilibrium. The momentum call uses density 1, velocity 0, both velocity derivatives 0, pressure gradient 0, that same depth, and the observed flag both ways. The map-page second is 20 / 299792458. The reading is in [RESULTS.md](RESULTS.md).
+γ = |CHAOS| + PSI_CON · POOF = 0.4280434460598068. For equilibria E₁ and E₂ the steady difference is [γ / (2κ + γ)] (E₁ − E₂), and the flux is κ times that difference. The steady scalars are E₁ − (κ/γ) Δ∞ and E₂ + (κ/γ) Δ∞. The seated order is quantum optics then quantum computing. The transport call uses the steady optics scalar, velocity 0, both derivatives 0, the optics depth, and the optics domain scalar as the equilibrium. The momentum call uses density 1, velocity 0, both velocity derivatives 0, pressure gradient 0, that same depth, and the observed flag both ways. The map-page second is 20 / 299792458. The reading is in [RESULTS.md](RESULTS.md). The solve is the next section.
+
+## The solve, 2026-11-10
+
+The solve page uses the two-mouth law and the shape already on the ledger. The pin is called and is not edited. `domain_scalar` is in `fsot_compute.py`. `scalar_at_D` is in `fsot_dynamics.py`. `kappa_domains` is in `fsot_scale_interconnects.py`. `coupled_equilibrium` is in `fsot_complex_interaction.py`, and its equilibrium for each sector is that sector's own scalar.
+
+The two-mouth law is dSᵢ/dt = κ (Sⱼ − Sᵢ) − γ (Sᵢ − Eᵢ). The difference Δ = S₁ − S₂ obeys dΔ/dt = −(2κ + γ) Δ + γ (E₁ − E₂). The sum Σ = S₁ + S₂ obeys dΣ/dt = −γ (Σ − (E₁ + E₂)). The settled difference is [γ / (2κ + γ)] (E₁ − E₂), and the flux is κ times that difference. `GateLedger.lean` proves that 2κ + γ is positive when κ and γ are positive, that the flux is 0 when the two equilibria are equal, and that the flux is positive when the first equilibrium is the larger one. γ = 0.4280434460598068. The published seated κ is 0.10001300937604073.
+
+From a state (Δ₀, Σ₀), with both equilibria then set to the same value E,
+
+Δ(t) = Δ₀ exp(−(2κ + γ) t), Σ(t) = 2E + (Σ₀ − 2E) exp(−γ t).
+
+The seated rate 2κ + γ is 0.6280694648118883. One difference e-fold on the map-page clock, one pin-time unit = 20/299792458, is 1.0621885440587598×10⁻⁷ s. The one-efold numbers in [RESULTS.md](RESULTS.md) use the open-page steady scalars and E equal to the computing scalar. E equal to the optics scalar has the same target flux, 0, and target sum 1.9073189046242158.
+
+Depth 8 is the generation that contains quantum computing and quantum optics. The same generation contains optics, acoustics, and materials science. Depth 5 contains particle physics and quantum mechanics. `kappa_domains` multiplies the absolute values of the two scalars, so the coupling itself carries a positive value.
+
+The shape density at radius r is ρ = b′ c⁴ / (8 π G r²), with b′ = −(r₀ − Rs) r₀ / r². The coordinate integral on one side is
+
+∫ ρ 4π r² dr = (c⁴ / (2G)) (Rs − r₀),
+
+from the throat to infinity, because b(∞) = Rs and b(r₀) = r₀. Divided by c² this is the mouth mass M = Rs c² / (2G) times (Rs − r₀) / Rs. The mouth mass is `compactMass` at 20 m. The ratios −5 and −1, and the one-side, one-mouth, and two-mouth products, are the Lean equalities.
+
+The proper-volume integral uses dl = dr / √(1 − b/r). The same prefactor c⁴ / (2G) multiplies ∫ b′ / √(1 − b/r) dr. The substitution r = r₀ + s² converts that integral to
+
+∫₀^∞ 40 (Rs − 20) / ((20 + s²) √(s² + 40 − Rs)) ds.
+
+For the one-sixth mouth, J = ∫ ds / ((s² + 20) √(s² + 110/3)). The substitution s = √(110/3) sinh u and w = 2u gives J = ∫ dw / (2 (5/3 + 55/3 cosh w)) from 0 to ∞. The integral of 1 / (5/3 + 55/3 cosh w) over that range equals √30 atan(√30/6) / 50. The proper integral is (−2000/3) J, and dividing by Rs = r₀/6 produces −2√30 atan(√30/6). For the half-compact mouth the prefactor 40 (Rs − 20) is −400, the denominator constants are 5 and 15, the integral of 1 / (5 + 15 cosh w) equals √2 atan(√2/2) / 10, and dividing that proper integral by Rs = 10 produces −2√2 atan(√2/2). With t = e^{−w}, each of those cosh integrals equals ∫ 2 / (B t² + 2 A t + B) dt on [0, 1], which is the Octave check.
+
+SymPy leaves ∫ ds / ((s² + 20) √(3s² + 110)) unevaluated. The published ship times remain the 400000-step trapezoid in `octave/dial_gate_stamp.m`. Run the Lean file with `lake env lean` from the FSOT-2.1-Lean checkout. The file stays outside `lean_lib FSOT`. The reading is in [RESULTS.md](RESULTS.md).

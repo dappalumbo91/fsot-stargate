@@ -135,7 +135,11 @@ Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.85301033594
 
 ## The open
 
-The seated leak runs from quantum optics toward quantum computing at 0.10948671535321428. Swapping the mouths returns the negative. Both orders keep κ positive. `kappa_domains` and `coupling_kappa` take two names, and neither takes a parameter named h. The depth-5 open and closed evaluations are not an edge of the eight-sector clock. That clock's seven steps leave all 35 observed flags where they started. Twelve domain scalars are negative pure numbers, and the throat density stays the shape-page pressure. `momentum_rhs` at rest still returns the observer source 0.0794560282152649. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The seated leak runs from quantum optics toward quantum computing at 0.10948671535321428. Swapping the mouths returns the negative. Both orders keep κ positive. `kappa_domains` and `coupling_kappa` take two names, and neither takes a parameter named h. The depth-5 open and closed evaluations are not an edge of the eight-sector clock. That clock's seven steps leave all 35 observed flags where they started. Twelve domain scalars are negative pure numbers, and the throat density stays the shape-page pressure. `momentum_rhs` at rest still returns the observer source 0.0794560282152649. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The solve is the next section.
+
+## The solve
+
+With κ and γ positive, the settled flux has the sign of the equilibrium gap, and equal equilibria give flux 0. From the seated steady scalars, both equilibria set to −0.6526335205358984 leave a flux of 0.04027791165983724 after one difference e-fold, 1.0621885440587598×10⁻⁷ s on the map-page clock. The target of that trajectory is flux 0. The eight-sector clock keeps each sector on its own scalar. At depth 8 the closed evaluation is quantum computing, and optics, acoustics, materials science, and quantum optics share 0.9536594523121079. At depth 5 both names share the open scalar, so their flux is 0. One side of the shape is exactly −5 mouth masses on the one-sixth mouth and −1 mouth mass on the half-compact mouth. The proper-volume factors are −2√30 atan(√30/6) and −2√2 atan(√2/2). Lean 4.31.0 accepted those ratios and the flux sign. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

@@ -1024,7 +1024,47 @@ Twelve of the 35 domain scalars are negative. Each of those twelve folds is unob
 | Particle astrophysics | 23 | −0.5175673355898566 |
 | Cosmology | 25 | −0.5023773181761478 |
 
-`gr_weak_field_metric_factor(0)` returns 0. `acoustic_metric_factor()` returns 0.7693639124918291. The pin function whose argument is a radius is `linear_potential`. Its slope is 0.17649137329543738, the return at unit argument, and the return at 0 is 0. That function is the confining probe. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+`gr_weak_field_metric_factor(0)` returns 0. `acoustic_metric_factor()` returns 0.7693639124918291. The pin function whose argument is a radius is `linear_potential`. Its slope is 0.17649137329543738, the return at unit argument, and the return at 0 is 0. That function is the confining probe. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The solve is the next section.
+
+## The solve, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The settled flux is κ [γ / (2κ + γ)] (E₁ − E₂). When κ and γ are positive, 2κ + γ is positive, and that flux has the sign of E₁ − E₂. When E₁ = E₂ the flux is 0. On the seated pair the published κ is 0.10001300937604073, γ is 0.4280434460598068, and the difference rate is 0.6280694648118883. Optics minus computing settles at 1.0947247366745378, and the flux is 0.10948671535321428. The open-page steady scalars are 0.6978753342253736 and −0.39684940244916417. Their sum is 0.30102593177620943.
+
+Both equilibria set to the computing scalar −0.6526335205358984 have target flux 0 and target sum −1.3052670410717968. From the open-page steady scalars the difference decays as exp(−0.6280694648118883 t) and the sum decays as exp(−0.4280434460598068 t). At one difference e-fold the flux is 0.04027791165983724, the scalars are −0.045001499415131495 and −0.4477282237795148, and the sum is still 0.8125373178771505 above the target. On the map-page clock that e-fold is 1.0621885440587598×10⁻⁷ s. The sum e-fold is the map-page scalar e-fold, 1.5585525173608007×10⁻⁷ s. Both equilibria set to the optics scalar have target sum 1.9073189046242158 and the same target flux 0. The eight-sector clock sets each sector's equilibrium to that sector's own scalar. Quantum optics and quantum computing are outside that clock. The open page recorded that its seven steps leave all 35 observed flags where they started.
+
+Depth 8 has five names. `scalar_at_D(8, True)` returns 0.9536594523121079 and matches the four observed names. `scalar_at_D(8, False)` returns −0.6526335205358984 and matches quantum computing. Each observed name against quantum computing has κ = 0.10001300937604074, which is 1.3877787807814457×10⁻¹⁷ above the published seated κ, and the gap is the seated gap. Any two of the observed names have flux 0. Their κ is 0.14614381386252193.
+
+| Depth-8 name | Scalar |
+| --- | ---: |
+| Optics | 0.9536594523121079 |
+| Acoustics | 0.9536594523121079 |
+| Materials science | 0.9536594523121079 |
+| Quantum optics | 0.9536594523121079 |
+| Quantum computing | −0.6526335205358984 |
+
+Depth 5's two names are particle physics and quantum mechanics. Both return 0.9501974701670142, and `scalar_at_D(5, True)` matches them, so their flux is 0. `scalar_at_D(5, False)` returns −0.6456729548144859. No domain name at depth 5 carries that closed value.
+
+The coordinate integral of the shape density on one side is (c⁴ / (2G)) (Rs − r₀). Divided by c² it is the mouth mass times (Rs − r₀) / Rs. That ratio is −5 on the one-sixth mouth and −1 on the half-compact mouth. One mouth has two sides. Two mouths of one kind have four sides.
+
+| Extent | One-sixth | One-sixth float64 | Half-compact | Half-compact float64 |
+| --- | ---: | ---: | ---: | ---: |
+| One side | −2246887946842044100000000000000000/200229 kg | −1.1221591012500907×10²⁸ kg | −449377589368408820000000000000000/66743 kg | −6.7329546075005447×10²⁷ kg |
+| One mouth | −4493775893684088200000000000000000/200229 kg | −2.2443182025001813×10²⁸ kg | −898755178736817640000000000000000/66743 kg | −1.3465909215001089×10²⁸ kg |
+| Two mouths | −8987551787368176400000000000000000/200229 kg | −4.4886364050003627×10²⁸ kg | −1797510357473635280000000000000000/66743 kg | −2.6931818430002179×10²⁸ kg |
+
+The proper-volume integral on one side is the mouth mass times −2√30 atan(√30/6) on the one-sixth mouth and times −2√2 atan(√2/2) on the half-compact mouth. Those factors are −8.1049877998325334897 and −1.7408395027342063949. The rational mouth mass times the factor is −1.8190171650206052×10²⁸ kg and −1.1720993350853231×10²⁸ kg on one side, −3.6380343300412103×10²⁸ kg and −2.3441986701706462×10²⁸ kg on one mouth, and −7.2760686600824206×10²⁸ kg and −4.6883973403412924×10²⁸ kg on two mouths. The stamp multiplies the float64 mouth mass by the float64 factor.
+
+| Extent | One-sixth float64 | Half-compact float64 |
+| --- | ---: | ---: |
+| One side | −1.8190171650206053×10²⁸ kg | −1.1720993350853233×10²⁸ kg |
+| One mouth | −3.6380343300412106×10²⁸ kg | −2.3441986701706466×10²⁸ kg |
+| Two mouths | −7.2760686600824212×10²⁸ kg | −4.6883973403412932×10²⁸ kg |
+
+The quadrature of the reduced proper-mass integrand, written on [0, 1], differs from √30 atan(√30/6)/50 by 1.388×10⁻¹⁷ and from √2 atan(√2/2)/10 by 0. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay the 400000-step trapezoid, 2.1294485057269195 s and 2.1647639000180656 s.
+
+The throat densities stay −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. Neither coupling takes a parameter named h. `linear_potential` stays the confining probe, with value 0 at 0 and 0.17649137329543738 at unit argument. `momentum_rhs` at rest stays the observer source 0.0794560282152649. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

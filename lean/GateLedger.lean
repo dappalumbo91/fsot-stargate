@@ -12,8 +12,9 @@ import Mathlib.Tactic.Ring
 Gate ledger. Not part of `lean_lib FSOT`.
 
 The shape, the lateral coefficient, the proper-length radicand, the load
-identity, the mouth masses, the cavity against both horizons, and the
-size of γ² − 1. The 400000-step crossings stay with the Octave log.
+identity, the mouth masses, the cavity against both horizons, the
+size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, and the sign of the
+settled two-mouth flux. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -222,5 +223,70 @@ theorem gamma_face : gammaSqMinus 6400 < 1 / 10 ^ 12 := by
 theorem gamma_width : gammaSqMinus 100000000 < 2 / 10 ^ 9 := by
   unfold gammaSqMinus cLight
   norm_num
+
+/-- One side, coordinate volume. (Rs − r₀) / Rs. -/
+theorem sixth_coordinate_ratio : (rsSixth - r0) / rsSixth = -5 := by
+  unfold rsSixth r0
+  norm_num
+
+theorem half_coordinate_ratio : (rsHalf - r0) / rsHalf = -1 := by
+  unfold rsHalf r0
+  norm_num
+
+theorem sixth_coordinate_one_side :
+    compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth) =
+      -2246887946842044100000000000000000 / 200229 := by
+  unfold compactMass rsSixth r0 cLight GNewt
+  norm_num
+
+theorem half_coordinate_one_side :
+    compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf) =
+      -449377589368408820000000000000000 / 66743 := by
+  unfold compactMass rsHalf r0 cLight GNewt
+  norm_num
+
+theorem sixth_coordinate_mouth :
+    2 * (compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth)) =
+      -4493775893684088200000000000000000 / 200229 := by
+  unfold compactMass rsSixth r0 cLight GNewt
+  norm_num
+
+theorem half_coordinate_mouth :
+    2 * (compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf)) =
+      -898755178736817640000000000000000 / 66743 := by
+  unfold compactMass rsHalf r0 cLight GNewt
+  norm_num
+
+theorem sixth_coordinate_pair :
+    4 * (compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth)) =
+      -8987551787368176400000000000000000 / 200229 := by
+  unfold compactMass rsSixth r0 cLight GNewt
+  norm_num
+
+theorem half_coordinate_pair :
+    4 * (compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf)) =
+      -1797510357473635280000000000000000 / 66743 := by
+  unfold compactMass rsHalf r0 cLight GNewt
+  norm_num
+
+/-- Settled flux κ [γ / (2κ + γ)] (E₁ − E₂). -/
+def steadyFlux (κ γ E1 E2 : ℚ) : ℚ :=
+  κ * γ * (E1 - E2) / (2 * κ + γ)
+
+theorem rate_positive {κ γ : ℚ} (hk : 0 < κ) (hg : 0 < γ) : 0 < 2 * κ + γ := by
+  linarith
+
+theorem equal_equilibria (κ γ E : ℚ) (h : 2 * κ + γ ≠ 0) : steadyFlux κ γ E E = 0 := by
+  unfold steadyFlux
+  rw [div_eq_iff h]
+  ring
+
+theorem flux_follows_gap {κ γ E1 E2 : ℚ} (hk : 0 < κ) (hg : 0 < γ) (hE : E2 < E1) :
+    0 < steadyFlux κ γ E1 E2 := by
+  unfold steadyFlux
+  have hden : 0 < 2 * κ + γ := by linarith
+  have hgap : 0 < E1 - E2 := by linarith
+  have hnum : 0 < κ * γ * (E1 - E2) := mul_pos (mul_pos hk hg) hgap
+  exact div_pos hnum hden
 
 end GateLedger

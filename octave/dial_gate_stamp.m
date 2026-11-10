@@ -1,7 +1,8 @@
 % Gate stamp. MATLAB syntax, run here in Octave.
 % The shape, the lateral coefficient, the proper length, and one scheduled
 % crossing. The fill adds the cavity bounds, the gamma bounds, a Simpson
-% length, and the throat-density reprint. Not a Warp Factory metric.
+% length, and the throat-density reprint. The solve adds the coordinate
+% mass ratios and the proper-mass factor. Not a Warp Factory metric.
 % The pin is not an input.
 
 function dial_gate_stamp(outname)
@@ -122,6 +123,26 @@ fails = lineout(fid, fails, 'throat_limit_half', integrand(0, Rsh, 0), limh, 0);
 fails = boundout(fid, fails, 'throat_approach_sixth', abs(raw_open(1e-4, Rs6) - lim6), 1e-6);
 fails = boundout(fid, fails, 'throat_approach_half', abs(raw_open(1e-4, Rsh) - limh), 1e-6);
 
+fails = lineout(fid, fails, 'coordinate_ratio_sixth', (Rs6 - r0) / Rs6, -5, 0);
+fails = lineout(fid, fails, 'coordinate_ratio_half', (Rsh - r0) / Rsh, -1, 0);
+fails = lineout(fid, fails, 'coordinate_side_sixth', -5 * M6, -1.1221591012500907e28, 0);
+fails = lineout(fid, fails, 'coordinate_side_half', -1 * Mh, -6.7329546075005447e27, 0);
+fails = lineout(fid, fails, 'coordinate_mouth_sixth', -10 * M6, -2.2443182025001813e28, 0);
+fails = lineout(fid, fails, 'coordinate_mouth_half', -2 * Mh, -1.3465909215001089e28, 0);
+fails = lineout(fid, fails, 'coordinate_pair_sixth', -20 * M6, -4.4886364050003627e28, 0);
+fails = lineout(fid, fails, 'coordinate_pair_half', -4 * Mh, -2.6931818430002179e28, 0);
+
+r6 = -2 * sqrt(30) * atan(sqrt(30) / 6);
+rh = -2 * sqrt(2) * atan(sqrt(2) / 2);
+fails = lineout(fid, fails, 'proper_side_sixth', M6 * r6, -1.8190171650206053e28, 0);
+fails = lineout(fid, fails, 'proper_side_half', Mh * rh, -1.1720993350853233e28, 0);
+fails = lineout(fid, fails, 'proper_mouth_sixth', 2 * M6 * r6, -3.6380343300412106e28, 0);
+fails = lineout(fid, fails, 'proper_mouth_half', 2 * Mh * rh, -2.3441986701706466e28, 0);
+fails = lineout(fid, fails, 'proper_pair_sixth', 4 * M6 * r6, -7.2760686600824212e28, 0);
+fails = lineout(fid, fails, 'proper_pair_half', 4 * Mh * rh, -4.6883973403412932e28, 0);
+fails = lineout(fid, fails, 'cosh_sixth', quad_cosh(5 / 3, 55 / 3), sqrt(30) * atan(sqrt(30) / 6) / 50, 1e-15);
+fails = lineout(fid, fails, 'cosh_half', quad_cosh(5, 15), sqrt(2) * atan(sqrt(2) / 2) / 10, 1e-15);
+
 fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the depth-5 open/closed pair stays unseated.\n');
@@ -199,4 +220,8 @@ function L = closed_length(r, Rs)
   u = r / r0;
   disc = sqrt((u - a) ^ 2 - d ^ 2);
   L = r0 * (disc + a * log((u - a + disc) / d));
+end
+
+function q = quad_cosh(A, B)
+  q = integral(@(t) 2 ./ (B .* t .^ 2 + 2 .* A .* t + B), 0, 1);
 end
