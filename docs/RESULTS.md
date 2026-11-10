@@ -167,6 +167,27 @@ A straight accel and a stop across the circular-orbit separation leaves the well
 
 Already on the clean coast, the hold across that separation is the separation divided by the coast speed. At 0.04c the holds are 1.82 hours, 14.6 hours, and 4.21 days. At 0.10c they are 43.6 minutes, 5.83 hours, and 1.69 days. The light clean shell remains the one-sixth window at 0.04c. The 0.10c shell remains compactness 1/2. This is kinematics. It is not a Warp Factory grid.
 
+Dated 2026-11-09. The same reflector and the same 10 tonnes. A short burn in the 200 km orbit, on the Hohmann excess, replaces the slow crawl. The departure burn is the speed that raises the low-orbit circle onto the transfer hyperbola. The arrival burn circularizes 200 km above the destination. The coasts are the half-periods of those ellipses. The beam times are the time spent on the two burns. Energy stays ½mcΔv.
+
+| Leg | Mars | Jupiter | Neptune |
+| --- | ---: | ---: | ---: |
+| Departure burn | 3.613 km/s | 6.306 km/s | 8.249 km/s |
+| Arrival burn, 200 km | 2.103 km/s | 17.679 km/s | 7.202 km/s |
+| Stack | 5.716 km/s | 23.985 km/s | 15.451 km/s |
+| Energy, 10 tonnes | 8.57×10¹⁵ J | 3.595×10¹⁶ J | 2.316×10¹⁶ J |
+| Coast | 259 days | 998 days | 11,242 days |
+| 1 GW | 99.2 days | 416 days | 268 days |
+| 10 GW | 9.92 days | 41.6 days | 26.8 days |
+| 100 GW | 23.8 hours | 4.16 days | 2.68 days |
+| 1 TW | 2.38 hours | 9.99 hours | 6.43 hours |
+| 15 TW | 9.52 minutes | 39.9 minutes | 25.7 minutes |
+
+A 200 km orbit lasts 88 minutes. At 15 TW the departure burns run 6.0 minutes, 10.5 minutes, and 13.7 minutes. A return spends the stack again. Setting down on Mars removes 5.682 km/s at the surface in place of the 2.103 km/s capture. That stack is 9.295 km/s and 1.393×10¹⁶ J. The 0.25 g film spends 38.9 minutes, 2.72 hours, and 1.75 hours on these burns.
+
+Callisto orbits at 1,882,700 km. A spiral capture there is 8.203 km/s. With the 7.788 km/s departure and the 16.728 km/s solar leg the stack is 32.719 km/s and 4.905×10¹⁶ J. The short burn at that distance is 4.698 km/s on top of the 6.306 km/s Earth departure, 11.004 km/s and 1.649×10¹⁶ J. Triton orbits at 354,760 km. The spiral capture is 4.389 km/s and the stack is 36.540 km/s, 5.477×10¹⁶ J. The short burn is 3.022 km/s on top of the 8.249 km/s departure, 11.271 km/s and 1.689×10¹⁶ J. Those coasts stay 998 days and 11,242 days.
+
+At 1 TW the spiral beam moves the ship 214,000 km, 3.32 million km, and 1.78 million km. The powered crossing of the same gaps takes 7.93 days, 22.5 days, and 59.2 days, with peaks 229 km/s, 648 km/s, and 1,710 km/s. This is kinematics. It is not a Warp Factory grid.
+
 Reaching 0.04c on a sail is 1.80×10¹⁹ J. A 15 TW beam takes 14 days and 48 AU. At 1 µm a 100 m sail needs a 3.8 m aperture at the Moon and a 73 km aperture at 49 AU.
 
 Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. That film stays on the pad. From a 200 km orbit its spiral takes 46 minutes and 2.030×10¹⁶ J. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading, with the same 2E/c, would need absorption 2.50×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
