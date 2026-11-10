@@ -603,7 +603,27 @@ The chain is in [METHOD.md](METHOD.md). Rest energy is mass density times the Wa
 | Mouth wall / tension | 0.5014556352509044 | 1.504366905752713 |
 | Mouth wall / abs(throat energy density) | 0.6017467623010851 | 3.008733811505426 |
 
-The pin number and both walls are positive. The throat energy density is negative. The condensate is short of the tension by those two factors near 10⁻⁵. The mouth wall is the same order as the tension and carries the positive sign. Neither one supplies the throat. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The pin number and both walls are positive. The throat energy density is negative. The condensate is short of the tension by those two factors near 10⁻⁵. The mouth wall is the same order as the tension and carries the positive sign. Neither one supplies the throat. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The switch is the next section.
+
+## The switch, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). These are the pin returns whose names mention a metric, a potential, or a length.
+
+| Return | Value |
+| --- | ---: |
+| Weak-field factor at 10⁻⁶ | 2.0647857988017726×10⁻⁶ |
+| Weak-field factor at 0 | 0 |
+| Classical weak-field value at 10⁻⁶ | 2×10⁻⁶ |
+| Weak-field factor / classical value | 1.0323928994008864 |
+| Acoustic factor | 0.7693639124918291 |
+| Solar Schwarzschild radius | 2953.3393820668784 m |
+| Planck length | 1.61625502392855×10⁻³⁵ m |
+| Fine-structure bridge | 17.673705940081472 |
+| Weinberg bridge | 0.3069644297889016 |
+| Strong-coupling bridge | 0.8934914156931002 |
+| Higgs-scale bridge | 442.1278490417853 |
+
+The shape page fixes the redshift at 0 and writes b(r). The weak-field function returns 0 when its argument is 0. The acoustic factor is the sound cone already printed on the funnel page. The solar radius and the Planck length are the suite's own lengths. The four bridge entries are pure numbers. A coast still has to arrive with the mass, and the metric stays the static shape. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

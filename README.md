@@ -87,7 +87,11 @@ A pair is two mouths of one kind, joined at the 20 m throat. From 40 m on one si
 
 ## The stress
 
-The pin's gluon condensate is the pure number 0.012832866903470668. The condensate body in the shell file has density 8.373887575889153×10¹⁷ kg/m³, and its rest energy is 7.5260748249902725×10³⁴ Pa. The 20 m mouth walls carry 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. All three are positive. The throat energy density is negative. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
+The pin's gluon condensate is the pure number 0.012832866903470668. The condensate body in the shell file has density 8.373887575889153×10¹⁷ kg/m³, and its rest energy is 7.5260748249902725×10³⁴ Pa. The 20 m mouth walls carry 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. All three are positive. The throat energy density is negative. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The switch is the next section.
+
+## The switch
+
+The pin's weak-field function, handed 10⁻⁶, returns 2.0647857988017726×10⁻⁶. Handed 0, it returns 0. The acoustic factor returns 0.7693639124918291. The solar Schwarzschild radius returns 2953.3393820668784 m, and the Planck length returns 1.61625502392855×10⁻³⁵ m. The throat on the shape page keeps redshift 0 and the inverse-power shape. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
 
 ## The parent shell
 

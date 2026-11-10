@@ -276,3 +276,13 @@ The condensate body is `data/shell_env.txt`. Its mass divided by the volume betw
 The mouth wall is the compactness mass spread over the 20 m ell wall. The inner radius is 20 m × (1 − ell) = 2.8530103359495373 m. The wall volume is 33413.047219545326 m³. The masses are the shape-page masses, 2.2443182025001816×10²⁷ kg and 6.732954607500545×10²⁷ kg. The densities are 6.716891721229614×10²² kg/m³ and 2.015067516368884×10²³ kg/m³. The rest energies are 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa.
 
 The throat tension and the throat energy density are the shape-page values. The ratios of these positive rest energies to that tension, and to the absolute value of that energy density, are the table in [RESULTS.md](RESULTS.md). `momentum_rhs` takes the pressure gradient as an argument and does not return a pressure. The reading is in [RESULTS.md](RESULTS.md).
+
+## The switch, 2026-11-10
+
+The switch page calls `gr_weak_field_metric_factor`, `acoustic_metric_factor`, and `sm_coupling_bridge` in `fsot_dynamics.py`, and `seed_weak_field_2phi`, `acoustic_null_cone`, `seed_schwarzschild_sun`, and `seed_planck_length` in `fsot_gr_sm.py`. The pin files are not edited.
+
+`gr_weak_field_metric_factor(phi_N)` returns 2 |phi_N| times (1 + K |S_cosmology| POOF). The limit suite uses phi_N = 10⁻⁶. |S_cosmology| is 0.5023773181761478, the dressing is 1.0323928994008864, and the dressing minus the returned ratio is 0. The same call at 0 returns 0. `seed_weak_field_2phi(10⁻⁶)` returns 2×10⁻⁶.
+
+`acoustic_metric_factor` is the square root of `sound_speed_sq(1)`. It returns 0.7693639124918291, and `acoustic_null_cone` returns the same value. `seed_schwarzschild_sun` returns 2953.3393820668784 m. `seed_planck_length` returns 1.61625502392855×10⁻³⁵ m. `sm_coupling_bridge` returns the four pure numbers in the table.
+
+The arguments are phi_N or nothing. The redshift and the shape remain the ones written on the shape page. The reading is in [RESULTS.md](RESULTS.md).

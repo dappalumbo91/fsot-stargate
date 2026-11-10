@@ -328,4 +328,8 @@ Two mouths of one kind meet at 20 m. Twice the recorded one-sided distance is 71
 
 ## The stress, 2026-11-10
 
-The pin condensate is the pure number 0.012832866903470668. The shell-file density is 8.373887575889153×10¹⁷ kg/m³ and its rest energy is 7.5260748249902725×10³⁴ Pa. The mouth-wall rest energies are 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. Divided by the throat tension, the condensate is 6.251601615990388×10⁻⁶ and the walls are 0.5014556352509044 and 1.504366905752713. All three rest energies are positive. The throat energy density is negative. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+The pin condensate is the pure number 0.012832866903470668. The shell-file density is 8.373887575889153×10¹⁷ kg/m³ and its rest energy is 7.5260748249902725×10³⁴ Pa. The mouth-wall rest energies are 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. Divided by the throat tension, the condensate is 6.251601615990388×10⁻⁶ and the walls are 0.5014556352509044 and 1.504366905752713. All three rest energies are positive. The throat energy density is negative. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The switch is the next section.
+
+## The switch, 2026-11-10
+
+`gr_weak_field_metric_factor(10⁻⁶)` returns 2.0647857988017726×10⁻⁶, and the same call at 0 returns 0. The ratio to 2×10⁻⁶ is 1.0323928994008864, and the dressing difference is 0. `acoustic_metric_factor` returns 0.7693639124918291. The solar Schwarzschild radius is 2953.3393820668784 m and the Planck length is 1.61625502392855×10⁻³⁵ m. The redshift and the shape stay the shape-page values. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
