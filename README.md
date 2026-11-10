@@ -127,7 +127,11 @@ The 253.10812582079262 m/s² figure is the pace coast at the 40 m face. The same
 
 ## The stamp
 
-Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean). Octave 11.3.0 wrote [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. The closed forms reprint. The 400000-step ship schedule sits 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s from 2.1294485057269195 s and 2.1647639000180656 s. The one-sixth mouth mass is the rational 449377589368408820000000000000000/200229. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean). Octave 11.3.0 wrote [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. The closed forms reprint. The 400000-step ship schedule sits 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s from 2.1294485057269195 s and 2.1647639000180656 s. The one-sixth mouth mass is the rational 449377589368408820000000000000000/200229. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The fill is the next section.
+
+## The fill
+
+Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.8530103359495373 m sits inside both horizons. γ² − 1 at 20 m/s, 80 m/s, and 10000 m/s is below 10⁻¹⁴, 10⁻¹², and 2×10⁻⁹. Octave 11.3.0 reran [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. A smooth Simpson rule reprints the closed length to 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. MATLAB R2026b is installed, and `matlab -batch` stops with Licensing Error 1 because no license file is present. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

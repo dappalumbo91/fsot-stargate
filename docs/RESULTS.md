@@ -961,7 +961,21 @@ Lean 4.31.0 accepted [lean/GateLedger.lean](../lean/GateLedger.lean). The file i
 
 The pin still does not supply the throat density. No vendor function writes Φ or b(r). The steady flux 0.10948671535321428 is not a coast. The sign of h is open. The depth-5 pair is unseated. The cavity lies inside both horizons. The pace coast leaves out γ. At 10000 m/s, γ² − 1 is 1.112650194201592×10⁻⁹. The throat stays at 20 m.
 
-Lean 4.31.0 accepted the gate file, and Octave 11.3.0 recorded 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The one-sixth mouth mass is 449377589368408820000000000000000/200229.
+Lean 4.31.0 accepted the gate file, and Octave 11.3.0 recorded 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The one-sixth mouth mass is 449377589368408820000000000000000/200229. The fill is the next section.
+
+## The fill, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Mathlib v4.31.0 was already present, so the hub was left as it stood. MATLAB Package Manager 2026.8 downloaded MATLAB R2026b and wrote the product files. `registerWithOS.exe` first stopped with Windows error 740. Run elevated, it exited 0. `matlab -batch` on `octave/dial_gate_stamp.m` stopped with MathWorks Licensing Error 1, code −1.2. The license search paths were empty. Octave 11.3.0 reran the same file and wrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). The printed ell is 8573494832025231/10¹⁶. The cavity built from it is 1426505167974769/500000000000000, and its float64 value is 2.8530103359495373 m. That cavity is below 10/3 and below 10, which are the two compactness horizons. The float reprint also sits inside the printed horizons 3.332860728780457 m and 9.995611722233722 m. The cavity stays a candidate.
+
+γ² − 1 = v² / (c² − v²). At 20 m/s it is 4.4506002242144935×10⁻¹⁵, below 10⁻¹⁴. At 80 m/s it is 7.120960358743665×10⁻¹⁴, below 10⁻¹². At 10000 m/s it is 1.1126500572916086×10⁻⁹, below 2×10⁻⁹. The published pace, dash, and buffer times stay the coasts that leave γ out.
+
+A positive prefactor keeps the sign of b′. The one-sixth slope is −5/6, so the shape density is negative. The float reprint of the tension is 1.2038634716806056×10⁴⁰ Pa with residual 0, and the two densities are −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa with residual 0. The pin condensate stays the positive recorded value. No conversion was applied.
+
+The trapezoid proper-length residuals on 400000 steps remain 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m. Simpson on that same guarded integrand leaves 8.905×10⁻¹⁰ m and 5.568×10⁻¹⁰ m. The smooth integrand 2 r / √(r + r₀ − Rs), which is the same integral once the throat substitution is simplified, has Simpson residuals 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The Simpson schedule on the guarded grid is 2.1294485057451071 s and 2.1647639000197083 s, which is 1.819×10⁻¹¹ s and 1.643×10⁻¹² s from the published trapezoid ship times. Those published times stay. The sample at s = 0 equals the analytic throat limit, and the sample at s = 10⁻⁴ is within 10⁻⁶ of it.
+
+`momentum_rhs` still takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, and observed. It does not take the flux. The steady flux 0.10948671535321428 is still not a coast. The sign of h is still open. The depth-5 pair is still unseated. No vendor function writes Φ or b(r). The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

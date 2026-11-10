@@ -365,4 +365,10 @@ The width at a stated throat speed is 9.80665 / (κ(r₀) v²), and the constant
 
 ## The stamp, 2026-11-10
 
-The stamp page checks the shape in two checkers. `lean/GateLedger.lean` is Lean 4.31.0 and Mathlib v4.31.0. Run it from the FSOT-2.1-Lean checkout, so Mathlib resolves: `lake env lean` on that file. The file is not part of `lean_lib FSOT`. `octave/dial_gate_stamp.m` is the float reprint. Octave 11.3.0 wrote `data/dial_gate_stamp.txt`. The 400000-step schedule uses the square-root substitution. At the throat the integrand is 2 r₀ / √(2 r₀ − Rs), divided by the throat speed. The reading is in [RESULTS.md](RESULTS.md).
+The stamp page checks the shape in two checkers. `lean/GateLedger.lean` is Lean 4.31.0 and Mathlib v4.31.0. Run it from the FSOT-2.1-Lean checkout, so Mathlib resolves: `lake env lean` on that file. The file is not part of `lean_lib FSOT`. `octave/dial_gate_stamp.m` is the float reprint. Octave 11.3.0 wrote `data/dial_gate_stamp.txt`. The 400000-step schedule uses the square-root substitution. At the throat the integrand is 2 r₀ / √(2 r₀ − Rs), divided by the throat speed. The reading is in [RESULTS.md](RESULTS.md). The fill is the next section.
+
+## The fill, 2026-11-10
+
+The fill extends the same two checkers. `GateLedger.lean` adds the printed ell, the cavity 20 (1 − ell), the comparison of that cavity with 10/3 and 10, the sign of a positive multiple of b′, and γ² − 1 = v² / (c² − v²) at v² = 400, 6400, and 100000000. Run it the same way: `lake env lean` from the FSOT-2.1-Lean checkout. The file stays outside `lean_lib FSOT`.
+
+`octave/dial_gate_stamp.m` adds the cavity bounds, those three gamma bounds, the published throat density, and a Simpson rule. The guarded integrand is the one the schedule already uses. The smooth integrand is 2 r / √(r + r₀ − Rs) on the same s-grid. The published ship times remain the 400000-step trapezoid. MATLAB R2026b can call the same function once a license file is present. `matlab -batch` on this machine stopped with Licensing Error 1, code −1.2. The reading is in [RESULTS.md](RESULTS.md).

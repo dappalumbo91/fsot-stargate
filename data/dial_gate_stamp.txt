@@ -29,5 +29,30 @@ PASS schedule_sixth got 2.1294485057270474e+00 want 2.1294485057269195e+00 resid
 PASS schedule_half got 2.1647639000180772e+00 want 2.1647639000180656e+00 residual 1.155e-14
 PASS length_integral_sixth got 3.5944886966381020e+01 want 3.5944886965654867e+01 residual 7.262e-10
 PASS length_integral_half got 3.9077758147222227e+01 want 3.9077758146657835e+01 residual 5.644e-10
+PASS length_simpson_sixth got 3.5944886966545361e+01 want 3.5944886965654867e+01 residual 8.905e-10
+PASS length_simpson_half got 3.9077758147214595e+01 want 3.9077758146657835e+01 residual 5.568e-10
+PASS length_simpson_smooth_sixth got 3.5944886965655350e+01 want 3.5944886965654867e+01 residual 4.832e-13
+PASS length_simpson_smooth_half got 3.9077758146657935e+01 want 3.9077758146657835e+01 residual 9.948e-14
+NOTE simpson schedule 2.1294485057451071e+00 2.1647639000197083e+00 on the same grid. The published ship times stay the trapezoid values.
 PASS radicand_worst got 3.5527136788005009e-15 want 0.0000000000000000e+00 residual 3.553e-15
+PASS tension got 1.2038634716806056e+40 want 1.2038634716806056e+40 residual 0.000e+00
+PASS density_sixth got -1.0032195597338381e+40 want -1.0032195597338381e+40 residual 0.000e+00
+PASS density_half got -6.0193173584030278e+39 want -6.0193173584030278e+39 residual 0.000e+00
+PASS density_sixth_negative got -1.0032195597338381e+40 upper 0.0000000000000000e+00 margin 1.003e+40
+PASS density_half_negative got -6.0193173584030278e+39 upper 0.0000000000000000e+00 margin 6.019e+39
+PASS cavity got 2.8530103359495373e+00 want 2.8530103359495373e+00 residual 0.000e+00
+PASS cavity_inside_sixth got 2.8530103359495373e+00 upper 3.3333333333333335e+00 margin 4.803e-01
+PASS cavity_inside_half got 2.8530103359495373e+00 upper 1.0000000000000000e+01 margin 7.147e+00
+PASS cavity_inside_float_sixth got 2.8530103359495373e+00 upper 3.3328607287804570e+00 margin 4.799e-01
+PASS cavity_inside_float_half got 2.8530103359495373e+00 upper 9.9956117222337220e+00 margin 7.143e+00
+PASS gamma_walk got 4.4506002242144935e-15 upper 1.0000000000000000e-14 margin 5.549e-15
+PASS gamma_face got 7.1209603587436654e-14 upper 9.9999999999999998e-13 margin 9.288e-13
+PASS gamma_width got 1.1126500572916086e-09 upper 2.0000000000000001e-09 margin 8.873e-10
+PASS throat_limit_sixth got 6.6057825907581638e+00 want 6.6057825907581638e+00 residual 0.000e+00
+PASS throat_limit_half got 7.3029674334022152e+00 want 7.3029674334022152e+00 residual 0.000e+00
+PASS throat_approach_sixth got 2.7328243401569807e-07 upper 9.9999999999999995e-07 margin 7.267e-07
+PASS throat_approach_half got 3.0212509916083263e-07 upper 9.9999999999999995e-07 margin 6.979e-07
+NOTE h is absent from this stamp. No value is supplied.
+NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
+NOTE the depth-5 open/closed pair stays unseated.
 fails 0

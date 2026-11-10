@@ -368,4 +368,8 @@ The along-path acceleration at the 40 m face reproduces 253.10812582079262 m/s²
 
 ## The stamp, 2026-11-10
 
-Lean 4.31.0 accepted `lean/GateLedger.lean`. Octave 11.3.0 wrote `data/dial_gate_stamp.txt` with 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The length-integral residuals are 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m. The one-sixth κ residual against 11/4800 is 4.337×10⁻¹⁹. The one-sixth mouth mass is 449377589368408820000000000000000/200229, and its float64 evaluation is 2.2443182025001816×10²⁷ kg.
+Lean 4.31.0 accepted `lean/GateLedger.lean`. Octave 11.3.0 wrote `data/dial_gate_stamp.txt` with 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The length-integral residuals are 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m. The one-sixth κ residual against 11/4800 is 4.337×10⁻¹⁹. The one-sixth mouth mass is 449377589368408820000000000000000/200229, and its float64 evaluation is 2.2443182025001816×10²⁷ kg. The fill is the next section.
+
+## The fill, 2026-11-10
+
+Lean 4.31.0 accepted the extended `lean/GateLedger.lean`, including the cavity inside 10/3 and 10 and the three bounds on γ² − 1. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The smooth Simpson residuals are 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The guarded Simpson residuals are 8.905×10⁻¹⁰ m and 5.568×10⁻¹⁰ m. The cavity float is 2.8530103359495373 m. The throat-density reprint matches the published pascals with residual 0. MATLAB R2026b is installed. `matlab -batch` exited with Licensing Error 1, code −1.2. No license file was on the search path.

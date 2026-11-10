@@ -12,8 +12,9 @@ import Mathlib.Tactic.Ring
 Gate ledger. Not part of `lean_lib FSOT`.
 
 The shape, the lateral coefficient, the proper-length radicand, the load
-identity, and the mouth masses. The 400000-step crossings stay with the
-Octave log. The Einstein tensor of a shell stays with the Warp Factory logs.
+identity, the mouth masses, the cavity against both horizons, and the
+size of γ² − 1. The 400000-step crossings stay with the Octave log.
+The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
 
@@ -169,6 +170,57 @@ theorem sixth_two_meter :
 theorem half_two_meter :
     compactMass (1 / 2) 2 = 44937758936840882000000000000000 / 66743 := by
   unfold compactMass cLight GNewt
+  norm_num
+
+/-- Printed map-page ell. The cavity built from it is a candidate, not a throat. -/
+def ellPrinted : ℚ := 8573494832025231 / 10 ^ 16
+
+def cavity : ℚ := r0 * (1 - ellPrinted)
+
+/-- γ² − 1 = v² / (c² − v²). -/
+def gammaSqMinus (vSq : ℚ) : ℚ := vSq / (cLight ^ 2 - vSq)
+
+theorem horizons_are_compactness :
+    rsSixth = (10 : ℚ) / 3 ∧ rsHalf = 10 := by
+  unfold rsSixth rsHalf r0
+  norm_num
+
+theorem cavity_exact :
+    cavity = 1426505167974769 / 500000000000000 := by
+  unfold cavity ellPrinted r0
+  norm_num
+
+theorem cavity_inside_horizons :
+    cavity < (10 : ℚ) / 3 ∧ cavity < (10 : ℚ) := by
+  unfold cavity ellPrinted r0
+  norm_num
+
+/-- A positive prefactor, c⁴ / (8 π G r₀²) included, keeps the sign of b'. -/
+theorem density_sign_follows_slope {pref Rs : ℚ} (hp : 0 < pref) :
+    pref * shapeSlope Rs r0 < 0 ↔ shapeSlope Rs r0 < 0 := by
+  constructor
+  · intro h
+    by_contra hn
+    have : 0 ≤ pref * shapeSlope Rs r0 := mul_nonneg (le_of_lt hp) (le_of_not_gt hn)
+    linarith
+  · intro h
+    exact mul_neg_of_pos_of_neg hp h
+
+theorem sixth_density_negative {pref : ℚ} (hp : 0 < pref) :
+    pref * shapeSlope rsSixth r0 < 0 := by
+  rw [density_sign_follows_slope hp, slope_sixth]
+  norm_num
+
+theorem gamma_walk : gammaSqMinus 400 < 1 / 10 ^ 14 := by
+  unfold gammaSqMinus cLight
+  norm_num
+
+theorem gamma_face : gammaSqMinus 6400 < 1 / 10 ^ 12 := by
+  unfold gammaSqMinus cLight
+  norm_num
+
+theorem gamma_width : gammaSqMinus 100000000 < 2 / 10 ^ 9 := by
+  unfold gammaSqMinus cLight
   norm_num
 
 end GateLedger

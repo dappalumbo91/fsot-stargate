@@ -1,14 +1,19 @@
 % Gate stamp. MATLAB syntax, run here in Octave.
 % The shape, the lateral coefficient, the proper length, and one scheduled
-% crossing. Not a Warp Factory metric. The pin is not an input.
+% crossing. The fill adds the cavity bounds, the gamma bounds, a Simpson
+% length, and the throat-density reprint. Not a Warp Factory metric.
+% The pin is not an input.
 
-function dial_gate_stamp()
+function dial_gate_stamp(outname)
+if nargin < 1 || isempty(outname)
+  outname = 'data/dial_gate_stamp.txt';
+end
 r0 = 20;
 g = 9.80665;
 c = 2.99792458e8;
 G = 6.67430e-11;
 n = 400000;
-fid = fopen('data/dial_gate_stamp.txt', 'w');
+fid = fopen(outname, 'w');
 fails = 0;
 
 Rs6 = r0 / 6;
@@ -63,6 +68,13 @@ fails = lineout(fid, fails, 'schedule_sixth', t6, 2.1294485057269195, 1e-12);
 fails = lineout(fid, fails, 'schedule_half', th, 2.1647639000180656, 1e-12);
 fails = lineout(fid, fails, 'length_integral_sixth', trapz(s, integrand(s, Rs6, 0)), L6, 1e-9);
 fails = lineout(fid, fails, 'length_integral_half', trapz(s, integrand(s, Rsh, 0)), Lh, 1e-9);
+fails = lineout(fid, fails, 'length_simpson_sixth', simpson(s, integrand(s, Rs6, 0)), L6, 1e-9);
+fails = lineout(fid, fails, 'length_simpson_half', simpson(s, integrand(s, Rsh, 0)), Lh, 1e-9);
+fails = lineout(fid, fails, 'length_simpson_smooth_sixth', simpson(s, smooth_integrand(s, Rs6)), L6, 1e-12);
+fails = lineout(fid, fails, 'length_simpson_smooth_half', simpson(s, smooth_integrand(s, Rsh)), Lh, 1e-12);
+ts6 = 2 * simpson(s, integrand(s, Rs6, 1));
+tsh = 2 * simpson(s, integrand(s, Rsh, 1));
+fprintf(fid, 'NOTE simpson schedule %.16e %.16e on the same grid. The published ship times stay the trapezoid values.\n', ts6, tsh);
 
 worst = 0;
 for r = [21 25 40 100]
@@ -78,9 +90,75 @@ for r = [21 25 40 100]
 end
 fails = lineout(fid, fails, 'radicand_worst', worst, 0, 1e-12);
 
+b6 = -((r0 - Rs6) / r0);
+bh = -((r0 - Rsh) / r0);
+pref = c ^ 4 / (8 * pi * G * r0 ^ 2);
+fails = lineout(fid, fails, 'tension', pref, 1.2038634716806056e40, 1e-15);
+fails = lineout(fid, fails, 'density_sixth', b6 * pref, -1.003219559733838e40, 1e-15);
+fails = lineout(fid, fails, 'density_half', bh * pref, -6.019317358403028e39, 1e-15);
+fails = boundout(fid, fails, 'density_sixth_negative', b6 * pref, 0);
+fails = boundout(fid, fails, 'density_half_negative', bh * pref, 0);
+
+ell = 8573494832025231 / 1e16;
+cav = r0 * (1 - ell);
+fails = lineout(fid, fails, 'cavity', cav, 2.8530103359495373, 0);
+fails = boundout(fid, fails, 'cavity_inside_sixth', cav, 10 / 3);
+fails = boundout(fid, fails, 'cavity_inside_half', cav, 10);
+fails = boundout(fid, fails, 'cavity_inside_float_sixth', cav, 3.332860728780457);
+fails = boundout(fid, fails, 'cavity_inside_float_half', cav, 9.995611722233722);
+
+c2 = 299792458 ^ 2;
+gwalk = 400 / (c2 - 400);
+gface = 6400 / (c2 - 6400);
+gwidth = 100000000 / (c2 - 100000000);
+fails = boundout(fid, fails, 'gamma_walk', gwalk, 1e-14);
+fails = boundout(fid, fails, 'gamma_face', gface, 1e-12);
+fails = boundout(fid, fails, 'gamma_width', gwidth, 2e-9);
+
+lim6 = 2 * r0 / sqrt(2 * r0 - Rs6);
+limh = 2 * r0 / sqrt(2 * r0 - Rsh);
+fails = lineout(fid, fails, 'throat_limit_sixth', integrand(0, Rs6, 0), lim6, 0);
+fails = lineout(fid, fails, 'throat_limit_half', integrand(0, Rsh, 0), limh, 0);
+fails = boundout(fid, fails, 'throat_approach_sixth', abs(raw_open(1e-4, Rs6) - lim6), 1e-6);
+fails = boundout(fid, fails, 'throat_approach_half', abs(raw_open(1e-4, Rsh) - limh), 1e-6);
+
+fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
+fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
+fprintf(fid, 'NOTE the depth-5 open/closed pair stays unseated.\n');
+
 fprintf(fid, 'fails %d\n', fails);
 fprintf('fails %d\n', fails);
 fclose(fid);
+end
+
+function fails = boundout(fid, fails, name, got, upper)
+  margin = upper - got;
+  if got < upper
+    status = 'PASS';
+  else
+    status = 'FAIL';
+    fails = fails + 1;
+  end
+  fprintf(fid, '%s %s got %.16e upper %.16e margin %.3e\n', status, name, got, upper, margin);
+  fprintf('%s %s margin %.3e\n', status, name, margin);
+end
+
+function q = simpson(x, y)
+  h = x(2) - x(1);
+  q = h / 3 * (y(1) + y(end) + 4 * sum(y(2:2:end-1)) + 2 * sum(y(3:2:end-2)));
+end
+
+function y = smooth_integrand(s, Rs)
+  r0 = 20;
+  r = r0 + s .* s;
+  y = 2 .* r ./ sqrt(r + r0 - Rs);
+end
+
+function y = raw_open(s, Rs)
+  r0 = 20;
+  r = r0 + s .* s;
+  b = Rs + (r0 - Rs) .* r0 ./ r;
+  y = 2 .* s ./ sqrt(1 - b ./ r);
 end
 
 function fails = lineout(fid, fails, name, got, want, tol)
