@@ -1,10 +1,19 @@
-# FSOT warp shell
+# FSOT Stargate
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 **Author:** Damian Arthur Palumbo  
 **License:** Apache-2.0  
-**Pin:** FSOT 2.1 AEB2AD, from [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)
+**Pin:** FSOT 2.1 AEB2AD, from [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
+**Parent:** [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`
+
+Two mouths. A transit from one to the other. The shell and sail ledger below is the parent record, cloned as it stood at that commit. This repository is the next system. Nothing in this opening is a scored transit, a built gate, or a faster-than-light channel.
+
+A mouth has to exist at each end before a crossing, the way the sheet's matched return mirror has to be on station before the fast ship leaves. On the parent parabola that delivery is 69.9 days, 405 days, and 4,764 days. A parked curvature shell used as a mouth is the parent mass: 1.182 Jupiter for the light window, 3.55 Jupiter for the half-compact wall. Two mouths of that kind are two of those masses.
+
+The candidate coupling is a shared quantum state between the mouths. A shared entangled state correlates outcomes at the two ends. It does not by itself carry a signal, a mass, or a ship. The project does not paste an entanglement factor onto the shell or the sail. Maldacena and Susskind, Fortschr. Phys. 61 (2013) 781, arXiv:1306.0533, relate entanglement to a wormhole. That paper is a citation. It is not adopted, and no wormhole solver is started. The open question is what the two mouths have to share, besides the name of a state, for a scored transit to exist.
+
+## The parent shell
 
 A constant-speed warp shell, scored in Warp Factory. The published positive-mass pass in this solver is Fuchs et al. 2024: **0.02c** on a 10–20 m shell, mass 4.49×10²⁷ kg.
 
