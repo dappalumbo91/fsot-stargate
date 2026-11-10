@@ -57,7 +57,13 @@ A bump at wavenumber 1.166385493421683, one over the smoothing length, has diffu
 
 At depth 5 the open branch is 0.9501974701670142 and the closed branch is −0.6456729548144859. The depths match, so the scale suppressor is 1 and the coupling is 0.0985871397275971. The two-mouth law holds a flux 0.10771457264599738 from the open evaluation toward the closed one. Swap which evaluation is open and the flux is −0.10771457264599738. The coupling stays on the same value.
 
-Particle physics and quantum mechanics are the folds at that depth. Both are observed, and both return the open value. The closed evaluation is not a seated fold. Nothing in the vendor puts the two evaluations on two mouths at once, and nothing swaps the bit on a clock. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
+Particle physics and quantum mechanics are the folds at that depth. Both are observed, and both return the open value. The closed evaluation is not a seated fold. Nothing in the vendor puts the two evaluations on two mouths at once, and nothing swaps the bit on a clock. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored. The seats are the next section.
+
+## The seats
+
+The recorded depth-5 flux approaches its steady value at rate 0.625217725515001. One e-fold is 1.5994428167824022. The steady difference holds 0.6846310150711437 of the gap. Started from the open value on both mouths, with one equilibrium set to the closed evaluation, the flux present at the vendor interval is 0.010129999530394252. That is 0.09404483795972873 of the steady flux. The fold leaves those two evaluations unseated.
+
+A generation that seats a specimen beside a bulk medium is seating the open evaluation beside the closed one. The largest of those fluxes is 0.10948671535321428, from quantum optics toward quantum computing at depth 8. Depth 12 seats the specimen scalar 0.9363875640629747 beside the medium scalar −0.6179071388700196, and the flux is 0.10074608467195591. Ten seated pairs share a scalar and hold flux 0. Particle physics and quantum mechanics are separate generations, and the flux between them is 0. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
 
 ## The parent shell
 

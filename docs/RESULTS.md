@@ -453,7 +453,44 @@ The coast does not carry a flat kick. The difference the pin can hold is the obs
 
 The coupling is A_BLEED · POOF · |open| · |closed|. The depths are equal, so the factor 1 + |D_i − D_j|/25 is 1. The steady difference is (γ/2) / (κ + γ/2) times the gap, with γ = 0.4280434460598068. The flux is κ times that difference, 0.10771457264599738. The quantum–cosmology standing flux already on the ledger is 0.05162288816705389. Substituting the steady scalars back into the two-mouth law leaves roundoff, 10⁻¹⁷. Swapping the evaluations swaps the sign of the gap and leaves κ on the same value, so the flux changes sign.
 
-Particle physics and quantum mechanics are the two folds at depth 5. Both are observed. Both return 0.9501974701670142. The closed evaluation is the same inputs with the branch off. It is not one of those folds. The vendor does not seat the open and closed evaluations as the two mouths, and it does not swap the bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+Particle physics and quantum mechanics are the two folds at depth 5. Both are observed. Both return 0.9501974701670142. The closed evaluation is the same inputs with the branch off. It is not one of those folds. The vendor does not seat the open and closed evaluations as the two mouths, and it does not swap the bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The seats are the next section.
+
+## The seats, 2026-11-10
+
+The recorded flux has a settle rate. The chain is in [METHOD.md](METHOD.md). The coupling is the depth-5 branch value 0.0985871397275971, and γ is 0.4280434460598068. The difference approaches the steady difference at 2κ + γ.
+
+| Reading | Value |
+| --- | ---: |
+| Difference rate | 0.625217725515001 |
+| e-fold | 1.5994428167824022 |
+| Held fraction of the gap | 0.6846310150711437 |
+| Fraction of the steady flux at the vendor interval | 0.09404483795972873 |
+| Flux present at the vendor interval | 0.010129999530394252 |
+
+Both mouths start at the open value 0.9501974701670142, so the difference starts at 0. One equilibrium is the closed evaluation −0.6456729548144859. The difference is then the steady difference times (1 − exp(−(2κ + γ) t)). The vendor interval is 0.1579697122378454. The flux present then is 0.010129999530394252. The fold leaves these two evaluations unseated.
+
+Twelve generations contain more than one name, and the pairs inside them number 19. The depth is shared, so the scale suppressor is 1. The steady flux is the same balance as the recorded branch.
+
+| Pair | Depth | Coupling | Steady flux | e-fold |
+| --- | ---: | ---: | ---: | ---: |
+| Quantum optics toward quantum computing | 8 | 0.10001300937604073 | 0.10948671535321428 | 1.5921805724140845 |
+| Thermodynamics toward fluid dynamics | 12 | 0.09297638393677046 | 0.10074608467195591 | 1.6286745378996017 |
+| Psychology toward meteorology | 13 | 0.09099118881794928 | 0.09828326880164323 | 1.6392748653519669 |
+| Sociology toward seismology | 15 | 0.08709522923555177 | 0.09345612326348175 | 1.6604843939812985 |
+| Astrophysics toward particle astrophysics | 23 | 0.07372763887153236 | 0.07699384685878549 | 1.7376233145958029 |
+| High-energy physics toward atomic physics | 6 | 0.10818906763961993 | 0.009239275123069976 | 1.5517791907621952 |
+
+Eight pairs differ by the observed bit alone. Look is 1 and hits are 0 on both names, so the scalars are `scalar_at_D(D, True)` and `scalar_at_D(D, False)`. Quantum optics is 0.9536594523121079 and quantum computing is −0.6526335205358984. The steady scalars of that pair are 0.6978753342253736 and −0.39684940244916417. The residual is roundoff. Swapping the names negates the flux. The two orders of the coupling agree to roundoff.
+
+At depth 12 the specimen names are thermodynamics and nuclear physics, both 0.9363875640629747. The medium names are fluid dynamics and ecology, both −0.6179071388700196. Each of the four specimen–medium pairs carries the flux 0.10074608467195591 from the specimen toward the medium. Fluid dynamics with ecology reprints the two-fluid coupling 0.06135362491527767, and the flux is 0. Thermodynamics with nuclear physics is the open scalar twice, and the flux is 0.
+
+High-energy physics and atomic physics are both observed. The looks are 0.9511450936457113 and 0.8652559794322651, and the hits are 1 and 0. The flux 0.009239275123069976 runs from high-energy physics toward atomic physics. That pair is the look-and-hits split.
+
+Ten pairs share one scalar, so the gap is 0 and the flux is 0: physical chemistry with chemistry, electromagnetism with molecular chemistry, the three pairs among optics, acoustics, and materials science, neuroscience with condensed matter, thermodynamics with nuclear physics, fluid dynamics with ecology, atmospheric physics with oceanography, and astronomy with economics.
+
+Particle physics and quantum mechanics are generations 0 and 1. Both are observed and both return 0.9501974701670142. `kappa_domains` returns 0.1450846749297095, the two-quantum-mouth coupling already on the ledger, and the flux is 0.
+
+The seated pairs are two names already. The vendor does not swap the observed bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

@@ -204,3 +204,17 @@ The flux page uses the two-mouth balance on the observed branch at depth 5. `sca
 The steady difference is (γ/2) / (κ + γ/2) times the gap, 1.0925823889771018. The flux is κ times that difference, 0.10771457264599738. The steady scalars are 0.698553452164815 on the open side and −0.3940289368122868 on the closed side. Each side of the two-mouth law then returns a residual at roundoff, 1.3877787807814457×10⁻¹⁷ and its negative. Swapping the two evaluations negates the gap, leaves κ unchanged, and negates the flux.
 
 `DOMAINS` at depth 5 contains Particle_Physics and Quantum_Mechanics. Both are observed. `domain_scalar` returns 0.9501974701670142 for each. The closed evaluation is not in that list. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The seats, 2026-11-10
+
+The seats page reads `NEST_GENERATIONS` and, inside each generation, every pair of names. `domain_scalar` and `kappa_domains` are the calls from the call page. The steady flux is the flux page's balance: (γ/2) / (κ + γ/2) times the gap, times κ. γ = 0.4280434460598068.
+
+For the recorded branch, κ = 0.0985871397275971. The difference rate is 2κ + γ = 0.625217725515001. The held fraction of the gap is γ / (2κ + γ) = 0.6846310150711437. With both mouths starting at the open value and one equilibrium equal to the closed evaluation, the difference is the steady difference times (1 − exp(−(2κ + γ) t)). At the vendor interval 0.1579697122378454 that factor is 0.09404483795972873, and the flux is 0.010129999530394252.
+
+Same-generation pairs share a depth, so the scale suppressor is 1. Eight pairs differ only by the observed bit. Their domain scalars match `scalar_at_D(D, True)` and `scalar_at_D(D, False)`. `kappa_domains("Quantum_Computing", "Quantum_Optics")` returns 0.10001300937604073. The flux from the open scalar toward the closed scalar is 0.10948671535321428. The steady scalars are 0.6978753342253736 and −0.39684940244916417. The residual is roundoff.
+
+At depth 12, `domain_scalar("Thermodynamics")` and `domain_scalar("Nuclear_Physics")` return 0.9363875640629747. `domain_scalar("Fluid_Dynamics")` and `domain_scalar("Ecology")` return −0.6179071388700196. Each specimen–medium pair has flux 0.10074608467195591. `kappa_domains("Fluid_Dynamics", "Ecology")` returns 0.06135362491527767 and the flux is 0.
+
+`domain_scalar("High_Energy_Physics")` is 0.8873295223725087 and `domain_scalar("Atomic_Physics")` is 0.7587603802989923. Both are observed. The looks are 0.9511450936457113 and 0.8652559794322651, and the hits are 1 and 0. The flux from high-energy physics toward atomic physics is 0.009239275123069976.
+
+`kappa_domains("Particle_Physics", "Quantum_Mechanics")` returns 0.1450846749297095 and the flux is 0. Those two names are generations 0 and 1. Ten pairs inside a generation have equal scalars and flux 0. The two orders of each coupling agree to roundoff. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
