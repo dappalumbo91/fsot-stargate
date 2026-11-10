@@ -310,7 +310,50 @@ Gao, Jafferis, and Wall, JHEP 12 (2017) 151, arXiv:1608.05687, couple the two bo
 
 Both boundaries are already in the shared state. h has support only after a turn-on time t₀. An appropriate sign of that coupling opens the bridge. A deformation of only one boundary Hamiltonian leaves it closed. The paper states that the window cannot be used to violate causality, and it identifies the passage with a teleportation protocol. Bahiru, JHEP 11 (2026) 051, published 5 November 2026, computes the effect registered on one boundary by a unitary on the other, inside that protocol. h is absent from the pin. No value of it is pasted on. Neither paper is adopted.
 
-The pin contains no tunneling amplitude. `qm_de_broglie_scale` returns a length, (1/p) times (1 + |S_QM| · POOF), and at unit momentum that factor is 1.1458384123083372. Quantum Mechanics is generation 1 of the nest and its depth rounds to 5. Chakrabarti and Singha, arXiv:2411.09236, version 4 of 4 March 2025, obtain a two-way or a one-way throat according to free parameter ranges. Those ranges are left alone. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require an energy-condition violation for flare-out at a throat. Friedman, Schleich, and Witt, Phys. Rev. Lett. 71, 1486 (1993), show that a globally hyperbolic, asymptotically flat spacetime satisfying the null energy condition hides its topology from a causal curve that runs from past null infinity to future null infinity. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The pin contains no tunneling amplitude. `qm_de_broglie_scale` returns a length, (1/p) times (1 + |S_QM| · POOF), and at unit momentum that factor is 1.1458384123083372. Quantum Mechanics is generation 1 of the nest and its depth rounds to 5. Chakrabarti and Singha, arXiv:2411.09236, version 4 of 4 March 2025, obtain a two-way or a one-way throat according to free parameter ranges. Those ranges are left alone. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require an energy-condition violation for flare-out at a throat. Friedman, Schleich, and Witt, Phys. Rev. Lett. 71, 1486 (1993), show that a globally hyperbolic, asymptotically flat spacetime satisfying the null energy condition hides its topology from a causal curve that runs from past null infinity to future null infinity. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The two-mouth call is the next section.
+
+## The call, 2026-11-09
+
+Two mouths. The vessel stays out. The coupling is `kappa_domains` and the relaxation rate is the funnel page's γ, 0.4280434460598068. The step the vendor uses when it integrates a coupled system is POOF · SUCTION = 0.022567101748263627, and the vendor step count is round(1/POOF) = 7, a pin time of 0.1579697122378454. Pin time is the time in that scalar law. The chain is in [METHOD.md](METHOD.md).
+
+| Reading | Value |
+| --- | ---: |
+| Quantum scalar, and the particle scalar | 0.9501974701670142 |
+| Fluid scalar | −0.6179071388700196 |
+| Cosmology scalar | −0.5023773181761478 |
+| κ, two quantum mouths | 0.1450846749297095 |
+| Far-mouth fraction, two quantum mouths | 0.09414684910198232 |
+| Pin time of that peak | 1.7835832717000715 |
+| Euler peak on the pin step | 0.09473377563036962 |
+| Relative gap of that Euler peak | 0.006234160080615503 |
+| Far-mouth fraction at the vendor's seven steps | 0.020936964617341736 |
+| κ, two fluid mouths | 0.06135362491527767 |
+| Far-mouth fraction, two fluid mouths | 0.04624101801466985 |
+| Pin time of the fluid peak | 2.0541373850879614 |
+| κ, two cosmology mouths | 0.04055588172472274 |
+| Far-mouth fraction, two cosmology mouths | 0.03187873648553654 |
+| Pin time of the cosmology peak | 2.139371566429859 |
+| κ, quantum–cosmology, both orders | 0.0426152645973651 |
+| Standing quantum–cosmology flux | 0.05162288816705389 |
+| Steady quantum scalar | 0.8295954877228278 |
+| Steady cosmology scalar | −0.3817753357319615 |
+| κ, fluid–cosmology, both orders | 0.03281734550983512 |
+| Standing fluid–cosmology flux | −0.0032873163967901955 |
+| κ, quantum–fluid, both orders | 0.07370906705774855 |
+| Standing quantum–fluid flux | 0.085974065417346 |
+| Observer source, observed mouth | 0.0794560282152649 |
+| Observer source, dark mouth | 0 |
+| Velocity growth over the vendor time | 0.01255164591272752 |
+| Third-term factor at D = 5, 12, 25 | 1.2648193460883854, 1.1721325749574505, 1 |
+| Compact remainder at D = 5, 12, 25 | 0.4970679476476895, 0.7084766195299412, 1 |
+
+On two mouths of one domain the far mouth receives half the sum mode minus half the difference mode. The sum mode decays at γ. The difference mode decays at 2κ + γ. The fraction at the peak does not depend on the size of the kick, because the law is linear, so no kick amplitude was chosen. Kicking the other mouth returns the same fraction. For two quantum mouths the closed-form peak is 0.09414684910198232 at pin time 1.7835832717000715. Forward Euler on the pin step peaks at 0.09473377563036962, higher by a relative gap 0.006234160080615503. The vendor's own seven steps, at pin time 0.1579697122378454, have carried 0.020936964617341736 of the kick. After the peak both offsets die.
+
+Particle physics returns the same scalar as quantum mechanics, 0.9501974701670142, at the same depth 5. The quantum–cosmology coupling is therefore the GR–EW entry already printed, 0.0426152645973651, in both orders. The standing flux 0.05162288816705389 runs from the quantum mouth toward cosmology while both mouths sit at their equilibria. The residual of that steady pair is roundoff, 10⁻¹⁷. The fluid–cosmology flux is −0.0032873163967901955, so along that pair the bleed runs toward the fluid mouth. Nobody has to call. Swapping the two names swaps the sign of the flux and leaves κ on the same value.
+
+At uniform rest, with the gradients off, `momentum_rhs` returns the observer source. That source is 0.0794560282152649 on an observed mouth and 0 on a dark mouth, and it does not depend on depth. Quantum mechanics is observed. Fluid dynamics and cosmology are dark. Over the vendor interval the observed velocity grows by 0.01255164591272752. The momentum law supplies no decay for that uniform piece, so the growth continues. `scalar_transport_rhs` does not take the observer source.
+
+The scalar's third term carries (D − 25)/25 with its sign. CHAOS is negative, so at depth 12 the factor equals 1 plus the viscosity scale piece, 1.1721325749574505. The compact remainder divides that signed distance by ln(D/25) and is 0.4970679476476895 at depth 5, 0.7084766195299412 at depth 12, and 1 at the ceiling. Each of these is a property of the depth. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 
