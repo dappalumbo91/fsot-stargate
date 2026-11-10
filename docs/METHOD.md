@@ -339,4 +339,10 @@ The outside distance is Vincenty's inverse formula on WGS84, a = 6378137 m and f
 
 An on-axis conduit time is the recorded through-distance divided by the supplied speed. The scheduled ship times are the passage-page integrals. The throat speed and the 40 m face speed are √(9.80665 / (κ W)) at those radii for W = 10 m, and both reproduce the passage values. A load computed on this page for a newly scored coast is κ γ² v² W. The 10 m/s and 100 m/s loads stay the passage-page values.
 
-`momentum_rhs` is called with density 1, velocity 0, both velocity derivatives 0, pressure gradient 0, effective depth 1, and the observed flag false and then true. The steady flux is the traversal value and is not passed into that call. Specific energy is v²/2. The reading is in [RESULTS.md](RESULTS.md).
+`momentum_rhs` is called with density 1, velocity 0, both velocity derivatives 0, pressure gradient 0, effective depth 1, and the observed flag false and then true. The steady flux is the traversal value and is not passed into that call. Specific energy is v²/2. The reading is in [RESULTS.md](RESULTS.md). The pace is the next section.
+
+## The pace, 2026-11-10
+
+The pace page keeps the passage coast v(r) = √(a / (κ(r) W)). The crossing time is the integral of dl / v(r) on both sides, 400000 steps of the square-root substitution. For W = 10 m, a = 9.80665 m/s², and the 40 m face, the integral differs from the passage ship time by 0.
+
+The stations are the walk-page marks at 21 m, 22 m, 25 m, 30 m, and 40 m. The half-tide radii are the passage values, and the proper lengths inside them reproduce 27.25019714723869 m and 31.24363785379133 m. A beam change and a cap change each scale v(r) by the same factor at every radius, so the time scales as √(W / a). The factor 1.1 on the schedule multiplies the load by 1.21. The 2 m beam at the 22 m station uses the same integral. The far-fiber cut is 20 m minus half the beam. The reading is in [RESULTS.md](RESULTS.md).

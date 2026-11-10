@@ -874,7 +874,50 @@ The specific energy of a supplied coast is v²/2. A mass of 10000 kg supplied wi
 | 79.22282499381096 m/s | 3138.1279999999992 J/kg | 31381279.999999996 J |
 | 100 m/s | 5000.0 J/kg | 50000000.0 J |
 
-The outside trip at 250 m/s takes 51961.0251919629 s. The 10 m ship on the scheduled coast takes 2.1294485057269195 s and 2.1647639000180656 s with the side-to-side load held at 9.80665 m/s². Holding the face speed through the throat raises that load to 143.83086666667677 m/s² on the one-sixth mouth. The steady flux stays out of the momentum call. A dwell at rest adds its own seconds, and the corridor length stays the through-distance.
+The outside trip at 250 m/s takes 51961.0251919629 s. The 10 m ship on the scheduled coast takes 2.1294485057269195 s and 2.1647639000180656 s with the side-to-side load held at 9.80665 m/s². Holding the face speed through the throat raises that load to 143.83086666667677 m/s² on the one-sixth mouth. The steady flux stays out of the momentum call. A dwell at rest adds its own seconds, and the corridor length stays the through-distance. The pace is the next section.
+
+## The pace, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The coast that holds a chosen side-to-side load a at every radius is v(r) = √(a / (κ(r) W)). The throat stays at 20 m. The stations below are the marks already on the walk page. Every exit sits on the steady flux 0.10948671535321428. The coast is supplied with the ship.
+
+For the 10 m ship, a = 9.80665 m/s², and the 40 m face, this coast reproduces the passage times 2.1294485057269195 s and 2.1647639000180656 s. A coast faster by a factor 1.1 at every radius holds 11.8660465 m/s² and takes 1.935862277933563 s and 1.967967181834605 s.
+
+On the published half-tide radius the one-sixth mouth spends 1.170276325142076 s of that crossing, fraction 0.5495677974812472, over a proper length of 27.25019714723869 m. The remaining proper length, 44.63957678407104 m, takes 0.9591721805848434 s. On the half-compact mouth the inner piece takes 1.2132042400169751 s, fraction 0.5604325903655593, over 31.24363785379133 m, and the outer 46.911878439524344 m takes 0.9515596600010905 s.
+
+| Station | One-sixth time | One-sixth saved | One-sixth face speed | Half-compact time | Half-compact saved | Half-compact face speed |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 21 m | 0.626004620069471 s | 1.5034438856574486 s | 22.75508256277955 m/s | 0.626630627582176 s | 1.5381332724358896 s | 25.006275269141256 m/s |
+| 22 m | 0.8684826386807305 s | 1.260965867046189 s | 24.917521255404065 m/s | 0.8702021293713793 s | 1.2945617706466863 s | 27.222302303620047 m/s |
+| 25 m | 1.3020395017600774 s | 0.827409003966842 s | 31.961321025055685 m/s | 1.3082905053215832 s | 0.8564733946964824 s | 34.331966069987445 m/s |
+| 30 m | 1.704789653467776 s | 0.42465885225914346 s | 45.52128933376882 m/s | 1.72035330498954 s | 0.44441059502852553 s | 47.63967884022729 m/s |
+| 40 m | 2.1294485057269195 s | 0.0 s | 79.22282499381096 m/s | 2.1647639000180656 s | 0.0 s | 79.22282499381096 m/s |
+
+The saved column is the 40 m time minus the station time. The throat speed on this 10 m coast stays 20.686385509666625 m/s and 22.869659668069687 m/s.
+
+A smaller beam raises the whole schedule by √(10 m / W). The 1.00 m row is the passage crate and the 0.50 m row is the passage person.
+
+| Beam | One-sixth time | One-sixth throat speed | Half-compact time | Half-compact throat speed |
+| --- | ---: | ---: | ---: | ---: |
+| 10 m | 2.1294485057269195 s | 20.686385509666625 m/s | 2.1647639000180656 s | 22.869659668069687 m/s |
+| 5 m | 1.505747478587086 s | 29.25496694424881 m/s | 1.5307192333706692 s | 32.34258286944113 m/s |
+| 2 m | 0.9523183226781783 s | 46.25616420838121 m/s | 0.9681118471356089 s | 51.138113640089095 m/s |
+| 1 m | 0.6733907438139346 s | 65.41609476684964 m/s | 0.6845584520566416 s | 72.32021386399056 m/s |
+| 0.50 m | 0.47615916133908914 s | 92.51232841676241 m/s | 0.48405592356780447 s | 102.27622728017819 m/s |
+
+The same scale read as a higher cap on the 10 m beam, with the cap in units of 9.80665 m/s², gives the following.
+
+| Cap | One-sixth time | One-sixth throat speed | Half-compact time | Half-compact throat speed |
+| --- | ---: | ---: | ---: | ---: |
+| 1 | 2.1294485057269195 s | 20.686385509666625 m/s | 2.1647639000180656 s | 22.869659668069687 m/s |
+| 2 | 1.505747478587086 s | 29.25496694424881 m/s | 1.5307192333706692 s | 32.34258286944113 m/s |
+| 5 | 0.9523183226781784 s | 46.25616420838121 m/s | 0.9681118471356089 s | 51.138113640089095 m/s |
+| 10 | 0.6733907438139347 s | 65.41609476684964 m/s | 0.6845584520566416 s | 72.32021386399056 m/s |
+
+A 2 m beam at the 22 m station, with the cap held at 9.80665 m/s², crosses in 0.3883972434737016 s and 0.3891662230878983 s. The throat speeds are 46.25616420838121 m/s and 51.138113640089095 m/s. The face speeds are 55.71727135787939 m/s and 60.87091845494354 m/s. The far fiber meets the 20 m circle at a centerline aim of 19 m. Against the haul's 250 m/s outside clock, 51961.0251919629 s, these crossings are shorter by 133783.1976541337 and 133518.84647046262.
+
+The same 2 m beam at the same station with the cap raised to 2 × 9.80665 m/s² crosses in 0.2746383246544163 s and 0.27518207535420425 s. The throat speeds are 65.41609476684964 m/s and 72.32021386399056 m/s.
+
+The 10 m ship at 9.80665 m/s² on the 40 m face keeps the passage time. The same ship at the 22 m station takes 0.8684826386807305 s and 0.8702021293713793 s. A 2 m beam at that station takes 0.3883972434737016 s and 0.3891662230878983 s. A coast faster than v(r) at the chosen cap raises the load by the square of that factor.
 
 ## Audit of the 20 m shell
 
