@@ -15,8 +15,9 @@ The shape, the lateral coefficient, the proper-length radicand, the load
 identity, the mouth masses, the cavity against both horizons, the
 size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, the sign of the
 settled two-mouth flux, the potential whose gradient is that law, the
-radial density factor (r₀/r)⁴, and the coordinate energy of the exotic
-mass. The 400000-step crossings stay with the Octave log.
+radial density factor (r₀/r)⁴, the coordinate energy of the exotic
+mass, the half-energy at r = 2 r₀, and the critical-point polynomials
+of the null and coast supply rates. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -458,5 +459,43 @@ theorem half_energy_pair :
   rw [half_coordinate_one_side]
   unfold cLight
   norm_num
+
+/-- At r = 2 r₀ the one-side energy is half the infinite-arm energy. -/
+theorem energy_face_half (Rs : ℚ) :
+    shape Rs (2 * r0) - r0 = (Rs - r0) / 2 := by
+  unfold shape r0
+  field_simp
+  ring
+
+theorem sixth_energy_face :
+    cLight ^ 4 / (2 * GNewt) * (rsSixth - r0) / 2 =
+      -100970108913281127865797509326896200000000000000000 / 200229 := by
+  rw [sixth_energy_integral, sixth_energy_one_side]
+  norm_num
+
+theorem half_energy_face :
+    cLight ^ 4 / (2 * GNewt) * (rsHalf - r0) / 2 =
+      -20194021782656225573159501865379240000000000000000 / 66743 := by
+  rw [half_energy_integral, half_energy_one_side]
+  norm_num
+
+theorem kappa_at_forty (Rs : ℚ) : kappa Rs (2 * r0) = 1 / (16 * r0 ^ 2) := by
+  unfold kappa r0
+  field_simp
+  ring
+
+/-- Numerator of d/dr [(r² − Rs r − A) / r⁶]. Vanishes on 4 r² − 5 Rs r − 6 A = 0. -/
+theorem null_peak_numerator (Rs r : ℚ) :
+    (2 * r - Rs) * r ^ 6 - (r ^ 2 - Rs * r - (r0 - Rs) * r0) * (6 * r ^ 5) =
+      r ^ 5 * (-(4 * r ^ 2) + 5 * Rs * r + 6 * ((r0 - Rs) * r0)) := by
+  unfold r0
+  ring
+
+/-- Numerator of d/dr of the squared coast sweep. Vanishes on the cubic. -/
+theorem coast_peak_numerator (Rs r A : ℚ) :
+    (2 * r - Rs) * (r ^ 2 * (Rs * r + 2 * A)) -
+        (r ^ 2 - Rs * r - A) * (Rs * r ^ 2 + 2 * r * (Rs * r + 2 * A)) =
+      -r * (Rs * r ^ 3 - 2 * Rs ^ 2 * r ^ 2 - 5 * A * Rs * r - 4 * A ^ 2) := by
+  ring
 
 end GateLedger

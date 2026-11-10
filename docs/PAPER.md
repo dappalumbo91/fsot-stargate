@@ -129,7 +129,7 @@ For scale inside the ledger itself: one side of the one-sixth corridor holds fiv
 
 The proper length from the 40 m face on one side, through the throat, to the 40 m face on the other side is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair.
 
-The coast on the ledger is the lateral-load coast. Its speed at each radius is the speed whose sideways squeeze stays at the load already scored. A 10 m ship that holds both accelerations at 9.80665 m/s² crosses those faces in 2.1294485057269195 s and 2.1647639000180656 s. Those times are the 400000-step trapezoid. They stay. The reduced schedule integrand 1/((s² + 20) √(3s² + 110)) is still an unevaluated integral.
+The coast on the ledger is the lateral-load coast. Its speed at each radius is the speed whose sideways squeeze stays at the load already scored. A 10 m ship that holds both accelerations at 9.80665 m/s² crosses those faces in 2.1294485057269195 s and 2.1647639000180656 s. Those times are the 400000-step trapezoid. They stay.
 
 On a flat steady coast the pin's momentum balance says the pressure gradient equals the observer source. That source is J = 0.0794560282152649 on the observed branch and 0 on the unobserved branch. Every constant speed satisfies the same balance. J is a pressure condition of that balance. The ship speed on the ledger is the lateral-load speed.
 
@@ -139,21 +139,39 @@ A walking pace covers the same proper length in about a minute, because a walkin
 
 ## What was checked
 
-Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, and the six coordinate energies.
+Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, and the critical-point polynomials of the two supply rates.
 
-Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines. MATLAB R2026b is installed. `matlab -batch` exits with Licensing Error 1, code −1.2, because no license file is on the search path. Octave is the checker that ran.
+Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines and the supply-rate lines. MATLAB R2026b is installed. `matlab -batch` exits with Licensing Error 1, code −1.2, because no license file is on the search path. Octave is the checker that ran.
 
 The constants c and G are the gate pair above. The parent shell's route pair is a different pair and is not mixed into these joules.
 
+## The supply rate
+
+The energy at radius r, on one side, is the integral of the density from the throat out to that radius:
+
+E(r) = (c⁴ / (2G)) (b(r) − r₀).
+
+This is a function of radius. A clock that leaves the radius fixed sees no change, so the hold rate is 0. The corridor, once the shape is present, does not ask for a continuing burn.
+
+A crossing does sweep the deficit. Along an outward ray,
+
+dE/dt = (c⁴ / (2G)) b′(r) dr/dt.
+
+The shape's own radial light ray has dr/dt = c √(1 − b/r). That sweep rate peaks a few meters outside the throat, at 24.540854963686442 m on the one-sixth mouth and 24.663649828320295 m on the half-compact mouth. The signed peaks are −5.5967323357299716×10⁵¹ W and −3.0748636696503162×10⁵¹ W. The supply that meets the sweep is the positive magnitude.
+
+The published coast is slower than light by v(r)/c, and its sweep rate is the null rate times that factor. The coast peaks at 64.523317740912603 m and 47.871228950239384 m, with signed rates −8.8645790720056626×10⁴⁴ W and −4.7969358278401484×10⁴⁴ W.
+
+At the 40 m face, each side holds exactly half of its infinite-arm energy. The two faces of one crossing therefore sweep one infinite-arm side. The mean rate over the published ship time is −4.7361854531950252×10⁴⁴ W on the one-sixth pair and −2.7953523345619962×10⁴⁴ W on the half-compact pair. In the unified-concept reading, this is the rate at which the thinning is gathered as a body moves through the corridor. It is the sweep of an inventory that is already there. The hold, with nobody moving and the radius fixed, remains 0.
+
+The same page evaluates the proper-mass integrand that had been left as an unevaluated integral. From zero to infinity it equals √10 atan(√30/6) / 100 on the one-sixth mouth and √2 atan(√2/2) / 20 on the half-compact mouth.
+
 ## What is still open
 
-The geometric energy is an inventory of the shape that is already on the ledger. The rate that would supply that deficit, or recover it, is the usual next question once a configuration has a mass and an energy. A supply rate needs a connector that touches the joule integral on one side and a time from the same framework on the other. The times on the ledger are the scalar shutdown, the ship coast, and the light time of the corridor. Each of those times belongs to its own object. Dividing the inventory by one of them would invent the connector. The energy page stops at the inventory. The supply rate is the open derivation.
+The sector clock still sets each sector to its own scalar. The shutdown path, both equilibria set equal, is already derived. The clock does not apply it, and the pin is not edited to make it do so.
 
-The schedule integrand remains non-elementary in the form SymPy returns. The ship times remain the trapezoid.
+The closed depth-5 value −0.6456729548144859 still has no domain name, so that pair stays unseated. The pin still has no parameter named h.
 
-The sector clock does not apply the both-equal substitution. The return law is known. Wiring that substitution into the clock is a later page, and it is a change in how the pin's clock is read, which this ledger has not made. The pin stays unedited.
-
-The coast remains the lateral-load coast. A shorter crossing needs a real change in that load, or a propulsion budget derived on its own terms.
+The ship times remain the 400000-step trapezoid. The coast remains the lateral-load coast. MATLAB R2026b still has no license file. Octave is the checker that ran.
 
 The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
 

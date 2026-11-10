@@ -92,6 +92,35 @@ PASS energy_proper_pair_sixth got -6.5394043890937331e+45 want -6.53940438909373
 PASS energy_proper_side_half got -1.0534303474019149e+45 want -1.0534303474019149e+45 residual 0.000e+00
 PASS energy_proper_mouth_half got -2.1068606948038297e+45 want -2.1068606948038297e+45 residual 0.000e+00
 PASS energy_proper_pair_half got -4.2137213896076594e+45 want -4.2137213896076594e+45 residual 0.000e+00
+PASS energy_face_ratio_sixth got 4.9999999999999989e-01 want 5.0000000000000000e-01 residual -1.110e-16
+PASS energy_face_ratio_half got 5.0000000000000000e-01 want 5.0000000000000000e-01 residual 0.000e+00
+PASS kappa_forty_sixth got 1.5625000000000003e-04 want 1.5625000000000000e-04 residual 2.711e-20
+PASS kappa_forty_half got 1.5625000000000000e-04 want 1.5625000000000000e-04 residual 0.000e+00
+PASS face_speed got 7.9222824993810960e+01 want 7.9222824993810960e+01 residual 0.000e+00
+PASS null_peak_radius_sixth got 2.4540854963686442e+01 want 2.4540854963686442e+01 residual 0.000e+00
+PASS null_peak_radius_half got 2.4663649828320295e+01 want 2.4663649828320295e+01 residual 0.000e+00
+PASS null_peak_quad_sixth got -6.8212102632969618e-13 want 0.0000000000000000e+00 residual -6.821e-13
+PASS null_peak_quad_half got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS supply_null_sixth got -5.5967323357299716e+51 want -5.5967323357299716e+51 residual 0.000e+00
+PASS supply_null_half got -3.0748636696503162e+51 want -3.0748636696503162e+51 residual 0.000e+00
+PASS supply_null_forty_sixth got -3.1808661740224099e+51 want -3.1808661740224099e+51 residual 0.000e+00
+PASS supply_null_forty_half got -1.7927420983775237e+51 want -1.7927420983775237e+51 residual 0.000e+00
+PASS coast_peak_radius_sixth got 6.4523317740912603e+01 want 6.4523317740912603e+01 residual 0.000e+00
+PASS coast_peak_radius_half got 4.7871228950239384e+01 want 4.7871228950239384e+01 residual 0.000e+00
+PASS coast_cubic_sixth got 1.2223608791828156e-09 upper 1.0000000000000000e-08 margin 8.778e-09
+PASS coast_cubic_half got 3.4560798667371273e-11 upper 1.0000000000000000e-08 margin 9.965e-09
+PASS supply_coast_sixth got -8.8645790720056626e+44 want -8.8645790720056626e+44 residual 0.000e+00
+PASS supply_coast_half got -4.7969358278401484e+44 want -4.7969358278401484e+44 residual 0.000e+00
+PASS supply_coast_forty_sixth got -8.4057219422548104e+44 want -8.4057219422548104e+44 residual 0.000e+00
+PASS supply_coast_forty_half got -4.7374805379126639e+44 want -4.7374805379126639e+44 residual 0.000e+00
+PASS supply_ratio_sixth got 6.5496283958441585e-07 want 6.5496283958441595e-07 residual -1.059e-22
+PASS supply_ratio_half got 3.6114402678829556e-07 want 3.6114402678829562e-07 residual -5.294e-23
+PASS energy_face_sixth got -5.0427315180758600e+44 want -5.0427315180758600e+44 residual 0.000e+00
+PASS energy_face_half got -3.0256389108455156e+44 want -3.0256389108455156e+44 residual 0.000e+00
+PASS supply_mean_sixth got -4.7361854531950252e+44 want -4.7361854531950252e+44 residual 0.000e+00
+PASS supply_mean_half got -2.7953523345619962e+44 want -2.7953523345619962e+44 residual 0.000e+00
+PASS proper_integrand_sixth got 2.3397084440059730e-02 want 2.3397084440059734e-02 residual -3.469e-18
+PASS proper_integrand_half got 4.3520987568355166e-02 want 4.3520987568355166e-02 residual 0.000e+00
 NOTE h is absent from this stamp. No value is supplied.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the depth-5 open/closed pair stays unseated.

@@ -5,6 +5,7 @@
 % mass ratios and the proper-mass factor. The derive adds the radial
 % density factor, the 40 m tension ratios, and the two-mouth potential.
 % The energy page multiplies the exotic masses by c squared.
+% The supply page reads dE/dt along the null ray and the lateral-load coast.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -182,6 +183,54 @@ fails = lineout(fid, fails, 'energy_proper_pair_sixth', 4 * M6 * r6 * c ^ 2, -6.
 fails = lineout(fid, fails, 'energy_proper_side_half', Mh * rh * c ^ 2, -1.0534303474019149e45, 0);
 fails = lineout(fid, fails, 'energy_proper_mouth_half', 2 * Mh * rh * c ^ 2, -2.1068606948038297e45, 0);
 fails = lineout(fid, fails, 'energy_proper_pair_half', 4 * Mh * rh * c ^ 2, -4.2137213896076594e45, 0);
+
+A6 = (r0 - Rs6) * r0;
+Ah = (r0 - Rsh) * r0;
+fails = lineout(fid, fails, 'energy_face_ratio_sixth', (b40s - r0) / (Rs6 - r0), 1 / 2, 1e-15);
+fails = lineout(fid, fails, 'energy_face_ratio_half', (b40h - r0) / (Rsh - r0), 1 / 2, 0);
+fails = lineout(fid, fails, 'kappa_forty_sixth', Rs6 / (2 * 40 ^ 3) + A6 / 40 ^ 4, 1 / 6400, 1e-15);
+fails = lineout(fid, fails, 'kappa_forty_half', Rsh / (2 * 40 ^ 3) + Ah / 40 ^ 4, 1 / 6400, 0);
+fails = lineout(fid, fails, 'face_speed', sqrt(g / ((1 / 6400) * 10)), 7.9222824993810960e+01, 0);
+rN6 = (5 * Rs6 + sqrt(25 * Rs6 ^ 2 + 96 * A6)) / 8;
+rNh = (5 * Rsh + sqrt(25 * Rsh ^ 2 + 96 * Ah)) / 8;
+fails = lineout(fid, fails, 'null_peak_radius_sixth', rN6, 2.4540854963686442e+01, 0);
+fails = lineout(fid, fails, 'null_peak_radius_half', rNh, 2.4663649828320295e+01, 0);
+fails = lineout(fid, fails, 'null_peak_quad_sixth', 4 * rN6 ^ 2 - 5 * Rs6 * rN6 - 6 * A6, 0, 1e-12);
+fails = lineout(fid, fails, 'null_peak_quad_half', 4 * rNh ^ 2 - 5 * Rsh * rNh - 6 * Ah, 0, 0);
+pnull = @(r, Rs, A) (c ^ 5 / (2 * G)) * (-A / r ^ 2) * sqrt(1 - (Rs + A / r) / r);
+fails = lineout(fid, fails, 'supply_null_sixth', pnull(rN6, Rs6, A6), -5.5967323357299716e51, 0);
+fails = lineout(fid, fails, 'supply_null_half', pnull(rNh, Rsh, Ah), -3.0748636696503162e51, 0);
+fails = lineout(fid, fails, 'supply_null_forty_sixth', pnull(40, Rs6, A6), -3.1808661740224099e51, 0);
+fails = lineout(fid, fails, 'supply_null_forty_half', pnull(40, Rsh, Ah), -1.7927420983775237e51, 0);
+p6 = [1, -2 * Rs6, -5 * A6, -4 * A6 ^ 2 / Rs6];
+ph = [1, -2 * Rsh, -5 * Ah, -4 * Ah ^ 2 / Rsh];
+z6 = roots(p6);
+zh = roots(ph);
+[~, i6] = max(real(z6));
+[~, ih] = max(real(zh));
+rc6 = real(z6(i6));
+rch = real(zh(ih));
+fails = lineout(fid, fails, 'coast_peak_radius_sixth', rc6, 6.4523317740912603e+01, 0);
+fails = lineout(fid, fails, 'coast_peak_radius_half', rch, 4.7871228950239384e+01, 0);
+fails = boundout(fid, fails, 'coast_cubic_sixth', abs(real(polyval(p6, rc6))), 1e-8);
+fails = boundout(fid, fails, 'coast_cubic_half', abs(real(polyval(ph, rch))), 1e-8);
+pcoast = @(r, Rs, A) (c ^ 4 / (2 * G)) * (-A / r ^ 2) * sqrt(g / ((Rs / (2 * r ^ 3) + A / r ^ 4) * 10)) * sqrt(1 - (Rs + A / r) / r);
+fails = lineout(fid, fails, 'supply_coast_sixth', pcoast(rc6, Rs6, A6), -8.8645790720056626e44, 0);
+fails = lineout(fid, fails, 'supply_coast_half', pcoast(rch, Rsh, Ah), -4.7969358278401484e44, 0);
+fails = lineout(fid, fails, 'supply_coast_forty_sixth', pcoast(40, Rs6, A6), -8.4057219422548104e44, 0);
+fails = lineout(fid, fails, 'supply_coast_forty_half', pcoast(40, Rsh, Ah), -4.7374805379126639e44, 0);
+fails = lineout(fid, fails, 'supply_ratio_sixth', pcoast(rc6, Rs6, A6) / pnull(rc6, Rs6, A6), sqrt(g / ((Rs6 / (2 * rc6 ^ 3) + A6 / rc6 ^ 4) * 10)) / c, 1e-12);
+fails = lineout(fid, fails, 'supply_ratio_half', pcoast(rch, Rsh, Ah) / pnull(rch, Rsh, Ah), sqrt(g / ((Rsh / (2 * rch ^ 3) + Ah / rch ^ 4) * 10)) / c, 1e-12);
+E6s = (c ^ 4 / (2 * G)) * (Rs6 - r0);
+Ehs = (c ^ 4 / (2 * G)) * (Rsh - r0);
+fails = lineout(fid, fails, 'energy_face_sixth', E6s / 2, -5.0427315180758600e44, 0);
+fails = lineout(fid, fails, 'energy_face_half', Ehs / 2, -3.0256389108455156e44, 0);
+fails = lineout(fid, fails, 'supply_mean_sixth', E6s / 2.1294485057269195, -4.7361854531950252e44, 0);
+fails = lineout(fid, fails, 'supply_mean_half', Ehs / 2.1647639000180656, -2.7953523345619962e44, 0);
+I6 = integral(@(s) 1 ./ ((s .^ 2 + 20) .* sqrt(3 * s .^ 2 + 110)), 0, inf);
+Kh = integral(@(s) 1 ./ ((s .^ 2 + 20) .* sqrt(s .^ 2 + 30)), 0, inf);
+fails = lineout(fid, fails, 'proper_integrand_sixth', I6, sqrt(10) * atan(sqrt(30) / 6) / 100, 1e-15);
+fails = lineout(fid, fails, 'proper_integrand_half', Kh, sqrt(2) * atan(sqrt(2) / 2) / 20, 0);
 
 fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');

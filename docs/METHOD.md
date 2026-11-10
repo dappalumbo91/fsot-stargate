@@ -437,4 +437,40 @@ because b(∞) = Rs and b(r₀) = r₀. The right-hand side equals the solve-pag
 
 The proper energy is the solve-page proper mass times the same c². The factor on one side remains −2√30 atan(√30/6) on the one-sixth mouth and −2√2 atan(√2/2) on the half-compact mouth. The stamp multiplies the float64 proper mass by c².
 
-The two-mouth potential V stays dimensionless. No conversion is applied to it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+The two-mouth potential V stays dimensionless. No conversion is applied to it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The supply is the next section.
+
+## The supply, 2026-11-10
+
+The supply page differentiates the one-side energy. With ρ 4π r² = b′ c⁴ / (2G),
+
+E(r) = (c⁴ / (2G)) (b(r) − r₀)
+
+on the interval from the throat to r. b is a function of r only, so the hold rate at fixed r is 0.
+
+Along an outward radial curve, dE/dt = (c⁴ / (2G)) b′ dr/dt. A radial null ray has dr/dt = c √(1 − b/r), so
+
+P_null = (c⁵ / (2G)) b′ √(1 − b/r).
+
+Write A = (r₀ − Rs) r₀ and N(r) = r² − Rs r − A. Then b′ = −A / r² and 1 − b/r = N/r², so the squared null sweep is proportional to N / r⁶. The numerator of the derivative of that quotient is r⁵ (−4 r² + 5 Rs r + 6 A). The positive root is
+
+r = [5 Rs + √(25 Rs² + 96 A)] / 8.
+
+The lateral-load coast has v = √(a / (κ W)) with a = 9.80665 m/s² and W = 10 m, and dr/dt = v √(1 − b/r). Therefore P_coast = P_null · v / c. Substituting κ = (Rs r + 2 A) / (2 r⁴) makes the squared coast sweep proportional to N / (r² (Rs r + 2 A)). The numerator of that derivative is −r (Rs r³ − 2 Rs² r² − 5 A Rs r − 4 A²).
+
+At r = 2 r₀ the identity b − r₀ = (Rs − r₀)/2 says the face holds half the infinite-arm side. Two faces, one on each side of the throat, sweep one infinite-arm side. The mean rate of the published crossing is that energy divided by the published ship time.
+
+κ(2 r₀) = 1/(16 r₀²). At 20 m that is 1/6400 for every Rs, so the face speed √(a / (κ W)) is the same on both mouths.
+
+The substitution already on the solve page evaluates the integrand SymPy left unevaluated. √(3 s² + 110) = √3 √(s² + 110/3), and the sinh reduction of the remaining integral produces
+
+∫_0^∞ ds / ((s² + 20) √(3 s² + 110)) = √10 atan(√30/6) / 100.
+
+The same reduction with Rs = 10 produces
+
+∫_0^∞ ds / ((s² + 20) √(s² + 30)) = √2 atan(√2/2) / 20.
+
+The ship-time integrand stays the 400000-step trapezoid. Its reduced form is
+
+√(W / (2 a)) ∫ √(Rs r + 2 A) / (r √(r² − Rs r − A)) dr,
+
+and the published values of that definite integral stay 2.1294485057269195 s and 2.1647639000180656 s. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

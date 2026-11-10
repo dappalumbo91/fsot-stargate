@@ -147,7 +147,11 @@ The two-mouth law is the downhill gradient of V = γ/2 (S₁ − E₁)² + γ/2 
 
 ## The energy
 
-The coordinate integral of the shape density is the energy. On one side it equals the exotic mass times c², which is −5 M c² on the one-sixth mouth and −1 M c² on the half-compact mouth. Two mouths of one kind are −4.0341852144606874×10⁴⁵ J and −2.4205111286764128×10⁴⁵ J. The proper-volume inventory on those two mouths is −6.5394043890937331×10⁴⁵ J and −4.2137213896076594×10⁴⁵ J. Lean 4.31.0 accepted the six coordinate energies. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The same reading, for a general reader and for a scientist, is in [docs/PAPER.md](docs/PAPER.md).
+The coordinate integral of the shape density is the energy. On one side it equals the exotic mass times c², which is −5 M c² on the one-sixth mouth and −1 M c² on the half-compact mouth. Two mouths of one kind are −4.0341852144606874×10⁴⁵ J and −2.4205111286764128×10⁴⁵ J. The proper-volume inventory on those two mouths is −6.5394043890937331×10⁴⁵ J and −4.2137213896076594×10⁴⁵ J. Lean 4.31.0 accepted the six coordinate energies. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The same reading, for a general reader and for a scientist, is in [docs/PAPER.md](docs/PAPER.md). The supply is the next section.
+
+## The supply
+
+The hold rate of the shape is 0, because the energy at a fixed radius does not change with time. Along an outward null ray the sweep rate peaks at −5.5967323357299716×10⁵¹ W on the one-sixth mouth and −3.0748636696503162×10⁵¹ W on the half-compact mouth. Along the lateral-load coast the peaks are −8.8645790720056626×10⁴⁴ W and −4.7969358278401484×10⁴⁴ W. The mean rate over the published 40 m crossing is −4.7361854531950252×10⁴⁴ W and −2.7953523345619962×10⁴⁴ W. The proper-mass integrand equals √10 atan(√30/6)/100 and √2 atan(√2/2)/20. Lean 4.31.0 accepted the face identity, the 40 m lateral coefficient, and the two critical-point polynomials. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

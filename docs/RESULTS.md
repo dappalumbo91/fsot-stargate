@@ -1117,7 +1117,38 @@ The proper-volume mass on the solve page, multiplied by the same c², is the pro
 | One mouth | −3.2697021945468666×10⁴⁵ J | −2.1068606948038297×10⁴⁵ J |
 | Two mouths | −6.5394043890937331×10⁴⁵ J | −4.2137213896076594×10⁴⁵ J |
 
-The two-mouth potential stays in its own units. Its settled value remains 0.08793387074603902. The scalar shutdown remains 3.888065755801519×10⁻⁶ s. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+The two-mouth potential stays in its own units. Its settled value remains 0.08793387074603902. The scalar shutdown remains 3.888065755801519×10⁻⁶ s. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The supply is the next section.
+
+## The supply, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+On one side, E(r) = (c⁴ / (2G)) (b(r) − r₀). The shape does not depend on time, so the hold rate at fixed radius is 0. An outward radial curve sweeps that energy at (c⁴ / (2G)) b′(r) dr/dt. On a null ray, dr/dt = c √(1 − b/r). On the lateral-load coast, dr/dt = v(r) √(1 − b/r), with v(r) = √(9.80665 / (κ(r) · 10 m)), so the coast rate is the null rate times v(r)/c.
+
+The null rate peaks where 4 r² − 5 Rs r − 6 (r₀ − Rs) r₀ = 0. The coast rate peaks where Rs r³ − 2 Rs² r² − 5 A Rs r − 4 A² = 0, with A = (r₀ − Rs) r₀. The signed rates below are those derivatives. The supply that meets the sweep is the positive magnitude.
+
+| Station | One-sixth | Half-compact |
+| --- | ---: | ---: |
+| Null peak radius | 24.540854963686442 m | 24.663649828320295 m |
+| Null peak rate | −5.5967323357299716×10⁵¹ W | −3.0748636696503162×10⁵¹ W |
+| Null rate at 40 m | −3.1808661740224099×10⁵¹ W | −1.7927420983775237×10⁵¹ W |
+| Coast peak radius | 64.523317740912603 m | 47.871228950239384 m |
+| Coast peak rate | −8.8645790720056626×10⁴⁴ W | −4.7969358278401484×10⁴⁴ W |
+| Coast rate at 40 m | −8.4057219422548104×10⁴⁴ W | −4.7374805379126639×10⁴⁴ W |
+
+At r = 40 m, b(r) − r₀ = (Rs − r₀)/2, so each side out to the face holds half the infinite-arm energy. The exact halves are −100970108913281127865797509326896200000000000000000/200229 J and −20194021782656225573159501865379240000000000000000/66743 J. The float64 halves are −5.0427315180758600×10⁴⁴ J and −3.0256389108455156×10⁴⁴ J. A through-crossing of the two 40 m faces sweeps one infinite-arm side. Dividing that energy by the published ship time gives the mean rate, −4.7361854531950252×10⁴⁴ W and −2.7953523345619962×10⁴⁴ W.
+
+At r = 40 m, κ = 1/6400 on both mouths. The coast speed there is 79.222824993810960 m/s on both. The one-sixth float of the face ratio differs from 1/2 by 1.11×10⁻¹⁶, and the one-sixth float of κ differs from 1/6400 by 2.71×10⁻²⁰. The half-compact floats match.
+
+The integrand SymPy returned unevaluated now has a value. From 0 to infinity,
+
+∫ ds / ((s² + 20) √(3 s² + 110)) = √10 atan(√30/6) / 100,
+
+and
+
+∫ ds / ((s² + 20) √(s² + 30)) = √2 atan(√2/2) / 20.
+
+The adaptive quadrature differs from the one-sixth value by −3.469×10⁻¹⁸ and from the half-compact value by 0. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 
