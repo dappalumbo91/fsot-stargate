@@ -247,6 +247,27 @@ Outside about 3 AU, Ulysses and Galileo counted interstellar grains from 10⁻¹
 
 This is kinematics and a dust column. It is not a Warp Factory grid. The Eulerian light shell remains the one-sixth bend window at 0.04c.
 
+Dated 2026-11-09. The same three coasts, and the same 10 tonne reflector. Hohmann and the parabola are the coasts already printed. The powered rows are the total trips, the crossing plus the two burns.
+
+| Shell | Mass | Clean | Breaks |
+| --- | ---: | ---: | ---: |
+| Condensate body, 9.81 km | 3.303×10³⁰ kg | 0.10c | 0.11c, outer wall near 7.7 km |
+| Half-compact wall, 20 m | 6.73×10²⁷ kg, 3.55 Jupiter | 0.10c | 0.11c at 15.7 m |
+| One-sixth window, 20 m | 2.244×10²⁷ kg, 1.182 Jupiter | 0.04c | 0.06c at 16.14 m |
+
+The late tent stays the failed drawing of that light window. It breaks at 5.46 m.
+
+| Path | Mars | Jupiter | Neptune | Mars energy | Jupiter energy | Neptune energy |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Hohmann coast | 259 days | 998 days | 11,242 days | 8.57×10¹⁵ J | 3.595×10¹⁶ J | 2.316×10¹⁶ J |
+| Parabola | 69.9 days | 405 days | 4,764 days | 3.925×10¹⁶ J | 4.292×10¹⁶ J | 2.566×10¹⁶ J |
+| 1 TW | 8.06 days | 22.9 days | 59.6 days | 6.963×10¹⁷ J | 1.976×10¹⁸ J | 5.147×10¹⁸ J |
+| 15 TW | 2.06 days | 5.83 days | 15.3 days | 2.666×10¹⁸ J | 7.555×10¹⁸ J | 1.985×10¹⁹ J |
+| 63 TW plant | 1.00 day | 2.84 days | 7.47 days | 5.449×10¹⁸ J | 1.544×10¹⁹ J | 4.064×10¹⁹ J |
+| One-day plant | 1.00 day, 63 TW | 1.00 day, 507 TW | 1.00 day, 3,745 TW | 5.449×10¹⁸ J | 4.377×10¹⁹ J | 3.236×10²⁰ J |
+
+The sheet's matched return mirror has to be on station before the fast ship leaves. On the parabola that delivery is 69.9 days for the 34.7 m Mars mirror, 405 days for the 279 m Jupiter mirror, and 4,764 days for the 1.93 km Neptune mirror. The Hohmann coasts are the slower delivery, 259 days, 998 days, and 11,242 days. The sheet subtends 3.0, 0.37, and 0.053 milliarcseconds. Earth's rotation moves the sky at 15 arcseconds a second. Dividing that rate by those angles, one untracked second on the ground walks the beam by 5,000 sheet-widths at Mars, 4.05×10⁴ at Jupiter, and 2.83×10⁵ at Neptune. The optic takes that motion out and leaves the residual inside the milliarcsecond. The 5.10×10⁵ peak-mass grains on the sheet are 0.51 grains on each square metre across the Mars gap. The same column is 0.51 per square metre on the 100 m sail. At the 63 TW Mars peak each of those grains carries 1.10×10⁴ J. This is kinematics. It is not a Warp Factory grid. The Eulerian light shell remains the one-sixth bend window at 0.04c.
+
 ## Audit of the 20 m shell
 
 Log `data/dial_audit_bar.txt`, dated 2026-10-29. Same mix, same N = 120 grid. A fresh 0.10c run at compactness 1/2 reproduces the line above: energy 8.2868×10²⁷ kg, dominant ratio 1.92×10⁻⁵ in the exterior at 26.47 m, shift 0.10, clean. With the shift off, compactness 1/2 is clean at energy 8.3144×10²⁷ kg, dominant 1.95×10⁻⁵, and compactness 1/3 is clean at energy 5.1495×10²⁷ kg, dominant 1.71×10⁻⁵. Both parked violations sit at 26.47 m. The smoothed density on this grid ends at 26.57 m. The check is written out in [AUDIT.md](AUDIT.md).

@@ -12,6 +12,14 @@ At that same 20 m outer radius the FSOT wall is clean at **0.10c** when the comp
 
 The condensate body, 1.40 km to 9.81 km, is the shell at the pin density. It is clean at **0.10c** on the 166.8 m grid and on the 83.4 m grid once the flat cavity is given its continuum value of zero. That body is 491 times larger in outer radius, 736 times heavier, and about 1.8×10⁵ times less dense than the published shell. The 20 m FSOT wall is the other way: about 1.3 times the published density. The pin does not fill 20 m.
 
+| Shell | Mass | Clean | Breaks |
+| --- | ---: | ---: | ---: |
+| Condensate body, 9.81 km | 3.303×10³⁰ kg | 0.10c | 0.11c, outer wall near 7.7 km |
+| Half-compact wall, 20 m | 6.73×10²⁷ kg, 3.55 Jupiter | 0.10c | 0.11c at 15.7 m |
+| One-sixth window, 20 m | 2.244×10²⁷ kg, 1.182 Jupiter | 0.04c | 0.06c at 16.14 m |
+
+The 10 tonne reflector is a separate ledger. The trip scorecard is with the beam.
+
 The raw 83.4 m difference misses that bar on four samples at 59 m. Those samples sit inside a ball, r < 87.55 m, where the constructed metric is exactly flat, so the continuum stress-energy is zero. The fourth-order stencil reaches outside the ball and reports a false negative. Setting those four cells back to zero puts the 83.4 m score under the bar. The worst remaining weak ratio is 4.006×10⁻⁷, in the exterior mass skirt. The wall is quiet on both grids. This is a simulation of a coast at constant speed.
 
 ![Eulerian speeds](figures/speed_limit.png)
@@ -147,6 +155,19 @@ Holding the beam on across the gap makes the trip. A 3.226 km/s burn leaves the 
 The 63 TW plant is the one-day Mars crossing. On that plant the total trips are 1.00 day, 2.84 days, and 7.47 days. A one-day trip takes 507 TW at Jupiter and 3,745 TW at Neptune. The Neptune day reaches 0.318c. These figures are kinematics. They are not a Warp Factory grid.
 
 The far-end aperture at 1 µm is 69.4 m, 557 m, and 3.87 km on the 1.13 km sheet, and 784 m, 6.29 km, and 43.7 km on a 100 m sail. The sheet runs at 1,026 K on the 63 TW plant at the published absorption. A matched return mirror is 34.7 m, 279 m, and 1.93 km. At the 1 AU dust density the sheet sweeps 7.54 g across the Mars gap. A 6.7×10⁻⁶ g grain at the 63 TW peaks carries 1.10×10⁴ J, 8.84×10⁴ J, and 6.12×10⁵ J. These figures are kinematics. They are not a Warp Factory grid.
+
+Hohmann and the parabola are the coasts already printed. The powered rows are the total trips, the crossing plus the two burns. The ship is 10 tonnes.
+
+| Path | Mars | Jupiter | Neptune | Mars energy | Jupiter energy | Neptune energy |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Hohmann coast | 259 days | 998 days | 11,242 days | 8.57×10¹⁵ J | 3.595×10¹⁶ J | 2.316×10¹⁶ J |
+| Parabola | 69.9 days | 405 days | 4,764 days | 3.925×10¹⁶ J | 4.292×10¹⁶ J | 2.566×10¹⁶ J |
+| 1 TW | 8.06 days | 22.9 days | 59.6 days | 6.963×10¹⁷ J | 1.976×10¹⁸ J | 5.147×10¹⁸ J |
+| 15 TW | 2.06 days | 5.83 days | 15.3 days | 2.666×10¹⁸ J | 7.555×10¹⁸ J | 1.985×10¹⁹ J |
+| 63 TW plant | 1.00 day | 2.84 days | 7.47 days | 5.449×10¹⁸ J | 1.544×10¹⁹ J | 4.064×10¹⁹ J |
+| One-day plant | 1.00 day, 63 TW | 1.00 day, 507 TW | 1.00 day, 3,745 TW | 5.449×10¹⁸ J | 4.377×10¹⁹ J | 3.236×10²⁰ J |
+
+The sheet's matched return mirror has to be on station before the fast ship leaves. On the parabola that delivery is 69.9 days for the 34.7 m Mars mirror, 405 days for the 279 m Jupiter mirror, and 4,764 days for the 1.93 km Neptune mirror. The Hohmann coasts are the slower delivery, 259 days, 998 days, and 11,242 days. The sheet subtends 3.0, 0.37, and 0.053 milliarcseconds. Earth's rotation moves the sky at 15 arcseconds a second. One untracked second on the ground walks the beam by 5,000 sheet-widths at Mars, 4.05×10⁴ at Jupiter, and 2.83×10⁵ at Neptune. The optic takes that motion out and leaves the residual inside the milliarcsecond. The 5.10×10⁵ peak-mass grains on the sheet are 0.51 grains on each square metre across the Mars gap. At the 63 TW Mars peak each of those grains carries 1.10×10⁴ J. These figures are kinematics. They are not a Warp Factory grid.
 
 A film at 10 g/m² that absorbs one part in a thousand, radiates from both faces with emissivity 0.5, and is held at 600 K can take 7.35×10⁶ W/m². Ten tonnes of that film is 1.13 km across. With another 10 tonnes of ship the acceleration is 0.25 g on 7.35 TW. Half the way up and half the way down: peak 30.7 km/s, 7.0 hours. That film is 0.25 g, so it stays on the pad. From the same 200 km orbit its spiral takes 46 minutes and 2.030×10¹⁶ J. The 1 µm aperture that fills the sheet at lunar distance is 0.34 m. Both beams deliver 1.84×10¹⁷ J. At 100 W per kilogram of station, 7.35 TW is 7.3×10⁷ tonnes of hardware on the ground. One g at 600 K on this loading, with the same 2E/c, needs absorption 2.50×10⁻⁴. These sail figures are a ledger from the scored mass and from radiation pressure. They are not a Warp Factory grid. The Eulerian speeds above are unchanged. The 0.10c shell remains compactness 1/2.
 
