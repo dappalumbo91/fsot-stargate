@@ -310,4 +310,10 @@ Ten same-generation pairs have equal scalars and flux 0. Particle physics with q
 
 `coupled_equilibrium` uses seven steps of 0.022567101748263627. Cosmology starts at −0.5023773181761478 and finishes at −0.4820922399905892. Particle physics starts at 0.9501974701670142 and finishes at 0.9395048551977233. The fixed point of the same law is −0.2606345553608392 and 0.8700275395267406. The residual at that fixed point is roundoff. High-energy physics finishes at 0.8911164249970055, above its start, and its fixed point is 0.884590585428397, below its start.
 
-The gravity–electroweak coupling is 0.0426152645973651. `matter_unobserved_S` on particle physics and on quantum mechanics returns −0.6456729548144859, and that value is not a sector equilibrium. The observed flags after the run are the flags the fold started with. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+The gravity–electroweak coupling is 0.0426152645973651. `matter_unobserved_S` on particle physics and on quantum mechanics returns −0.6456729548144859, and that value is not a sector equilibrium. The observed flags after the run are the flags the fold started with. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The map is the next section.
+
+## The map, 2026-11-10
+
+ell = 0.8573494832025231 and R₂ = 20 m give the cavity 2.8530103359495373 m. The half-compact horizon is 10 m. The one-sixth horizon is 3.3333333333333335 m. The cavity lies 7.146989664050462 m inside the first and 0.48032299738379614 m inside the second. The formula masses are 6.732954607500545×10²⁷ kg and 2.2443182025001816×10²⁷ kg, which round to the printed mouths. The cavity is not adopted as a throat.
+
+c = 2.99792458×10⁸ m/s. One pin-time unit read as R₂/c is 6.671281903963041×10⁻⁸ s. The vendor interval becomes 1.0538604826265869×10⁻⁸ s. The scalar e-fold becomes 1.5585525173608007×10⁻⁷ s. No wormhole metric is scored. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.

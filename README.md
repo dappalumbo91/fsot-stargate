@@ -69,7 +69,13 @@ A generation that seats a specimen beside a bulk medium is seating the open eval
 
 The pin's integrator steps eight sectors on fifteen edges for the vendor's seven steps, pin time 0.1579697122378454. Each sector starts on its own domain scalar. Cosmology rises by 0.020285078185558636. Particle physics falls by 0.010692614969290859. The fixed point of the same law puts cosmology at −0.2606345553608392 and particle physics at 0.8700275395267406. The seven steps stop short of that fixed point.
 
-The closed evaluation −0.6456729548144859 is the unobserved dual of particle physics and of quantum mechanics. No sector equilibrium is that number. The loop writes the eight scalars. It does not write the observed bit. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
+The closed evaluation −0.6456729548144859 is the unobserved dual of particle physics and of quantum mechanics. No sector equilibrium is that number. The loop writes the eight scalars. It does not write the observed bit. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored. The map is the next section.
+
+## The map
+
+Both mouths are the 20 m shells already on this ledger. The shell formula puts the cavity at R₂ (1 − ell) = 2.8530103359495373 m. The half-compact horizon is 10 m. The one-sixth horizon is 3.3333333333333335 m. The cavity lies 7.146989664050462 m inside the half-compact horizon and 0.48032299738379614 m inside the one-sixth horizon. A throat at that cavity would sit inside the horizon of either mouth. It is not adopted.
+
+One pin-time unit, read as the light time of that 20 m mouth, is 6.671281903963041×10⁻⁸ s. The vendor's seven steps are then 1.0538604826265869×10⁻⁸ s. One scalar e-fold is 1.5585525173608007×10⁻⁷ s. The converter is the parent's c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No wormhole metric is scored.
 
 ## The parent shell
 

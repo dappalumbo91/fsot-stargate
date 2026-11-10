@@ -511,7 +511,44 @@ Cosmology is the dark sector. The other seven are observed. At the start the rel
 
 The fixed point is the same linear law with the rate set to 0. Substituting it back leaves roundoff. High-energy physics finishes the seven steps above its start and has its fixed point below its start. The vendor stops at seven steps.
 
-`matter_unobserved_S` on particle physics and on quantum mechanics returns −0.6456729548144859, the closed evaluation at depth 5. No sector equilibrium is that number. Cosmology's unobserved dual is its own start, because the fold already has that sector closed. The loop's state is the eight scalars. Reading the domains after the run returns the same observed flags the fold started with. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+`matter_unobserved_S` on particle physics and on quantum mechanics returns −0.6456729548144859, the closed evaluation at depth 5. No sector equilibrium is that number. Cosmology's unobserved dual is its own start, because the fold already has that sector closed. The loop's state is the eight scalars. Reading the domains after the run returns the same observed flags the fold started with. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The map is the next section.
+
+## The map, 2026-11-10
+
+The mouth already has an outer radius, and the shell formula already has an inner edge. The chain is in [METHOD.md](METHOD.md). Both published mouths use R₂ = 20 m. ell = 0.8573494832025231, so the cavity is R₂ (1 − ell) = 2.8530103359495373 m. Compactness C puts the horizon at C R₂.
+
+| Reading | Value |
+| --- | ---: |
+| Cavity | 2.8530103359495373 m |
+| Half-compact horizon | 10 m |
+| One-sixth horizon | 3.3333333333333335 m |
+| Cavity inside the half-compact horizon | 7.146989664050462 m |
+| Cavity inside the one-sixth horizon | 0.48032299738379614 m |
+| Formula mass, compactness 1/2 | 6.732954607500545×10²⁷ kg |
+| Formula mass, compactness 1/6 | 2.2443182025001816×10²⁷ kg |
+
+The formula masses round to the printed mouths, 6.73×10²⁷ kg and 2.244×10²⁷ kg. Horizons from those printed kilograms are 9.995611722233722 m and 3.332860728780457 m. The cavity lies inside both. A throat placed on the cavity is inside the horizon of either mouth. The placement is not adopted.
+
+The parent's c is 2.99792458×10⁸ m/s. One pin-time unit is read as the light time of the 20 m mouth, R₂/c = 6.671281903963041×10⁻⁸ s.
+
+| Pin interval | Pin time | Seconds |
+| --- | ---: | ---: |
+| One vendor step | 0.022567101748263627 | 1.5055149751808385×10⁻⁹ |
+| Seven steps | 0.1579697122378454 | 1.0538604826265869×10⁻⁸ |
+| Shaped e-fold | 1.1681057252542053 | 7.792762586804004×10⁻⁸ |
+| Depth-5 difference e-fold | 1.5994428167824022 | 1.0670333920024113×10⁻⁷ |
+| Two-quantum peak | 1.7835832717000715 | 1.1898786804703883×10⁻⁷ |
+| Scalar e-fold | 2.3362114505084106 | 1.5585525173608007×10⁻⁷ |
+
+| Length | Light time |
+| --- | ---: |
+| 20 m mouth | 6.671281903963041×10⁻⁸ s |
+| Wall, 17.146989664050462 m | 5.7196200926610577×10⁻⁸ s |
+| Cavity | 9.516618113019832×10⁻⁹ s |
+| Half-compact horizon | 3.3356409519815205×10⁻⁸ s |
+| One-sixth horizon | 1.1118803173271735×10⁻⁸ s |
+
+No shape function is introduced. The cavity is not adopted as a throat. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

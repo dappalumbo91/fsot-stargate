@@ -230,3 +230,13 @@ with γ = 0.4280434460598068. E_i is `domain_scalar` of the sector's domain. The
 Forward Euler on those seven steps returns the moves in the table. Cosmology's initial rate is 0.13345450567211478. Thermodynamics' initial rate is −0.07374981045099419. The fixed point is the same linear system with every rate set to 0. Its residual is roundoff. High-energy physics moves to 0.8911164249970055 in the seven steps, and its fixed point is 0.884590585428397.
 
 `matter_unobserved_S("Particle_Physics")` and `matter_unobserved_S("Quantum_Mechanics")` return −0.6456729548144859. `coupled_equilibrium` does not call that function. The observed flags are read from `DOMAINS` and are not entries in the integrated state. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The map, 2026-11-10
+
+The map page uses the mouth radius already on this ledger and the shell relation already in this file. R₂ = 20 m. ell = sqrt(κ/γ) = 0.8573494832025231. The cavity is R₂ (1 − ell) = 2.8530103359495373 m. The wall thickness is R₂ ell = 17.146989664050462 m.
+
+Compactness C means M = C R₂ c² / (2 G), so the horizon Rs = C R₂. The constants are the Warp Factory pair already printed above, c = 2.99792458×10⁸ m/s and G = 6.67430×10⁻¹¹ m³ kg⁻¹ s⁻². Compactness 1/2 gives Rs = 10 m and M = 6.732954607500545×10²⁷ kg. Compactness 1/6 gives Rs = 3.3333333333333335 m and M = 2.2443182025001816×10²⁷ kg. The printed mouths are 6.73×10²⁷ kg and 2.244×10²⁷ kg. Their horizons, 2 G M / c², are 9.995611722233722 m and 3.332860728780457 m.
+
+The cavity minus the half-compact horizon is −7.146989664050462 m. The cavity minus the one-sixth horizon is −0.48032299738379614 m. The cavity is inside both horizons. No shape function is introduced, and the cavity is not adopted as a throat.
+
+One pin-time unit is read as R₂/c = 6.671281903963041×10⁻⁸ s. A pin interval t becomes t R₂/c. The vendor interval 0.1579697122378454 becomes 1.0538604826265869×10⁻⁸ s. The scalar e-fold 2.3362114505084106 becomes 1.5585525173608007×10⁻⁷ s. The scalar law does not contain c. The converter is the parent's. No double-trace coupling is introduced. The reading is in [RESULTS.md](RESULTS.md).
