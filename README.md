@@ -75,7 +75,11 @@ The closed evaluation −0.6456729548144859 is the unobserved dual of particle p
 
 Both mouths are the 20 m shells already on this ledger. The shell formula puts the cavity at R₂ (1 − ell) = 2.8530103359495373 m. The half-compact horizon is 10 m. The one-sixth horizon is 3.3333333333333335 m. The cavity lies 7.146989664050462 m inside the half-compact horizon and 0.48032299738379614 m inside the one-sixth horizon. A throat at that cavity would sit inside the horizon of either mouth. It is not adopted.
 
-One pin-time unit, read as the light time of that 20 m mouth, is 6.671281903963041×10⁻⁸ s. The vendor's seven steps are then 1.0538604826265869×10⁻⁸ s. One scalar e-fold is 1.5585525173608007×10⁻⁷ s. The converter is the parent's c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No wormhole metric is scored.
+One pin-time unit, read as the light time of that 20 m mouth, is 6.671281903963041×10⁻⁸ s. The vendor's seven steps are then 1.0538604826265869×10⁻⁸ s. One scalar e-fold is 1.5585525173608007×10⁻⁷ s. The converter is the parent's c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No wormhole metric is scored. The shape is the next section.
+
+## The shape
+
+The throat is the 20 m mouth. The redshift is 0. The shape is b(r) = Rs + (20 m − Rs) × 20 m / r, and Rs is the horizon of that mouth, 3.3333333333333335 m or 10 m. The slope at the throat is −5/6 on the one-sixth mouth and −1/2 on the half-compact mouth. Both lie under 1, so the flare-out holds. From 20 m out to 40 m the proper distance is 35.94488696565487 m on the one-sixth mouth and 39.077758146657835 m on the half-compact mouth. Light takes 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s over those distances. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
 
 ## The parent shell
 

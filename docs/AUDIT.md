@@ -316,4 +316,8 @@ The gravity–electroweak coupling is 0.0426152645973651. `matter_unobserved_S` 
 
 ell = 0.8573494832025231 and R₂ = 20 m give the cavity 2.8530103359495373 m. The half-compact horizon is 10 m. The one-sixth horizon is 3.3333333333333335 m. The cavity lies 7.146989664050462 m inside the first and 0.48032299738379614 m inside the second. The formula masses are 6.732954607500545×10²⁷ kg and 2.2443182025001816×10²⁷ kg, which round to the printed mouths. The cavity is not adopted as a throat.
 
-c = 2.99792458×10⁸ m/s. One pin-time unit read as R₂/c is 6.671281903963041×10⁻⁸ s. The vendor interval becomes 1.0538604826265869×10⁻⁸ s. The scalar e-fold becomes 1.5585525173608007×10⁻⁷ s. No wormhole metric is scored. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+c = 2.99792458×10⁸ m/s. One pin-time unit read as R₂/c is 6.671281903963041×10⁻⁸ s. The vendor interval becomes 1.0538604826265869×10⁻⁸ s. The scalar e-fold becomes 1.5585525173608007×10⁻⁷ s. No wormhole metric is scored. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The shape is the next section.
+
+## The shape, 2026-11-10
+
+The throat radius is 20 m and the redshift is 0. b(r) = Rs + (20 m − Rs) × 20 m / r, with Rs = 3.3333333333333335 m or 10 m. The throat slopes are −5/6 and −1/2. The flare-out values are 0.04583333333333333 m⁻¹ and 0.0375 m⁻¹. The throat energy densities are −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. The tension is 1.2038634716806056×10⁴⁰ Pa. ρ + p_r is negative on both mouths. The proper distance from 20 m to 40 m is 35.94488696565487 m and 39.077758146657835 m, and the light times are 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.

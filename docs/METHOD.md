@@ -240,3 +240,23 @@ Compactness C means M = C R₂ c² / (2 G), so the horizon Rs = C R₂. The cons
 The cavity minus the half-compact horizon is −7.146989664050462 m. The cavity minus the one-sixth horizon is −0.48032299738379614 m. The cavity is inside both horizons. No shape function is introduced, and the cavity is not adopted as a throat.
 
 One pin-time unit is read as R₂/c = 6.671281903963041×10⁻⁸ s. A pin interval t becomes t R₂/c. The vendor interval 0.1579697122378454 becomes 1.0538604826265869×10⁻⁸ s. The scalar e-fold 2.3362114505084106 becomes 1.5585525173608007×10⁻⁷ s. The scalar law does not contain c. The converter is the parent's. No double-trace coupling is introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The shape, 2026-11-10
+
+The shape page sets the throat at the mouth's outer radius, r₀ = 20 m, the published radius that lies outside both horizons. The redshift function is Φ = 0. The shape is the single inverse power that equals r₀ at the throat and Rs at infinity:
+
+b(r) = Rs + (r₀ − Rs) r₀ / r.
+
+Rs = r₀/6 on the one-sixth mouth and Rs = r₀/2 on the half-compact mouth. Then b(r₀) = r₀ and b'(r) = −(r₀ − Rs) r₀ / r², so b'(r₀) = −5/6 and −1/2. The flare-out (b − b' r)/(2 b²) at the throat is (1 − b')/(2 r₀), which is 11/240 m⁻¹ and 0.0375 m⁻¹. For r > r₀, r − b(r) is positive because its derivative at the throat is positive and its value there is 0.
+
+With Φ = 0 the Einstein reading quoted by Morris and Thorne gives, at the throat,
+
+ρ = b' c⁴ / (8 π G r₀²), τ = c⁴ / (8 π G r₀²).
+
+c and G are the Warp Factory pair already printed. The one-sixth energy density is −1.003219559733838×10⁴⁰ Pa and the half-compact energy density is −6.019317358403028×10³⁹ Pa. The tension is 1.2038634716806056×10⁴⁰ Pa on both. ρ + p_r = ρ − τ is −2.2070830314144437×10⁴⁰ Pa and −1.8057952075209085×10⁴⁰ Pa. The exoticity (τ − ρ)/|ρ| is 11/5 and 3.
+
+The proper radial distance from the throat to coordinate radius r₀ U is r₀ times
+
+sqrt((U − a)² − d²) + a ln( (U − a + sqrt((U − a)² − d²)) / d ),
+
+with a = Rs/(2 r₀) and d = 1 − a. From 20 m to 40 m that distance is 35.94488696565487 m and 39.077758146657835 m. With Φ = 0 the coordinate light time of the same segment is that distance over c, 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s. The reading is in [RESULTS.md](RESULTS.md).

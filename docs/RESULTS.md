@@ -548,7 +548,31 @@ The parent's c is 2.99792458×10⁸ m/s. One pin-time unit is read as the light 
 | Half-compact horizon | 3.3356409519815205×10⁻⁸ s |
 | One-sixth horizon | 1.1118803173271735×10⁻⁸ s |
 
-No shape function is introduced. The cavity is not adopted as a throat. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+No shape function is introduced. The cavity is not adopted as a throat. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The shape is the next section.
+
+## The shape, 2026-11-10
+
+The throat is the outer radius of the mouth, 20 m. That radius lies outside both horizons. The redshift function is 0. The shape that meets the throat and the mouth horizon with one inverse power is
+
+b(r) = Rs + (20 m − Rs) × 20 m / r.
+
+Rs is 3.3333333333333335 m on the one-sixth mouth and 10 m on the half-compact mouth. The chain is in [METHOD.md](METHOD.md). The metric is
+
+ds² = −c² dt² + dr² / (1 − b(r)/r) + r² dΩ².
+
+| Reading | One-sixth mouth | Half-compact mouth |
+| --- | ---: | ---: |
+| Slope at the throat | −5/6 | −1/2 |
+| Flare-out, (1 − b')/(2 r₀) | 0.04583333333333333 m⁻¹ | 0.0375 m⁻¹ |
+| Exoticity (τ − ρ) / abs(ρ) | 11/5 | 3 |
+| Energy density | −1.003219559733838×10⁴⁰ Pa | −6.019317358403028×10³⁹ Pa |
+| Tension | 1.2038634716806056×10⁴⁰ Pa | 1.2038634716806056×10⁴⁰ Pa |
+| ρ + p_r | −2.2070830314144437×10⁴⁰ Pa | −1.8057952075209085×10⁴⁰ Pa |
+| Mass density | −1.1162322993719416×10²³ kg/m³ | −6.697393796231649×10²² kg/m³ |
+| Proper distance, 20 m to 40 m | 35.94488696565487 m | 39.077758146657835 m |
+| Light time of that distance | 1.1989923697698516×10⁻⁷ s | 1.3034937038562135×10⁻⁷ s |
+
+b(20 m) = 20 m. Far out, b approaches Rs, so the mass is the mouth mass. For r > 20 m the shape stays under r. The flare-out is positive on both mouths. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require the radial tension to exceed the energy density at a flare-out. The throat energy density is negative, and ρ + p_r is negative, on both mouths. The proper distance from the throat to twice that radius is finite, and so is the light time. The integral out to infinity is the light time of an asymptotically flat line. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 
