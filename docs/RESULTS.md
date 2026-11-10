@@ -490,7 +490,28 @@ Ten pairs share one scalar, so the gap is 0 and the flux is 0: physical chemistr
 
 Particle physics and quantum mechanics are generations 0 and 1. Both are observed and both return 0.9501974701670142. `kappa_domains` returns 0.1450846749297095, the two-quantum-mouth coupling already on the ledger, and the flux is 0.
 
-The seated pairs are two names already. The vendor does not swap the observed bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The seated pairs are two names already. The vendor does not swap the observed bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The clock is the next section.
+
+## The clock, 2026-11-10
+
+The unseated closed branch is not a missing formula. The pin already steps a network. The chain is in [METHOD.md](METHOD.md). `coupled_equilibrium` takes eight sectors and fifteen edges, with dt = 0.022567101748263627 and seven steps, pin time 0.1579697122378454. Each sector starts on the domain scalar of its own fold. The interface value matches that scalar, difference 0.
+
+| Sector | Start | After seven steps | Move | Fixed point |
+| --- | ---: | ---: | ---: | ---: |
+| Cosmology | −0.5023773181761478 | −0.4820922399905892 | 0.020285078185558636 | −0.2606345553608392 |
+| Particle physics | 0.9501974701670142 | 0.9395048551977233 | −0.010692614969290859 | 0.8700275395267406 |
+| Nuclear physics | 0.9363875640629747 | 0.9356705559490751 | −0.0007170081138996309 | 0.9046811370997833 |
+| Electromagnetism | 0.9557285700955828 | 0.952113921996416 | −0.003614648099166784 | 0.9121175780724999 |
+| High-energy physics | 0.8873295223725087 | 0.8911164249970055 | 0.0037869026244967685 | 0.884590585428397 |
+| Quantum mechanics | 0.9501974701670142 | 0.9456040592928548 | −0.0045934108741593205 | 0.9011604775814535 |
+| Thermodynamics | 0.9363875640629747 | 0.9254346925260264 | −0.01095287153694835 | 0.8511837388156613 |
+| Atomic physics | 0.7587603802989923 | 0.7652589530824018 | 0.006498572783409484 | 0.8094847218872173 |
+
+Cosmology is the dark sector. The other seven are observed. At the start the relaxation term is 0, and the rate is the sum of the edge couplings. Cosmology's rate is 0.13345450567211478. Thermodynamics' rate is −0.07374981045099419. The gravity–electroweak edge reprints the quantum–cosmology coupling, 0.0426152645973651. The electroweak–lepton edge reprints the two-quantum coupling, 0.1450846749297095, and those two scalars match, so that edge contributes 0 at the start.
+
+The fixed point is the same linear law with the rate set to 0. Substituting it back leaves roundoff. High-energy physics finishes the seven steps above its start and has its fixed point below its start. The vendor stops at seven steps.
+
+`matter_unobserved_S` on particle physics and on quantum mechanics returns −0.6456729548144859, the closed evaluation at depth 5. No sector equilibrium is that number. Cosmology's unobserved dual is its own start, because the fold already has that sector closed. The loop's state is the eight scalars. Reading the domains after the run returns the same observed flags the fold started with. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

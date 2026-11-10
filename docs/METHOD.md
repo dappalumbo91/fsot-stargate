@@ -218,3 +218,15 @@ At depth 12, `domain_scalar("Thermodynamics")` and `domain_scalar("Nuclear_Physi
 `domain_scalar("High_Energy_Physics")` is 0.8873295223725087 and `domain_scalar("Atomic_Physics")` is 0.7587603802989923. Both are observed. The looks are 0.9511450936457113 and 0.8652559794322651, and the hits are 1 and 0. The flux from high-energy physics toward atomic physics is 0.009239275123069976.
 
 `kappa_domains("Particle_Physics", "Quantum_Mechanics")` returns 0.1450846749297095 and the flux is 0. Those two names are generations 0 and 1. Ten pairs inside a generation have equal scalars and flux 0. The two orders of each coupling agree to roundoff. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The clock, 2026-11-10
+
+The clock page calls `coupled_equilibrium` with its own defaults. The step is POOF · SUCTION = 0.022567101748263627. The step count is round(1/POOF) = 7. The law inside the loop is
+
+dS_i/dt = Σ_j κ_ij (S_j − S_i) − γ (S_i − E_i),
+
+with γ = 0.4280434460598068. E_i is `domain_scalar` of the sector's domain. The start is `sector_scalar_at_interface` on that domain's own observed bit, and it matches E_i. The edges and the domains are the vendor lists: cosmology, particle physics, nuclear physics, electromagnetism, high-energy physics, quantum mechanics, thermodynamics, and atomic physics. κ_ij is `coupling_kappa`. The gravity–electroweak value is 0.0426152645973651. The electroweak–lepton value is 0.1450846749297095.
+
+Forward Euler on those seven steps returns the moves in the table. Cosmology's initial rate is 0.13345450567211478. Thermodynamics' initial rate is −0.07374981045099419. The fixed point is the same linear system with every rate set to 0. Its residual is roundoff. High-energy physics moves to 0.8911164249970055 in the seven steps, and its fixed point is 0.884590585428397.
+
+`matter_unobserved_S("Particle_Physics")` and `matter_unobserved_S("Quantum_Mechanics")` return −0.6456729548144859. `coupled_equilibrium` does not call that function. The observed flags are read from `DOMAINS` and are not entries in the integrated state. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
