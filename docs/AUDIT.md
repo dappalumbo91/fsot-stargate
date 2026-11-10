@@ -364,4 +364,8 @@ The along-path acceleration of the pace coast at the 40 m face is 253.1081258207
 
 ## The buffer, 2026-11-10
 
-The along-path acceleration at the 40 m face reproduces 253.10812582079262 m/s² and 217.0794515126316 m/s², and it is 0 at the throat. At 22 m it is 22.00303553476865 m/s² and 22.324466255983335 m/s². The constant throat-speed times are 3.4752216088072063 s and 3.4174324160335168 s. The start-and-stop with the side-to-side load removed is 5.4150592988470425 s and 5.646111833747349 s. The 250 m/s widths are 0.06846824727272725 m and 0.08368341333333333 m. The upright 1.80 m constant coast takes 1.4744116594281595 s and 1.449893781374416 s.
+The along-path acceleration at the 40 m face reproduces 253.10812582079262 m/s² and 217.0794515126316 m/s², and it is 0 at the throat. At 22 m it is 22.00303553476865 m/s² and 22.324466255983335 m/s². The constant throat-speed times are 3.4752216088072063 s and 3.4174324160335168 s. The start-and-stop with the side-to-side load removed is 5.4150592988470425 s and 5.646111833747349 s. The 250 m/s widths are 0.06846824727272725 m and 0.08368341333333333 m. The upright 1.80 m constant coast takes 1.4744116594281595 s and 1.449893781374416 s. The stamp is the next section.
+
+## The stamp, 2026-11-10
+
+Lean 4.31.0 accepted `lean/GateLedger.lean`. Octave 11.3.0 wrote `data/dial_gate_stamp.txt` with 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The length-integral residuals are 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m. The one-sixth κ residual against 11/4800 is 4.337×10⁻¹⁹. The one-sixth mouth mass is 449377589368408820000000000000000/200229, and its float64 evaluation is 2.2443182025001816×10²⁷ kg.

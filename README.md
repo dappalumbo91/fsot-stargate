@@ -123,7 +123,11 @@ The pace schedule on the 10 m ship reaches 253.10812582079262 m/s² along the pa
 
 ## The buffer
 
-The 253.10812582079262 m/s² figure is the pace coast at the 40 m face. The same coast is at 22.00303553476865 m/s² at the 22 m station and at 0 at the throat. Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width that holds 9.80665 m/s² at the throat at 250 m/s is 0.06846824727272725 m and 0.08368341333333333 m, and that coast crosses in 0.2875590957252389 s and 0.3126220651732627 s. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The 253.10812582079262 m/s² figure is the pace coast at the 40 m face. The same coast is at 22.00303553476865 m/s² at the 22 m station and at 0 at the throat. Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width that holds 9.80665 m/s² at the throat at 250 m/s is 0.06846824727272725 m and 0.08368341333333333 m, and that coast crosses in 0.2875590957252389 s and 0.3126220651732627 s. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The stamp is the next section.
+
+## The stamp
+
+Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean). Octave 11.3.0 wrote [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. The closed forms reprint. The 400000-step ship schedule sits 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s from 2.1294485057269195 s and 2.1647639000180656 s. The one-sixth mouth mass is the rational 449377589368408820000000000000000/200229. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

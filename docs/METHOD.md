@@ -361,4 +361,8 @@ The buffer page keeps the pace coast and reads v dv/dl at 21 m, 22 m, 25 m, and 
 
 The start-and-stop with the side-to-side load removed is 2 √(D / 9.80665), where D is the through-distance. The crossing at the dash entry speed with that load removed is D divided by the entry speed.
 
-The width at a stated throat speed is 9.80665 / (κ(r₀) v²), and the constant-speed time is D / v. The factor γ² on a constant coast is 1 / (1 − v²/c²). The 2 m masses are the shape-page mouth masses times 2/20. The reading is in [RESULTS.md](RESULTS.md).
+The width at a stated throat speed is 9.80665 / (κ(r₀) v²), and the constant-speed time is D / v. The factor γ² on a constant coast is 1 / (1 − v²/c²). The 2 m masses are the compactness formula at that radius. The reading is in [RESULTS.md](RESULTS.md). The stamp is the next section.
+
+## The stamp, 2026-11-10
+
+The stamp page checks the shape in two checkers. `lean/GateLedger.lean` is Lean 4.31.0 and Mathlib v4.31.0. Run it from the FSOT-2.1-Lean checkout, so Mathlib resolves: `lake env lean` on that file. The file is not part of `lean_lib FSOT`. `octave/dial_gate_stamp.m` is the float reprint. Octave 11.3.0 wrote `data/dial_gate_stamp.txt`. The 400000-step schedule uses the square-root substitution. At the throat the integrand is 2 r₀ / √(2 r₀ − Rs), divided by the throat speed. The reading is in [RESULTS.md](RESULTS.md).

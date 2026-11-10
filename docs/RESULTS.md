@@ -949,9 +949,19 @@ The width that holds 9.80665 m/s² at the throat is 9.80665 / (κ(r₀) v²). At
 
 An upright body 1.80 m across, held at its throat speed, crosses in 1.4744116594281595 s and 1.449893781374416 s at 48.75827824041468 m/s and 53.90430478240188 m/s.
 
-The compactness mass at an outer radius of 2 m is one tenth of each shape-page mouth mass, 2.2443182025001816×10²⁶ kg and 6.732954607500545×10²⁶ kg. κ(r) on the corridor is unchanged.
+The compactness mass at an outer radius of 2 m evaluates in float64 to 2.2443182025001814×10²⁶ kg and 6.732954607500545×10²⁶ kg. κ(r) on the corridor is unchanged.
 
-Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width for 250 m/s at 9.80665 m/s² is 0.06846824727272725 m and 0.08368341333333333 m. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s.
+Holding the throat speed the whole way takes 3.4752216088072063 s and 3.4174324160335168 s. The width for 250 m/s at 9.80665 m/s² is 0.06846824727272725 m and 0.08368341333333333 m. An upright 1.80 m body at its throat speed crosses in 1.4744116594281595 s and 1.449893781374416 s. The stamp is the next section.
+
+## The stamp, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The closed forms were recomputed and the 10 m ship schedule was integrated again on 400000 steps. Octave 11.3.0 wrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures. Lengths, through-distances, null times, throat speeds, constant coasts, rest clocks, the 250 m/s widths, and the upright times reprint with residual 0. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The same grid's proper-length integral sits 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m from the closed form. The radicand's worst sample is 3.553×10⁻¹⁵. κ at the one-sixth throat differs from 11/4800 by 4.337×10⁻¹⁹. The half-compact throat κ is 3/1600.
+
+Lean 4.31.0 accepted [lean/GateLedger.lean](../lean/GateLedger.lean). The file is not part of `lean_lib FSOT`. It proves the throat value of the shape, the zero coordinate factor, the slopes −5/6 and −1/2, the flares 11/240 and 3/80, κ = 11/4800 and 3/1600, the identity κ = (b/r − b')/(2 r²), the proper-length radicand, the factorization of r − b(r), the load identities, the pace scale, and the rest-clock square. The mouth masses are the rationals 449377589368408820000000000000000/200229 and 449377589368408820000000000000000/66743. A 2 m body at the same compactness is one tenth of each. The float64 evaluation of the one-sixth 20 m mass is 2.2443182025001816×10²⁷ kg, one unit in the last place above the float of that rational. The half-compact 20 m float matches its rational. The 2 m floats are 2.2443182025001814×10²⁶ kg and 6.732954607500545×10²⁶ kg.
+
+The pin still does not supply the throat density. No vendor function writes Φ or b(r). The steady flux 0.10948671535321428 is not a coast. The sign of h is open. The depth-5 pair is unseated. The cavity lies inside both horizons. The pace coast leaves out γ. At 10000 m/s, γ² − 1 is 1.112650194201592×10⁻⁹. The throat stays at 20 m.
+
+Lean 4.31.0 accepted the gate file, and Octave 11.3.0 recorded 0 failures. The schedule residuals are 1.279×10⁻¹³ s and 1.155×10⁻¹⁴ s. The one-sixth mouth mass is 449377589368408820000000000000000/200229.
 
 ## Audit of the 20 m shell
 
