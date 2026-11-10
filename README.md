@@ -39,7 +39,13 @@ The scalar law parks. At the quantum mouth the fold holds the scalar at 0.950197
 
 Curved velocity returns. A unit sine of wavenumber 1 decays at the viscosity, and the vendor's own check of that identity has error 0. At the fluid the e-fold is 3.0045873434184927. Across the vendor's seven steps, 0.9487820441147276 of that curve is still there. With the call on, the node of the same sine accelerates at the full source 0.0794560282152649, so the sine is not a steady shape. The source is one number.
 
-Uniform velocity freezes. After the call ends, the rate on the leftover 0.01255164591272752 is 0. A unit scalar gradient is then advected at that leftover, and the scalar restore is 34.102574995823105 times that rate. The coast stays on. A pressure gradient equal to the source holds the velocity at rest while the call is on, and the same gradient drives it the other way at 0.0794560282152649 when the call is off. The law accepts that gradient as an argument. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
+Uniform velocity freezes. After the call ends, the rate on the leftover 0.01255164591272752 is 0. A unit scalar gradient is then advected at that leftover, and the scalar restore is 34.102574995823105 times that rate. The coast stays on. A pressure gradient equal to the source holds the velocity at rest while the call is on, and the same gradient drives it the other way at 0.0794560282152649 when the call is off. The law accepts that gradient as an argument. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored. The carry is the next section.
+
+## The carry
+
+After the call, the uniform velocity sits at 0.01255164591272752. In one scalar e-fold, pin time 2.3362114505084106, that coast carries a scalar offset a distance 0.029323298904041128. The smoothing length of the same law is 0.8573494832025231, and it is 29.237825048544227 times the carry. The offset is gone across that smoothing length, and the velocity is still there. What remains is an empty coast.
+
+While the source stays on, the distance from rest grows as J t²/2. Over the vendor's seven steps that distance is 0.0009913899464724474. Left on for one scalar e-fold it would be 0.21683089022520075, at velocity 0.18562608292842123. The fold does not end the call at that e-fold. The coordinate is the one in the scalar transport law. It is not a length in meters, and the two mouths in the coupling still have no separation of their own. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
 
 ## The parent shell
 

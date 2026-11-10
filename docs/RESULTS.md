@@ -389,7 +389,27 @@ Set the pressure gradient equal to the source, with the flow at rest, and `momen
 
 `scalar_at_D(5, True)` returns 0.9501974701670142, the same value as the quantum fold. `scalar_at_D(5, False)` returns −0.6456729548144859. The difference is 1.5958704249815001. Parked on the open value, `scalar_transport_rhs` returns 0. Pointed at the closed value, it returns −0.6831018761740097, and the e-fold is 2.3362114505084106. Quantum mechanics is observed in the fold, with look 1 and no hits. Fluid dynamics and cosmology match `scalar_at_D` on their own dark settings. No vendor function closes the observed branch after a pin time.
 
-The scalar parks on the branch the fold leaves open. Curved velocity returns at the viscosity. Uniform velocity freezes at the value the call grew. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The scalar parks on the branch the fold leaves open. Curved velocity returns at the viscosity. Uniform velocity freezes at the value the call grew. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The carry is the next section.
+
+## The carry, 2026-11-10
+
+The hold left a uniform velocity of 0.01255164591272752 with the call off and the rate at 0. This page turns that coast into a distance in the scalar transport law. The chain is in [METHOD.md](METHOD.md). Pin time remains the time in that law. The coordinate x is the one in which κ multiplies the second derivative and the velocity multiplies the first.
+
+| Reading | Value |
+| --- | ---: |
+| Leftover coast | 0.01255164591272752 |
+| Scalar e-fold, 1/γ | 2.3362114505084106 |
+| Carry in one e-fold, coast / γ | 0.029323298904041128 |
+| Smoothing length, sqrt(κ/γ) | 0.8573494832025231 |
+| Carry over that smoothing length | 0.034202270460941514 |
+| Smoothing length over the carry | 29.237825048544227 |
+| Distance while the source is on, vendor interval | 0.0009913899464724474 |
+| Distance while the source is on, one scalar e-fold | 0.21683089022520075 |
+| Velocity if the source stays on for one e-fold | 0.18562608292842123 |
+
+The leftover equals the source times the vendor interval, 0.0794560282152649 × 0.1579697122378454. Dividing by γ = 0.4280434460598068 gives the carry 0.029323298904041128. The smoothing length reprints the shell's relaxation length, 0.8573494832025231, from κ = 0.3146325373020798. On the transport law that length is 29.237825048544227 carry-lengths. An offset riding the coast is down by one e-fold when the coast has moved 0.034202270460941514 of a smoothing length. The velocity remains. The coast is empty.
+
+While the source stays on and the flow starts from rest, the distance is J t²/2. Over the vendor interval that is 0.0009913899464724474. Over one scalar e-fold it is 0.21683089022520075, and the velocity has become 0.18562608292842123. The fold does not end the call at that e-fold. The two-mouth coupling still has no separation. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 
