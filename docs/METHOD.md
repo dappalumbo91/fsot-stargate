@@ -305,4 +305,14 @@ with Δ_0 = −1.6062929728480064 and Δ_∞ = [γ / (2κ + γ)] Δ_0 = −1.094
 
 The crossing page fixes the through-distance 2L. An on-axis coast at proper-distance speed v has laboratory time T = 2L/v. The map page reads one pin-time unit as R₂/c. The pin time on that laboratory interval is t = T c / R₂. A forward Euler of 200000 steps over the one-sixth null pin time differs from this closed form by 3.4091445660910935×10⁻⁷ and −3.409144698762745×10⁻⁷.
 
-The 19 m and 21 m times use 400000 steps of the square-root substitution on the same metric. The reading is in [RESULTS.md](RESULTS.md).
+The 19 m and 21 m times use 400000 steps of the square-root substitution on the same metric. The reading is in [RESULTS.md](RESULTS.md). The passage is the next section.
+
+## The passage, 2026-11-10
+
+The passage page puts three widths on the traversal metric. The person is 0.50 m across, the crate is 1.00 m across, and the ship is 10.00 m across. The lengths along the crossing are 1.80 m, 1.00 m, and 10.00 m. The pin is called for the seated steady flux and is not edited.
+
+κ(r) = Rs / (2 r³) + (r₀ − Rs) r₀ / r⁴. The side-to-side load is κ v² times the width. At the throat this κ is 0.002291666666666667 m⁻² on the one-sixth mouth and 0.001875 m⁻² on the half-compact mouth. The radial gap acceleration on an on-axis coast is 0.
+
+A parallel fiber at offset ρ is the aim of impact parameter ρ. It exits the far mouth when ρ is under 20 m, returns when ρ is over 20 m, and does not finish at 20 m. The fiber times use 400000 steps of the square-root substitution. The 19 m and 21 m fibers reproduce the traversal page.
+
+The coast that holds the side-to-side load at 9.80665 m/s² is v(r) = √(9.80665 / (κ(r) W)). Its crossing time is the integral of dl / v(r) on both sides, with the same substitution. The reading is in [RESULTS.md](RESULTS.md).

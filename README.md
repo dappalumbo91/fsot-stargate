@@ -95,7 +95,11 @@ The pin's weak-field function, handed 10⁻⁶, returns 2.0647857988017726×10�
 
 ## The traversal
 
-The two devices are quantum computing and quantum optics. An on-axis coast at proper-distance speed v takes laboratory time T = 2L/v. The pin time on that same interval is t = T c / R₂. The scalar difference is Δ(t) = Δ_∞ + (Δ_0 − Δ_∞) exp(−(2κ + γ) t). Quantum optics stays the higher scalar, and the leak runs from optics toward computing. The steady flux is 0.10948671535321428. One e-fold of the difference is 1.0621885440587599×10⁻⁷ s. Every mass coast in the table exits on that steady flux. The null ray still carries a remnant transient, 0.10460241999366285 on the one-sixth pair and 0.08591862389049004 on the half-compact pair. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The two devices are quantum computing and quantum optics. An on-axis coast at proper-distance speed v takes laboratory time T = 2L/v. The pin time on that same interval is t = T c / R₂. The scalar difference is Δ(t) = Δ_∞ + (Δ_0 − Δ_∞) exp(−(2κ + γ) t). Quantum optics stays the higher scalar, and the leak runs from optics toward computing. The steady flux is 0.10948671535321428. One e-fold of the difference is 1.0621885440587599×10⁻⁷ s. Every mass coast in the table exits on that steady flux. The null ray still carries a remnant transient, 0.10460241999366285 on the one-sixth pair and 0.08591862389049004 on the half-compact pair. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The passage is the next section.
+
+## The passage
+
+Three bodies ride that coast. A person is 0.50 m across, a crate is 1.00 m across, and a ship is 10.00 m across. On axis, at the same coast, all three exit together in time T = 2L/v and come out the size they went in. At 10 m/s the one-sixth side-to-side loads are 0.11458333333333352 m/s², 0.22916666666666705 m/s², and 2.2916666666666705 m/s². A body finishes whole when its farthest impact parameter stays under 20 m. The 10 m ship on a 19 m aim is cut: 47.163304949497814 m² exits the far mouth and 31.376511390247018 m² returns. The coast that holds the side-to-side load at 9.80665 m/s² crosses the one-sixth ship in 2.1294485057269195 s. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

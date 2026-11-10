@@ -688,7 +688,56 @@ At 10 m/s the r = 30 m station is already on the steady scalars, −0.3968494024
 
 An impact parameter inside 20 m crosses. An impact parameter outside 20 m turns and comes back out the same mouth. At 10 m/s, with 400000 steps of the square-root substitution, the 19 m crossing takes 12.334973695883157 s on the one-sixth pair and 13.46211847419015 s on the half-compact pair. The 21 m return takes 12.49766197844221 s and 13.617077789383652 s. Both aims exit on the steady flux.
 
-The connection that stays up for a mass traversal is that steady leak, flux 0.10948671535321428, from quantum optics toward quantum computing. The coast is the speed supplied with the mass.
+The connection that stays up for a mass traversal is that steady leak, flux 0.10948671535321428, from quantum optics toward quantum computing. The coast is the speed supplied with the mass. The passage is the next section.
+
+## The passage, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Three bodies ride the traversal. The length along the crossing is unloaded, so that length exits as it entered: 1.80 m, 1.00 m, and 10.00 m. The lateral width takes the load. On axis the exit time is the traversal's T = 2L/v, the same time for all three bodies. A free bundle aimed at the throat has lateral size proportional to r, so the width is half at the throat and the entry width again at the exit.
+
+| Body | Width | One-sixth load at 10 m/s | One-sixth load at 100 m/s | Half-compact load at 10 m/s | Half-compact load at 100 m/s |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Person | 0.50 m | 0.11458333333333352 m/s² | 11.458333333334611 m/s² | 0.09375000000000012 m/s² | 9.375000000001043 m/s² |
+| Crate | 1.00 m | 0.22916666666666705 m/s² | 22.916666666669222 m/s² | 0.18750000000000025 m/s² | 18.750000000002085 m/s² |
+| Ship | 10.00 m | 2.2916666666666705 m/s² | 229.1666666666922 m/s² | 1.8750000000000024 m/s² | 187.50000000002086 m/s² |
+
+Standard gravity is 9.80665 m/s². Dividing the one-sixth column by it gives 0.011684248273705448, 0.023368496547410897, and 0.23368496547410897 at 10 m/s, and 1.1684248273706732, 2.3368496547413464, and 23.36849654741346 at 100 m/s. At 1 m/s the one-sixth loads are 0.0011458333333333336 m/s², 0.002291666666666667 m/s², and 0.022916666666666672 m/s². The steady flux during every one of these exits is 0.10948671535321428.
+
+On a parallel approach the outer fiber carries impact parameter equal to half the width. At 10 m/s its lag behind the center is 0.00034025478556465316 s, 0.001361357504916505 s, and 0.14079967338678667 s on the one-sixth mouth, and 0.00037173440818794035 s, 0.001487308790699693 s, and 0.15384542777850907 s on the half-compact mouth. The lag scales as 1/v. All three rims are inside 20 m, so all three bodies exit the far mouth.
+
+The same 10 m ship with its centerline 10 m off axis still lies inside the 20 m circle. Its disk area is 78.53981633974483 m². At 10 m/s on the one-sixth mouth the inner edge exits in 7.32977706651776 s, the centerline in 7.820153336879041 s, and the outer edge in 9.017695449300218 s. On the half-compact mouth those times are 7.9693970571100765 s, 8.505511707974685 s, and 9.816725724677342 s.
+
+The failure on clearance is the 20 m circle. A fiber inside it exits the far mouth. A fiber outside it returns. A fiber on it does not finish. For the 10 m ship the outer fiber reaches that circle when the centerline aim reaches 15 m.
+
+| Centerline aim | Inner fiber | Outer fiber | One-sixth inner time | One-sixth outer time | Half-compact inner time | Half-compact outer time |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 14 m | 9 m | 19 m | 7.684723901508549 s | 12.334973695883157 s | 8.35740337431699 s | 13.46211847419015 s |
+| 14.5 m | 9.5 m | 19.5 m | 7.749578635680528 s | 13.807163340538516 s | 8.428325314556515 s | 15.084710849585147 s |
+| 14.9 m | 9.9 m | 19.9 m | 7.80555752740761 s | 17.208033085128275 s | 8.489547708659694 s | 18.839149016938826 s |
+
+At a 19 m aim the circle cuts the hull. Of the 78.53981633974483 m² disk, 47.163304949497814 m² exits the far mouth and 31.376511390247018 m² returns. The fraction that exits is 0.6005018492210424. On the one-sixth mouth at 10 m/s the returning rim at 25 m of impact parameter is back out in 8.98412646910567 s, while a crossing fiber at 19.9 m is still in the throat until 17.208033085128275 s.
+
+An on-axis beam fails the same way as its rim approaches 20 m. The center still takes the on-axis time. The rim time at 10 m/s is the fiber time.
+
+| Rim impact | One-sixth rim time | Half-compact rim time |
+| --- | ---: | ---: |
+| 15 m | 9.017695449300218 s | 9.816725724677342 s |
+| 18 m | 10.871221787900295 s | 11.851430687321491 s |
+| 19 m | 12.334973695883157 s | 13.46211847419015 s |
+| 19.5 m | 13.807163340538516 s | 15.084710849585147 s |
+| 19.9 m | 17.208033085128275 s | 18.839149016938826 s |
+| 19.99 m | 22.034718983461183 s | 24.173487270816818 s |
+
+A rim at 20 m does not finish. A rim at 21 m returns in the traversal's 12.49766197844221 s and 13.617077789383652 s. A rim at 25 m returns in 8.98412646910567 s and 9.713220394760258 s.
+
+The load failure is separate. The coast that holds the side-to-side load at 9.80665 m/s² at every radius is v(r) = √(9.80665 / (κ(r) W)). At the throat that speed is 92.51232841676241 m/s, 65.41609476684964 m/s, and 20.686385509666625 m/s on the one-sixth mouth, and 102.27622728017819 m/s, 72.32021386399056 m/s, and 22.869659668069687 m/s on the half-compact mouth. At the 40 m station κ is 0.00015625000000000003 m⁻² and 0.00015625 m⁻², and the entry speeds are 354.29524411146133 m/s, 250.52456965335753 m/s, and 79.22282499381096 m/s on the one-sixth mouth.
+
+| Body | One-sixth scheduled time | One-sixth constant time at the throat speed | Half-compact scheduled time | Half-compact constant time at the throat speed |
+| --- | ---: | ---: | ---: | ---: |
+| Person | 0.47615916133908914 s | 0.7770831754169095 s | 0.48405592356780447 s | 0.7641611190762286 s |
+| Crate | 0.6733907438139346 s | 1.0989615657665444 s | 0.6845584520566416 s | 1.0806870184358042 s |
+| Ship | 2.1294485057269195 s | 3.4752216088072063 s | 2.1647639000180656 s | 3.4174324160335168 s |
+
+On axis at 10 m/s the person, the crate, and the 10 m ship exit whole, inside the clearance, with the loads in the first table. The same ship at a constant 100 m/s still exits whole and carries 23.36849654741346 times standard gravity on the one-sixth mouth. The scheduled coast above holds that load at one standard gravity and crosses the one-sixth ship in 2.1294485057269195 s. The 19 m aim, and any rim at 20 m, does not exit as one body.
 
 ## Audit of the 20 m shell
 
