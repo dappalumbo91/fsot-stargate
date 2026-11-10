@@ -623,7 +623,72 @@ The chain is in [METHOD.md](METHOD.md). These are the pin returns whose names me
 | Strong-coupling bridge | 0.8934914156931002 |
 | Higgs-scale bridge | 442.1278490417853 |
 
-The shape page fixes the redshift at 0 and writes b(r). The weak-field function returns 0 when its argument is 0. The acoustic factor is the sound cone already printed on the funnel page. The solar radius and the Planck length are the suite's own lengths. The four bridge entries are pure numbers. A coast still has to arrive with the mass, and the metric stays the static shape. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The shape page fixes the redshift at 0 and writes b(r). The weak-field function returns 0 when its argument is 0. The acoustic factor is the sound cone already printed on the funnel page. The solar radius and the Planck length are the suite's own lengths. The four bridge entries are pure numbers. A coast still has to arrive with the mass, and the metric stays the static shape. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The traversal is the next section.
+
+## The traversal, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The two devices are the seated pair, quantum computing and quantum optics. Both start on their domain scalars. The laboratory time of an on-axis coast at proper-distance speed v is T = 2L/v. The pin time on that interval is t = T c / R₂, with R₂ = 20 m and c = 2.99792458×10⁸ m/s.
+
+| Reading | Value |
+| --- | ---: |
+| Domain scalar, quantum computing | −0.6526335205358984 |
+| Domain scalar, quantum optics | 0.9536594523121079 |
+| Coupling κ | 0.10001300937604073 |
+| Restore rate γ | 0.4280434460598068 |
+| Difference rate 2κ + γ | 0.6280694648118883 |
+| e-fold | 1.5921805724140845 |
+| e-fold in seconds | 1.0621885440587599×10⁻⁷ s |
+| Held fraction γ / (2κ + γ) | 0.6815224589656005 |
+| Difference at the start | −1.6062929728480064 |
+| Steady difference | −1.0947247366745378 |
+| Steady scalar, quantum computing | −0.39684940244916417 |
+| Steady scalar, quantum optics | 0.6978753342253736 |
+| Flux at the start | 0.160650194154116 |
+| Steady flux | 0.10948671535321428 |
+| Sum of the two scalars | 0.3010259317762095 |
+| One e-fold at 10 m/s | 1.0621885440587599×10⁻⁶ m |
+| Light travel in one e-fold | 31.843611448281692 m |
+
+The difference, starting on the domain scalars, is Δ(t) = Δ_∞ + (Δ_0 − Δ_∞) exp(−(2κ + γ) t). The flux is κ times the absolute difference. Quantum optics is higher at the start and at steady, so the leak runs from optics toward computing. The steady scalars are the seats-page pair.
+
+| Coast | One-sixth time | Half-compact time |
+| --- | ---: | ---: |
+| Null ray | 2.397984739539703×10⁻⁷ s | 2.606987407712427×10⁻⁷ s |
+| Tide scale, 20.88931871468374 m/s and 23.09401076758503 m/s | 3.4414609166155437 s | 3.384233127794999 s |
+| 100 m/s | 0.7188977393130973 s | 0.7815551629331567 s |
+| 10 m/s | 7.1889773931309735 s | 7.815551629331567 s |
+| 1 m/s | 71.88977393130973 s | 78.15551629331567 s |
+
+Every mass row exits with transient 0, flux 0.10948671535321428, and the steady scalars. The through-distance matches the crossing page, difference 0.
+
+The null ray still carries a remnant.
+
+| Null reading | One-sixth pair | Half-compact pair |
+| --- | ---: | ---: |
+| Pin time | 3.5944886965654868 | 3.9077758146657833 |
+| e-folds | 2.257588591924267 | 2.454354664521979 |
+| Transient left | 0.10460241999366285 | 0.08591862389049004 |
+| Exit flux | 0.11483853905108304 | 0.113882611045238 |
+| Exit scalar, quantum computing | −0.42360504019698136 | −0.418826021888219 |
+| Exit scalar, quantum optics | 0.7246309719731909 | 0.7198519536644286 |
+
+The speed whose crossing lasts one e-fold is 676808033.1257349 m/s on the one-sixth pair and 735797017.6808096 m/s on the half-compact pair. The null ray is slower than that speed, so the remnant remains. A forward Euler of 200000 steps over the one-sixth null pin time differs from the closed form by 3.4091445660910935×10⁻⁷ and −3.409144698762745×10⁻⁷. The table is the closed form.
+
+Stations on the one-sixth pair, measured from the 40 m entry:
+
+| Station | Distance traveled | Null time | Null transient | Null flux | 10 m/s time | 10 m/s flux |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| r = 40 m | 0 m | 0 s | 1 | 0.160650194154116 | 0 s | 0.160650194154116 |
+| r = 30 m | 12.67238908687889 m | 4.227053999763693×10⁻⁸ s | 0.6716908885353386 | 0.1438527578895509 | 1.267238908687889 s | 0.10948671535321428 |
+| r = 25 m | 20.30660157993436 m | 6.773553182560169×10⁻⁸ s | 0.5285077448801754 | 0.13652701015450353 | 2.030660157993436 s | 0.10948671535321428 |
+| Throat, r = 20 m | 35.94488696565487 m | 1.1989923697698516×10⁻⁷ s | 0.32342297381859386 | 0.1260341598179065 | 3.5944886965654868 s | 0.10948671535321428 |
+| Exit, r = 40 m | 71.88977393130973 m | 2.397984739539703×10⁻⁷ s | 0.10460241999366285 | 0.11483853905108304 | 7.1889773931309735 s | 0.10948671535321428 |
+
+At 10 m/s the r = 30 m station is already on the steady scalars, −0.39684940244916417 and 0.6978753342253736. On the null ray the same station is still moving: quantum computing −0.5686572640000707, quantum optics 0.8696831957762803. At the throat the null-ray scalars are −0.47957586257634216 and 0.7806017943525516.
+
+An impact parameter inside 20 m crosses. An impact parameter outside 20 m turns and comes back out the same mouth. At 10 m/s, with 400000 steps of the square-root substitution, the 19 m crossing takes 12.334973695883157 s on the one-sixth pair and 13.46211847419015 s on the half-compact pair. The 21 m return takes 12.49766197844221 s and 13.617077789383652 s. Both aims exit on the steady flux.
+
+The connection that stays up for a mass traversal is that steady leak, flux 0.10948671535321428, from quantum optics toward quantum computing. The coast is the speed supplied with the mass.
 
 ## Audit of the 20 m shell
 

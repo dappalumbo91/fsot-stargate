@@ -332,4 +332,8 @@ The pin condensate is the pure number 0.012832866903470668. The shell-file densi
 
 ## The switch, 2026-11-10
 
-`gr_weak_field_metric_factor(10⁻⁶)` returns 2.0647857988017726×10⁻⁶, and the same call at 0 returns 0. The ratio to 2×10⁻⁶ is 1.0323928994008864, and the dressing difference is 0. `acoustic_metric_factor` returns 0.7693639124918291. The solar Schwarzschild radius is 2953.3393820668784 m and the Planck length is 1.61625502392855×10⁻³⁵ m. The redshift and the shape stay the shape-page values. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+`gr_weak_field_metric_factor(10⁻⁶)` returns 2.0647857988017726×10⁻⁶, and the same call at 0 returns 0. The ratio to 2×10⁻⁶ is 1.0323928994008864, and the dressing difference is 0. `acoustic_metric_factor` returns 0.7693639124918291. The solar Schwarzschild radius is 2953.3393820668784 m and the Planck length is 1.61625502392855×10⁻³⁵ m. The redshift and the shape stay the shape-page values. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The traversal is the next section.
+
+## The traversal, 2026-11-10
+
+The seated pair is quantum computing −0.6526335205358984 and quantum optics 0.9536594523121079. The coupling is 0.10001300937604073 and the difference rate is 0.6280694648118883. The steady flux is 0.10948671535321428, the seats-page value for this pair. The through-distance differs from the crossing page by 0. One e-fold is 1.0621885440587599×10⁻⁷ s. Every mass coast in the table exits on the steady flux. The null-ray transients are 0.10460241999366285 and 0.08591862389049004. A 200000-step Euler run differs from the closed form by 3.4091445660910935×10⁻⁷ and −3.409144698762745×10⁻⁷. The coast is the speed supplied with the mass.

@@ -285,4 +285,24 @@ The switch page calls `gr_weak_field_metric_factor`, `acoustic_metric_factor`, a
 
 `acoustic_metric_factor` is the square root of `sound_speed_sq(1)`. It returns 0.7693639124918291, and `acoustic_null_cone` returns the same value. `seed_schwarzschild_sun` returns 2953.3393820668784 m. `seed_planck_length` returns 1.61625502392855×10⁻³⁵ m. `sm_coupling_bridge` returns the four pure numbers in the table.
 
-The arguments are phi_N or nothing. The redshift and the shape remain the ones written on the shape page. The reading is in [RESULTS.md](RESULTS.md).
+The arguments are phi_N or nothing. The redshift and the shape remain the ones written on the shape page. The reading is in [RESULTS.md](RESULTS.md). The traversal is the next section.
+
+## The traversal, 2026-11-10
+
+The traversal page calls `domain_scalar` in `fsot_compute.py` and `kappa_domains` in `fsot_scale_interconnects.py`. γ = |CHAOS| + PSI_CON · POOF = 0.4280434460598068, from `fsot_dynamics.py`. The pin files are not edited.
+
+The two devices are Quantum_Computing and Quantum_Optics. `domain_scalar` returns −0.6526335205358984 and 0.9536594523121079. `kappa_domains` on that pair returns 0.10001300937604073. The difference rate is 2κ + γ = 0.6280694648118883.
+
+Both mouths start on their own domain scalars. The two-mouth law is
+
+dS_i/dt = κ (S_j − S_i) − γ (S_i − E_i).
+
+The sum stays 0.3010259317762095. The difference is
+
+Δ(t) = Δ_∞ + (Δ_0 − Δ_∞) exp(−(2κ + γ) t),
+
+with Δ_0 = −1.6062929728480064 and Δ_∞ = [γ / (2κ + γ)] Δ_0 = −1.0947247366745378. The flux is κ |Δ|.
+
+The crossing page fixes the through-distance 2L. An on-axis coast at proper-distance speed v has laboratory time T = 2L/v. The map page reads one pin-time unit as R₂/c. The pin time on that laboratory interval is t = T c / R₂. A forward Euler of 200000 steps over the one-sixth null pin time differs from this closed form by 3.4091445660910935×10⁻⁷ and −3.409144698762745×10⁻⁷.
+
+The 19 m and 21 m times use 400000 steps of the square-root substitution on the same metric. The reading is in [RESULTS.md](RESULTS.md).

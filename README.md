@@ -91,7 +91,11 @@ The pin's gluon condensate is the pure number 0.012832866903470668. The condensa
 
 ## The switch
 
-The pin's weak-field function, handed 10⁻⁶, returns 2.0647857988017726×10⁻⁶. Handed 0, it returns 0. The acoustic factor returns 0.7693639124918291. The solar Schwarzschild radius returns 2953.3393820668784 m, and the Planck length returns 1.61625502392855×10⁻³⁵ m. The throat on the shape page keeps redshift 0 and the inverse-power shape. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
+The pin's weak-field function, handed 10⁻⁶, returns 2.0647857988017726×10⁻⁶. Handed 0, it returns 0. The acoustic factor returns 0.7693639124918291. The solar Schwarzschild radius returns 2953.3393820668784 m, and the Planck length returns 1.61625502392855×10⁻³⁵ m. The throat on the shape page keeps redshift 0 and the inverse-power shape. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The traversal is the next section.
+
+## The traversal
+
+The two devices are quantum computing and quantum optics. An on-axis coast at proper-distance speed v takes laboratory time T = 2L/v. The pin time on that same interval is t = T c / R₂. The scalar difference is Δ(t) = Δ_∞ + (Δ_0 − Δ_∞) exp(−(2κ + γ) t). Quantum optics stays the higher scalar, and the leak runs from optics toward computing. The steady flux is 0.10948671535321428. One e-fold of the difference is 1.0621885440587599×10⁻⁷ s. Every mass coast in the table exits on that steady flux. The null ray still carries a remnant transient, 0.10460241999366285 on the one-sixth pair and 0.08591862389049004 on the half-compact pair. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 
