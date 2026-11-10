@@ -13,8 +13,9 @@ Gate ledger. Not part of `lean_lib FSOT`.
 
 The shape, the lateral coefficient, the proper-length radicand, the load
 identity, the mouth masses, the cavity against both horizons, the
-size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, and the sign of the
-settled two-mouth flux. The 400000-step crossings stay with the Octave log.
+size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, the sign of the
+settled two-mouth flux, the potential whose gradient is that law, and the
+radial density factor (r₀/r)⁴. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -288,5 +289,118 @@ theorem flux_follows_gap {κ γ E1 E2 : ℚ} (hk : 0 < κ) (hg : 0 < γ) (hE : E
   have hgap : 0 < E1 - E2 := by linarith
   have hnum : 0 < κ * γ * (E1 - E2) := mul_pos (mul_pos hk hg) hgap
   exact div_pos hnum hden
+
+/-- V = γ/2 (S₁−E₁)² + γ/2 (S₂−E₂)² + κ/2 (S₁−S₂)². -/
+def mouthPotential (κ γ E1 E2 S1 S2 : ℚ) : ℚ :=
+  γ / 2 * (S1 - E1) ^ 2 + γ / 2 * (S2 - E2) ^ 2 + κ / 2 * (S1 - S2) ^ 2
+
+theorem product_coefficient (κ γ E1 E2 S1 S2 : ℚ) :
+    mouthPotential κ γ E1 E2 S1 S2 =
+      γ / 2 * (S1 - E1) ^ 2 + γ / 2 * (S2 - E2) ^ 2 +
+        κ / 2 * S1 ^ 2 + κ / 2 * S2 ^ 2 - κ * S1 * S2 := by
+  unfold mouthPotential
+  ring
+
+theorem gradient_is_two_mouth (κ γ E1 E2 S1 S2 : ℚ) :
+    -(γ * (S1 - E1) + κ * (S1 - S2)) = κ * (S2 - S1) - γ * (S1 - E1) ∧
+      -(γ * (S2 - E2) + κ * (S2 - S1)) = κ * (S1 - S2) - γ * (S2 - E2) := by
+  constructor <;> ring
+
+theorem steady_potential (κ γ E1 E2 : ℚ) (hr : 2 * κ + γ ≠ 0) :
+    mouthPotential κ γ E1 E2
+        (E1 - κ * (E1 - E2) / (2 * κ + γ))
+        (E2 + κ * (E1 - E2) / (2 * κ + γ)) =
+      κ * γ * (E1 - E2) ^ 2 / (2 * (2 * κ + γ)) := by
+  unfold mouthPotential
+  field_simp
+  ring
+
+theorem shutdown_action (S1 S2 E : ℚ) :
+    ((S1 + S2 - 2 * E) ^ 2 + (S1 - S2) ^ 2) / 8 =
+      ((S1 - E) ^ 2 + (S2 - E) ^ 2) / 4 := by
+  ring
+
+theorem inverse_power_unique (Rs A B r : ℚ) (hr : r ≠ 0)
+    (hThroat : A + B / r0 = r0) (hFar : A = Rs) :
+    A + B / r = shape Rs r := by
+  have hB : B = (r0 - Rs) * r0 := by
+    rw [hFar] at hThroat
+    have hr0 : (r0 : ℚ) ≠ 0 := by unfold r0; norm_num
+    field_simp at hThroat
+    linarith
+  rw [hFar, hB]
+  unfold shape
+  field_simp [hr]
+
+theorem slope_scales (Rs r : ℚ) (hr : r ≠ 0) :
+    shapeSlope Rs r = shapeSlope Rs r0 * (r0 ^ 2 / r ^ 2) := by
+  unfold shapeSlope
+  have hr0 : (r0 : ℚ) ≠ 0 := by unfold r0; norm_num
+  field_simp [hr, hr0]
+
+theorem density_scales (Rs r : ℚ) (hr : r ≠ 0) (hs : shapeSlope Rs r0 ≠ 0) :
+    (shapeSlope Rs r / r ^ 2) / (shapeSlope Rs r0 / r0 ^ 2) = (r0 / r) ^ 4 := by
+  rw [slope_scales Rs r hr]
+  have hr0 : (r0 : ℚ) ≠ 0 := by unfold r0; norm_num
+  field_simp [hs, hr, hr0]
+
+theorem density_at_forty (Rs : ℚ) (hs : shapeSlope Rs r0 ≠ 0) :
+    (shapeSlope Rs 40 / 40 ^ 2) / (shapeSlope Rs r0 / r0 ^ 2) = 1 / 16 := by
+  have hr : (40 : ℚ) ≠ 0 := by norm_num
+  rw [density_scales Rs 40 hr hs]
+  unfold r0
+  norm_num
+
+theorem tension_ratio_forty_sixth :
+    (shape rsSixth 40 / r0) * (r0 / 40) ^ 3 = 7 / 96 := by
+  unfold shape rsSixth r0
+  norm_num
+
+theorem tension_ratio_forty_half :
+    (shape rsHalf 40 / r0) * (r0 / 40) ^ 3 = 3 / 32 := by
+  unfold shape rsHalf r0
+  norm_num
+
+theorem nec_numerator (Rs r : ℚ) (hr : r ≠ 0) :
+    shapeSlope Rs r * r - shape Rs r = -Rs - 2 * (r0 - Rs) * r0 / r := by
+  unfold shapeSlope shape
+  field_simp
+  ring
+
+theorem nec_negative {Rs r : ℚ} (hr : 0 < r) (hRs : 0 < Rs) (hcmp : Rs < r0) :
+    shapeSlope Rs r * r - shape Rs r < 0 := by
+  have hr0 : (0 : ℚ) < r0 := by unfold r0; norm_num
+  have hgap : 0 < r0 - Rs := sub_pos.mpr hcmp
+  have hterm : 0 < 2 * (r0 - Rs) * r0 / r :=
+    div_pos (mul_pos (mul_pos (by norm_num) hgap) hr0) hr
+  rw [nec_numerator Rs r (ne_of_gt hr)]
+  linarith
+
+theorem nec_face (Rs : ℚ) :
+    shapeSlope Rs (2 * r0) * (2 * r0) - shape Rs (2 * r0) = -r0 := by
+  have hr : (2 * r0 : ℚ) ≠ 0 := by unfold r0; norm_num
+  rw [nec_numerator Rs (2 * r0) hr]
+  unfold r0
+  field_simp
+  ring
+
+theorem nec_face_ratio (Rs : ℚ) :
+    r0 ^ 2 / (2 * r0) ^ 3 * (shapeSlope Rs (2 * r0) * (2 * r0) - shape Rs (2 * r0)) =
+      -1 / 8 := by
+  rw [nec_face]
+  unfold r0
+  norm_num
+
+/-- Flat steady coast: ∂t v = 0 and vanishing velocity derivatives give ∂x P = J. -/
+theorem steady_balance (ρ dP J : ℚ) (hρ : ρ ≠ 0) :
+    -dP / ρ + J / ρ = 0 ↔ dP = J := by
+  constructor
+  · intro h
+    field_simp at h
+    linarith
+  · intro h
+    rw [h]
+    field_simp
+    ring
 
 end GateLedger

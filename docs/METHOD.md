@@ -405,4 +405,24 @@ The proper-volume integral uses dl = dr / √(1 − b/r). The same prefactor c�
 
 For the one-sixth mouth, J = ∫ ds / ((s² + 20) √(s² + 110/3)). The substitution s = √(110/3) sinh u and w = 2u gives J = ∫ dw / (2 (5/3 + 55/3 cosh w)) from 0 to ∞. The integral of 1 / (5/3 + 55/3 cosh w) over that range equals √30 atan(√30/6) / 50. The proper integral is (−2000/3) J, and dividing by Rs = r₀/6 produces −2√30 atan(√30/6). For the half-compact mouth the prefactor 40 (Rs − 20) is −400, the denominator constants are 5 and 15, the integral of 1 / (5 + 15 cosh w) equals √2 atan(√2/2) / 10, and dividing that proper integral by Rs = 10 produces −2√2 atan(√2/2). With t = e^{−w}, each of those cosh integrals equals ∫ 2 / (B t² + 2 A t + B) dt on [0, 1], which is the Octave check.
 
-SymPy leaves ∫ ds / ((s² + 20) √(3s² + 110)) unevaluated. The published ship times remain the 400000-step trapezoid in `octave/dial_gate_stamp.m`. Run the Lean file with `lake env lean` from the FSOT-2.1-Lean checkout. The file stays outside `lean_lib FSOT`. The reading is in [RESULTS.md](RESULTS.md).
+SymPy leaves ∫ ds / ((s² + 20) √(3s² + 110)) unevaluated. The published ship times remain the 400000-step trapezoid in `octave/dial_gate_stamp.m`. Run the Lean file with `lake env lean` from the FSOT-2.1-Lean checkout. The file stays outside `lean_lib FSOT`. The reading is in [RESULTS.md](RESULTS.md). The derive is the next section.
+
+## The derive, 2026-11-10
+
+The derive page builds the potential of the two-mouth law and the radial reading of the shape. The pin is not edited.
+
+Set
+
+V(S₁, S₂) = γ/2 (S₁ − E₁)² + γ/2 (S₂ − E₂)² + κ/2 (S₁ − S₂)².
+
+Then −∂V/∂S₁ = κ (S₂ − S₁) − γ (S₁ − E₁), and the same with the labels swapped. Expanding (S₁ − S₂)² produces the product term −κ S₁ S₂. γ = 0.4280434460598068 and the seated κ is 0.10001300937604073, so the seated product coefficient is −0.10001300937604073.
+
+The settled difference is Δ = γ (E₁ − E₂) / (2κ + γ), with S₁ = E₁ − (κ/γ) Δ and S₂ = E₂ + (κ/γ) Δ. Substituting those scalars gives V = κ γ (E₁ − E₂)² / (2 (2κ + γ)). The right-hand side is 0 when E₁ = E₂.
+
+On the way from a prepared state (Δ₀, Σ₀) to a common equilibrium E, Δ(t) = Δ₀ exp(−(2κ + γ) t) and Σ(t) − 2E = (Σ₀ − 2E) exp(−γ t). The potential along that path is (γ/4) (Σ − 2E)² + (2κ + γ) Δ² / 4. Its integral from 0 to ∞ is [(Σ₀ − 2E)² + Δ₀²] / 8, which equals [(S₁ − E)² + (S₂ − E)²] / 4. When S₁ + S₂ = E_optics + E_computing, the two choices of the common equilibrium give one integral, (gap² + Δ²) / 8.
+
+The flux on that path is the starting flux times exp(−(2κ + γ) t). The open-page roundoff 1.3877787807814457×10⁻¹⁷ fixes one time, ln(flux / roundoff) / (2κ + γ). One pin-time unit is 20/299792458 s.
+
+Any A + B/r with A + B/r₀ = r₀ and A = Rs is the shape page's b(r). The slope at r is the throat slope times (r₀/r)². The Einstein density used at the throat, ρ = b′ c⁴ / (8 π G r²), therefore scales by another (r₀/r)², and the ratio of densities is (r₀/r)⁴. The radial tension that returns c⁴ / (8 π G r₀²) at the throat is τ(r) = b(r) c⁴ / (8 π G r³), so τ(r)/τ(r₀) = (b(r)/r₀) (r₀/r)³. Their difference has the sign of b′ r − b = −Rs − 2 (r₀ − Rs) r₀ / r. At r = 2 r₀ that numerator is −r₀, and ρ − τ = −τ(r₀)/8.
+
+The pin momentum balance at vanishing velocity derivatives is ∂t v = −(1/ρ) ∂x P + J/ρ. A steady coast then has ∂x P = J. J is `observer_source`. The speed remains the lateral-load coast already on the ledger. The reading is in [RESULTS.md](RESULTS.md).

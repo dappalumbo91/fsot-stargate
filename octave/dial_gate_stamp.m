@@ -2,7 +2,9 @@
 % The shape, the lateral coefficient, the proper length, and one scheduled
 % crossing. The fill adds the cavity bounds, the gamma bounds, a Simpson
 % length, and the throat-density reprint. The solve adds the coordinate
-% mass ratios and the proper-mass factor. Not a Warp Factory metric.
+% mass ratios and the proper-mass factor. The derive adds the radial
+% density factor, the 40 m tension ratios, and the two-mouth potential.
+% Not a Warp Factory metric.
 % The pin is not an input.
 
 function dial_gate_stamp(outname)
@@ -142,6 +144,30 @@ fails = lineout(fid, fails, 'proper_pair_sixth', 4 * M6 * r6, -7.276068660082421
 fails = lineout(fid, fails, 'proper_pair_half', 4 * Mh * rh, -4.6883973403412932e28, 0);
 fails = lineout(fid, fails, 'cosh_sixth', quad_cosh(5 / 3, 55 / 3), sqrt(30) * atan(sqrt(30) / 6) / 50, 1e-15);
 fails = lineout(fid, fails, 'cosh_half', quad_cosh(5, 15), sqrt(2) * atan(sqrt(2) / 2) / 10, 1e-15);
+
+fails = lineout(fid, fails, 'density_ratio_forty', (r0 / 40) ^ 4, 1 / 16, 0);
+b40s = Rs6 + (r0 - Rs6) * r0 / 40;
+b40h = Rsh + (r0 - Rsh) * r0 / 40;
+fails = lineout(fid, fails, 'tension_ratio_forty_sixth', (b40s / r0) * (r0 / 40) ^ 3, 7 / 96, 0);
+fails = lineout(fid, fails, 'tension_ratio_forty_half', (b40h / r0) * (r0 / 40) ^ 3, 3 / 32, 0);
+fails = lineout(fid, fails, 'density_forty_sixth', (b6 * pref) / 16, -6.2701222483364878e38, 0);
+fails = lineout(fid, fails, 'density_forty_half', (bh * pref) / 16, -3.7620733490018924e38, 0);
+fails = lineout(fid, fails, 'tension_forty_sixth', pref * (b40s / r0) * (r0 / 40) ^ 3, 8.7781711476710825e38, 0);
+fails = lineout(fid, fails, 'tension_forty_half', pref * (b40h / r0) * (r0 / 40) ^ 3, 1.1286220047005678e39, 0);
+fails = lineout(fid, fails, 'nec_face', -pref / 8, -1.5048293396007570e39, 0);
+
+kap = 0.10001300937604073;
+gam = 0.4280434460598068;
+gap = 0.9536594523121079 - (-0.6526335205358984);
+Vpot = kap * gam * gap ^ 2 / (2 * (2 * kap + gam));
+fails = lineout(fid, fails, 'potential_on', Vpot, 8.7933870746039020e-02, 0);
+delta_inf = 1.0947247366745378;
+fails = lineout(fid, fails, 'shutdown_action', (gap ^ 2 + delta_inf ^ 2) / 8, 4.7232492046350283e-01, 0);
+flux0 = 0.10948671535321428;
+roundoff = 1.3877787807814457e-17;
+t_pin = log(flux0 / roundoff) / (2 * kap + gam);
+fails = lineout(fid, fails, 'shutdown_pin_time', t_pin, 5.8280639489868257e+01, 0);
+fails = lineout(fid, fails, 'shutdown_seconds', t_pin * r0 / c, 3.8880657558015190e-06, 1e-15);
 
 fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');

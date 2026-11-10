@@ -1064,7 +1064,30 @@ The proper-volume integral on one side is the mouth mass times −2√30 atan(�
 
 The quadrature of the reduced proper-mass integrand, written on [0, 1], differs from √30 atan(√30/6)/50 by 1.388×10⁻¹⁷ and from √2 atan(√2/2)/10 by 0. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay the 400000-step trapezoid, 2.1294485057269195 s and 2.1647639000180656 s.
 
-The throat densities stay −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. Neither coupling takes a parameter named h. `linear_potential` stays the confining probe, with value 0 at 0 and 0.17649137329543738 at unit argument. `momentum_rhs` at rest stays the observer source 0.0794560282152649. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+The throat densities stay −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. Neither coupling takes a parameter named h. `linear_potential` stays the confining probe, with value 0 at 0 and 0.17649137329543738 at unit argument. `momentum_rhs` at rest stays the observer source 0.0794560282152649. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The derive is the next section.
+
+## The derive, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The potential whose downhill gradient is the two-mouth law is
+
+V = γ/2 (S₁ − E₁)² + γ/2 (S₂ − E₂)² + κ/2 (S₁ − S₂)².
+
+Expanded, the product S₁ S₂ has coefficient −κ. On the seated pair κ = 0.10001300937604073, so that coefficient is −0.10001300937604073. At the settled scalars the potential equals κ γ (E₁ − E₂)² / (2 (2κ + γ)). With the printed optics and computing scalars the gap is 1.6062929728480063 and V = 0.08793387074603902. Equal equilibria put V at 0.
+
+From a state whose sum equals the sum of the two equilibria, the time integral of V down to either common equilibrium is (gap² + Δ²) / 8. With the published settled difference 1.0947247366745378 that integral is 0.47232492046350283. After both equilibria are set to one scalar, the seated flux 0.10948671535321428 falls to the open-page roundoff 1.3877787807814457×10⁻¹⁷ in 58.28063948986826 pin-time units. On the map-page clock that is 3.888065755801519×10⁻⁶ s, which is 36.60429005329616 difference e-folds.
+
+The inverse-power shape is the unique A + B/r that equals r₀ at the throat and Rs at infinity. Its slope scales as (r₀/r)², so the density scales as (r₀/r)⁴. At 40 m the density is 1/16 of the throat density. The radial tension scales as (b(r)/r₀) (r₀/r)³, which is 7/96 on the one-sixth mouth and 3/32 on the half-compact mouth. The combination b′ r − b equals −Rs − 2 (r₀ − Rs) r₀ / r, and that quantity is negative at every positive radius when 0 < Rs < r₀. At r = 40 m it equals −r₀, and the stress combination ρ − τ equals −τ/8 on both mouths.
+
+| Radius | One-sixth density | Half-compact density | One-sixth tension | Half-compact tension |
+| --- | ---: | ---: | ---: | ---: |
+| 20 m | −1.003219559733838×10⁴⁰ Pa | −6.019317358403028×10³⁹ Pa | 1.2038634716806056×10⁴⁰ Pa | 1.2038634716806056×10⁴⁰ Pa |
+| 40 m | −6.2701222483364878×10³⁸ Pa | −3.7620733490018924×10³⁸ Pa | 8.7781711476710825×10³⁸ Pa | 1.1286220047005678×10³⁹ Pa |
+
+At 40 m, ρ − τ = −1.5048293396007570×10³⁹ Pa on both mouths.
+
+A steady coast with flat velocity satisfies ∂t v = 0 when the pressure gradient equals the observer source. That source is 0.0794560282152649 on the observed branch and 0 on the unobserved branch. Every constant speed satisfies the same balance. The coast on the ledger remains the lateral-load speed. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 
