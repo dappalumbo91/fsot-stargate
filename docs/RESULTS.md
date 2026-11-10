@@ -409,7 +409,29 @@ The hold left a uniform velocity of 0.01255164591272752 with the call off and th
 
 The leftover equals the source times the vendor interval, 0.0794560282152649 × 0.1579697122378454. Dividing by γ = 0.4280434460598068 gives the carry 0.029323298904041128. The smoothing length reprints the shell's relaxation length, 0.8573494832025231, from κ = 0.3146325373020798. On the transport law that length is 29.237825048544227 carry-lengths. An offset riding the coast is down by one e-fold when the coast has moved 0.034202270460941514 of a smoothing length. The velocity remains. The coast is empty.
 
-While the source stays on and the flow starts from rest, the distance is J t²/2. Over the vendor interval that is 0.0009913899464724474. Over one scalar e-fold it is 0.21683089022520075, and the velocity has become 0.18562608292842123. The fold does not end the call at that e-fold. The two-mouth coupling still has no separation. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+While the source stays on and the flow starts from rest, the distance is J t²/2. Over the vendor interval that is 0.0009913899464724474. Over one scalar e-fold it is 0.21683089022520075, and the velocity has become 0.18562608292842123. The fold does not end the call at that e-fold. The two-mouth coupling still has no separation. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The split is the next section.
+
+## The split, 2026-11-10
+
+The carry is the motion of a bump that has a slope. This page splits that bump from a flat offset on the same coast, 0.01255164591272752. The chain is in [METHOD.md](METHOD.md). The wavenumber is one over the smoothing length, 1.166385493421683. At that wavenumber κ k² equals γ, up to roundoff.
+
+| Reading | Value |
+| --- | ---: |
+| Flat transport rate on a unit offset | −0.4280434460598068 |
+| Flat distance | 0 |
+| Flat e-fold | 2.3362114505084106 |
+| Wavenumber, 1 / smoothing length | 1.166385493421683 |
+| κ k² − γ | roundoff |
+| Crest rate on a unit bump | −0.8560868921196136 |
+| Shaped e-fold, 1/(2γ) | 1.1681057252542053 |
+| Node rate on a unit bump | 0.014640057711170941 |
+| Distance the peak moves in that e-fold | 0.014661649452020564 |
+| That distance over the smoothing length | 0.017101135230470757 |
+| Shaped distance against the recorded carry | 1/2 |
+
+`scalar_transport_rhs` on a unit flat offset, with the leftover coast and zero slope, returns −γ. The coast does not enter. The offset dies in place. A two-mouth kick is one number on each mouth, so it is this flat kind. The coupling still has no x, and this coast does not take the kick to the other mouth.
+
+On a unit cosine of wavenumber 1/ell the crest has zero slope and curvature −k². The same function returns −0.8560868921196136, which is −2γ. The node has zero value and slope −k, and the function returns 0.014640057711170941, which is the coast times k. The peak moves at the coast. In one e-fold of the combined decay, pin time 1.1681057252542053, it moves 0.014661649452020564. Twice that distance is the recorded carry, 0.029323298904041128. The move is 0.017101135230470757 of a smoothing length. The velocity remains after the bump is gone. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

@@ -188,3 +188,11 @@ The carry page uses the hold's leftover and the scalar law's own scales. `observ
 κ = bleed_rate · A_BLEED = 0.3146325373020798. The smoothing length is sqrt(κ/γ) = 0.8573494832025231. That is the relaxation length already used as wall thickness on the parent shell, read here as the unit of x in the transport law. The carry divided by that length is 0.034202270460941514. The length divided by the carry is 29.237825048544227.
 
 With the source on and the flow starting from rest, v = J t and the distance is J t²/2. At the vendor interval the distance is 0.0009913899464724474. At one scalar e-fold it is 0.21683089022520075, and the velocity is J/γ = 0.18562608292842123. No off time is read from the fold. Pin time is not converted to seconds. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The split, 2026-11-10
+
+The split page evaluates `scalar_transport_rhs` on the leftover coast 0.01255164591272752. γ = 0.4280434460598068 and κ = 0.3146325373020798. The smoothing length is 0.8573494832025231, and the wavenumber is its reciprocal, 1.166385493421683. Then κ k² − γ is roundoff, −5.551115123125783×10⁻¹⁷.
+
+A unit flat offset uses slope 0 and curvature 0. The call returns −0.4280434460598068, which matches −γ, so the coast does not enter. The distance of that pattern is 0. The e-fold is 1/γ = 2.3362114505084106.
+
+A unit cosine at that wavenumber has, at its crest, value 1, slope 0, and curvature −k². The call returns −0.8560868921196136, which matches −2γ. The e-fold is 1/(2γ) = 1.1681057252542053. At the node the value is 0, the slope is −k, and the curvature is 0. The call returns 0.014640057711170941, which matches the coast times k. The peak moves at the coast, so in one shaped e-fold the distance is the coast times 1/(2γ) = 0.014661649452020564. Twice that distance matches the recorded carry. Dividing by the smoothing length gives 0.017101135230470757. No off time, no mouth separation, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
