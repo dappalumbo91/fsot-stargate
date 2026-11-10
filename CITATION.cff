@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-title: "FSOT warp shell: 0.10c at the published 20 m radius"
+title: "FSOT Stargate: two mouths"
 message: "If you use this record, cite it."
 type: software
 authors:
   - family-names: Palumbo
     given-names: Damian Arthur
-repository-code: "https://github.com/dappalumbo91/fsot-warp-shell"
+repository-code: "https://github.com/dappalumbo91/fsot-stargate"
 license: Apache-2.0
 year: 2026
+abstract: "The scalar channel and the 20 m shape are recorded separately."
 identifiers: []

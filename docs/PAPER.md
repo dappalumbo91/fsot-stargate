@@ -183,4 +183,4 @@ The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
 
 ## Where the numbers live
 
-The chain, the proofs, and the stamp are in this repository. [docs/RESULTS.md](RESULTS.md) holds the tables. [docs/METHOD.md](METHOD.md) holds the derivations. [docs/AUDIT.md](AUDIT.md) holds the check record. [README.md](../README.md) holds the short form of each page. The unified concept used as the lens is the note *Fluid Spacetime Theory, The Unified Concept*, by the same author. That note is the picture. This paper is the picture applied to the numbers the ledger has fixed.
+The chain, the proofs, and the stamp are in this repository. [docs/RESULTS.md](RESULTS.md) holds the tables. [docs/METHOD.md](METHOD.md) holds the derivations. [docs/AUDIT.md](AUDIT.md) holds the check record. [README.md](../README.md) holds the short form of each page. The one-page claim is [docs/CLAIM.md](CLAIM.md). The unified concept used as the lens is the note *Fluid Spacetime Theory, The Unified Concept*, by the same author. That note is the picture. This paper is the picture applied to the numbers the ledger has fixed.

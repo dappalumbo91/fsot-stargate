@@ -5,7 +5,8 @@
 **Author:** Damian Arthur Palumbo  
 **License:** Apache-2.0  
 **Pin:** FSOT 2.1 AEB2AD, from [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Parent:** [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`
+**Parent:** [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`  
+**Claim:** [docs/CLAIM.md](docs/CLAIM.md)
 
 Two mouths. A transit from one to the other. The shell and sail ledger below is the parent record, cloned as it stood at that commit. This repository is the next system. Nothing in this opening is a scored transit, a built gate, or a faster-than-light channel.
 
@@ -267,7 +268,25 @@ python python/figures.py
 
 The pin check runs when `vendor/fsot_compute.py` from FSOT-2.1-Lean is available. Point `FSOT_VENDOR` at that directory, or clone FSOT-2.1-Lean next to this repository. The script checks that the file still hashes to pin AEB2AD and that `ell` matches the shell.
 
-The Lean proofs use Lean 4.31.0 and Mathlib v4.31.0, from a checkout that already has those built. Run both from the FSOT-2.1-Lean repository so Mathlib resolves:
+The gate claim is [docs/CLAIM.md](docs/CLAIM.md). Its check hashes that same pin and reprints the shutdown mean, the depth-5 name, and the gate's h. It exits if the pin is absent.
+
+```bash
+python python/claim_check.py
+```
+
+The gate stamp, from this repository:
+
+```bash
+octave --eval "addpath('octave'); dial_gate_stamp"
+```
+
+The gate proofs are [lean/GateLedger.lean](lean/GateLedger.lean). From the FSOT-2.1-Lean checkout:
+
+```bash
+lake env lean /path/to/fsot-stargate/lean/GateLedger.lean
+```
+
+The parent shell proofs use Lean 4.31.0 and Mathlib v4.31.0, from a checkout that already has those built. Run them from the FSOT-2.1-Lean repository so Mathlib resolves:
 
 ```bash
 lake env lean /path/to/fsot-warp-shell/lean/WarpMix.lean
