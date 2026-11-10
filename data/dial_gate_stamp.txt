@@ -80,6 +80,18 @@ PASS potential_on got 8.7933870746039020e-02 want 8.7933870746039020e-02 residua
 PASS shutdown_action got 4.7232492046350283e-01 want 4.7232492046350283e-01 residual 0.000e+00
 PASS shutdown_pin_time got 5.8280639489868257e+01 want 5.8280639489868257e+01 residual 0.000e+00
 PASS shutdown_seconds got 3.8880657558015190e-06 want 3.8880657558015190e-06 residual 0.000e+00
+PASS energy_side_sixth got -1.0085463036151718e+45 want -1.0085463036151718e+45 residual 0.000e+00
+PASS energy_mouth_sixth got -2.0170926072303437e+45 want -2.0170926072303437e+45 residual 0.000e+00
+PASS energy_pair_sixth got -4.0341852144606874e+45 want -4.0341852144606874e+45 residual 0.000e+00
+PASS energy_side_half got -6.0512778216910320e+44 want -6.0512778216910320e+44 residual 0.000e+00
+PASS energy_mouth_half got -1.2102555643382064e+45 want -1.2102555643382064e+45 residual 0.000e+00
+PASS energy_pair_half got -2.4205111286764128e+45 want -2.4205111286764128e+45 residual 0.000e+00
+PASS energy_proper_side_sixth got -1.6348510972734333e+45 want -1.6348510972734333e+45 residual 0.000e+00
+PASS energy_proper_mouth_sixth got -3.2697021945468666e+45 want -3.2697021945468666e+45 residual 0.000e+00
+PASS energy_proper_pair_sixth got -6.5394043890937331e+45 want -6.5394043890937331e+45 residual 0.000e+00
+PASS energy_proper_side_half got -1.0534303474019149e+45 want -1.0534303474019149e+45 residual 0.000e+00
+PASS energy_proper_mouth_half got -2.1068606948038297e+45 want -2.1068606948038297e+45 residual 0.000e+00
+PASS energy_proper_pair_half got -4.2137213896076594e+45 want -4.2137213896076594e+45 residual 0.000e+00
 NOTE h is absent from this stamp. No value is supplied.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the depth-5 open/closed pair stays unseated.

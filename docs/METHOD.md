@@ -425,4 +425,16 @@ The flux on that path is the starting flux times exp(−(2κ + γ) t). The open-
 
 Any A + B/r with A + B/r₀ = r₀ and A = Rs is the shape page's b(r). The slope at r is the throat slope times (r₀/r)². The Einstein density used at the throat, ρ = b′ c⁴ / (8 π G r²), therefore scales by another (r₀/r)², and the ratio of densities is (r₀/r)⁴. The radial tension that returns c⁴ / (8 π G r₀²) at the throat is τ(r) = b(r) c⁴ / (8 π G r³), so τ(r)/τ(r₀) = (b(r)/r₀) (r₀/r)³. Their difference has the sign of b′ r − b = −Rs − 2 (r₀ − Rs) r₀ / r. At r = 2 r₀ that numerator is −r₀, and ρ − τ = −τ(r₀)/8.
 
-The pin momentum balance at vanishing velocity derivatives is ∂t v = −(1/ρ) ∂x P + J/ρ. A steady coast then has ∂x P = J. J is `observer_source`. The speed remains the lateral-load coast already on the ledger. The reading is in [RESULTS.md](RESULTS.md).
+The pin momentum balance at vanishing velocity derivatives is ∂t v = −(1/ρ) ∂x P + J/ρ. A steady coast then has ∂x P = J. J is `observer_source`. The speed remains the lateral-load coast already on the ledger. The reading is in [RESULTS.md](RESULTS.md). The energy is the next section.
+
+## The energy, 2026-11-10
+
+The energy page reads the solve-page coordinate integral as joules. The density ρ = b′ c⁴ / (8 π G r²) is in pascals. From the throat to infinity, on one side,
+
+∫ ρ 4π r² dr = (c⁴ / (2G)) (Rs − r₀),
+
+because b(∞) = Rs and b(r₀) = r₀. The right-hand side equals the solve-page exotic mass times c². With c = 299792458 and G = 66743/10¹⁵ the product is an exact rational. One side is −5 M c² on the one-sixth mouth and −1 M c² on the half-compact mouth, where M = Rs c² / (2G) is `compactMass` at 20 m. One mouth doubles the one-side value. Two mouths of one kind quadruple it. `GateLedger.lean` proves the integral form, the product with c², and the six rationals.
+
+The proper energy is the solve-page proper mass times the same c². The factor on one side remains −2√30 atan(√30/6) on the one-sixth mouth and −2√2 atan(√2/2) on the half-compact mouth. The stamp multiplies the float64 proper mass by c².
+
+The two-mouth potential V stays dimensionless. No conversion is applied to it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

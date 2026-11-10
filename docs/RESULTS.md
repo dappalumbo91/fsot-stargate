@@ -1087,7 +1087,37 @@ The inverse-power shape is the unique A + B/r that equals r₀ at the throat and
 
 At 40 m, ρ − τ = −1.5048293396007570×10³⁹ Pa on both mouths.
 
-A steady coast with flat velocity satisfies ∂t v = 0 when the pressure gradient equals the observer source. That source is 0.0794560282152649 on the observed branch and 0 on the unobserved branch. Every constant speed satisfies the same balance. The coast on the ledger remains the lateral-load speed. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+A steady coast with flat velocity satisfies ∂t v = 0 when the pressure gradient equals the observer source. That source is 0.0794560282152649 on the observed branch and 0 on the unobserved branch. Every constant speed satisfies the same balance. The coast on the ledger remains the lateral-load speed. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The energy is the next section.
+
+## The energy, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The shape density is in pascals, joules per cubic meter. Its coordinate integral from the throat to infinity, on one side, is (c⁴ / (2G)) (Rs − r₀). That integral equals the solve-page exotic mass times c². c = 299792458 and G = 66743/10¹⁵. One side is −5 M c² on the one-sixth mouth and −1 M c² on the half-compact mouth. One mouth has two sides. Two mouths of one kind have four sides. M is the positive mouth mass Rs c² / (2G).
+
+| Extent | One-sixth | Half-compact |
+| --- | ---: | ---: |
+| One side | −201940217826562255731595018653792400000000000000000/200229 J | −40388043565312451146319003730758480000000000000000/66743 J |
+| One mouth | −403880435653124511463190037307584800000000000000000/200229 J | −80776087130624902292638007461516960000000000000000/66743 J |
+| Two mouths | −807760871306249022926380074615169600000000000000000/200229 J | −161552174261249804585276014923033920000000000000000/66743 J |
+
+The stamp multiplies the float64 exotic mass by c². On the one-sixth mouth those products match the float of the rational. On the half-compact mouth each product sits one unit in the last place above the float of the rational. The floats of the three half-compact rationals are −6.0512778216910312×10⁴⁴ J, −1.2102555643382062×10⁴⁵ J, and −2.4205111286764125×10⁴⁵ J.
+
+| Extent | One-sixth float64 | Half-compact float64 |
+| --- | ---: | ---: |
+| One side | −1.0085463036151718×10⁴⁵ J | −6.0512778216910320×10⁴⁴ J |
+| One mouth | −2.0170926072303437×10⁴⁵ J | −1.2102555643382064×10⁴⁵ J |
+| Two mouths | −4.0341852144606874×10⁴⁵ J | −2.4205111286764128×10⁴⁵ J |
+
+The proper-volume mass on the solve page, multiplied by the same c², is the proper energy. The factors stay −2√30 atan(√30/6) and −2√2 atan(√2/2). The stamp multiplies the float64 proper mass by c².
+
+| Extent | One-sixth float64 | Half-compact float64 |
+| --- | ---: | ---: |
+| One side | −1.6348510972734333×10⁴⁵ J | −1.0534303474019149×10⁴⁵ J |
+| One mouth | −3.2697021945468666×10⁴⁵ J | −2.1068606948038297×10⁴⁵ J |
+| Two mouths | −6.5394043890937331×10⁴⁵ J | −4.2137213896076594×10⁴⁵ J |
+
+The two-mouth potential stays in its own units. Its settled value remains 0.08793387074603902. The scalar shutdown remains 3.888065755801519×10⁻⁶ s. SymPy leaves 1/((s² + 20) √(3s² + 110)) as an integral. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

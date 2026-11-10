@@ -14,8 +14,9 @@ Gate ledger. Not part of `lean_lib FSOT`.
 The shape, the lateral coefficient, the proper-length radicand, the load
 identity, the mouth masses, the cavity against both horizons, the
 size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, the sign of the
-settled two-mouth flux, the potential whose gradient is that law, and the
-radial density factor (r₀/r)⁴. The 400000-step crossings stay with the Octave log.
+settled two-mouth flux, the potential whose gradient is that law, the
+radial density factor (r₀/r)⁴, and the coordinate energy of the exotic
+mass. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -402,5 +403,60 @@ theorem steady_balance (ρ dP J : ℚ) (hρ : ρ ≠ 0) :
     rw [h]
     field_simp
     ring
+
+/-- One side, coordinate energy: (c⁴ / (2G)) (Rs − r₀) = exotic mass × c². -/
+theorem sixth_energy_integral :
+    cLight ^ 4 / (2 * GNewt) * (rsSixth - r0) =
+      compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth) * cLight ^ 2 := by
+  unfold compactMass rsSixth r0 cLight GNewt
+  field_simp
+
+theorem half_energy_integral :
+    cLight ^ 4 / (2 * GNewt) * (rsHalf - r0) =
+      compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf) * cLight ^ 2 := by
+  unfold compactMass rsHalf r0 cLight GNewt
+  field_simp
+
+theorem sixth_energy_one_side :
+    compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth) * cLight ^ 2 =
+      -201940217826562255731595018653792400000000000000000 / 200229 := by
+  rw [sixth_coordinate_one_side]
+  unfold cLight
+  norm_num
+
+theorem half_energy_one_side :
+    compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf) * cLight ^ 2 =
+      -40388043565312451146319003730758480000000000000000 / 66743 := by
+  rw [half_coordinate_one_side]
+  unfold cLight
+  norm_num
+
+theorem sixth_energy_mouth :
+    2 * (compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth) * cLight ^ 2) =
+      -403880435653124511463190037307584800000000000000000 / 200229 := by
+  rw [sixth_coordinate_one_side]
+  unfold cLight
+  norm_num
+
+theorem half_energy_mouth :
+    2 * (compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf) * cLight ^ 2) =
+      -80776087130624902292638007461516960000000000000000 / 66743 := by
+  rw [half_coordinate_one_side]
+  unfold cLight
+  norm_num
+
+theorem sixth_energy_pair :
+    4 * (compactMass (1 / 6) 20 * ((rsSixth - r0) / rsSixth) * cLight ^ 2) =
+      -807760871306249022926380074615169600000000000000000 / 200229 := by
+  rw [sixth_coordinate_one_side]
+  unfold cLight
+  norm_num
+
+theorem half_energy_pair :
+    4 * (compactMass (1 / 2) 20 * ((rsHalf - r0) / rsHalf) * cLight ^ 2) =
+      -161552174261249804585276014923033920000000000000000 / 66743 := by
+  rw [half_coordinate_one_side]
+  unfold cLight
+  norm_num
 
 end GateLedger

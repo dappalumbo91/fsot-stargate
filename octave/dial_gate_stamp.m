@@ -4,6 +4,7 @@
 % length, and the throat-density reprint. The solve adds the coordinate
 % mass ratios and the proper-mass factor. The derive adds the radial
 % density factor, the 40 m tension ratios, and the two-mouth potential.
+% The energy page multiplies the exotic masses by c squared.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -168,6 +169,19 @@ roundoff = 1.3877787807814457e-17;
 t_pin = log(flux0 / roundoff) / (2 * kap + gam);
 fails = lineout(fid, fails, 'shutdown_pin_time', t_pin, 5.8280639489868257e+01, 0);
 fails = lineout(fid, fails, 'shutdown_seconds', t_pin * r0 / c, 3.8880657558015190e-06, 1e-15);
+
+fails = lineout(fid, fails, 'energy_side_sixth', -5 * M6 * c ^ 2, -1.0085463036151718e45, 0);
+fails = lineout(fid, fails, 'energy_mouth_sixth', -10 * M6 * c ^ 2, -2.0170926072303437e45, 0);
+fails = lineout(fid, fails, 'energy_pair_sixth', -20 * M6 * c ^ 2, -4.0341852144606874e45, 0);
+fails = lineout(fid, fails, 'energy_side_half', -1 * Mh * c ^ 2, -6.0512778216910320e44, 0);
+fails = lineout(fid, fails, 'energy_mouth_half', -2 * Mh * c ^ 2, -1.2102555643382064e45, 0);
+fails = lineout(fid, fails, 'energy_pair_half', -4 * Mh * c ^ 2, -2.4205111286764128e45, 0);
+fails = lineout(fid, fails, 'energy_proper_side_sixth', M6 * r6 * c ^ 2, -1.6348510972734333e45, 0);
+fails = lineout(fid, fails, 'energy_proper_mouth_sixth', 2 * M6 * r6 * c ^ 2, -3.2697021945468666e45, 0);
+fails = lineout(fid, fails, 'energy_proper_pair_sixth', 4 * M6 * r6 * c ^ 2, -6.5394043890937331e45, 0);
+fails = lineout(fid, fails, 'energy_proper_side_half', Mh * rh * c ^ 2, -1.0534303474019149e45, 0);
+fails = lineout(fid, fails, 'energy_proper_mouth_half', 2 * Mh * rh * c ^ 2, -2.1068606948038297e45, 0);
+fails = lineout(fid, fails, 'energy_proper_pair_half', 4 * Mh * rh * c ^ 2, -4.2137213896076594e45, 0);
 
 fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');

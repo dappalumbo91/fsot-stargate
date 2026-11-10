@@ -384,4 +384,8 @@ Lean 4.31.0 accepted `lean/GateLedger.lean`, including (Rs − r₀)/Rs = −5 a
 
 ## The derive, 2026-11-10
 
-Lean 4.31.0 accepted `lean/GateLedger.lean`, including the product coefficient −κ, the settled potential, the shutdown identity, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the 40 m combination −1/8, and the steady balance ∂x P = J. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The new residuals are 0, including the potential 0.08793387074603902, the shutdown integral 0.47232492046350283, and the shutdown time 3.888065755801519×10⁻⁶ s. The pin files were not edited.
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including the product coefficient −κ, the settled potential, the shutdown identity, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the 40 m combination −1/8, and the steady balance ∂x P = J. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The new residuals are 0, including the potential 0.08793387074603902, the shutdown integral 0.47232492046350283, and the shutdown time 3.888065755801519×10⁻⁶ s. The pin files were not edited. The energy is the next section.
+
+## The energy, 2026-11-10
+
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including (c⁴ / (2G)) (Rs − r₀) equal to the exotic mass times c², and the six coordinate energies −5 M c², −10 M c², and −20 M c² on the one-sixth mouth and −1 M c², −2 M c², and −4 M c² on the half-compact mouth. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The twelve energy residuals are 0. The one-sixth coordinate products match the float of the rational. Each half-compact coordinate product sits one unit in the last place above the float of its rational. The pin files were not edited.
