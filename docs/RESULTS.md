@@ -223,6 +223,30 @@ Reaching 0.04c on a sail is 1.80×10¹⁹ J. A 15 TW beam takes 14 days and 48 A
 
 Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. That film stays on the pad. From a 200 km orbit its spiral takes 46 minutes and 2.030×10¹⁶ J. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading, with the same 2E/c, would need absorption 2.50×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
 
+Dated 2026-11-09. The same 1 µm line. Spot diameter is wavelength times range over aperture diameter, the same line as the 3.8 m lunar aperture and the 73 km aperture at 49 AU. The aperture that puts the spot on the sail at the far end of the gap is 784 m, 6.29 km, and 43.7 km for the 100 m sail, and 69.4 m, 557 m, and 3.87 km for the 1.13 km sheet. The light time across those gaps is 4.36 minutes, 35.0 minutes, and 4.04 hours. Holding the spot on the sheet takes 3.0 milliarcseconds, 0.37 milliarcseconds, and 0.053 milliarcseconds. On the 100 m sail those angles are 0.26, 0.033, and 0.0047 milliarcseconds. A larger aperture makes a smaller spot. At half the range that tight spot is half the sail, the intensity is four times the even value, and the temperature is 1.41 times the even value.
+
+The published sheet, absorption 0.001 and emissivity 0.5, with both faces radiating, runs at 364 K on 1 TW, 717 K on 15 TW, 1,026 K on the 63 TW plant, 1,729 K on 507 TW, and 2,851 K on 3,745 TW. The absorption that holds that same sheet at 600 K is 7.35×10⁻³, 4.90×10⁻⁴, 1.17×10⁻⁴, 1.45×10⁻⁵, and 1.96×10⁻⁶. The 2.50×10⁻⁴ figure remains the 1 g target on the 20 tonne loading. The 63 TW sheet is 10 tonnes of film at 4.28 g, and the absorption that holds it at 600 K is 1.17×10⁻⁴. A 100 m sail of the same film is 79 kg. At absorption 0.001 it runs at 1,224 K on 1 TW, 2,409 K on 15 TW, 3,448 K on 63 TW, 5,808 K on 507 TW, and 9,576 K on 3,745 TW.
+
+The stop is a mirror at the destination. A mirror matched to the sail at half the gap is 392 m, 3.14 km, and 21.8 km for the 100 m sail, and 34.7 m, 279 m, and 1.93 km for the sheet. The feed that lights a matched mirror is twice the sail, 200 m or 2.26 km. The home optic is the larger of that feed and the far-end aperture: 784 m, 6.29 km, and 43.7 km for the 100 m sail, and 2.26 km, 2.26 km, and 3.87 km for the sheet. On the Neptune day the brake covers 0.29 of the gap, and the matched sheet mirror is 1.12 km. The half-gap mirror is the case that matches the trips from 1 TW through the 63 TW plant.
+
+A destination mirror the size of the sail, lit by a home aperture of that same size, puts a spot on the destination equal to those matched-mirror diameters. The 100 m sail catches 6.5%, 0.10%, and 0.002% of the return. On the sheet the Mars spot is inside the sheet. The power concentrates 1,060 times and the temperature rises by a factor 5.7, about 5,850 K against the 63 TW even temperature of 1,026 K. At Jupiter the concentration is 16.4 and the temperature rises by a factor 2.01, about 2,070 K. At Neptune the sheet catches 34% of the return.
+
+Dust at 1 AU follows Grün et al., Icarus 62, 244–272 (1985). The cumulative flux on one side of a randomly tumbling plate, inverted with the model's 20 km/s mean speed through Φ = ρ v / 4, gives 9.62×10⁻¹⁷ g/m³. That sits on the paper's figure of about 10⁻¹⁶ g/m³. The mass peaks at a grain of 6.7×10⁻⁶ g. Grains from 10⁻⁶ g to 10⁻⁴ g hold 45% of the mass. The model domain is the cloud around 1 AU, which is the Mars gap and the start of the longer trips.
+
+At that density the sheet sweeps 7.54 g across the Mars gap. 5.10×10⁵ grains at the peak mass make up the 45%. The 100 m sail sweeps 0.059 g. One peak-mass grain at the booked peaks carries the kinetic energy below. The Jupiter and Neptune entries are that grain at the booked speed. The 7.54 g column is the Mars gap.
+
+| Peak | Mars | Jupiter | Neptune |
+| --- | ---: | ---: | ---: |
+| 1 TW | 176 J | 1,410 J | 9,790 J |
+| 15 TW | 2,630 J | 2.11×10⁴ J | 1.46×10⁵ J |
+| 63 TW plant | 1.10×10⁴ J | 8.84×10⁴ J | 6.12×10⁵ J |
+
+At the one-day Jupiter peak the same grain carries 7.10×10⁵ J. At the Neptune-day peak it carries 3.29×10⁷ J. If the whole 7.54 g met the sheet at the 63 TW Mars peak, the kinetic energy is 1.24×10¹⁰ J. The ship is at that speed at mid-gap.
+
+Outside about 3 AU, Ulysses and Galileo counted interstellar grains from 10⁻¹⁴ g to 10⁻¹² g at a flux of 1.5×10⁻⁴ m⁻² s⁻¹ (Grün, Landgraf, and co-workers). A 10⁻¹² g grain at the 63 TW Neptune speed carries 0.09 J. At 0.318c it carries 4.9 J. The heavy grains are the 1 AU cloud.
+
+This is kinematics and a dust column. It is not a Warp Factory grid. The Eulerian light shell remains the one-sixth bend window at 0.04c.
+
 ## Audit of the 20 m shell
 
 Log `data/dial_audit_bar.txt`, dated 2026-10-29. Same mix, same N = 120 grid. A fresh 0.10c run at compactness 1/2 reproduces the line above: energy 8.2868×10²⁷ kg, dominant ratio 1.92×10⁻⁵ in the exterior at 26.47 m, shift 0.10, clean. With the shift off, compactness 1/2 is clean at energy 8.3144×10²⁷ kg, dominant 1.95×10⁻⁵, and compactness 1/3 is clean at energy 5.1495×10²⁷ kg, dominant 1.71×10⁻⁵. Both parked violations sit at 26.47 m. The smoothed density on this grid ends at 26.57 m. The check is written out in [AUDIT.md](AUDIT.md).
