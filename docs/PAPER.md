@@ -69,7 +69,7 @@ The same law is the downhill slope of a potential,
 
 V = (γ/2) (S₁ − E₁)² + (γ/2) (S₂ − E₂)² + (κ/2) (S₁ − S₂)².
 
-Expanding the last square produces the product −κ S₁ S₂. The two mouths pull on each other with coefficient −κ. On the seated pair that coefficient is −0.10001300937604073. The pin source has no parameter named h. The coefficient is the leak that was already seated.
+Expanding the last square produces the product −κ S₁ S₂. The two mouths pull on each other with coefficient −κ. On the seated pair that coefficient is −0.10001300937604073. The pin source has no parameter named h. The coefficient is the leak that was already seated. The shutdown section names that coefficient h.
 
 While the equilibria differ, the settled value of V is 0.08793387074603902. When the equilibria match, V is 0. V is the tension-plus-leak accounting of the scalar channel. It is dimensionless. The joule inventory in the next section is a different object, the integral of the shape density. No conversion is pasted from one onto the other.
 
@@ -77,9 +77,9 @@ Set both equilibria to one common value and the current returns to rest. Along t
 
 In the unified concept, κ is leakage between scales and γ is the medium pulling each condensate back into its own phase. A gap that remains between the two equilibria is an opening that stays up. Removing the gap returns the current to rest. Four requirements sit on this ledger together. The direction follows the caller, and it reverses when the gap reverses. The opening stays up while the equilibria differ. The return to rest is the shutdown path just written. The crossing on a clock in seconds is the coast in the section after the energy.
 
-The eight-sector clock in the pin sets each sector's equilibrium to that sector's own scalar. Seven steps of that clock leave all 35 observed flags where they started. The shutdown substitution, both equilibria set equal, is a derived path. That clock does not apply it.
+The eight-sector clock in the pin sets each sector's equilibrium to that sector's own scalar. Seven steps of that clock leave all 35 observed flags where they started. The shutdown substitution, both equilibria set equal, is a derived path. That clock does not apply it. The shutdown section runs the substitution on the clock's output.
 
-At depth 8, optics, acoustics, materials science, and quantum optics share 0.9536594523121079, and quantum computing carries the closed scalar. Any two of the four observed names have flux 0, because their equilibria match. At depth 5 the two named domains, particle physics and quantum mechanics, both carry the open scalar 0.9501974701670142, so their flux is 0. The closed depth-5 value −0.6456729548144859 has no domain name. That pair stays unseated.
+At depth 8, optics, acoustics, materials science, and quantum optics share 0.9536594523121079, and quantum computing carries the closed scalar. Any two of the four observed names have flux 0, because their equilibria match. At depth 5 the two named domains, particle physics and quantum mechanics, both carry the open scalar 0.9501974701670142, so their flux is 0. The closed depth-5 value −0.6456729548144859 has no domain name in the observed list. The shutdown section names that reading.
 
 ## The corridor and its energy
 
@@ -139,9 +139,9 @@ A walking pace covers the same proper length in about a minute, because a walkin
 
 ## What was checked
 
-Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, and the critical-point polynomials of the two supply rates.
+Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, and the integral of one decay mode.
 
-Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines and the supply-rate lines. MATLAB R2026b is installed. `matlab -batch` exits with Licensing Error 1, code −1.2, because no license file is on the search path. Octave is the checker that ran.
+Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines, the supply-rate lines, and the shutdown lines. MATLAB R2026b is installed. `matlab -batch` exits with Licensing Error 1, code −1.2, because no license file is on the search path. Octave is the checker that ran.
 
 The constants c and G are the gate pair above. The parent shell's route pair is a different pair and is not mixed into these joules.
 
@@ -165,11 +165,17 @@ At the 40 m face, each side holds exactly half of its infinite-arm energy. The t
 
 The same page evaluates the proper-mass integrand that had been left as an unevaluated integral. From zero to infinity it equals √10 atan(√30/6) / 100 on the one-sixth mouth and √2 atan(√2/2) / 20 on the half-compact mouth.
 
+## The shutdown
+
+The eight sectors come back from the clock with mean 0.73407640288136422. The shutdown sets every equilibrium to that one number and keeps the same linear law. The mean stays, because the two rates on an undirected edge cancel. The largest edge current starts at 0.069999121186276561 and falls to the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The integral of the potential along that return is 0.42911086091120682.
+
+In the unified-concept reading, this is the medium letting every condensate settle to one shared phase once the call is over. While each sector keeps its own phase, thirteen edges still carry a steady leak. The largest of those leaks is 0.058061061286508266. Moving only the gravity sector onto the shared phase leaves a largest leak of 0.014485873046876672. The return to rest uses all eight.
+
+The closed number at depth 5, −0.6456729548144859, is the unobserved reading of particle physics and of quantum mechanics. Both names return it. The open reading of those same names is 0.9501974701670142. The seated pair is those two readings. Its leakage κ is 0.0985871397275971, and that leakage is the gate's h on the pair. The optics–computing h is 0.10001300937604073. The two mouths pull on each other with coefficient −h.
+
+Gao, Jafferis, and Wall write the same slot as −h times the product of the two boundary operators, and they find that a positive h makes the horizon null energy negative. The value here is the κ already on the pair. The pin files were not edited.
+
 ## What is still open
-
-The sector clock still sets each sector to its own scalar. The shutdown path, both equilibria set equal, is already derived. The clock does not apply it, and the pin is not edited to make it do so.
-
-The closed depth-5 value −0.6456729548144859 still has no domain name, so that pair stays unseated. The pin still has no parameter named h.
 
 The ship times remain the 400000-step trapezoid. The coast remains the lateral-load coast. MATLAB R2026b still has no license file. Octave is the checker that ran.
 

@@ -1148,7 +1148,35 @@ and
 
 ∫ ds / ((s² + 20) √(s² + 30)) = √2 atan(√2/2) / 20.
 
-The adaptive quadrature differs from the one-sixth value by −3.469×10⁻¹⁸ and from the half-compact value by 0. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+The adaptive quadrature differs from the one-sixth value by −3.469×10⁻¹⁸ and from the half-compact value by 0. The published ship times stay 2.1294485057269195 s and 2.1647639000180656 s. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The shutdown is the next section.
+
+## The shutdown, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+`coupled_equilibrium` still runs seven steps with each sector's own scalar as its equilibrium. The gate readout takes those eight coupled scalars and sets every equilibrium to their mean, 0.73407640288136422. The mean of the eight bare scalars is the same number. The sum of the two rates on an undirected edge is 0, so the mean stays. The potential at that start is 0.46402250394927314. Its integral along the decay is 0.42911086091120682.
+
+| Reading | Value |
+| --- | ---: |
+| Largest edge current at the start | 0.069999121186276561 |
+| Slowest difference rate | 0.52223176413167338 |
+| Time to the open-page roundoff | 69.213540350682152 pin-time units |
+| That time on the map-page clock | 4.6174303925072154×10⁻⁶ s |
+| Bare edges with a nonzero steady flux | 13 |
+| Largest bare steady flux | 0.058061061286508266 |
+| Largest steady flux after moving only gravity | 0.014485873046876672 |
+
+Thirteen of the fifteen edges carry a nonzero steady flux while each equilibrium stays on its own scalar. The largest of those is the gravity–Higgs edge. Moving only the gravity equilibrium to the mean leaves the largest steady flux at 0.014485873046876672. Setting all eight equilibria to the mean makes every steady flux 0, and the carried currents decay to the roundoff above.
+
+Particle physics and quantum mechanics are the depth-5 domains. Both have look 1, hits 0, and the observed flag on. `domain_scalar` returns 0.9501974701670142 for each. `matter_unobserved_S` returns −0.6456729548144859 for each, and `scalar_at_D(5, False)` returns the same number. The closed mouth's name is that unobserved reading. The seated pair is the observed reading against it. κ = 0.0985871397275971. The steady scalars are 0.69855345216481501 and −0.39402893681228679. Their mean is 0.15226225767626411. The shutdown integral from that steady state is 0.14921703458786387. The current reaches the same roundoff in 58.520368540428223 pin-time units, 3.9040587565700679×10⁻⁶ s.
+
+The observed particle–quantum-mechanics coupling is 0.1450846749297095. Those two observed scalars match, so that flux is 0.
+
+Gao, Jafferis, and Wall, JHEP 12 (2017) 151, equation (2.7), write
+
+δH(t) = −∫ dφ h(t, φ) O_R(t, φ) O_L(−t, φ),
+
+with h equal to 0 before a turn-on time t₀. In that paper, positive h makes the null energy on the horizon negative. The two-mouth potential already contains the product of the two scalars with coefficient −κ. The gate's h on a pair is that pair's κ, so the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. A deformation of only one boundary Hamiltonian leaves the bridge closed, which is the citation for the gravity-only row above. The pin files were not edited. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

@@ -6,6 +6,7 @@
 % density factor, the 40 m tension ratios, and the two-mouth potential.
 % The energy page multiplies the exotic masses by c squared.
 % The supply page reads dE/dt along the null ray and the lateral-load coast.
+% The shutdown page sets every sector equilibrium to the mean of the clock.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -232,9 +233,161 @@ Kh = integral(@(s) 1 ./ ((s .^ 2 + 20) .* sqrt(s .^ 2 + 30)), 0, inf);
 fails = lineout(fid, fails, 'proper_integrand_sixth', I6, sqrt(10) * atan(sqrt(30) / 6) / 100, 1e-15);
 fails = lineout(fid, fails, 'proper_integrand_half', Kh, sqrt(2) * atan(sqrt(2) / 2) / 20, 0);
 
-fprintf(fid, 'NOTE h is absent from this stamp. No value is supplied.\n');
+Sclock = [
+  -0.4820922399905892
+   0.93950485519772331
+   0.93567055594907511
+   0.95211392199641598
+   0.8911164249970055
+   0.94560405929285485
+   0.92543469252602639
+   0.76525895308240177
+];
+Sbare = [
+  -0.5023773181761478
+   0.9501974701670142
+   0.9363875640629747
+   0.9557285700955828
+   0.8873295223725087
+   0.9501974701670142
+   0.9363875640629747
+   0.7587603802989923
+];
+kedge = [
+  0.042615264597365102
+  0.049731994158804659
+  0.11170004262740593
+  0.1351196415665806
+  0.11170004262740593
+  0.13027445443111807
+  0.1450846749297095
+  0.10767445561559723
+  0.14089808029916673
+  0.13511964156658057
+  0.11204685639948532
+  0.13027445443111807
+  0.10767445561559723
+  0.11170004262740592
+  0.11139840622354726
+];
+edges = [
+  1 2; 1 7; 2 3; 2 4; 2 7; 2 5; 2 6; 3 5; 3 7; 4 6; 4 8; 5 6; 7 5; 7 6; 6 8
+];
+nsec = 8;
+Lsec = zeros(nsec);
+for e = 1:size(edges, 1)
+  i = edges(e, 1);
+  j = edges(e, 2);
+  k = kedge(e);
+  Lsec(i, i) = Lsec(i, i) + k;
+  Lsec(j, j) = Lsec(j, j) + k;
+  Lsec(i, j) = Lsec(i, j) - k;
+  Lsec(j, i) = Lsec(j, i) - k;
+end
+Eshut = mean(Sclock);
+dsec = Sclock - Eshut;
+fails = lineout(fid, fails, 'shutdown_mean', Eshut, 7.3407640288136422e-01, 0);
+fails = lineout(fid, fails, 'shutdown_mean_bare', mean(Sbare), 7.3407640288136422e-01, 0);
+fails = lineout(fid, fails, 'shutdown_action_graph', (dsec' * dsec) / 4, 4.2911086091120682e-01, 0);
+V0 = gam / 2 * (dsec' * dsec);
+for e = 1:size(edges, 1)
+  V0 = V0 + kedge(e) / 2 * (Sclock(edges(e, 1)) - Sclock(edges(e, 2))) ^ 2;
+end
+fails = lineout(fid, fails, 'shutdown_potential', V0, 4.6402250394927314e-01, 1e-15);
+Asec = Lsec + gam * eye(nsec);
+[Vsec, Dsec] = eig(Asec);
+ev = diag(Dsec);
+[ev, ord] = sort(ev);
+Vsec = Vsec(:, ord);
+amps = Vsec' * dsec;
+fails = lineout(fid, fails, 'shutdown_slow_rate', ev(2), 5.2223176413167338e-01, 1e-12);
+roundoff = 1.3877787807814457e-17;
+lo = 0;
+hi = 1;
+flux_at = inf;
+while true
+  st = Eshut + Vsec * (amps .* exp(-ev * hi));
+  flux_at = 0;
+  for e = 1:size(edges, 1)
+    cur = abs(kedge(e) * (st(edges(e, 1)) - st(edges(e, 2))));
+    if cur > flux_at
+      flux_at = cur;
+    end
+  end
+  if flux_at <= roundoff
+    break
+  end
+  hi = hi * 2;
+end
+for k = 1:90
+  mid = 0.5 * (lo + hi);
+  st = Eshut + Vsec * (amps .* exp(-ev * mid));
+  flux_at = 0;
+  for e = 1:size(edges, 1)
+    cur = abs(kedge(e) * (st(edges(e, 1)) - st(edges(e, 2))));
+    if cur > flux_at
+      flux_at = cur;
+    end
+  end
+  if flux_at > roundoff
+    lo = mid;
+  else
+    hi = mid;
+  end
+end
+fails = lineout(fid, fails, 'shutdown_clock_time', hi, 6.9213540350682152e+01, 1e-12);
+fails = lineout(fid, fails, 'shutdown_clock_seconds', hi * r0 / c, 4.6174303925072154e-06, 1e-12);
+st0 = Sclock;
+flux0 = 0;
+bare_max = 0;
+bare_open = 0;
+one_max = 0;
+Eone = Sbare;
+Eone(1) = Eshut;
+for e = 1:size(edges, 1)
+  cur = abs(kedge(e) * (st0(edges(e, 1)) - st0(edges(e, 2))));
+  if cur > flux0
+    flux0 = cur;
+  end
+  gapb = Sbare(edges(e, 1)) - Sbare(edges(e, 2));
+  fbare = kedge(e) * gam / (2 * kedge(e) + gam) * gapb;
+  if abs(fbare) > bare_max
+    bare_max = abs(fbare);
+  end
+  if abs(fbare) > 0
+    bare_open = bare_open + 1;
+  end
+  gap1 = Eone(edges(e, 1)) - Eone(edges(e, 2));
+  fone = abs(kedge(e) * gam / (2 * kedge(e) + gam) * gap1);
+  if fone > one_max
+    one_max = fone;
+  end
+end
+fails = lineout(fid, fails, 'shutdown_current0', flux0, 6.9999121186276561e-02, 0);
+fails = lineout(fid, fails, 'shutdown_bare_max', bare_max, 5.8061061286508266e-02, 1e-15);
+fails = lineout(fid, fails, 'shutdown_bare_open', bare_open, 13, 0);
+fails = lineout(fid, fails, 'shutdown_one_boundary', one_max, 1.4485873046876672e-02, 1e-15);
+k5 = 0.0985871397275971;
+op5 = 0.9501974701670142;
+cl5 = -0.6456729548144859;
+den5 = 2 * k5 + gam;
+So5 = op5 - k5 * (op5 - cl5) / den5;
+Sc5 = cl5 + k5 * (op5 - cl5) / den5;
+d05 = So5 - Sc5;
+fails = lineout(fid, fails, 'depth5_steady_open', So5, 6.9855345216481501e-01, 0);
+fails = lineout(fid, fails, 'depth5_steady_closed', Sc5, -3.9402893681228679e-01, 0);
+fails = lineout(fid, fails, 'depth5_shutdown_mean', 0.5 * (So5 + Sc5), 1.5226225767626411e-01, 0);
+fails = lineout(fid, fails, 'depth5_shutdown_action', d05 ^ 2 / 8, 1.4921703458786387e-01, 0);
+t5 = log(abs(k5 * d05) / roundoff) / den5;
+fails = lineout(fid, fails, 'depth5_shutdown_time', t5, 5.8520368540428223e+01, 0);
+fails = lineout(fid, fails, 'depth5_shutdown_seconds', t5 * r0 / c, 3.9040587565700679e-06, 1e-15);
+fails = lineout(fid, fails, 'gate_h_optics', kap, 1.0001300937604073e-01, 0);
+fails = lineout(fid, fails, 'gate_h_depth5', k5, 9.8587139727597098e-02, 0);
+fails = lineout(fid, fails, 'gate_h_product_depth5', -k5, -9.8587139727597098e-02, 0);
+
+fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
-fprintf(fid, 'NOTE the depth-5 open/closed pair stays unseated.\n');
+fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');
 
 fprintf(fid, 'fails %d\n', fails);
 fprintf('fails %d\n', fails);

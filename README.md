@@ -151,7 +151,11 @@ The coordinate integral of the shape density is the energy. On one side it equal
 
 ## The supply
 
-The hold rate of the shape is 0, because the energy at a fixed radius does not change with time. Along an outward null ray the sweep rate peaks at −5.5967323357299716×10⁵¹ W on the one-sixth mouth and −3.0748636696503162×10⁵¹ W on the half-compact mouth. Along the lateral-load coast the peaks are −8.8645790720056626×10⁴⁴ W and −4.7969358278401484×10⁴⁴ W. The mean rate over the published 40 m crossing is −4.7361854531950252×10⁴⁴ W and −2.7953523345619962×10⁴⁴ W. The proper-mass integrand equals √10 atan(√30/6)/100 and √2 atan(√2/2)/20. Lean 4.31.0 accepted the face identity, the 40 m lateral coefficient, and the two critical-point polynomials. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The hold rate of the shape is 0, because the energy at a fixed radius does not change with time. Along an outward null ray the sweep rate peaks at −5.5967323357299716×10⁵¹ W on the one-sixth mouth and −3.0748636696503162×10⁵¹ W on the half-compact mouth. Along the lateral-load coast the peaks are −8.8645790720056626×10⁴⁴ W and −4.7969358278401484×10⁴⁴ W. The mean rate over the published 40 m crossing is −4.7361854531950252×10⁴⁴ W and −2.7953523345619962×10⁴⁴ W. The proper-mass integrand equals √10 atan(√30/6)/100 and √2 atan(√2/2)/20. Lean 4.31.0 accepted the face identity, the 40 m lateral coefficient, and the two critical-point polynomials. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The shutdown is the next section.
+
+## The shutdown
+
+The sector clock returns eight scalars whose mean is 0.73407640288136422. The shutdown sets every equilibrium to that mean. The largest edge current starts at 0.069999121186276561 and reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The integral of the potential along that path is 0.42911086091120682. The closed depth-5 value is the unobserved reading of particle physics and of quantum mechanics, both −0.6456729548144859. On that pair the gate's h is 0.0985871397275971. On the optics–computing pair it is 0.10001300937604073. The product in the potential is −h. Lean 4.31.0 accepted the identities. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

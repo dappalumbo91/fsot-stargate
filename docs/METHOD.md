@@ -473,4 +473,34 @@ The ship-time integrand stays the 400000-step trapezoid. Its reduced form is
 
 √(W / (2 a)) ∫ √(Rs r + 2 A) / (r √(r² − Rs r − A)) dr,
 
-and the published values of that definite integral stay 2.1294485057269195 s and 2.1647639000180656 s. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+and the published values of that definite integral stay 2.1294485057269195 s and 2.1647639000180656 s. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The shutdown is the next section.
+
+## The shutdown, 2026-11-10
+
+The shutdown page runs the both-equal substitution on the output of `coupled_equilibrium`. The pin is not edited.
+
+The clock integrates
+
+dS_i/dt = Σ_j κ_ij (S_j − S_i) − γ (S_i − E_i)
+
+for seven steps of dt = POOF · SUCTION, with E_i equal to sector i's own scalar. On one undirected edge the two coupling terms are κ (S_j − S_i) and κ (S_i − S_j), and their sum is 0. The mean of the eight scalars therefore moves only through the relaxation. After those seven steps the mean is 0.73407640288136422, and the mean of the eight bare scalars is the same number. Setting every equilibrium to that mean leaves the mean fixed.
+
+The potential of that law is
+
+V = Σ_i (γ/2) (S_i − E)² + Σ_edges (κ_ij/2) (S_i − S_j)².
+
+At the clock's state, with E the common mean, V = 0.46402250394927314. The deviation decomposes into eigenmodes of the coupling matrix plus γ. A mode of amplitude c and rate λ contributes (λ/2) c² exp(−2 λ t) to V. The integral of that term is c²/4. Summing the modes gives |S − E|² / 4 = 0.42911086091120682. For two mouths whose sum already equals 2E, the same identity is Δ²/8.
+
+The largest edge current at the start is 0.069999121186276561. The slowest difference rate is 0.52223176413167338. The modal decay brings every edge current down to the open-page roundoff 1.3877787807814457×10⁻¹⁷ at 69.213540350682152 pin-time units. One pin-time unit is 20/299792458 s, so that shutdown is 4.6174303925072154×10⁻⁶ s.
+
+While each equilibrium stays on its own scalar, 13 of the 15 edges have a nonzero steady flux. The largest is 0.058061061286508266. Replacing only the gravity equilibrium with the common mean leaves a largest steady flux of 0.014485873046876672.
+
+Particle physics and quantum mechanics both have depth 5, look 1, and hits 0, and both are observed. `scalar_at_D(5, False)` uses look 1 and hits 0. `matter_unobserved_S` uses the domain's own look and hits with the observer off. On these two names the calls are the same evaluation, and both return −0.6456729548144859. The closed mouth's name is that unobserved reading. The seated pair uses the observed scalar 0.9501974701670142 against it. The coupling is A_BLEED · POOF · |open| · |closed| = 0.0985871397275971. The steady scalars are 0.69855345216481501 and −0.39402893681228679. Their mean is 0.15226225767626411, the difference is already the steady difference, and the shutdown integral is Δ²/8 = 0.14921703458786387. The time to the same roundoff is ln(κ |Δ| / roundoff) / (2κ + γ) = 58.520368540428223 pin-time units, 3.9040587565700679×10⁻⁶ s.
+
+The observed particle–quantum-mechanics coupling stays 0.1450846749297095. The two observed scalars match, so that flux is 0.
+
+Gao, Jafferis, and Wall, JHEP 12 (2017) 151, equation (2.7), set
+
+δH(t) = −∫ dφ h(t, φ) O_R(t, φ) O_L(−t, φ),
+
+with h equal to 0 for t < t₀. The same paper finds the horizon null energy negative for positive h. The product term already proved for the two-mouth potential is −κ S₁ S₂. The gate's h is κ, and the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. Their statement that a deformation of only one boundary Hamiltonian leaves the bridge closed is the reading of the gravity-only substitution above. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md).

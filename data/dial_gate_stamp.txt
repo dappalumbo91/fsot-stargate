@@ -121,7 +121,27 @@ PASS supply_mean_sixth got -4.7361854531950252e+44 want -4.7361854531950252e+44 
 PASS supply_mean_half got -2.7953523345619962e+44 want -2.7953523345619962e+44 residual 0.000e+00
 PASS proper_integrand_sixth got 2.3397084440059730e-02 want 2.3397084440059734e-02 residual -3.469e-18
 PASS proper_integrand_half got 4.3520987568355166e-02 want 4.3520987568355166e-02 residual 0.000e+00
-NOTE h is absent from this stamp. No value is supplied.
+PASS shutdown_mean got 7.3407640288136422e-01 want 7.3407640288136422e-01 residual 0.000e+00
+PASS shutdown_mean_bare got 7.3407640288136422e-01 want 7.3407640288136422e-01 residual 0.000e+00
+PASS shutdown_action_graph got 4.2911086091120682e-01 want 4.2911086091120682e-01 residual 0.000e+00
+PASS shutdown_potential got 4.6402250394927314e-01 want 4.6402250394927314e-01 residual 0.000e+00
+PASS shutdown_slow_rate got 5.2223176413167338e-01 want 5.2223176413167338e-01 residual 0.000e+00
+PASS shutdown_clock_time got 6.9213540350682152e+01 want 6.9213540350682152e+01 residual 0.000e+00
+PASS shutdown_clock_seconds got 4.6174303925072154e-06 want 4.6174303925072154e-06 residual 0.000e+00
+PASS shutdown_current0 got 6.9999121186276561e-02 want 6.9999121186276561e-02 residual 0.000e+00
+PASS shutdown_bare_max got 5.8061061286508266e-02 want 5.8061061286508266e-02 residual 0.000e+00
+PASS shutdown_bare_open got 1.3000000000000000e+01 want 1.3000000000000000e+01 residual 0.000e+00
+PASS shutdown_one_boundary got 1.4485873046876672e-02 want 1.4485873046876672e-02 residual 0.000e+00
+PASS depth5_steady_open got 6.9855345216481501e-01 want 6.9855345216481501e-01 residual 0.000e+00
+PASS depth5_steady_closed got -3.9402893681228679e-01 want -3.9402893681228679e-01 residual 0.000e+00
+PASS depth5_shutdown_mean got 1.5226225767626411e-01 want 1.5226225767626411e-01 residual 0.000e+00
+PASS depth5_shutdown_action got 1.4921703458786387e-01 want 1.4921703458786387e-01 residual 0.000e+00
+PASS depth5_shutdown_time got 5.8520368540428223e+01 want 5.8520368540428223e+01 residual 0.000e+00
+PASS depth5_shutdown_seconds got 3.9040587565700679e-06 want 3.9040587565700679e-06 residual 0.000e+00
+PASS gate_h_optics got 1.0001300937604073e-01 want 1.0001300937604073e-01 residual 0.000e+00
+PASS gate_h_depth5 got 9.8587139727597098e-02 want 9.8587139727597098e-02 residual 0.000e+00
+PASS gate_h_product_depth5 got -9.8587139727597098e-02 want -9.8587139727597098e-02 residual 0.000e+00
+NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
-NOTE the depth-5 open/closed pair stays unseated.
+NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.
 fails 0

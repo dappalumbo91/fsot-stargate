@@ -16,8 +16,10 @@ identity, the mouth masses, the cavity against both horizons, the
 size of γ² − 1, the coordinate ratios (Rs − r₀)/Rs, the sign of the
 settled two-mouth flux, the potential whose gradient is that law, the
 radial density factor (r₀/r)⁴, the coordinate energy of the exotic
-mass, the half-energy at r = 2 r₀, and the critical-point polynomials
-of the null and coast supply rates. The 400000-step crossings stay with the Octave log.
+mass, the half-energy at r = 2 r₀, the critical-point polynomials
+of the null and coast supply rates, the opening coefficient h = κ
+in the two-mouth potential, the cancellation on one undirected edge,
+and the integral of one decay mode. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -496,6 +498,30 @@ theorem coast_peak_numerator (Rs r A : ℚ) :
     (2 * r - Rs) * (r ^ 2 * (Rs * r + 2 * A)) -
         (r ^ 2 - Rs * r - A) * (Rs * r ^ 2 + 2 * r * (Rs * r + 2 * A)) =
       -r * (Rs * r ^ 3 - 2 * Rs ^ 2 * r ^ 2 - 5 * A * Rs * r - 4 * A ^ 2) := by
+  ring
+
+/-- The gate's h on a pair is that pair's κ. The product in the potential is −h. -/
+def gateH (κ : ℚ) : ℚ := κ
+
+theorem product_is_minus_gateH (κ γ E1 E2 S1 S2 : ℚ) :
+    mouthPotential κ γ E1 E2 S1 S2 =
+      γ / 2 * (S1 - E1) ^ 2 + γ / 2 * (S2 - E2) ^ 2 +
+        gateH κ / 2 * (S1 ^ 2 + S2 ^ 2) - gateH κ * S1 * S2 := by
+  unfold mouthPotential gateH
+  ring
+
+theorem edge_pair_cancels (κ s1 s2 : ℚ) :
+    κ * (s2 - s1) + κ * (s1 - s2) = 0 := by
+  ring
+
+/-- One mode of V = (lam/2) c² exp(−2 lam t) integrates to c²/4. -/
+theorem mode_integral (c lam : ℚ) (hlam : lam ≠ 0) :
+    (lam / 2) * c ^ 2 / (2 * lam) = c ^ 2 / 4 := by
+  field_simp
+  ring
+
+theorem two_mouth_norm (δ : ℚ) :
+    ((δ / 2) ^ 2 + (δ / 2) ^ 2) / 4 = δ ^ 2 / 8 := by
   ring
 
 end GateLedger
