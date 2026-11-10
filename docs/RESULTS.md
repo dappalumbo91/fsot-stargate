@@ -272,7 +272,45 @@ The sheet's matched return mirror has to be on station before the fast ship leav
 
 Parent repository [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`. Two mouths. A mouth has to exist at each end before a crossing. On the parent parabola the sheet's matched mirror arrives in 69.9 days, 405 days, and 4,764 days. A parked curvature shell used as a mouth carries the parent mass, 1.182 Jupiter or 3.55 Jupiter, and two mouths are two of those masses.
 
-The candidate coupling is a shared quantum state. A shared entangled state correlates the outcomes at the two ends. It does not by itself carry a signal, a mass, or a ship. Maldacena and Susskind, Fortschr. Phys. 61 (2013) 781, arXiv:1306.0533, is the citation that relates entanglement to a wormhole. It is not adopted. No wormhole solver is started. No entanglement factor is pasted onto the shell or the sail. The open question is what the two mouths have to share, besides the name of a state, for a scored transit to exist. This opening is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+The candidate coupling is a shared quantum state. A shared entangled state correlates the outcomes at the two ends. It does not by itself carry a signal, a mass, or a ship. Maldacena and Susskind, Fortschr. Phys. 61 (2013) 781, arXiv:1306.0533, is the citation that relates entanglement to a wormhole. It is not adopted. No wormhole solver is started. No entanglement factor is pasted onto the shell or the sail. The open question is what the two mouths have to share, besides the name of a state, for a scored transit to exist. The one-way call is the next section. This opening is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+
+## One-way funnel, 2026-11-09
+
+The vessel stays out of this score. A parked curvature shell used as a mouth remains the parent mass, 1.182 Jupiter or 3.55 Jupiter. This page leaves that mass where the opening put it. The two mouths are the two ends of one conduit, and the direction is supposed to follow which side opens the call. The pin is FSOT 2.1 AEB2AD, read from `vendor/fsot_dynamics.py` and `vendor/fsot_complex_interaction.py`. The chain is in [METHOD.md](METHOD.md).
+
+| Reading | Value |
+| --- | ---: |
+| Particle Physics D, Quantum Mechanics D | 5, 5 |
+| Fluid Dynamics D | 12 |
+| Cosmology D | 25 |
+| Scale distance at the fluid, \|D − 25\|/25 | 0.52 |
+| Viscosity at D = 12 | 0.33282440671611235 |
+| Scale piece of that viscosity | 0.17213257495745055 |
+| Bleed piece of that viscosity | 0.16069183175866183 |
+| Bleed rate, POOF + SUCTION | 0.30051620032255366 |
+| Yin-yang fraction | 0.510728588773961 |
+| Transport κ | 0.3146325373020798 |
+| Relaxation γ | 0.4280434460598068 |
+| Relaxation length | 0.8573494832025231 |
+| Fluid–cosmology suppressor | 0.6578947368421053 |
+| Same suppressor, depths swapped | 0.6578947368421053 |
+| Quantum–cosmology suppressor | 0.5555555555555556 |
+| Adjacency asymmetry | 0 |
+| GR–EW coupling, both orders | 0.0426152645973651 |
+| Observer source on the dark fluid | 0 |
+| Sound speed squared at ρ = 1 | 0.5919208298447349 |
+| Acoustic factor at ρ = 1 | 0.7693639124918291 |
+| de Broglie factor at p = 1, ħ = 1 | 1.1458384123083372 |
+
+The viscosity is the shell's viscosity, reprinted. The relaxation length is the shell's wall thickness, reprinted. Neither number is a throat radius. The scale distance is a magnitude. Swapping the two depths leaves the suppressor on the same value. The adjacency matrix is symmetric, and the GR–EW entry is the same in both orders. The yin-yang valve is one fraction. With a unit gradient and zero curvature, the scalar transport right-hand side equals minus the velocity, and the bleed coefficients stay put when that velocity changes sign. The velocity is a fluid state. Fluid Dynamics is a dark medium, so the observer source on that fold is 0. The acoustic factor is the square root of the sound speed squared at unit density.
+
+Gao, Jafferis, and Wall, JHEP 12 (2017) 151, arXiv:1608.05687, couple the two boundaries of an eternal BTZ black hole by
+
+δS = ∫ dt d^{d−1}x h(t, x) O_R(t, x) O_L(−t, x).
+
+Both boundaries are already in the shared state. h has support only after a turn-on time t₀. An appropriate sign of that coupling opens the bridge. A deformation of only one boundary Hamiltonian leaves it closed. The paper states that the window cannot be used to violate causality, and it identifies the passage with a teleportation protocol. Bahiru, JHEP 11 (2026) 051, published 5 November 2026, computes the effect registered on one boundary by a unitary on the other, inside that protocol. h is absent from the pin. No value of it is pasted on. Neither paper is adopted.
+
+The pin contains no tunneling amplitude. `qm_de_broglie_scale` returns a length, (1/p) times (1 + |S_QM| · POOF), and at unit momentum that factor is 1.1458384123083372. Quantum Mechanics is generation 1 of the nest and its depth rounds to 5. Chakrabarti and Singha, arXiv:2411.09236, version 4 of 4 March 2025, obtain a two-way or a one-way throat according to free parameter ranges. Those ranges are left alone. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require an energy-condition violation for flare-out at a throat. Friedman, Schleich, and Witt, Phys. Rev. Lett. 71, 1486 (1993), show that a globally hyperbolic, asymptotically flat spacetime satisfying the null energy condition hides its topology from a causal curve that runs from past null infinity to future null infinity. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 
