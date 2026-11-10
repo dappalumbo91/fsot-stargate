@@ -206,6 +206,19 @@ The beam stays on for the crossing. At Jupiter, the same arrival at Callisto's d
 
 A parabola with its perihelion on Earth's orbit is the quicker coast. The flight from Earth's radius to the planet's radius is 69.9 days, 405 days, and 4,764 days. The departure from the 200 km orbit is 8.750 km/s. The arrivals are 17.437 km/s, 19.884 km/s, and 8.366 km/s. The stacks are 26.188 km/s, 28.635 km/s, and 17.116 km/s. The energies are 3.925×10¹⁶ J, 4.292×10¹⁶ J, and 2.566×10¹⁶ J. This is kinematics. It is not a Warp Factory grid.
 
+Dated 2026-11-09. The same reflector and the same 10 tonnes. The outward push is the home beam. The stop is that power turned around at the destination. With the beam behind the ship the proper acceleration is (2P/(mc))(1−β)/(1+β). With the return beam ahead of the ship it is (2P/(mc))(1+β)/(1−β). Through 15 TW the printed trips stay in place. The 15 TW Neptune peak is 6,607 km/s.
+
+The 63 TW plant is the one-day Mars crossing. On that plant the total trips are 1.00 day, 2.84 days, and 7.47 days. The peaks are 1,814 km/s, 5,137 km/s, and 13,514 km/s. The energies are 5.449×10¹⁸ J, 1.544×10¹⁹ J, and 4.064×10¹⁹ J.
+
+| Leg | Mars | Jupiter | Neptune |
+| --- | ---: | ---: | ---: |
+| One-day power | 63 TW | 507 TW | 3,745 TW |
+| One-day acceleration | 4.28 g | 34.5 g | 255 g |
+| One-day peak | 1,814 km/s | 14,549 km/s | 95,218 km/s |
+| One-day energy | 5.449×10¹⁸ J | 4.377×10¹⁹ J | 3.236×10²⁰ J |
+
+On the Neptune day the ship reaches 0.318c. The outward push covers 0.71 of that gap, and the ship clock reads 0.981 day. At 100 W per kilogram of station, 63 TW is 6.3×10⁸ tonnes, 507 TW is 5.07×10⁹ tonnes, and 3,745 TW is 3.75×10¹⁰ tonnes. This is kinematics. It is not a Warp Factory grid.
+
 Reaching 0.04c on a sail is 1.80×10¹⁹ J. A 15 TW beam takes 14 days and 48 AU. At 1 µm a 100 m sail needs a 3.8 m aperture at the Moon and a 73 km aperture at 49 AU.
 
 Heat: both faces radiate, absorbed intensity equals 2 ε σ T⁴, and the spot is kept the size of the sail. Film 10 g/m², absorption 0.001, emissivity 0.5, 600 K, intensity 7.35×10⁶ W/m². A 10 tonne sheet is 1.13 km across. Plus 10 tonnes of ship: 0.25 g on 7.35 TW, peak 30.7 km/s, 7.0 hours, lunar aperture 0.34 m. That film stays on the pad. From a 200 km orbit its spiral takes 46 minutes and 2.030×10¹⁶ J. Both beams deliver 1.84×10¹⁷ J. Station hardware at 100 W/kg is 7.3×10⁷ tonnes; at 10 W/kg it is 7.3×10⁸ tonnes, on the ground. The same film at 1200 K is 4 g, 1.18×10¹⁴ W, peak 123 km/s, 1.7 hours. One g at 600 K on this loading, with the same 2E/c, would need absorption 2.50×10⁻⁴. That is a material target, not a measured sail. This section is not an energy-condition score. The Eulerian light shell remains the one-sixth bend window at 0.04c.
