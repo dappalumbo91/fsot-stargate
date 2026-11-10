@@ -320,4 +320,8 @@ c = 2.99792458×10⁸ m/s. One pin-time unit read as R₂/c is 6.671281903963041
 
 ## The shape, 2026-11-10
 
-The throat radius is 20 m and the redshift is 0. b(r) = Rs + (20 m − Rs) × 20 m / r, with Rs = 3.3333333333333335 m or 10 m. The throat slopes are −5/6 and −1/2. The flare-out values are 0.04583333333333333 m⁻¹ and 0.0375 m⁻¹. The throat energy densities are −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. The tension is 1.2038634716806056×10⁴⁰ Pa. ρ + p_r is negative on both mouths. The proper distance from 20 m to 40 m is 35.94488696565487 m and 39.077758146657835 m, and the light times are 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+The throat radius is 20 m and the redshift is 0. b(r) = Rs + (20 m − Rs) × 20 m / r, with Rs = 3.3333333333333335 m or 10 m. The throat slopes are −5/6 and −1/2. The flare-out values are 0.04583333333333333 m⁻¹ and 0.0375 m⁻¹. The throat energy densities are −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa. The tension is 1.2038634716806056×10⁴⁰ Pa. ρ + p_r is negative on both mouths. The proper distance from 20 m to 40 m is 35.94488696565487 m and 39.077758146657835 m, and the light times are 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The crossing is the next section.
+
+## The crossing, 2026-11-10
+
+Two mouths of one kind meet at 20 m. Twice the recorded one-sided distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. The difference from 2L is 0. The light times are 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat dr/dt is 0 and dl/dt is c. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.

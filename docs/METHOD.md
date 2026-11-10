@@ -260,3 +260,9 @@ The proper radial distance from the throat to coordinate radius r₀ U is r₀ t
 sqrt((U − a)² − d²) + a ln( (U − a + sqrt((U − a)² − d²)) / d ),
 
 with a = Rs/(2 r₀) and d = 1 − a. From 20 m to 40 m that distance is 35.94488696565487 m and 39.077758146657835 m. With Φ = 0 the coordinate light time of the same segment is that distance over c, 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s. The reading is in [RESULTS.md](RESULTS.md).
+
+## The crossing, 2026-11-10
+
+The crossing page joins two copies of one shape at r₀ = 20 m. The one-sixth pair uses Rs = r₀/6 on both sides. The half-compact pair uses Rs = r₀/2 on both sides. The proper distance already scored from 20 m to 40 m is L. The through-distance is 2L, because the two sides use the same formula. That is 71.88977393130973 m and 78.15551629331567 m. Twice the recorded one-sided length differs from 2L by 0.
+
+With Φ = 0 the radial null ray satisfies dl/dt = c, so the light time is 2L/c: 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. The coordinate speed is dr/dt = c √(1 − b(r)/r). At r = r₀ that factor is 0, and dl/dt remains c. The reading is in [RESULTS.md](RESULTS.md).

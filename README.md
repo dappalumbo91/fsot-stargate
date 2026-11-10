@@ -79,7 +79,11 @@ One pin-time unit, read as the light time of that 20 m mouth, is 6.6712819039630
 
 ## The shape
 
-The throat is the 20 m mouth. The redshift is 0. The shape is b(r) = Rs + (20 m − Rs) × 20 m / r, and Rs is the horizon of that mouth, 3.3333333333333335 m or 10 m. The slope at the throat is −5/6 on the one-sixth mouth and −1/2 on the half-compact mouth. Both lie under 1, so the flare-out holds. From 20 m out to 40 m the proper distance is 35.94488696565487 m on the one-sixth mouth and 39.077758146657835 m on the half-compact mouth. Light takes 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s over those distances. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
+The throat is the 20 m mouth. The redshift is 0. The shape is b(r) = Rs + (20 m − Rs) × 20 m / r, and Rs is the horizon of that mouth, 3.3333333333333335 m or 10 m. The slope at the throat is −5/6 on the one-sixth mouth and −1/2 on the half-compact mouth. Both lie under 1, so the flare-out holds. From 20 m out to 40 m the proper distance is 35.94488696565487 m on the one-sixth mouth and 39.077758146657835 m on the half-compact mouth. Light takes 1.1989923697698516×10⁻⁷ s and 1.3034937038562135×10⁻⁷ s over those distances. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The crossing is the next section.
+
+## The crossing
+
+A pair is two mouths of one kind, joined at the 20 m throat. From 40 m on one side, through the throat, and out to 40 m on the other, the proper distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. Light takes 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat the circumferential radius turns around, and the proper-distance speed of the ray stays c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
 
 ## The parent shell
 

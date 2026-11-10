@@ -572,7 +572,19 @@ ds² = −c² dt² + dr² / (1 − b(r)/r) + r² dΩ².
 | Proper distance, 20 m to 40 m | 35.94488696565487 m | 39.077758146657835 m |
 | Light time of that distance | 1.1989923697698516×10⁻⁷ s | 1.3034937038562135×10⁻⁷ s |
 
-b(20 m) = 20 m. Far out, b approaches Rs, so the mass is the mouth mass. For r > 20 m the shape stays under r. The flare-out is positive on both mouths. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require the radial tension to exceed the energy density at a flare-out. The throat energy density is negative, and ρ + p_r is negative, on both mouths. The proper distance from the throat to twice that radius is finite, and so is the light time. The integral out to infinity is the light time of an asymptotically flat line. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+b(20 m) = 20 m. Far out, b approaches Rs, so the mass is the mouth mass. For r > 20 m the shape stays under r. The flare-out is positive on both mouths. Morris and Thorne, Am. J. Phys. 56, 395 (1988), require the radial tension to exceed the energy density at a flare-out. The throat energy density is negative, and ρ + p_r is negative, on both mouths. The proper distance from the throat to twice that radius is finite, and so is the light time. The integral out to infinity is the light time of an asymptotically flat line. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The crossing is the next section.
+
+## The crossing, 2026-11-10
+
+The shape is the same on both sides of one mouth. A pair is two mouths of that one kind. The chain is in [METHOD.md](METHOD.md). The scored segment runs from 40 m on one side, through the throat at 20 m, and out to 40 m on the other side.
+
+| Reading | One-sixth pair | Half-compact pair |
+| --- | ---: | ---: |
+| Proper distance, one side, 20 m to 40 m | 35.94488696565487 m | 39.077758146657835 m |
+| Proper distance through | 71.88977393130973 m | 78.15551629331567 m |
+| Light time through | 2.397984739539703×10⁻⁷ s | 2.606987407712427×10⁻⁷ s |
+
+With the redshift at 0, a radial null ray has proper-distance speed c. Its coordinate speed dr/dt is c times the square root of 1 − b(r)/r, which is 0 at the throat. The circumferential radius reaches 20 m and climbs again. Twice the recorded one-sided distance matches the through-distance, difference 0. The vessel stays out of this ray. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 
