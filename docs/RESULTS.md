@@ -837,7 +837,44 @@ A horizontal miss puts the spine at the aim and the head or a foot at the hypote
 
 The far fiber at a 2 m aim exits in 51.53806917248963 s on the one-sixth mouth and 56.03101890444409 s on the half-compact mouth.
 
-An upright walk on axis at 1.4 m/s exits whole on either mouth. The 40 m face takes 51.349838522364095 s on the one-sixth mouth, carrying 0.008085000000000002 m/s² from head to foot, and 55.82536878093977 s on the half-compact mouth, carrying 0.006614999999999999 m/s². The head lags the spine by 0.031529146465985036 s and 0.03444628247400061 s. A 2 m miss stays inside the 20 m circle. The head or a foot meets that circle at a centerline aim of 19.1 m. A station at 22 m is still a through-length of 19.131054524802302 m and 21.108256237659916 m, which at 1.4 m/s takes 13.665038946287359 s and 15.077325884042798 s. Proper acceleration at rest is 0, a deck at rest has tidal load 0, and a stop stays at the station where the speed was left.
+An upright walk on axis at 1.4 m/s exits whole on either mouth. The 40 m face takes 51.349838522364095 s on the one-sixth mouth, carrying 0.008085000000000002 m/s² from head to foot, and 55.82536878093977 s on the half-compact mouth, carrying 0.006614999999999999 m/s². The head lags the spine by 0.031529146465985036 s and 0.03444628247400061 s. A 2 m miss stays inside the 20 m circle. The head or a foot meets that circle at a centerline aim of 19.1 m. A station at 22 m is still a through-length of 19.131054524802302 m and 21.108256237659916 m, which at 1.4 m/s takes 13.665038946287359 s and 15.077325884042798 s. Proper acceleration at rest is 0, a deck at rest has tidal load 0, and a stop stays at the station where the speed was left. The haul is the next section.
+
+## The haul, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The two mouths of one kind sit on the published aerodrome reference points. John F. Kennedy International is 40°38'23.741"N, 73°46'43.292"W, 13 miles southeast of New York. Hong Kong International is 22°18'32"N, 113°54'53"E, the mid-point of that aerodrome. In decimal degrees the points are 40.63992805555556, −73.77869222222222 and 22.30888888888889, 113.91472222222222.
+
+The outside distance is the WGS84 Vincenty length, with a = 6378137 m and f = 1/298.257223563. That length is 12990256.297990724 m. Light takes 0.04333083088431372 s along it. An outside speed of 250 m/s takes 51961.0251919629 s, which is 14.433618108878584 h. An outside walk at 1.4 m/s takes 9278754.498564804 s, which is 107.39299188153709 days.
+
+The conduit length stays the through-distance, 71.88977393130973 m on the one-sixth mouth and 78.15551629331567 m on the half-compact mouth. The outside length divided by those through-distances is 180696.85836545876 and 166210.3574268337. Dividing the outside light time by the null time returns the same two ratios.
+
+| Clock | One-sixth | Half-compact |
+| --- | ---: | ---: |
+| Null ray | 2.397984739539703×10⁻⁷ s | 2.606987407712427×10⁻⁷ s |
+| Upright walk at 1.4 m/s | 51.349838522364095 s | 55.82536878093977 s |
+| 10 m ship at a constant 10 m/s | 7.1889773931309735 s | 7.815551629331567 s |
+| 10 m ship at the constant throat speed | 3.4752216088072063 s | 3.4174324160335168 s |
+| 10 m ship on the scheduled coast | 2.1294485057269195 s | 2.1647639000180656 s |
+
+The 250 m/s outside clock divided by the conduit walk is 1011.9024068465691 and 930.7780015902688. Divided by the scheduled ship it is 24401.16539668341 and 24003.09114150013. The constant throat speeds are 20.686385509666625 m/s and 22.869659668069687 m/s, the passage speeds at which the 10 m load is 9.80665 m/s². The 10 m/s loads remain the passage values, 2.2916666666666705 m/s² and 1.8750000000000024 m/s².
+
+A dwell of 60 s at rest adds those 60 s. The walk becomes 111.3498385223641 s and 115.82536878093977 s. The scheduled ship becomes 62.12944850572692 s and 62.164763900018066 s. The coast supplied on the way in is the coast the body keeps, and a coast left at 0 leaves the body at that station.
+
+The 40 m face speed on the same one-gravity formula is 79.22282499381096 m/s on both mouths. Held constant through the throat, that speed exits in 0.9074376473816214 s and 0.9865277626671521 s and carries 143.83086666667677 m/s² and 117.67980000000821 m/s². Divided by 9.80665 m/s² those loads are 14.666666666667698 and 12.000000000000838. The constant 100 m/s loads remain the passage values, 229.1666666666922 m/s² and 187.50000000002086 m/s².
+
+The ship coast is supplied with the ship. `momentum_rhs` takes density, velocity, the first and second velocity derivatives, the pressure gradient, the effective depth, and the observed flag. The steady flux is not one of those arguments. At rest, with the derivatives and the pressure gradient set to 0 and the density set to 1, the call returns 0 when unobserved and 0.0794560282152649 when observed. The steady flux on these exits remains 0.10948671535321428.
+
+The specific energy of a supplied coast is v²/2. A mass of 10000 kg supplied with the ship multiplies it.
+
+| Supplied coast | Specific energy | Energy of 10000 kg |
+| --- | ---: | ---: |
+| 1.4 m/s | 0.9799999999999999 J/kg | 9800.0 J |
+| 10 m/s | 50.0 J/kg | 500000.0 J |
+| 20.686385509666625 m/s | 213.96327272727265 J/kg | 2139632.7272727266 J |
+| 22.869659668069687 m/s | 261.5106666666667 J/kg | 2615106.6666666665 J |
+| 79.22282499381096 m/s | 3138.1279999999992 J/kg | 31381279.999999996 J |
+| 100 m/s | 5000.0 J/kg | 50000000.0 J |
+
+The outside trip at 250 m/s takes 51961.0251919629 s. The 10 m ship on the scheduled coast takes 2.1294485057269195 s and 2.1647639000180656 s with the side-to-side load held at 9.80665 m/s². Holding the face speed through the throat raises that load to 143.83086666667677 m/s² on the one-sixth mouth. The steady flux stays out of the momentum call. A dwell at rest adds its own seconds, and the corridor length stays the through-distance.
 
 ## Audit of the 20 m shell
 

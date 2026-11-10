@@ -107,7 +107,11 @@ A person thrown feet-first is 1.80 m along the crossing and 0.50 m across. On ax
 
 ## The walk
 
-A person walks the mouth upright. The height is 1.80 m and the shoulders are 0.50 m, both across the crossing. On axis at 1.4 m/s the 40 m face takes 51.349838522364095 s on the one-sixth mouth and 55.82536878093977 s on the half-compact mouth. The head-to-foot load is 0.008085000000000002 m/s² and 0.006614999999999999 m/s². Proper acceleration at rest is 0, and a deck at rest has tidal load 0. One meter of proper distance reaches 20.02290394948242 m and 20.018742194287782 m. A stop stays at the station where the speed was left. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+A person walks the mouth upright. The height is 1.80 m and the shoulders are 0.50 m, both across the crossing. On axis at 1.4 m/s the 40 m face takes 51.349838522364095 s on the one-sixth mouth and 55.82536878093977 s on the half-compact mouth. The head-to-foot load is 0.008085000000000002 m/s² and 0.006614999999999999 m/s². Proper acceleration at rest is 0, and a deck at rest has tidal load 0. One meter of proper distance reaches 20.02290394948242 m and 20.018742194287782 m. A stop stays at the station where the speed was left. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The haul is the next section.
+
+## The haul
+
+One mouth sits at John F. Kennedy International, 40°38'23.741"N, 73°46'43.292"W. The other sits at Hong Kong International, 22°18'32"N, 113°54'53"E. The WGS84 distance between those reference points is 12990256.297990724 m. Light takes 0.04333083088431372 s along it, and 250 m/s takes 51961.0251919629 s. The conduit walk at 1.4 m/s stays 51.349838522364095 s and 55.82536878093977 s. The 10 m ship on the one-gravity schedule stays 2.1294485057269195 s and 2.1647639000180656 s. The steady flux is not an argument of the momentum call. A stop adds the seconds spent at rest. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

@@ -329,4 +329,14 @@ The walk page puts the person upright on the same metric. The height is 1.80 m a
 
 The side-to-side load is κ v² times the width. At the throat κ is 0.002291666666666667 m⁻² on the one-sixth mouth and 0.001875 m⁻² on the half-compact mouth. Proper acceleration at rest is 0 because the redshift derivative is 0. A deck at rest has tidal load 0 because that load is proportional to v². On axis the crossing time is the recorded through-distance divided by the gait.
 
-An offset fiber uses 400000 steps of the square-root substitution. The 19 m fiber at 10 m/s reproduces the traversal page. The one-sided proper length is the closed form on the shape page. The radius at a stated proper length is an 80-step bisection of that form. A horizontal miss at aim A puts the spine at impact parameter A and the head or a foot at the hypotenuse of A and 0.90 m. A fiber on the 20 m circle does not finish, so the upright cut aim is 19.1 m. The reading is in [RESULTS.md](RESULTS.md).
+An offset fiber uses 400000 steps of the square-root substitution. The 19 m fiber at 10 m/s reproduces the traversal page. The one-sided proper length is the closed form on the shape page. The radius at a stated proper length is an 80-step bisection of that form. A horizontal miss at aim A puts the spine at impact parameter A and the head or a foot at the hypotenuse of A and 0.90 m. A fiber on the 20 m circle does not finish, so the upright cut aim is 19.1 m. The reading is in [RESULTS.md](RESULTS.md). The haul is the next section.
+
+## The haul, 2026-11-10
+
+The haul page places the two mouths on the published aerodrome reference points. John F. Kennedy International is 40°38'23.741"N, 73°46'43.292"W. Hong Kong International is 22°18'32"N, 113°54'53"E. Decimal degrees are degrees plus minutes over 60 plus seconds over 3600, with west negative.
+
+The outside distance is Vincenty's inverse formula on WGS84, a = 6378137 m and f = 1/298.257223563. The light time is that distance over c = 2.99792458×10⁸ m/s. The outside speeds 250 m/s and 1.4 m/s, the dwell of 60 s, and the mass of 10000 kg are supplied for the comparison.
+
+An on-axis conduit time is the recorded through-distance divided by the supplied speed. The scheduled ship times are the passage-page integrals. The throat speed and the 40 m face speed are √(9.80665 / (κ W)) at those radii for W = 10 m, and both reproduce the passage values. A load computed on this page for a newly scored coast is κ γ² v² W. The 10 m/s and 100 m/s loads stay the passage-page values.
+
+`momentum_rhs` is called with density 1, velocity 0, both velocity derivatives 0, pressure gradient 0, effective depth 1, and the observed flag false and then true. The steady flux is the traversal value and is not passed into that call. Specific energy is v²/2. The reading is in [RESULTS.md](RESULTS.md).
