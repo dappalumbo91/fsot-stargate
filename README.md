@@ -83,7 +83,11 @@ The throat is the 20 m mouth. The redshift is 0. The shape is b(r) = Rs + (20 m 
 
 ## The crossing
 
-A pair is two mouths of one kind, joined at the 20 m throat. From 40 m on one side, through the throat, and out to 40 m on the other, the proper distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. Light takes 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat the circumferential radius turns around, and the proper-distance speed of the ray stays c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
+A pair is two mouths of one kind, joined at the 20 m throat. From 40 m on one side, through the throat, and out to 40 m on the other, the proper distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. Light takes 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat the circumferential radius turns around, and the proper-distance speed of the ray stays c. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The stress is the next section.
+
+## The stress
+
+The pin's gluon condensate is the pure number 0.012832866903470668. The condensate body in the shell file has density 8.373887575889153×10¹⁷ kg/m³, and its rest energy is 7.5260748249902725×10³⁴ Pa. The 20 m mouth walls carry 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. All three are positive. The throat energy density is negative. The full table is in [docs/RESULTS.md](docs/RESULTS.md). This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel.
 
 ## The parent shell
 

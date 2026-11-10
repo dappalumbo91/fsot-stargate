@@ -266,3 +266,13 @@ with a = Rs/(2 r₀) and d = 1 − a. From 20 m to 40 m that distance is 35.9448
 The crossing page joins two copies of one shape at r₀ = 20 m. The one-sixth pair uses Rs = r₀/6 on both sides. The half-compact pair uses Rs = r₀/2 on both sides. The proper distance already scored from 20 m to 40 m is L. The through-distance is 2L, because the two sides use the same formula. That is 71.88977393130973 m and 78.15551629331567 m. Twice the recorded one-sided length differs from 2L by 0.
 
 With Φ = 0 the radial null ray satisfies dl/dt = c, so the light time is 2L/c: 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. The coordinate speed is dr/dt = c √(1 − b(r)/r). At r = r₀ that factor is 0, and dl/dt remains c. The reading is in [RESULTS.md](RESULTS.md).
+
+## The stress, 2026-11-10
+
+The stress page reads the pin and the shell file. It does not edit either one. `Gluon_condensate` in `fsot_compute.py` is C_cosm − e⁻³ = 0.012832866903470668. That result is a pure number. This page does not multiply it by a GeV conversion.
+
+The condensate body is `data/shell_env.txt`. Its mass divided by the volume between its two radii is 8.373887575889153×10¹⁷ kg/m³, which rounds to the printed 8.373888×10¹⁷ kg/m³. Rest energy is that density times the Warp Factory c², 7.5260748249902725×10³⁴ Pa.
+
+The mouth wall is the compactness mass spread over the 20 m ell wall. The inner radius is 20 m × (1 − ell) = 2.8530103359495373 m. The wall volume is 33413.047219545326 m³. The masses are the shape-page masses, 2.2443182025001816×10²⁷ kg and 6.732954607500545×10²⁷ kg. The densities are 6.716891721229614×10²² kg/m³ and 2.015067516368884×10²³ kg/m³. The rest energies are 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa.
+
+The throat tension and the throat energy density are the shape-page values. The ratios of these positive rest energies to that tension, and to the absolute value of that energy density, are the table in [RESULTS.md](RESULTS.md). `momentum_rhs` takes the pressure gradient as an argument and does not return a pressure. The reading is in [RESULTS.md](RESULTS.md).

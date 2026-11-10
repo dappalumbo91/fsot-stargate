@@ -324,4 +324,8 @@ The throat radius is 20 m and the redshift is 0. b(r) = Rs + (20 m − Rs) × 20
 
 ## The crossing, 2026-11-10
 
-Two mouths of one kind meet at 20 m. Twice the recorded one-sided distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. The difference from 2L is 0. The light times are 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat dr/dt is 0 and dl/dt is c. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
+Two mouths of one kind meet at 20 m. Twice the recorded one-sided distance is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair. The difference from 2L is 0. The light times are 2.397984739539703×10⁻⁷ s and 2.606987407712427×10⁻⁷ s. At the throat dr/dt is 0 and dl/dt is c. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c. The stress is the next section.
+
+## The stress, 2026-11-10
+
+The pin condensate is the pure number 0.012832866903470668. The shell-file density is 8.373887575889153×10¹⁷ kg/m³ and its rest energy is 7.5260748249902725×10³⁴ Pa. The mouth-wall rest energies are 6.036841219469572×10³⁹ Pa and 1.8110523658408714×10⁴⁰ Pa. Divided by the throat tension, the condensate is 6.251601615990388×10⁻⁶ and the walls are 0.5014556352509044 and 1.504366905752713. All three rest energies are positive. The throat energy density is negative. This page is not a Warp Factory grid. The light clean shell remains the one-sixth window at 0.04c.
