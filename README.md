@@ -51,7 +51,13 @@ While the source stays on, the distance from rest grows as J t²/2. Over the ven
 
 A flat offset has no slope. On the leftover coast its transport rate is −0.4280434460598068, the scalar restore alone, and the distance it travels is 0. It dies in place over pin time 2.3362114505084106. The kick between two mouths is one number on each mouth, the flat kind.
 
-A bump at wavenumber 1.166385493421683, one over the smoothing length, has diffusion equal to that restore. Its crest decays at −0.8560868921196136, twice γ, and the e-fold is 1.1681057252542053. In that time the peak moves 0.014661649452020564, half the recorded carry, and 0.017101135230470757 of a smoothing length. The velocity remains after the bump is gone. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
+A bump at wavenumber 1.166385493421683, one over the smoothing length, has diffusion equal to that restore. Its crest decays at −0.8560868921196136, twice γ, and the e-fold is 1.1681057252542053. In that time the peak moves 0.014661649452020564, half the recorded carry, and 0.017101135230470757 of a smoothing length. The velocity remains after the bump is gone. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored. The flux is the next section.
+
+## The flux
+
+At depth 5 the open branch is 0.9501974701670142 and the closed branch is −0.6456729548144859. The depths match, so the scale suppressor is 1 and the coupling is 0.0985871397275971. The two-mouth law holds a flux 0.10771457264599738 from the open evaluation toward the closed one. Swap which evaluation is open and the flux is −0.10771457264599738. The coupling stays on the same value.
+
+Particle physics and quantum mechanics are the folds at that depth. Both are observed, and both return the open value. The closed evaluation is not a seated fold. Nothing in the vendor puts the two evaluations on two mouths at once, and nothing swaps the bit on a clock. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
 
 ## The parent shell
 

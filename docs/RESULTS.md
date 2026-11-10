@@ -431,7 +431,29 @@ The carry is the motion of a bump that has a slope. This page splits that bump f
 
 `scalar_transport_rhs` on a unit flat offset, with the leftover coast and zero slope, returns −γ. The coast does not enter. The offset dies in place. A two-mouth kick is one number on each mouth, so it is this flat kind. The coupling still has no x, and this coast does not take the kick to the other mouth.
 
-On a unit cosine of wavenumber 1/ell the crest has zero slope and curvature −k². The same function returns −0.8560868921196136, which is −2γ. The node has zero value and slope −k, and the function returns 0.014640057711170941, which is the coast times k. The peak moves at the coast. In one e-fold of the combined decay, pin time 1.1681057252542053, it moves 0.014661649452020564. Twice that distance is the recorded carry, 0.029323298904041128. The move is 0.017101135230470757 of a smoothing length. The velocity remains after the bump is gone. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+On a unit cosine of wavenumber 1/ell the crest has zero slope and curvature −k². The same function returns −0.8560868921196136, which is −2γ. The node has zero value and slope −k, and the function returns 0.014640057711170941, which is the coast times k. The peak moves at the coast. In one e-fold of the combined decay, pin time 1.1681057252542053, it moves 0.014661649452020564. Twice that distance is the recorded carry, 0.029323298904041128. The move is 0.017101135230470757 of a smoothing length. The velocity remains after the bump is gone. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The flux is the next section.
+
+## The flux, 2026-11-10
+
+The coast does not carry a flat kick. The difference the pin can hold is the observed branch at one depth. The chain is in [METHOD.md](METHOD.md). Depth 5 is the quantum depth. The open and closed evaluations are `scalar_at_D(5, True)` and `scalar_at_D(5, False)`.
+
+| Reading | Value |
+| --- | ---: |
+| Open evaluation | 0.9501974701670142 |
+| Closed evaluation | −0.6456729548144859 |
+| Gap | 1.5958704249815001 |
+| Scale suppressor | 1 |
+| Coupling | 0.0985871397275971 |
+| Steady difference | 1.0925823889771018 |
+| Flux, open toward closed | 0.10771457264599738 |
+| Flux with the evaluations swapped | −0.10771457264599738 |
+| Steady open-side scalar | 0.698553452164815 |
+| Steady closed-side scalar | −0.3940289368122868 |
+| Steady residual | roundoff |
+
+The coupling is A_BLEED · POOF · |open| · |closed|. The depths are equal, so the factor 1 + |D_i − D_j|/25 is 1. The steady difference is (γ/2) / (κ + γ/2) times the gap, with γ = 0.4280434460598068. The flux is κ times that difference, 0.10771457264599738. The quantum–cosmology standing flux already on the ledger is 0.05162288816705389. Substituting the steady scalars back into the two-mouth law leaves roundoff, 10⁻¹⁷. Swapping the evaluations swaps the sign of the gap and leaves κ on the same value, so the flux changes sign.
+
+Particle physics and quantum mechanics are the two folds at depth 5. Both are observed. Both return 0.9501974701670142. The closed evaluation is the same inputs with the branch off. It is not one of those folds. The vendor does not seat the open and closed evaluations as the two mouths, and it does not swap the bit after a pin time. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

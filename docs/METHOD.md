@@ -196,3 +196,11 @@ The split page evaluates `scalar_transport_rhs` on the leftover coast 0.01255164
 A unit flat offset uses slope 0 and curvature 0. The call returns −0.4280434460598068, which matches −γ, so the coast does not enter. The distance of that pattern is 0. The e-fold is 1/γ = 2.3362114505084106.
 
 A unit cosine at that wavenumber has, at its crest, value 1, slope 0, and curvature −k². The call returns −0.8560868921196136, which matches −2γ. The e-fold is 1/(2γ) = 1.1681057252542053. At the node the value is 0, the slope is −k, and the curvature is 0. The call returns 0.014640057711170941, which matches the coast times k. The peak moves at the coast, so in one shaped e-fold the distance is the coast times 1/(2γ) = 0.014661649452020564. Twice that distance matches the recorded carry. Dividing by the smoothing length gives 0.017101135230470757. No off time, no mouth separation, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
+
+## The flux, 2026-11-10
+
+The flux page uses the two-mouth balance on the observed branch at depth 5. `scalar_at_D(5, True)` returns 0.9501974701670142 and `scalar_at_D(5, False)` returns −0.6456729548144859. The gap is 1.5958704249815001. γ = 0.4280434460598068. The coupling is the `kappa_domains` product with these two evaluations in place of two domain scalars: A_BLEED · POOF · |open| · |closed| = 0.0985871397275971. The depths are equal, so 1 + |D_i − D_j|/25 = 1.
+
+The steady difference is (γ/2) / (κ + γ/2) times the gap, 1.0925823889771018. The flux is κ times that difference, 0.10771457264599738. The steady scalars are 0.698553452164815 on the open side and −0.3940289368122868 on the closed side. Each side of the two-mouth law then returns a residual at roundoff, 1.3877787807814457×10⁻¹⁷ and its negative. Swapping the two evaluations negates the gap, leaves κ unchanged, and negates the flux.
+
+`DOMAINS` at depth 5 contains Particle_Physics and Quantum_Mechanics. Both are observed. `domain_scalar` returns 0.9501974701670142 for each. The closed evaluation is not in that list. No shape function, no throat radius, and no double-trace coupling are introduced. The reading is in [RESULTS.md](RESULTS.md).
