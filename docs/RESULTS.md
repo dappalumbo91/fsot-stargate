@@ -975,7 +975,56 @@ A positive prefactor keeps the sign of b′. The one-sixth slope is −5/6, so t
 
 The trapezoid proper-length residuals on 400000 steps remain 7.262×10⁻¹⁰ m and 5.644×10⁻¹⁰ m. Simpson on that same guarded integrand leaves 8.905×10⁻¹⁰ m and 5.568×10⁻¹⁰ m. The smooth integrand 2 r / √(r + r₀ − Rs), which is the same integral once the throat substitution is simplified, has Simpson residuals 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The Simpson schedule on the guarded grid is 2.1294485057451071 s and 2.1647639000197083 s, which is 1.819×10⁻¹¹ s and 1.643×10⁻¹² s from the published trapezoid ship times. Those published times stay. The sample at s = 0 equals the analytic throat limit, and the sample at s = 10⁻⁴ is within 10⁻⁶ of it.
 
-`momentum_rhs` still takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, and observed. It does not take the flux. The steady flux 0.10948671535321428 is still not a coast. The sign of h is still open. The depth-5 pair is still unseated. No vendor function writes Φ or b(r). The throat stays at 20 m.
+`momentum_rhs` still takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, and observed. It does not take the flux. The steady flux 0.10948671535321428 is still not a coast. The sign of h is still open. The depth-5 pair is still unseated. No vendor function writes Φ or b(r). The throat stays at 20 m. The open is the next section.
+
+## The open, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The five holes left by the fill were read off the pin as it stands.
+
+`kappa_domains` and `coupling_kappa` each take two names. The product inside κ uses the absolute values of the two scalars. On the seated pair the two orders are 0.10001300937604074 and 0.10001300937604073, difference 1.3877787807814457×10⁻¹⁷. The optics scalar is 0.9536594523121079 and the computing scalar is −0.6526335205358984. Optics is the observed mouth. Computing is the unobserved mouth. The flux from optics toward computing is 0.10948671535321429, which sits 1.3877787807814457×10⁻¹⁷ from the published 0.10948671535321428. The swapped order returns −0.10948671535321428. The two-mouth residual at that steady state is the same roundoff on one side and 0 on the other. The steady scalars reprint 0.6978753342253736 and −0.39684940244916417. No parameter in either coupling is named h.
+
+The eight-sector clock has 15 edges. Every edge coupling is positive. The smallest is the cosmology–particle edge, 0.0426152645973651, and its flux reprints the quantum–cosmology value −0.05162288816705389. The largest absolute flux on this graph is cosmology toward thermodynamics, −0.05806106128650827. The particle–quantum-mechanics edge has κ = 0.1450846749297095 and flux 0, because both names return 0.9501974701670142. Quantum optics and quantum computing are not nodes of this graph.
+
+| Edge | κ | Flux |
+| --- | ---: | ---: |
+| Cosmology–particle physics | 0.0426152645973651 | −0.05162288816705389 |
+| Cosmology–thermodynamics | 0.04973199415880466 | −0.05806106128650827 |
+| Particle physics–nuclear physics | 0.11170004262740593 | 0.001013573250385586 |
+| Particle physics–electromagnetism | 0.1351196415665806 | −0.0004581276882920058 |
+| Particle physics–thermodynamics | 0.11170004262740593 | 0.001013573250385586 |
+| Particle physics–high-energy physics | 0.13027445443111807 | 0.00509113018004622 |
+| Particle physics–quantum mechanics | 0.1450846749297095 | 0 |
+| Nuclear physics–high-energy physics | 0.10767445561559723 | 0.003514267747443867 |
+| Nuclear physics–thermodynamics | 0.14089808029916673 | 0 |
+| Electromagnetism–quantum mechanics | 0.13511964156658057 | 0.0004581276882920057 |
+| Electromagnetism–atomic physics | 0.11204685639948532 | 0.014485873046876674 |
+| High-energy physics–quantum mechanics | 0.13027445443111807 | −0.00509113018004622 |
+| Thermodynamics–high-energy physics | 0.10767445561559723 | 0.003514267747443867 |
+| Thermodynamics–quantum mechanics | 0.11170004262740592 | −0.001013573250385586 |
+| Quantum mechanics–atomic physics | 0.11139840622354726 | 0.014025504893303713 |
+
+`scalar_at_D(5, True)` returns 0.9501974701670142 and matches both particle physics and quantum mechanics. `scalar_at_D(5, False)` returns −0.6456729548144859 and matches `matter_unobserved_S` on both names. The open/closed product is 0.0985871397275971 and its flux is 0.10771457264599738. That pair is not one of the 15 edges. `coupled_equilibrium` takes seven steps of 0.022567101748263627. Afterwards the observed flag of each of the 35 domains is the flag it started with.
+
+`scalar_transport_rhs` at the steady optics scalar, with velocity 0 and both gradients 0, returns 0.1094867153532143. The difference from the seated flux is 1.3877787807814457×10⁻¹⁷. The κ inside that function, used on the second derivative, is bleed × A_BLEED = 0.3146325373020798. The call does not receive the seated flux. `momentum_rhs` at rest returns 0.0794560282152649 when observed and 0 when unobserved. On the map-page clock the scalar rate is 1641164.5757043224 per second. That is the scalar, and the coast stays the speed supplied with the mass.
+
+Twelve of the 35 domain scalars are negative. Each of those twelve folds is unobserved. The gluon condensate returns 0.01283286690347067. The throat densities stay −1.003219559733838×10⁴⁰ Pa and −6.019317358403028×10³⁹ Pa.
+
+| Domain | Depth | Scalar |
+| --- | ---: | ---: |
+| Quantum computing | 8 | −0.6526335205358984 |
+| Biology | 9 | −0.6456637055867616 |
+| Ecology | 12 | −0.6179071388700196 |
+| Fluid dynamics | 12 | −0.6179071388700196 |
+| Meteorology | 13 | −0.6079341914747709 |
+| Atmospheric physics | 14 | −0.5979722301922584 |
+| Oceanography | 14 | −0.5979722301922584 |
+| Seismology | 15 | −0.5881253441068303 |
+| Geophysics | 16 | −0.5784581666515678 |
+| Quantum gravity | 21 | −0.5337062416885814 |
+| Particle astrophysics | 23 | −0.5175673355898566 |
+| Cosmology | 25 | −0.5023773181761478 |
+
+`gr_weak_field_metric_factor(0)` returns 0. `acoustic_metric_factor()` returns 0.7693639124918291. The pin function whose argument is a radius is `linear_potential`. Its slope is 0.17649137329543738, the return at unit argument, and the return at 0 is 0. That function is the confining probe. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

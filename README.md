@@ -131,7 +131,11 @@ Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean). Octave 11.3.0
 
 ## The fill
 
-Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.8530103359495373 m sits inside both horizons. γ² − 1 at 20 m/s, 80 m/s, and 10000 m/s is below 10⁻¹⁴, 10⁻¹², and 2×10⁻⁹. Octave 11.3.0 reran [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. A smooth Simpson rule reprints the closed length to 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. MATLAB R2026b is installed, and `matlab -batch` stops with Licensing Error 1 because no license file is present. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.8530103359495373 m sits inside both horizons. γ² − 1 at 20 m/s, 80 m/s, and 10000 m/s is below 10⁻¹⁴, 10⁻¹², and 2×10⁻⁹. Octave 11.3.0 reran [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. A smooth Simpson rule reprints the closed length to 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. MATLAB R2026b is installed, and `matlab -batch` stops with Licensing Error 1 because no license file is present. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The open is the next section.
+
+## The open
+
+The seated leak runs from quantum optics toward quantum computing at 0.10948671535321428. Swapping the mouths returns the negative. Both orders keep κ positive. `kappa_domains` and `coupling_kappa` take two names, and neither takes a parameter named h. The depth-5 open and closed evaluations are not an edge of the eight-sector clock. That clock's seven steps leave all 35 observed flags where they started. Twelve domain scalars are negative pure numbers, and the throat density stays the shape-page pressure. `momentum_rhs` at rest still returns the observer source 0.0794560282152649. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 
