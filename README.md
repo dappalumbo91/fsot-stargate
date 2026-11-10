@@ -99,7 +99,11 @@ The two devices are quantum computing and quantum optics. An on-axis coast at pr
 
 ## The passage
 
-Three bodies ride that coast. A person is 0.50 m across, a crate is 1.00 m across, and a ship is 10.00 m across. On axis, at the same coast, all three exit together in time T = 2L/v and come out the size they went in. At 10 m/s the one-sixth side-to-side loads are 0.11458333333333352 m/s², 0.22916666666666705 m/s², and 2.2916666666666705 m/s². A body finishes whole when its farthest impact parameter stays under 20 m. The 10 m ship on a 19 m aim is cut: 47.163304949497814 m² exits the far mouth and 31.376511390247018 m² returns. The coast that holds the side-to-side load at 9.80665 m/s² crosses the one-sixth ship in 2.1294485057269195 s. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+Three bodies ride that coast. A person is 0.50 m across, a crate is 1.00 m across, and a ship is 10.00 m across. On axis, at the same coast, all three exit together in time T = 2L/v and come out the size they went in. At 10 m/s the one-sixth side-to-side loads are 0.11458333333333352 m/s², 0.22916666666666705 m/s², and 2.2916666666666705 m/s². A body finishes whole when its farthest impact parameter stays under 20 m. The 10 m ship on a 19 m aim is cut: 47.163304949497814 m² exits the far mouth and 31.376511390247018 m² returns. The coast that holds the side-to-side load at 9.80665 m/s² crosses the one-sixth ship in 2.1294485057269195 s. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The throw is the next section.
+
+## The throw
+
+A person thrown feet-first is 1.80 m along the crossing and 0.50 m across. On axis at 10 m/s the exit is 7.1889773931309735 s on the one-sixth mouth and 7.815551629331567 s on the half-compact mouth. The side-to-side load is 0.11458333333333352 m/s² and 0.09375000000000012 m/s². That load reaches one standard gravity, 9.80665 m/s², at 92.51232841676241 m/s and 102.27622728017819 m/s. Turned sideways, the 1.80 m width reaches that load at 48.75827824041468 m/s and 53.90430478240188 m/s. A feet-first shoulder reaches the 20 m circle at a centerline aim of 19.75 m. At 10 m/s the shoulder lag stays under 0.1 s inside an aim of 11.778371943352136 m on the one-sixth mouth. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

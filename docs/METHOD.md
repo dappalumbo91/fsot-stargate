@@ -315,4 +315,10 @@ The passage page puts three widths on the traversal metric. The person is 0.50 m
 
 A parallel fiber at offset ρ is the aim of impact parameter ρ. It exits the far mouth when ρ is under 20 m, returns when ρ is over 20 m, and does not finish at 20 m. The fiber times use 400000 steps of the square-root substitution. The 19 m and 21 m fibers reproduce the traversal page.
 
-The coast that holds the side-to-side load at 9.80665 m/s² is v(r) = √(9.80665 / (κ(r) W)). Its crossing time is the integral of dl / v(r) on both sides, with the same substitution. The reading is in [RESULTS.md](RESULTS.md).
+The coast that holds the side-to-side load at 9.80665 m/s² is v(r) = √(9.80665 / (κ(r) W)). Its crossing time is the integral of dl / v(r) on both sides, with the same substitution. The reading is in [RESULTS.md](RESULTS.md). The throw is the next section.
+
+## The throw, 2026-11-10
+
+The throw page puts one person on a constant coast. Feet-first, the width is 0.50 m and the length along the crossing is 1.80 m. Sideways, the width is 1.80 m. The flat diagonal is √(1.80² + 0.50²) = 1.8681541692269406 m. The side-to-side load is κ v² times that width. The speed at which the load equals 9.80665 m/s² is √(9.80665 / (κ W)).
+
+The shoulders are two parallel fibers. Feet-first they sit 0.25 m to either side of the centerline aim. Sideways they sit 0.90 m to either side. The lag is the difference of those two fiber times. The fiber integral uses 400000 steps of the square-root substitution. The 19 m fiber reproduces the traversal page, and the on-axis 0.25 m lag reproduces the passage page. A shoulder on the 20 m circle does not finish, so the cut aim is 20 m minus the half-width: 19.75 m feet-first and 19.1 m sideways. The reading is in [RESULTS.md](RESULTS.md).

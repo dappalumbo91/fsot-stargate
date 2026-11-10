@@ -737,7 +737,42 @@ The load failure is separate. The coast that holds the side-to-side load at 9.80
 | Crate | 0.6733907438139346 s | 1.0989615657665444 s | 0.6845584520566416 s | 1.0806870184358042 s |
 | Ship | 2.1294485057269195 s | 3.4752216088072063 s | 2.1647639000180656 s | 3.4174324160335168 s |
 
-On axis at 10 m/s the person, the crate, and the 10 m ship exit whole, inside the clearance, with the loads in the first table. The same ship at a constant 100 m/s still exits whole and carries 23.36849654741346 times standard gravity on the one-sixth mouth. The scheduled coast above holds that load at one standard gravity and crosses the one-sixth ship in 2.1294485057269195 s. The 19 m aim, and any rim at 20 m, does not exit as one body.
+On axis at 10 m/s the person, the crate, and the 10 m ship exit whole, inside the clearance, with the loads in the first table. The same ship at a constant 100 m/s still exits whole and carries 23.36849654741346 times standard gravity on the one-sixth mouth. The scheduled coast above holds that load at one standard gravity and crosses the one-sixth ship in 2.1294485057269195 s. The 19 m aim, and any rim at 20 m, does not exit as one body. The throw is the next section.
+
+## The throw, 2026-11-10
+
+The chain is in [METHOD.md](METHOD.md). The person is thrown on a constant coast. Feet-first, the 1.80 m length lies along the crossing and the shoulders are 0.50 m across. Sideways, the 1.80 m is the width. The flat diagonal is 1.8681541692269406 m. The radial load is 0. Every exit below sits on the steady flux 0.10948671535321428.
+
+Feet-first, the side-to-side load on the one-sixth mouth reaches 9.80665 m/s² at 92.51232841676241 m/s, and the exit then takes 0.7770831754169095 s. On the half-compact mouth that speed is 102.27622728017819 m/s and the exit takes 0.7641611190762286 s.
+
+| Feet-first coast | One-sixth time | One-sixth load | Half-compact time | Half-compact load |
+| --- | ---: | ---: | ---: | ---: |
+| 5 m/s | 14.377954786261947 s | 0.028645833333333346 m/s² | 15.631103258663135 s | 0.023437500000000007 m/s² |
+| 10 m/s | 7.1889773931309735 s | 0.11458333333333352 m/s² | 7.815551629331567 s | 0.09375000000000012 m/s² |
+| 20 m/s | 3.5944886965654868 s | 0.45833333333333537 m/s² | 3.9077758146657837 s | 0.3750000000000016 m/s² |
+| 30 m/s | 2.3963257977103245 s | 1.0312500000000107 m/s² | 2.6051838764438555 s | 0.8437500000000085 m/s² |
+| 50 m/s | 1.4377954786261946 s | 2.8645833333334134 m/s² | 1.5631103258663135 s | 2.3437500000000653 m/s² |
+| 100 m/s | 0.7188977393130973 s | 11.458333333334611 m/s² | 0.7815551629331567 s | 9.375000000001043 m/s² |
+
+Divided by 9.80665 m/s², the one-sixth 10 m/s load is 0.011684248273705448 and the 100 m/s load is 1.1684248273706732. The half-compact 100 m/s load is 0.9559839496669141 of standard gravity.
+
+Sideways, the one-sixth load at 10 m/s is 0.4125000000000007 m/s², at 50 m/s it is 10.312500000000288 m/s², and at 100 m/s it is 41.250000000004604 m/s². One standard gravity is reached at 48.75827824041468 m/s on the one-sixth mouth and 53.90430478240188 m/s on the half-compact mouth. The diagonal reaches it at 47.86061304289579 m/s and 52.9118985665584 m/s.
+
+On axis the two feet-first shoulders share one fiber, 0.25 m off the spine. At 10 m/s that fiber exits in 7.189317647916538 s on the one-sixth mouth, 0.00034025478556465316 s behind the center, and in 7.815923363739755 s on the half-compact mouth. A sideways person on axis has both shoulders 0.90 m off the spine, exiting in 7.193391473636185 s and 7.82037410887802 s.
+
+The shoulder lag below is the far shoulder minus the near shoulder, at 10 m/s. It scales as 1/v.
+
+| Feet-first aim | One-sixth lag | Half-compact lag |
+| --- | ---: | ---: |
+| 5 m | 0.02914803748852357 s | 0.03185276613599619 s |
+| 10 m | 0.07362036108662195 s | 0.08052259302468023 s |
+| 15 m | 0.19124424179121569 s | 0.2096191296463985 s |
+| 18 m | 0.5260037682521581 s | 0.5782588467176168 s |
+| 19 m | 1.084221471804753 s | 1.1941941411776682 s |
+
+The aim where that lag is 0.1 s is 11.778371943352136 m on the one-sixth mouth and 11.265559053460796 m on the half-compact mouth. The aim where it is 1 s is 18.91976097503131 m and 18.815487243901792 m. The far shoulder reaches the 20 m circle at a centerline aim of 19.75 m, and that shoulder does not finish. Sideways, the 0.1 s aim is 4.782652749992801 m and 4.418092341016779 m, the 1 s aim is 16.316758159976914 m and 16.011878337010213 m, and the cut is at 19.1 m.
+
+A feet-first throw on axis at 10 m/s exits whole on either mouth, with the load in the first table. The same throw at 30 m/s exits in 2.3963257977103245 s on the one-sixth mouth carrying 1.0312500000000107 m/s². A feet-first throw faster than 92.51232841676241 m/s on the one-sixth mouth, a sideways throw faster than 48.75827824041468 m/s there, and a centerline aim past the cut, are the three ways out of that exit.
 
 ## Audit of the 20 m shell
 
