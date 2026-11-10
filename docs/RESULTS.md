@@ -353,7 +353,43 @@ Particle physics returns the same scalar as quantum mechanics, 0.950197470167014
 
 At uniform rest, with the gradients off, `momentum_rhs` returns the observer source. That source is 0.0794560282152649 on an observed mouth and 0 on a dark mouth, and it does not depend on depth. Quantum mechanics is observed. Fluid dynamics and cosmology are dark. Over the vendor interval the observed velocity grows by 0.01255164591272752. The momentum law supplies no decay for that uniform piece, so the growth continues. `scalar_transport_rhs` does not take the observer source.
 
-The scalar's third term carries (D − 25)/25 with its sign. CHAOS is negative, so at depth 12 the factor equals 1 plus the viscosity scale piece, 1.1721325749574505. The compact remainder divides that signed distance by ln(D/25) and is 0.4970679476476895 at depth 5, 0.7084766195299412 at depth 12, and 1 at the ceiling. Each of these is a property of the depth. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
+The scalar's third term carries (D − 25)/25 with its sign. CHAOS is negative, so at depth 12 the factor equals 1 plus the viscosity scale piece, 1.1721325749574505. The compact remainder divides that signed distance by ln(D/25) and is 0.4970679476476895 at depth 5, 0.7084766195299412 at depth 12, and 1 at the ceiling. Each of these is a property of the depth. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c. The hold is the next section.
+
+## The hold, 2026-11-09
+
+The call page left the observer source growing on a uniform flow. This page asks what in the pin can hold that push while the call is on and bring it back to rest when the call ends. The chain is in [METHOD.md](METHOD.md). Pin time remains the time in these laws.
+
+| Reading | Value |
+| --- | ---: |
+| Viscosity at D = 5 | 0.4255111778470473 |
+| Viscosity at D = 12 | 0.33282440671611235 |
+| Viscosity at D = 25 | 0.16069183175866183 |
+| Source over viscosity, those depths | 0.18673076608066422, 0.2387325767338876, 0.49446214748860096 |
+| Stokes e-fold at k = 1 | 2.350114525920765, 3.0045873434184927, 6.223091672150888 |
+| Stokes fraction left after the vendor time | 0.9349914647745501, 0.9487820441147276, 0.9749350335878659 |
+| Stokes identity error | 0 |
+| Crest rate, call on, unit sine, D = 5 | −0.3460551496317824 |
+| Node rate, call on | 0.0794560282152649 |
+| Uniform rate after the call | 0 |
+| Rate when the pressure gradient equals the source | 0 |
+| Rate of that same gradient after the call | −0.0794560282152649 |
+| Quantum scalar, observed branch on | 0.9501974701670142 |
+| Same inputs, observed branch off | −0.6456729548144859 |
+| Held offset | 1.5958704249815001 |
+| Transport rate parked on the open branch | 0 |
+| Transport rate of that offset toward the closed branch | −0.6831018761740097 |
+| Scalar e-fold | 2.3362114505084106 |
+| Scalar restore over the leftover coast | 34.102574995823105 |
+
+A sine of wavenumber 1, with the observer off, decays at the viscosity. `viscous_mode_rhs_error_pct` returns 0, so that rate is the function's own identity. At the fluid the e-fold is 3.0045873434184927, and after the vendor interval 0.9487820441147276 of the curve remains. With the call on, the crest of a unit sine at depth 5 falls at −0.3460551496317824, and the node of that sine rises at 0.0794560282152649. The source is one number at every point. No sine cancels it on the whole line. The source is smaller than the viscosity at all three depths, so a unit crest still falls, and the node still runs at the full source.
+
+On a uniform flow the call grows the velocity at 0.0794560282152649. With the call off and the gradients off, `momentum_rhs` on the leftover 0.01255164591272752 returns 0. The leftover stays. Fed to the scalar law as an advection speed against a unit gradient, it contributes that same 0.01255164591272752, and γ is 34.102574995823105 times that contribution. The scalar restore is the larger rate on a unit gradient. The coast does not turn off.
+
+Set the pressure gradient equal to the source, with the flow at rest, and `momentum_rhs` returns 0 while the call is on. Leave that gradient and turn the call off, and the rate is −0.0794560282152649. The gradient is an argument of the law.
+
+`scalar_at_D(5, True)` returns 0.9501974701670142, the same value as the quantum fold. `scalar_at_D(5, False)` returns −0.6456729548144859. The difference is 1.5958704249815001. Parked on the open value, `scalar_transport_rhs` returns 0. Pointed at the closed value, it returns −0.6831018761740097, and the e-fold is 2.3362114505084106. Quantum mechanics is observed in the fold, with look 1 and no hits. Fluid dynamics and cosmology match `scalar_at_D` on their own dark settings. No vendor function closes the observed branch after a pin time.
+
+The scalar parks on the branch the fold leaves open. Curved velocity returns at the viscosity. Uniform velocity freezes at the value the call grew. No shape function is introduced. No throat radius is introduced. No wormhole metric is scored. This page is not a Warp Factory grid, not a built gate, and not a faster-than-light channel. The light clean shell remains the one-sixth window at 0.04c.
 
 ## Audit of the 20 m shell
 

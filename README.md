@@ -31,7 +31,15 @@ The quantum scalar is 0.9501974701670142 and the cosmology scalar is −0.502377
 
 The one-sided term in the pin is the observer source in the momentum law. On a uniform flow at rest it is 0.0794560282152649 on an observed mouth and 0 on a dark mouth, and that law has no restoring piece. Across the vendor's seven steps the observed velocity grows by 0.01255164591272752 and keeps growing. The scalar conduit does not receive that source.
 
-The signed distance (D − 25)/25 enters the scalar's third term. At the fluid it is −0.52, and with CHAOS negative that term is 1.1721325749574505, one plus the viscosity's scale piece. The compact remainder is 0.4970679476476895 at depth 5, 0.7084766195299412 at depth 12, and 1 at the ceiling. Those values belong to the depth. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
+The signed distance (D − 25)/25 enters the scalar's third term. At the fluid it is −0.52, and with CHAOS negative that term is 1.1721325749574505, one plus the viscosity's scale piece. The compact remainder is 0.4970679476476895 at depth 5, 0.7084766195299412 at depth 12, and 1 at the ceiling. Those values belong to the depth. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored. The hold is the next section.
+
+## The hold
+
+The scalar law parks. At the quantum mouth the fold holds the scalar at 0.9501974701670142, and the transport rate on that value is 0. The same inputs with the observed branch closed return −0.6456729548144859. Pointed at that closed value, the offset 1.5958704249815001 decays with an e-fold of 2.3362114505084106 in pin time. The fold keeps the quantum mouth observed. Nothing in the vendor closes that branch on a clock.
+
+Curved velocity returns. A unit sine of wavenumber 1 decays at the viscosity, and the vendor's own check of that identity has error 0. At the fluid the e-fold is 3.0045873434184927. Across the vendor's seven steps, 0.9487820441147276 of that curve is still there. With the call on, the node of the same sine accelerates at the full source 0.0794560282152649, so the sine is not a steady shape. The source is one number.
+
+Uniform velocity freezes. After the call ends, the rate on the leftover 0.01255164591272752 is 0. A unit scalar gradient is then advected at that leftover, and the scalar restore is 34.102574995823105 times that rate. The coast stays on. A pressure gradient equal to the source holds the velocity at rest while the call is on, and the same gradient drives it the other way at 0.0794560282152649 when the call is off. The law accepts that gradient as an argument. The full table is in [docs/RESULTS.md](docs/RESULTS.md). No throat radius is introduced, and no wormhole metric is scored.
 
 ## The parent shell
 
