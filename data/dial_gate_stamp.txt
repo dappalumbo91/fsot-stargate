@@ -119,6 +119,12 @@ PASS energy_face_sixth got -5.0427315180758600e+44 want -5.0427315180758600e+44 
 PASS energy_face_half got -3.0256389108455156e+44 want -3.0256389108455156e+44 residual 0.000e+00
 PASS supply_mean_sixth got -4.7361854531950252e+44 want -4.7361854531950252e+44 residual 0.000e+00
 PASS supply_mean_half got -2.7953523345619962e+44 want -2.7953523345619962e+44 residual 0.000e+00
+PASS schedule_closed_sixth got 2.1294485056590506e+00 want 2.1294485056590506e+00 residual 0.000e+00
+PASS schedule_closed_half got 2.1647638999709788e+00 want 2.1647638999709788e+00 residual 0.000e+00
+PASS schedule_gap_sixth got 6.7996719366192337e-11 want 6.7996719366192337e-11 residual 0.000e+00
+PASS schedule_gap_half got 4.7098325239858241e-11 want 4.7098325239858241e-11 residual 0.000e+00
+PASS supply_mean_closed_sixth got -4.7361854533459755e+44 want -4.7361854533459755e+44 residual 0.000e+00
+PASS supply_mean_closed_half got -2.7953523346227991e+44 want -2.7953523346227991e+44 residual 0.000e+00
 PASS proper_integrand_sixth got 2.3397084440059730e-02 want 2.3397084440059734e-02 residual -3.469e-18
 PASS proper_integrand_half got 4.3520987568355166e-02 want 4.3520987568355166e-02 residual 0.000e+00
 PASS shutdown_mean got 7.3407640288136422e-01 want 7.3407640288136422e-01 residual 0.000e+00

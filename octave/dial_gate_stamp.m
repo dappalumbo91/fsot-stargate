@@ -1,4 +1,4 @@
-% Gate stamp. MATLAB syntax, run here in Octave.
+% Gate stamp. Run in Octave.
 % The shape, the lateral coefficient, the proper length, and one scheduled
 % crossing. The fill adds the cavity bounds, the gamma bounds, a Simpson
 % length, and the throat-density reprint. The solve adds the coordinate
@@ -7,6 +7,7 @@
 % The energy page multiplies the exotic masses by c squared.
 % The supply page reads dE/dt along the null ray and the lateral-load coast.
 % The shutdown page sets every sector equilibrium to the mean of the clock.
+% The schedule page evaluates the 40 m crossing as a Carlson integral.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -228,6 +229,16 @@ fails = lineout(fid, fails, 'energy_face_sixth', E6s / 2, -5.0427315180758600e44
 fails = lineout(fid, fails, 'energy_face_half', Ehs / 2, -3.0256389108455156e44, 0);
 fails = lineout(fid, fails, 'supply_mean_sixth', E6s / 2.1294485057269195, -4.7361854531950252e44, 0);
 fails = lineout(fid, fails, 'supply_mean_half', Ehs / 2.1647639000180656, -2.7953523345619962e44, 0);
+scale_t = 2 * sqrt(10 / (2 * g));
+geom_t = @(ss, Rs) 2 * sqrt(Rs * ss .^ 2 + r0 * (2 * r0 - Rs)) ./ ((ss .^ 2 + r0) .* sqrt(ss .^ 2 + (2 * r0 - Rs)));
+t6c = scale_t * integral(@(ss) geom_t(ss, Rs6), 0, sqrt(r0), 'AbsTol', 1e-14, 'RelTol', 1e-14);
+thc = scale_t * integral(@(ss) geom_t(ss, Rsh), 0, sqrt(r0), 'AbsTol', 1e-14, 'RelTol', 1e-14);
+fails = lineout(fid, fails, 'schedule_closed_sixth', t6c, 2.1294485056590506, 0);
+fails = lineout(fid, fails, 'schedule_closed_half', thc, 2.1647638999709788, 0);
+fails = lineout(fid, fails, 'schedule_gap_sixth', t6 - t6c, 6.7996719366192337e-11, 0);
+fails = lineout(fid, fails, 'schedule_gap_half', th - thc, 4.7098325239858241e-11, 0);
+fails = lineout(fid, fails, 'supply_mean_closed_sixth', E6s / t6c, -4.7361854533459755e44, 0);
+fails = lineout(fid, fails, 'supply_mean_closed_half', Ehs / thc, -2.7953523346227991e44, 0);
 I6 = integral(@(s) 1 ./ ((s .^ 2 + 20) .* sqrt(3 * s .^ 2 + 110)), 0, inf);
 Kh = integral(@(s) 1 ./ ((s .^ 2 + 20) .* sqrt(s .^ 2 + 30)), 0, inf);
 fails = lineout(fid, fails, 'proper_integrand_sixth', I6, sqrt(10) * atan(sqrt(30) / 6) / 100, 1e-15);

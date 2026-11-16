@@ -524,4 +524,23 @@ theorem two_mouth_norm (δ : ℚ) :
     ((δ / 2) ^ 2 + (δ / 2) ^ 2) / 4 = δ ^ 2 / 8 := by
   ring
 
+/-- Numerator of the ship-time integrand, split at the face factor u + r₀. -/
+theorem schedule_numerator (Rs u : ℚ) :
+    Rs * u + r0 * (2 * r0 - Rs) = Rs * (u + r0) + 2 * r0 * (r0 - Rs) := by
+  ring
+
+theorem schedule_sixth_arguments :
+    (3 * r0 - rsSixth) / (2 * r0 - rsSixth) = 17 / 11 ∧
+      2 * r0 / (2 * r0 - rsSixth) = 12 / 11 ∧
+        4 * (r0 - rsSixth) / (3 * (2 * r0 - rsSixth)) = 20 / 33 := by
+  unfold rsSixth r0
+  norm_num
+
+theorem schedule_half_arguments :
+    (3 * r0 - rsHalf) / (2 * r0 - rsHalf) = 5 / 3 ∧
+      2 * r0 / (2 * r0 - rsHalf) = 4 / 3 ∧
+        4 * (r0 - rsHalf) / (3 * (2 * r0 - rsHalf)) = 4 / 9 := by
+  unfold rsHalf r0
+  norm_num
+
 end GateLedger

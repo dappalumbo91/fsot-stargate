@@ -372,7 +372,7 @@ Lean 4.31.0 accepted `lean/GateLedger.lean`. Octave 11.3.0 wrote `data/dial_gate
 
 ## The fill, 2026-11-10
 
-Lean 4.31.0 accepted the extended `lean/GateLedger.lean`, including the cavity inside 10/3 and 10 and the three bounds on γ² − 1. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The smooth Simpson residuals are 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The guarded Simpson residuals are 8.905×10⁻¹⁰ m and 5.568×10⁻¹⁰ m. The cavity float is 2.8530103359495373 m. The throat-density reprint matches the published pascals with residual 0. MATLAB R2026b is installed. `matlab -batch` exited with Licensing Error 1, code −1.2. No license file was on the search path. The open is the next section.
+Lean 4.31.0 accepted the extended `lean/GateLedger.lean`, including the cavity inside 10/3 and 10 and the three bounds on γ² − 1. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The smooth Simpson residuals are 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The guarded Simpson residuals are 8.905×10⁻¹⁰ m and 5.568×10⁻¹⁰ m. The cavity float is 2.8530103359495373 m. The throat-density reprint matches the published pascals with residual 0. The open is the next section.
 
 ## The open, 2026-11-10
 
@@ -396,4 +396,8 @@ Lean 4.31.0 accepted `lean/GateLedger.lean`, including b(2 r₀) − r₀ = (Rs 
 
 ## The shutdown, 2026-11-10
 
-Lean 4.31.0 accepted `lean/GateLedger.lean`, including the product written as −h with h = κ, the cancellation of the two rates on one undirected edge, the integral of one decay mode, and the reduction of the eight-sector norm to the two-mouth integral Δ²/8. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The common equilibrium is 0.73407640288136422. The potential integral is 0.42911086091120682. The largest edge current reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The closed depth-5 value is the unobserved reading of particle physics and of quantum mechanics. The gate's h is 0.10001300937604073 on the optics–computing pair and 0.0985871397275971 on the depth-5 pair. The pin files were not edited.
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including the product written as −h with h = κ, the cancellation of the two rates on one undirected edge, the integral of one decay mode, and the reduction of the eight-sector norm to the two-mouth integral Δ²/8. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The common equilibrium is 0.73407640288136422. The potential integral is 0.42911086091120682. The largest edge current reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The closed depth-5 value is the unobserved reading of particle physics and of quantum mechanics. The gate's h is 0.10001300937604073 on the optics–computing pair and 0.0985871397275971 on the depth-5 pair. The pin files were not edited. The schedule is the next section.
+
+## The schedule, 2026-11-16
+
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including the numerator split Rs u + r₀ (2 r₀ − Rs) = Rs (u + r₀) + 2 r₀ (r₀ − Rs) and the six rationals 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The closed crossings are 2.1294485056590506 s and 2.1647638999709788 s. The trapezoid gaps are 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s. The closed mean rates are −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The pin files were not edited.

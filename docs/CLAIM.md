@@ -15,7 +15,7 @@ A reading applies the unified concept, or a published paper kept as a citation, 
 
 ## Proved
 
-Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, and the integral of one decay mode.
+Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, and the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9.
 
 ## Checked
 
@@ -28,6 +28,8 @@ The shutdown mean of the eight coupled scalars is 0.73407640288136422. The mean 
 The closed depth-5 value −0.6456729548144859 is `scalar_at_D(5, False)`. It is the unobserved reading of Particle_Physics and of Quantum_Mechanics. Both names return it, and no other domain's unobserved reading returns it. Their open reading is 0.9501974701670142.
 
 The gate's h on a pair is that pair's κ. On the depth-5 pair, h = A_BLEED · POOF · |open| · |closed| = 0.0985871397275971, and the product coefficient is −h. On the optics–computing pair the seated h is 0.10001300937604073. The pin's `kappa_domains(Quantum_Optics, Quantum_Computing)` is 0.10001300937604074, one unit in the last place above the seated value. The seated value stays. The observed particle–quantum-mechanics κ, 0.1450846749297095, is a different pair.
+
+The 40 m ship times are 2.1294485056590506 s and 2.1647638999709788 s. Each is 2 √(W / (2 a)) times a Carlson combination, with arguments 17/11, 12/11 and coefficient 20/33 on the one-sixth mouth, and arguments 5/3, 4/3 and coefficient 4/9 on the half-compact mouth. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them.
 
 ## Reading
 
@@ -47,11 +49,11 @@ E(r) = (c⁴ / (2G)) (b(r) − r₀),
 
 with c = 299792458 m/s and G = 6.67430×10⁻¹¹ m³ kg⁻¹ s⁻². A clock that leaves r fixed sees no change.
 
-A radial light ray gathers that inventory at a signed peak of −5.5967323357299716×10⁵¹ W at 24.540854963686442 m on the one-sixth mouth, and −3.0748636696503162×10⁵¹ W at 24.663649828320295 m on the half-compact mouth. The published coast gathers it at −8.8645790720056626×10⁴⁴ W at 64.523317740912603 m and −4.7969358278401484×10⁴⁴ W at 47.871228950239384 m. The supply that meets a sweep is the positive magnitude of that rate. The mean rate over the published ship time is −4.7361854531950252×10⁴⁴ W on the one-sixth pair and −2.7953523345619962×10⁴⁴ W on the half-compact pair.
+A radial light ray gathers that inventory at a signed peak of −5.5967323357299716×10⁵¹ W at 24.540854963686442 m on the one-sixth mouth, and −3.0748636696503162×10⁵¹ W at 24.663649828320295 m on the half-compact mouth. The published coast gathers it at −8.8645790720056626×10⁴⁴ W at 64.523317740912603 m and −4.7969358278401484×10⁴⁴ W at 47.871228950239384 m. The supply that meets a sweep is the positive magnitude of that rate. The mean rate over the closed ship time is −4.7361854533459755×10⁴⁴ W on the one-sixth pair and −2.7953523346227991×10⁴⁴ W on the half-compact pair.
 
 ## Still open
 
-The ship times remain the 400000-step trapezoid. The coast remains the lateral-load coast. MATLAB R2026b still has no license file. The throat stays at 20 m. The redshift stays 0. The shape stays b(r). The join of the scalar law to Φ and to b(r) stays open.
+The 40 m ship times are the closed values 2.1294485056590506 s and 2.1647638999709788 s. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r). The join of the scalar law to Φ and to b(r) stays open.
 
 ## How to check
 

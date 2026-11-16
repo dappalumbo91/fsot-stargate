@@ -132,7 +132,7 @@ Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean). Octave 11.3.0
 
 ## The fill
 
-Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.8530103359495373 m sits inside both horizons. γ² − 1 at 20 m/s, 80 m/s, and 10000 m/s is below 10⁻¹⁴, 10⁻¹², and 2×10⁻⁹. Octave 11.3.0 reran [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. A smooth Simpson rule reprints the closed length to 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. MATLAB R2026b is installed, and `matlab -batch` stops with Licensing Error 1 because no license file is present. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The open is the next section.
+Lean 4.31.0 accepted the added cavity and gamma bounds. The cavity 2.8530103359495373 m sits inside both horizons. γ² − 1 at 20 m/s, 80 m/s, and 10000 m/s is below 10⁻¹⁴, 10⁻¹², and 2×10⁻⁹. Octave 11.3.0 reran [data/dial_gate_stamp.txt](data/dial_gate_stamp.txt) with 0 failures. A smooth Simpson rule reprints the closed length to 4.832×10⁻¹³ m and 9.948×10⁻¹⁴ m. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The open is the next section.
 
 ## The open
 
@@ -156,7 +156,19 @@ The hold rate of the shape is 0, because the energy at a fixed radius does not c
 
 ## The shutdown
 
-The sector clock returns eight scalars whose mean is 0.73407640288136422. The shutdown sets every equilibrium to that mean. The largest edge current starts at 0.069999121186276561 and reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The integral of the potential along that path is 0.42911086091120682. The closed depth-5 value is the unobserved reading of particle physics and of quantum mechanics, both −0.6456729548144859. On that pair the gate's h is 0.0985871397275971. On the optics–computing pair it is 0.10001300937604073. The product in the potential is −h. Lean 4.31.0 accepted the identities. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
+The sector clock returns eight scalars whose mean is 0.73407640288136422. The shutdown sets every equilibrium to that mean. The largest edge current starts at 0.069999121186276561 and reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. The integral of the potential along that path is 0.42911086091120682. The closed depth-5 value is the unobserved reading of particle physics and of quantum mechanics, both −0.6456729548144859. On that pair the gate's h is 0.0985871397275971. On the optics–computing pair it is 0.10001300937604073. The product in the potential is −h. Lean 4.31.0 accepted the identities. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The schedule is the next section.
+
+## The schedule
+
+The 40 m crossing time of the lateral-load coast is
+
+t = 2 √(W / (2 a)) I,
+
+with W = 10 m and a = 9.80665 m/s². One side is the Carlson value
+
+I = 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − [4 (r₀ − Rs) / (3 B)] R_J(1, (3 r₀ − Rs) / B, 2 r₀ / B, 2),
+
+where B = 2 r₀ − Rs. On the one-sixth mouth that is 2 R_F(1, 17/11, 12/11) − (20/33) R_J(1, 17/11, 12/11, 2). On the half-compact mouth it is 2 R_F(1, 5/3, 4/3) − (4/9) R_J(1, 5/3, 4/3, 2). The two crossings are 2.1294485056590506 s and 2.1647638999709788 s. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them. The mean sweep over the closed time is −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. Lean 4.31.0 accepted the arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## The parent shell
 

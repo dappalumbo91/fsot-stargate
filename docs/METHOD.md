@@ -371,7 +371,7 @@ The stamp page checks the shape in two checkers. `lean/GateLedger.lean` is Lean 
 
 The fill extends the same two checkers. `GateLedger.lean` adds the printed ell, the cavity 20 (1 − ell), the comparison of that cavity with 10/3 and 10, the sign of a positive multiple of b′, and γ² − 1 = v² / (c² − v²) at v² = 400, 6400, and 100000000. Run it the same way: `lake env lean` from the FSOT-2.1-Lean checkout. The file stays outside `lean_lib FSOT`.
 
-`octave/dial_gate_stamp.m` adds the cavity bounds, those three gamma bounds, the published throat density, and a Simpson rule. The guarded integrand is the one the schedule already uses. The smooth integrand is 2 r / √(r + r₀ − Rs) on the same s-grid. The published ship times remain the 400000-step trapezoid. MATLAB R2026b can call the same function once a license file is present. `matlab -batch` on this machine stopped with Licensing Error 1, code −1.2. The reading is in [RESULTS.md](RESULTS.md). The open is the next section.
+`octave/dial_gate_stamp.m` adds the cavity bounds, those three gamma bounds, the published throat density, and a Simpson rule. The guarded integrand is the one the schedule already uses. The smooth integrand is 2 r / √(r + r₀ − Rs) on the same s-grid. The published ship times remain the 400000-step trapezoid. The reading is in [RESULTS.md](RESULTS.md). The open is the next section.
 
 ## The open, 2026-11-10
 
@@ -503,4 +503,26 @@ Gao, Jafferis, and Wall, JHEP 12 (2017) 151, equation (2.7), set
 
 δH(t) = −∫ dφ h(t, φ) O_R(t, φ) O_L(−t, φ),
 
-with h equal to 0 for t < t₀. The same paper finds the horizon null energy negative for positive h. The product term already proved for the two-mouth potential is −κ S₁ S₂. The gate's h is κ, and the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. Their statement that a deformation of only one boundary Hamiltonian leaves the bridge closed is the reading of the gravity-only substitution above. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md).
+with h equal to 0 for t < t₀. The same paper finds the horizon null energy negative for positive h. The product term already proved for the two-mouth potential is −κ S₁ S₂. The gate's h is κ, and the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. Their statement that a deformation of only one boundary Hamiltonian leaves the bridge closed is the reading of the gravity-only substitution above. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md). The schedule is the next section.
+
+## The schedule, 2026-11-16
+
+The ship time is both sides of
+
+t = √(W / (2 a)) ∫_{r₀}^{2 r₀} √(Rs r + 2 A) / (r √(r² − Rs r − A)) dr,
+
+with A = r₀ (r₀ − Rs), W = 10, and a = 9.80665. The substitution r = r₀ + u gives
+
+I = ∫₀^{r₀} √(Rs u + r₀ B) / ((u + r₀) √(u (u + B))) du,
+
+where B = 2 r₀ − Rs and the full crossing is t = 2 √(W / (2 a)) I.
+
+The identity Rs u + r₀ B = Rs (u + r₀) + 2 r₀ (r₀ − Rs) splits the integrand into
+
+Rs / √(u (u + B) (Rs u + r₀ B)) + 2 r₀ (r₀ − Rs) / ((u + r₀) √(u (u + B) (Rs u + r₀ B))).
+
+The first integral is a Carlson R_F. The second is a Carlson R_J. At the upper limit u = r₀ their combination is
+
+I = 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − [4 (r₀ − Rs) / (3 B)] R_J(1, (3 r₀ − Rs) / B, 2 r₀ / B, 2).
+
+For Rs = r₀/6 the arguments are 17/11 and 12/11 and the coefficient is 20/33. For Rs = r₀/2 the arguments are 5/3 and 4/3 and the coefficient is 4/9. Lean proves those six rationals and the numerator split. Octave evaluates the definite integral. The values are 2.1294485056590506 s and 2.1647638999709788 s. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

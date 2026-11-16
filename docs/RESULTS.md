@@ -965,7 +965,7 @@ Lean 4.31.0 accepted the gate file, and Octave 11.3.0 recorded 0 failures. The s
 
 ## The fill, 2026-11-10
 
-The chain is in [METHOD.md](METHOD.md). Mathlib v4.31.0 was already present, so the hub was left as it stood. MATLAB Package Manager 2026.8 downloaded MATLAB R2026b and wrote the product files. `registerWithOS.exe` first stopped with Windows error 740. Run elevated, it exited 0. `matlab -batch` on `octave/dial_gate_stamp.m` stopped with MathWorks Licensing Error 1, code −1.2. The license search paths were empty. Octave 11.3.0 reran the same file and wrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+The chain is in [METHOD.md](METHOD.md). Mathlib v4.31.0 was already present, so the hub was left as it stood. Octave 11.3.0 reran the same file and wrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
 
 Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). The printed ell is 8573494832025231/10¹⁶. The cavity built from it is 1426505167974769/500000000000000, and its float64 value is 2.8530103359495373 m. That cavity is below 10/3 and below 10, which are the two compactness horizons. The float reprint also sits inside the printed horizons 3.332860728780457 m and 9.995611722233722 m. The cavity stays a candidate.
 
@@ -1176,7 +1176,26 @@ Gao, Jafferis, and Wall, JHEP 12 (2017) 151, equation (2.7), write
 
 δH(t) = −∫ dφ h(t, φ) O_R(t, φ) O_L(−t, φ),
 
-with h equal to 0 before a turn-on time t₀. In that paper, positive h makes the null energy on the horizon negative. The two-mouth potential already contains the product of the two scalars with coefficient −κ. The gate's h on a pair is that pair's κ, so the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. A deformation of only one boundary Hamiltonian leaves the bridge closed, which is the citation for the gravity-only row above. The pin files were not edited. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+with h equal to 0 before a turn-on time t₀. In that paper, positive h makes the null energy on the horizon negative. The two-mouth potential already contains the product of the two scalars with coefficient −κ. The gate's h on a pair is that pair's κ, so the product is −h S₁ S₂. On the optics–computing pair h = 0.10001300937604073. On the depth-5 pair h = 0.0985871397275971. A deformation of only one boundary Hamiltonian leaves the bridge closed, which is the citation for the gravity-only row above. The pin files were not edited. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The schedule is the next section.
+
+## The schedule, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+One side of the 40 m crossing, in the variable u = r − r₀, is
+
+I = ∫₀^{r₀} √(Rs u + r₀ B) / ((u + r₀) √(u (u + B))) du,
+
+with B = 2 r₀ − Rs. The numerator Rs u + r₀ B splits as Rs (u + r₀) + 2 r₀ (r₀ − Rs). Each piece is a Carlson integral. At the face u = r₀ the sum is
+
+I = 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − [4 (r₀ − Rs) / (3 B)] R_J(1, (3 r₀ − Rs) / B, 2 r₀ / B, 2).
+
+| Mouth | Arguments of R_F and R_J | Coefficient of R_J | Crossing time |
+| --- | --- | ---: | ---: |
+| One-sixth | 1, 17/11, 12/11, and p = 2 | 20/33 | 2.1294485056590506 s |
+| Half-compact | 1, 5/3, 4/3, and p = 2 | 4/9 | 2.1647638999709788 s |
+
+The crossing multiplies one side by 2 √(W / (2 a)), with W = 10 m and a = 9.80665 m/s². The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above these values. Dividing the infinite-arm side by the closed time gives −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The supply page keeps the quotients of the trapezoid times. The coast remains the lateral-load coast. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 

@@ -129,7 +129,7 @@ For scale inside the ledger itself: one side of the one-sixth corridor holds fiv
 
 The proper length from the 40 m face on one side, through the throat, to the 40 m face on the other side is 71.88977393130973 m on the one-sixth pair and 78.15551629331567 m on the half-compact pair.
 
-The coast on the ledger is the lateral-load coast. Its speed at each radius is the speed whose sideways squeeze stays at the load already scored. A 10 m ship that holds both accelerations at 9.80665 m/s² crosses those faces in 2.1294485057269195 s and 2.1647639000180656 s. Those times are the 400000-step trapezoid. They stay.
+The coast on the ledger is the lateral-load coast. Its speed at each radius is the speed whose sideways squeeze stays at the load already scored. A 10 m ship that holds both accelerations at 9.80665 m/s² crosses those faces in 2.1294485056590506 s and 2.1647638999709788 s. The schedule section records the closed form of that integral.
 
 On a flat steady coast the pin's momentum balance says the pressure gradient equals the observer source. That source is J = 0.0794560282152649 on the observed branch and 0 on the unobserved branch. Every constant speed satisfies the same balance. J is a pressure condition of that balance. The ship speed on the ledger is the lateral-load speed.
 
@@ -139,9 +139,9 @@ A walking pace covers the same proper length in about a minute, because a walkin
 
 ## What was checked
 
-Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, and the integral of one decay mode.
+Lean 4.31.0 accepted the throat value of the shape, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, and the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9.
 
-Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines, the supply-rate lines, and the shutdown lines. MATLAB R2026b is installed. `matlab -batch` exits with Licensing Error 1, code −1.2, because no license file is on the search path. Octave is the checker that ran.
+Octave 11.3.0 rewrote the stamp with 0 failures, including the twelve energy lines, the supply-rate lines, the shutdown lines, and the closed ship times.
 
 The constants c and G are the gate pair above. The parent shell's route pair is a different pair and is not mixed into these joules.
 
@@ -161,7 +161,7 @@ The shape's own radial light ray has dr/dt = c √(1 − b/r). That sweep rate p
 
 The published coast is slower than light by v(r)/c, and its sweep rate is the null rate times that factor. The coast peaks at 64.523317740912603 m and 47.871228950239384 m, with signed rates −8.8645790720056626×10⁴⁴ W and −4.7969358278401484×10⁴⁴ W.
 
-At the 40 m face, each side holds exactly half of its infinite-arm energy. The two faces of one crossing therefore sweep one infinite-arm side. The mean rate over the published ship time is −4.7361854531950252×10⁴⁴ W on the one-sixth pair and −2.7953523345619962×10⁴⁴ W on the half-compact pair. In the unified-concept reading, this is the rate at which the thinning is gathered as a body moves through the corridor. It is the sweep of an inventory that is already there. The hold, with nobody moving and the radius fixed, remains 0.
+At the 40 m face, each side holds exactly half of its infinite-arm energy. The two faces of one crossing therefore sweep one infinite-arm side. The mean rate over the closed ship time is −4.7361854533459755×10⁴⁴ W on the one-sixth pair and −2.7953523346227991×10⁴⁴ W on the half-compact pair. In the unified-concept reading, this is the rate at which the thinning is gathered as a body moves through the corridor. It is the sweep of an inventory that is already there. The hold, with nobody moving and the radius fixed, remains 0.
 
 The same page evaluates the proper-mass integrand that had been left as an unevaluated integral. From zero to infinity it equals √10 atan(√30/6) / 100 on the one-sixth mouth and √2 atan(√2/2) / 20 on the half-compact mouth.
 
@@ -175,9 +175,19 @@ The closed number at depth 5, −0.6456729548144859, is the unobserved reading o
 
 Gao, Jafferis, and Wall write the same slot as −h times the product of the two boundary operators, and they find that a positive h makes the horizon null energy negative. The value here is the κ already on the pair. The pin files were not edited.
 
+## The schedule
+
+The 40 m crossing of the lateral-load coast is a definite integral. With B = 2 r₀ − Rs it equals
+
+t = 2 √(W / (2 a)) [ 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − (4 (r₀ − Rs) / (3 B)) R_J(1, (3 r₀ − Rs) / B, 2 r₀ / B, 2) ],
+
+where W = 10 m and a = 9.80665 m/s². R_F and R_J are Carlson's elliptic integrals. On the one-sixth mouth the arguments are 17/11 and 12/11 and the coefficient of R_J is 20/33. On the half-compact mouth the arguments are 5/3 and 4/3 and the coefficient is 4/9. The crossings are 2.1294485056590506 s and 2.1647638999709788 s.
+
+The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above those values. Dividing the infinite-arm energy by the closed time gives mean sweeps of −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The hold rate at a fixed radius remains 0.
+
 ## What is still open
 
-The ship times remain the 400000-step trapezoid. The coast remains the lateral-load coast. MATLAB R2026b still has no license file. Octave is the checker that ran.
+The coast remains the lateral-load coast.
 
 The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
 
