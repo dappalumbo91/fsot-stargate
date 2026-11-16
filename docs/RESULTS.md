@@ -979,4 +979,24 @@ The antiderivative is
 
 up to a constant. From 25 m to 40 m that logarithm equals −1.8726515999694673×10⁻² on the one-sixth mouth and −2.5196758599871052×10⁻² on the half-compact mouth. Octave's integral of Φ' on that interval matches those values. From r₀ + 10⁻⁶ m to 40 m the same logarithm equals −3.8139089617420829×10⁻¹ and −4.6977014152602592×10⁻¹. Those are cutoff checks. They are not a throat redshift.
 
-Shutting the call off sets the two equilibria equal. Then V = 0, Φ' = 0, and the static piece is 0. The lateral law returns to κ(r) v². The closed ship times 2.1294485056590506 s and 2.1647638999709788 s return with it. b(r) is unchanged. The throat stays at 20 m. The redshift of that call-off shape stays 0.
+Shutting the call off sets the two equilibria equal. Then V = 0, Φ' = 0, and the static piece is 0. The lateral law returns to κ(r) v². The closed ship times 2.1294485056590506 s and 2.1647638999709788 s return with it. b(r) is unchanged. The throat stays at 20 m. The redshift of that call-off shape stays 0. The entry is the next section.
+
+## The entry, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The seated pair starts at its on-state. Both equilibria are set to the mean of the two domain scalars. The steady sum is already that mean's double, so the sum mode is absent. The steady difference is
+
+Δ∞ = γ (E₁ − E₂) / (2κ + γ) = 1.0947247366745378.
+
+The potential at that instant is (2κ + γ) Δ∞² / 4 = 0.18817310515070426. That is γ/(2κ) = 2.1399388376086073 times the seated potential 0.08793387074603902. The throat tide rises to 2.1140194094147898×10¹³ m/s² per meter. g/W minus that tide is −2.1140194094146918×10¹³.
+
+The difference then decays as Δ∞ exp(−(2κ + γ) t). The potential decays as the square of that factor. It equals the gate
+
+V = 2 r₀² (g/W) / c² = 8.7290957377585730×10⁻¹⁵
+
+at 24.441342370391848 pin-time units, which is 1.6305508506416028×10⁻⁶ s. The throat radicand is 0 there, so the 1 g throat speed is 0.
+
+The static piece at 40 m is 7/96 of the throat piece on the one-sixth mouth and 3/32 on the half-compact mouth. Those faces reach a zero radicand at 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. The throat is the later of the three.
+
+The seated flux reaches the open-page roundoff at the time already stamped, 3.8880657558015190×10⁻⁶ s. The potential there is 3.0232578084704490×10⁻³³, and that value divided by the gate is 3.4634261088385663×10⁻¹⁹. The closed ship times 2.1294485056590506 s and 2.1647638999709788 s are the coast at that floor. They are not the crossing at the gate. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.

@@ -191,11 +191,23 @@ The call and the shape meet in one product. The seated potential V is a pure num
 
 Φ'(r) = −V b(r) / (2 r (r − b(r))).
 
-Nothing new is put in by hand. When the call is shut off, the two equilibria agree, V is 0, and Φ' is 0. The closed crossing times come back with that zero.
+Nothing new is put in by hand. After the call has settled off, the two equilibria agree, V is 0, and Φ' is 0. The closed crossing times come back with that zero. The entry is the decay between the switch and that zero.
 
 While the call is on, r − b(r) vanishes at the throat and Φ' does not. The weight of that pole is 3/11 on the one-sixth mouth and 1/3 on the half-compact mouth. The throat redshift is infinite. A body at rest already feels a sideways tide of 9.8788777149220645×10¹² m/s² per meter, 1.0073651771932379×10¹³ times the 1 g load of a 10 m ship. Moving faster adds to that tide. The 1 g coast has no real speed. The curvature on the radial separation diverges at the throat for the same reason.
 
-In the unified-concept reading, V is the call stored in the medium, and the tension is the conduit. The product is the call pressing on the conduit. The press is singular at the throat. Taking the call away takes the press away. The shape of the conduit is the same shape as before.
+In the unified-concept reading, V is the call stored in the medium, and the tension is the conduit. The product is the call pressing on the conduit. The press is singular at the throat. Taking the call away takes the press away on the shutdown clock. The shape of the conduit is the same shape as before.
+
+## The entry
+
+Shutting the call off does not set the potential to zero at that instant. The two mouths are still apart. Both equilibria move to the mean of the two domain scalars. The sum of the two scalars is already twice that mean, so the sum mode is absent. The difference that remains is
+
+Δ∞ = γ (E₁ − E₂) / (2κ + γ) = 1.0947247366745378.
+
+Lean 4.31.0 accepts that this difference, multiplied by (2κ + γ), equals γ (E₁ − E₂). It accepts that the potential with the sum mode absent is (2κ + γ) Δ² / 4. It accepts that this switch potential is γ/(2κ) times the seated potential. It accepts that V = 196133 / (250 c²) makes the throat load equal to g/10. It accepts (96/7) · (7/96) = 1 and (32/3) · (3/32) = 1.
+
+Octave 11.3.0 prints the switch potential 0.18817310515070426 and the ratio 2.1399388376086073. The throat tide is then 2.1140194094147898×10¹³ m/s² per meter, and g/W minus that tide is −2.1140194094146918×10¹³. The potential decays as that switch value times exp(−2(2κ + γ) t). It reaches 8.7290957377585730×10⁻¹⁵ at 1.6305508506416028×10⁻⁶ s. The 1 g throat speed there is 0. The 40 m faces, at 7/96 and 3/32 of the throat piece, reach a zero radicand at 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. At the seated flux roundoff, 3.8880657558015190×10⁻⁶ s, the potential is 3.0232578084704490×10⁻³³.
+
+In the unified-concept reading, the entry is that press falling on the shutdown clock. Taking the equilibria to one shared phase takes the press away on that clock, after a jump up by γ/(2κ). A ship waits outside until the throat radicand is non-negative. A real positive 1 g speed exists only after that. The shape is unchanged.
 
 ## The audit
 
@@ -203,9 +215,9 @@ The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two
 
 ## What is still open
 
-The 1 g coast has no real speed while the call is on.
+The 1 g coast has no real speed while the seated call stays on. At the mean-equilibrium switch the radicand is still negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. A positive 1 g speed exists only after that instant. The closed ship times are the coast after the seated flux reaches roundoff. They are not the crossing at the gate.
 
-The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r).
+The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 
 ## Where the numbers live
 

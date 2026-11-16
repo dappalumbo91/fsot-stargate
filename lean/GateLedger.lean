@@ -21,7 +21,9 @@ of the null and coast supply rates, the opening coefficient h = κ
 in the two-mouth potential, the cancellation on one undirected edge,
 and the integral of one decay mode, and the join of the
 dimensionless potential to the shape: the pole weights 3/11 and 1/3
-and the residue 1/2. The 400000-step crossings stay with the Octave log.
+and the residue 1/2. The entry writes the seated shutdown into that join.
+The switch potential is γ/(2κ) times the seated potential, and the throat
+gate is the load g/10. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -568,6 +570,49 @@ theorem join_weight_sixth : r0 / (2 * (2 * r0 - rsSixth)) = 3 / 11 := by
 
 theorem join_weight_half : r0 / (2 * (2 * r0 - rsHalf)) = 1 / 3 := by
   unfold rsHalf r0
+  norm_num
+
+/-- At the on-state the difference is `γ (E₁ − E₂) / (2κ + γ)`. The sum is `E₁ + E₂`. -/
+theorem entry_steady_difference (κ γ E1 E2 : ℚ) (hd : 2 * κ + γ ≠ 0) :
+    ((E1 - κ * (E1 - E2) / (2 * κ + γ)) -
+        (E2 + κ * (E1 - E2) / (2 * κ + γ))) * (2 * κ + γ) =
+      γ * (E1 - E2) := by
+  have hmul := div_mul_cancel₀ (κ * (E1 - E2)) hd
+  have hsplit :
+      ((E1 - κ * (E1 - E2) / (2 * κ + γ)) -
+          (E2 + κ * (E1 - E2) / (2 * κ + γ))) * (2 * κ + γ) =
+        E1 * (2 * κ + γ) - κ * (E1 - E2) / (2 * κ + γ) * (2 * κ + γ) -
+          (E2 * (2 * κ + γ) + κ * (E1 - E2) / (2 * κ + γ) * (2 * κ + γ)) := by
+    ring
+  rw [hsplit, hmul]
+  ring
+
+/-- With the sum already on the common mean, the potential is `(2κ + γ) Δ² / 4`. -/
+theorem entry_switch (κ γ Δ : ℚ) :
+    γ / 2 * (Δ / 2) ^ 2 + γ / 2 * (Δ / 2) ^ 2 + κ / 2 * Δ ^ 2 =
+      (2 * κ + γ) * Δ ^ 2 / 4 := by
+  ring
+
+/-- That switch potential is `γ / (2κ)` times the seated potential. -/
+theorem entry_ratio (κ γ gap : ℚ) (hk : κ ≠ 0) (hg : γ ≠ 0) (hd : 2 * κ + γ ≠ 0)
+    (hgap : gap ≠ 0) :
+    (γ ^ 2 * gap ^ 2 / (4 * (2 * κ + γ))) /
+        (κ * γ * gap ^ 2 / (2 * (2 * κ + γ))) =
+      γ / (2 * κ) := by
+  field_simp
+  norm_num
+
+/-- `c² V / (2 r₀²) = g/10` at `V = 196133 / (250 c²)`. -/
+theorem entry_gate :
+    cLight ^ 2 * (196133 / (250 * cLight ^ 2)) / (2 * r0 ^ 2) = gStd / 10 := by
+  unfold cLight gStd r0
+  norm_num
+
+/-- The 40 m static piece is the proved tension ratio times the throat piece. -/
+theorem entry_face_sixth : (96 : ℚ) / 7 * ((7 : ℚ) / 96) = 1 := by
+  norm_num
+
+theorem entry_face_half : (32 : ℚ) / 3 * ((3 : ℚ) / 32) = 1 := by
   norm_num
 
 end GateLedger

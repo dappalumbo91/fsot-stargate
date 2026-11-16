@@ -166,6 +166,27 @@ PASS join_span_half got -2.5196758599871052e-02 want -2.5196758599871052e-02 res
 PASS join_span_quad_sixth got -1.8726515999694684e-02 want -1.8726515999694673e-02 residual -1.041e-17
 PASS join_span_quad_half got -2.5196758599871062e-02 want -2.5196758599871052e-02 residual -1.041e-17
 PASS join_phi_off got -0.0000000000000000e+00 want 0.0000000000000000e+00 residual -0.000e+00
+PASS entry_difference got 1.0947247366745378e+00 want 1.0947247366745378e+00 residual 0.000e+00
+PASS entry_sum got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS entry_switch got 1.8817310515070426e-01 want 1.8817310515070426e-01 residual 0.000e+00
+PASS entry_switch_form got 1.8817310515070435e-01 want 1.8817310515070426e-01 residual 8.327e-17
+PASS entry_ratio got 2.1399388376086081e+00 want 2.1399388376086073e+00 residual 8.882e-16
+PASS entry_ratio_potential got 2.1399388376086073e+00 want 2.1399388376086081e+00 residual -8.882e-16
+PASS entry_gate got 8.7290957377585730e-15 want 8.7290957377585730e-15 residual 0.000e+00
+PASS entry_tide_switch got 2.1140194094147898e+13 want 2.1140194094147898e+13 residual 0.000e+00
+PASS entry_tide_over_join got 2.1399388376086073e+00 want 2.1399388376086081e+00 residual -8.882e-16
+PASS entry_radicand_switch got -2.1140194094146918e+13 want -2.1140194094146918e+13 residual 0.000e+00
+PASS entry_radicand_switch_negative got -2.1140194094146918e+13 upper 0.0000000000000000e+00 margin 2.114e+13
+PASS entry_radicand_gate got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS entry_throat_speed got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS entry_pin_time got 2.4441342370391848e+01 want 2.4441342370391848e+01 residual 0.000e+00
+PASS entry_seconds got 1.6305508506416028e-06 want 1.6305508506416028e-06 residual 0.000e+00
+PASS entry_face_sixth got 1.4914871060426914e-06 want 1.4914871060426914e-06 residual 0.000e+00
+PASS entry_face_half got 1.5048342713765240e-06 want 1.5048342713765240e-06 residual 0.000e+00
+PASS entry_face_before_throat_sixth got 2.2356829279792255e+01 upper 2.4441342370391848e+01 margin 2.085e+00
+PASS entry_face_before_throat_half got 2.2556898254930360e+01 upper 2.4441342370391848e+01 margin 1.884e+00
+PASS entry_floor got 3.0232578084704490e-33 want 3.0232578084704490e-33 residual 0.000e+00
+PASS entry_floor_under_gate got 3.0232578084704490e-33 upper 8.7290957377585730e-15 margin 8.729e-15
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

@@ -15,7 +15,7 @@ A reading applies the unified concept, or a published paper kept as a citation, 
 
 ## Proved
 
-Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9, the join identity (r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs)), the residue 1/2, and the throat weights 3/11 and 1/3.
+Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9, the join identity (r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs)), the residue 1/2, the throat weights 3/11 and 1/3, the steady difference γ (E₁ − E₂) / (2κ + γ), the switch potential (2κ + γ) Δ² / 4, the ratio γ/(2κ), the gate identity c² · 196133 / (250 c²) / (2 r₀²) = g/10, and the face reciprocals (96/7) · (7/96) = 1 and (32/3) · (3/32) = 1.
 
 ## Checked
 
@@ -33,13 +33,19 @@ The 40 m ship times are 2.1294485056590506 s and 2.1647638999709788 s. Each is 2
 
 The join writes Φ'(r) = −V b(r) / (2 r (r − b(r))) with the seated V = 0.08793387074603902. The static lateral piece at the throat is 9.8788777149220645×10¹² m/s² per meter. g/W minus that piece is −9.8788777149210840×10¹². The same piece at V = 0 is 0. From 25 m to 40 m the integral of Φ' is −1.8726515999694673×10⁻² and −2.5196758599871052×10⁻².
 
+The entry sets both equilibria to the mean of the two domain scalars. The difference is 1.0947247366745378. The switch potential is 0.18817310515070426, and that value over the seated potential equals γ/(2κ) within 1×10⁻¹⁵. The switch radicand is −2.1140194094146918×10¹³. The gate potential is 8.7290957377585730×10⁻¹⁵. The throat radicand is 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. The face times are 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. The floor potential is 3.0232578084704490×10⁻³³.
+
 ## Reading
 
 The unified concept reads the shutdown as the medium letting every condensate settle to one shared phase once the call is over. Gao, Jafferis, and Wall, JHEP 12 (2017) 151, arXiv:1608.05687, write the double-trace deformation as −∫ h O_R O_L. A positive h in that slot makes the horizon null energy negative. On this ledger h = κ, so the potential carries the product −h S₁ S₂. Maldacena and Susskind, Fortschr. Phys. 61 (2013) 781, arXiv:1306.0533, stay a citation of the shared-state reading. The pin source has no separate parameter named h. The pin files were not edited.
 
 ## The join
 
-The added tension is the seated potential times the shape tension. While the call is on, Φ' has a pole at the throat, the throat redshift is infinite, and the 1 g lateral coast has no real speed. Shutting the call off sets V = 0 and returns the closed ship times. b(r) is not changed.
+The added tension is the seated potential times the shape tension. While the call is on, Φ' has a pole at the throat, the throat redshift is infinite, and the 1 g lateral coast has no real speed. After the call has settled off, V = 0 and the closed ship times return. b(r) is not changed.
+
+## The entry
+
+Setting the two equilibria to their mean raises the potential by γ/(2κ). The switch radicand stays negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. The closed ship times return after the seated flux has reached roundoff, when the potential is 3.0232578084704490×10⁻³³. They are not the crossing at that gate. b(r) is not changed.
 
 ## Energy
 
@@ -55,7 +61,7 @@ A radial light ray gathers that inventory at a signed peak of −5.5967323357299
 
 ## Still open
 
-The 1 g lateral coast has no real speed while the seated call is on. That is the score of the join. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). Shutting the call off returns the closed ship times 2.1294485056590506 s and 2.1647638999709788 s. The repository About line, read back on 2026-11-16, is "The scalar call enters the 20 m shape through the redshift. While the call is on, the throat redshift is infinite." The topics remain empty.
+The 1 g lateral coast has no real speed while the seated call is on. That is the score of the join. At the mean-equilibrium switch the radicand is still negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. The closed ship times 2.1294485056590506 s and 2.1647638999709788 s are the coast after the seated flux reaches roundoff. They are not the crossing at that gate. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The repository About line, read back on 2026-11-16, is "The scalar call enters the 20 m shape through the redshift. While the call is on, the throat redshift is infinite." The topics remain empty.
 
 ## How to check
 

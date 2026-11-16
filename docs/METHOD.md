@@ -416,4 +416,34 @@ Integrating Φ' gives
 
 Φ(r) = V / (2 (Rs − 2 r₀)) [ r₀ ln(r − r₀) + (Rs − 2 r₀) ln r − (Rs − r₀) ln(r + r₀ − Rs) ],
 
-up to a constant. The coefficient of ln(r − r₀) is negative for both seated mouths, and the logarithm goes to −∞, so Φ goes to +∞ at the throat. Octave integrates Φ' from 25 m to 40 m and matches this expression. The values are in [RESULTS.md](RESULTS.md). The pin is not edited.
+up to a constant. The coefficient of ln(r − r₀) is negative for both seated mouths, and the logarithm goes to −∞, so Φ goes to +∞ at the throat. Octave integrates Φ' from 25 m to 40 m and matches this expression. The values are in [RESULTS.md](RESULTS.md). The pin is not edited. The entry is the next section.
+
+## The entry, 2026-11-16
+
+The seated pair is quantum optics and quantum computing, already at the on-state of the join. Shutting the call off sets both equilibria to the mean of those two domain scalars. The steady scalars sum to that same total, so Σ − 2E starts at 0 and the sum mode is absent. The difference is the derive page's steady difference,
+
+Δ∞ = γ (E₁ − E₂) / (2κ + γ) = 1.0947247366745378.
+
+The two-mouth potential at that instant, with the common equilibrium equal to the mean, is
+
+V_switch = (2κ + γ) Δ∞² / 4 = γ² (E₁ − E₂)² / (4 (2κ + γ)) = 0.18817310515070426.
+
+The seated potential is V_on = κ γ (E₁ − E₂)² / (2 (2κ + γ)). Lean proves V_switch / V_on = γ / (2κ). Octave prints that ratio as 2.1399388376086073. The throat tide scales with V, so the switch tide is that many times the seated tide: 2.1140194094147898×10¹³ m/s² per meter. The radicand g/W − c² V_switch / (2 r₀²) is −2.1140194094146918×10¹³.
+
+With the sum mode absent, Δ(t) = Δ∞ exp(−(2κ + γ) t) and
+
+V(t) = V_switch exp(−2 (2κ + γ) t).
+
+The throat radicand is zero when c² V / (2 r₀²) = g/W, so
+
+V_gate = 2 r₀² (g/W) / c².
+
+Lean proves this rational equals 196133 / (250 c²) and that the load it produces is g/10, with g = 980665/100000, W = 10, r₀ = 20, and c = 299792458. Octave prints 8.7290957377585730×10⁻¹⁵. The time is
+
+t = ln(V_switch / V_gate) / (2 (2κ + γ)) = 24.441342370391848
+
+pin-time units. One pin-time unit is 20/299792458 s, so the gate is 1.6305508506416028×10⁻⁶ s. The 1 g throat speed at that instant is 0, because the radicand is 0. A positive 1 g speed exists only later.
+
+The static piece is c² V b(r) / (2 r³). At 40 m, b/r³ over the throat value 1/r₀² is the tension ratio already proved, 7/96 on the one-sixth mouth and 3/32 on the half-compact mouth. The face gate is V_gate times 96/7 and 32/3. Those times are 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. Both are earlier than the throat.
+
+The seated flux κ Δ(t) reaches the open-page roundoff 1.3877787807814457×10⁻¹⁷ at the shutdown time already stamped, 3.8880657558015190×10⁻⁶ s. Because V scales as Δ², the potential there is V_switch (roundoff / flux)² = 3.0232578084704490×10⁻³³. Dividing by the gate gives 3.4634261088385663×10⁻¹⁹. The closed ship times are the coast at V = 0, which is the coast after that floor. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

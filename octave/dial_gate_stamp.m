@@ -9,6 +9,7 @@
 % The shutdown page sets every sector equilibrium to the mean of the clock.
 % The schedule page evaluates the 40 m crossing as a Carlson integral.
 % The join multiplies the shape tension by the seated potential.
+% The entry follows the seated shutdown into that tide.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -430,6 +431,42 @@ fails = lineout(fid, fails, 'join_span_half', spanh, -2.5196758599871052e-02, 0)
 fails = lineout(fid, fails, 'join_span_quad_sixth', quad6, span6, 1e-15);
 fails = lineout(fid, fails, 'join_span_quad_half', quadh, spanh, 1e-15);
 fails = lineout(fid, fails, 'join_phi_off', join_phi(r30, Rs6, 0), 0, 0);
+
+% Entry. Equilibria go to the mean. The difference decays. The sum mode is absent.
+den = 2 * kap + gam;
+dlt = gam * gap / den;
+fails = lineout(fid, fails, 'entry_difference', dlt, 1.0947247366745378, 0);
+Eo = 0.9536594523121079;
+Ec = -0.6526335205358984;
+fails = lineout(fid, fails, 'entry_sum', (Eo + Ec) - 2 * ((Eo + Ec) / 2), 0, 0);
+Vswitch = den * dlt ^ 2 / 4;
+fails = lineout(fid, fails, 'entry_switch', Vswitch, 1.8817310515070426e-01, 0);
+fails = lineout(fid, fails, 'entry_switch_form', gam ^ 2 * gap ^ 2 / (4 * den), Vswitch, 1e-15);
+fails = lineout(fid, fails, 'entry_ratio', gam / (2 * kap), 2.1399388376086073, 1e-15);
+fails = lineout(fid, fails, 'entry_ratio_potential', Vswitch / Vpot, gam / (2 * kap), 1e-15);
+Vgate = (g / 10) * 2 * r0 ^ 2 / c ^ 2;
+fails = lineout(fid, fails, 'entry_gate', Vgate, 8.7290957377585730e-15, 0);
+tide_switch = c ^ 2 * Vswitch / (2 * r0 ^ 2);
+fails = lineout(fid, fails, 'entry_tide_switch', tide_switch, 2.1140194094147898e+13, 0);
+fails = lineout(fid, fails, 'entry_tide_over_join', tide_switch / tide, gam / (2 * kap), 1e-15);
+fails = lineout(fid, fails, 'entry_radicand_switch', g / 10 - tide_switch, -2.1140194094146918e+13, 0);
+fails = boundout(fid, fails, 'entry_radicand_switch_negative', g / 10 - tide_switch, 0);
+fails = lineout(fid, fails, 'entry_radicand_gate', g / 10 - c ^ 2 * Vgate / (2 * r0 ^ 2), 0, 0);
+fails = lineout(fid, fails, 'entry_throat_speed', 0, 0, 0);
+tpin = log(Vswitch / Vgate) / (2 * den);
+fails = lineout(fid, fails, 'entry_pin_time', tpin, 2.4441342370391848e+01, 0);
+fails = lineout(fid, fails, 'entry_seconds', tpin * r0 / c, 1.6305508506416028e-06, 0);
+tf6 = log(Vswitch / (Vgate * 96 / 7)) / (2 * den);
+tfh = log(Vswitch / (Vgate * 32 / 3)) / (2 * den);
+fails = lineout(fid, fails, 'entry_face_sixth', tf6 * r0 / c, 1.4914871060426914e-06, 0);
+fails = lineout(fid, fails, 'entry_face_half', tfh * r0 / c, 1.5048342713765240e-06, 0);
+fails = boundout(fid, fails, 'entry_face_before_throat_sixth', tf6, tpin);
+fails = boundout(fid, fails, 'entry_face_before_throat_half', tfh, tpin);
+seated_flux = 0.10948671535321428;
+rnd = 1.3877787807814457e-17;
+Vfloor = Vswitch * (rnd / seated_flux) ^ 2;
+fails = lineout(fid, fails, 'entry_floor', Vfloor, 3.0232578084704490e-33, 0);
+fails = boundout(fid, fails, 'entry_floor_under_gate', Vfloor, Vgate);
 
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
