@@ -19,7 +19,9 @@ radial density factor (r₀/r)⁴, the coordinate energy of the exotic
 mass, the half-energy at r = 2 r₀, the critical-point polynomials
 of the null and coast supply rates, the opening coefficient h = κ
 in the two-mouth potential, the cancellation on one undirected edge,
-and the integral of one decay mode. The 400000-step crossings stay with the Octave log.
+and the integral of one decay mode, and the join of the
+dimensionless potential to the shape: the pole weights 3/11 and 1/3
+and the residue 1/2. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -540,6 +542,31 @@ theorem schedule_half_arguments :
     (3 * r0 - rsHalf) / (2 * r0 - rsHalf) = 5 / 3 ∧
       2 * r0 / (2 * r0 - rsHalf) = 4 / 3 ∧
         4 * (r0 - rsHalf) / (3 * (2 * r0 - rsHalf)) = 4 / 9 := by
+  unfold rsHalf r0
+  norm_num
+
+/-- `(r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs))`. The left side is `−(r − r₀) Φ' / V`. -/
+theorem join_pole (Rs r : ℚ) (hr : r ≠ 0) (ht : r ≠ r0) (hf : r + r0 - Rs ≠ 0) :
+    (r - r0) * shape Rs r / (2 * r * (r - shape Rs r)) =
+      shape Rs r / (2 * (r + r0 - Rs)) := by
+  have hsplit : r ^ 2 - Rs * r - (r0 - Rs) * r0 = (r - r0) * (r + r0 - Rs) := gap_split Rs r
+  have hdiff : r - shape Rs r = (r ^ 2 - Rs * r - (r0 - Rs) * r0) / r := by
+    unfold shape
+    field_simp
+    ring
+  rw [hdiff, hsplit]
+  field_simp
+
+/-- Cancelling the throat gap leaves `b / (2 r)`. At the throat that residue is `1/2`. -/
+theorem join_residue (Rs : ℚ) : shape Rs r0 / (2 * r0) = 1 / 2 := by
+  rw [shape_at_throat Rs]
+  field_simp [r0]
+
+theorem join_weight_sixth : r0 / (2 * (2 * r0 - rsSixth)) = 3 / 11 := by
+  unfold rsSixth r0
+  norm_num
+
+theorem join_weight_half : r0 / (2 * (2 * r0 - rsHalf)) = 1 / 3 := by
   unfold rsHalf r0
   norm_num
 

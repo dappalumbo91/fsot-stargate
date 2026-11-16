@@ -382,4 +382,38 @@ For Rs = r₀/6 the arguments are 17/11 and 12/11 and the coefficient is 20/33. 
 
 ## The audit, 2026-11-16
 
-The two-mouth law is dSᵢ/dt = κ (Sⱼ − Sᵢ) − γ (Sᵢ − Eᵢ). Its unknowns are the two scalars. The crossing time is the integral of 1/v(r) along b(r), with v(r) = √(a / (κ(r) W)) and κ(r) = (b/r − b')/(2 r²). The integrand has no scalar, no flux, and no h. Setting the two equilibria equal changes the scalar trajectory and leaves the integral where it is. The hold rate at fixed radius is the time derivative of an energy that depends on r and not on t, so that rate is 0. The watt figures divide that energy by a ship time. They do not enter the momentum call. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md).
+The two-mouth law is dSᵢ/dt = κ (Sⱼ − Sᵢ) − γ (Sᵢ − Eᵢ). Its unknowns are the two scalars. The crossing time is the integral of 1/v(r) along b(r), with v(r) = √(a / (κ(r) W)) and κ(r) = (b/r − b')/(2 r²). The integrand has no scalar, no flux, and no h. Setting the two equilibria equal changes the scalar trajectory and leaves the integral where it is. The hold rate at fixed radius is the time derivative of an energy that depends on r and not on t, so that rate is 0. The watt figures divide that energy by a ship time. They do not enter the momentum call. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md). The join is the next section.
+
+## The join, 2026-11-16
+
+The potential on the seated pair is
+
+V = κ γ (E₁ − E₂)² / (2 (2κ + γ)).
+
+V is dimensionless. The settled flux κ γ (E₁ − E₂) / (2κ + γ) is a rate. A rate times the shape tension would need a time the ledger does not have. V times the tension does not. That product is the join. The factor (1 − b/r) is not inserted by hand.
+
+Ford and Roman, gr-qc/9510071, give the radial pressure of the Morris–Thorne metric, in units G = c = 1, as
+
+p_r = −(1/(8π)) [ b/r³ − 2 (Φ'/r) (1 − b/r) ].
+
+The ledger's tension is the negative of that pressure, with c⁴/G restored. At Φ' = 0 it is τ(r) = b(r) c⁴ / (8π G r³). An added tension δτ = V τ then fixes
+
+Φ'(r) = −V b(r) / (2 r (r − b(r))).
+
+The same paper gives a^r = Φ' (1 − b/r) for the proper acceleration of a static observer, R_{tθtθ} = (Φ'/r) (1 − b/r), and R_{rθrθ} = (b' r − b) / (2 r³). The last of those is −κ(r). For a radial traveler, omitting the Lorentz factor the way the coast already does, the lateral acceleration per meter is
+
+κ(r) v² − c² (Φ'/r) (1 − b/r).
+
+Substituting Φ' turns the second term into c² V b(r) / (2 r³). The two terms have the same sign. At the throat the 1 g condition is κ v² = g/W − c² V / (2 r₀²). While the seated call is on, the right-hand side is negative, so that speed is not real. At V = 0 the right-hand side is g/W and the closed coast returns.
+
+The gap identity r² − Rs r − (r₀ − Rs) r₀ = (r − r₀)(r + r₀ − Rs) writes r − b(r) = (r − r₀)(r + r₀ − Rs) / r. Therefore
+
+(r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs)),
+
+which is −(r − r₀) Φ' / V wherever the original quotient is defined. At the throat the right-hand side is r₀ / (2 (2 r₀ − Rs)). For Rs = r₀/6 that is 3/11. For Rs = r₀/2 that is 1/3. Cancelling the gap before the limit leaves b / (2 r), and at the throat that residue is 1/2, so (r − b) Φ' approaches −V/2. Lean proves the identity, the two weights, and the residue. It does not prove the logarithm.
+
+Integrating Φ' gives
+
+Φ(r) = V / (2 (Rs − 2 r₀)) [ r₀ ln(r − r₀) + (Rs − 2 r₀) ln r − (Rs − r₀) ln(r + r₀ − Rs) ],
+
+up to a constant. The coefficient of ln(r − r₀) is negative for both seated mouths, and the logarithm goes to −∞, so Φ goes to +∞ at the throat. Octave integrates Φ' from 25 m to 40 m and matches this expression. The values are in [RESULTS.md](RESULTS.md). The pin is not edited.

@@ -947,4 +947,36 @@ The passage, the haul, and the pace print the trapezoid 2.1294485057269195 s and
 
 The repository About line, read on this date, is "Gate-to-gate ledger. Parent is fsot-warp-shell. A mouth-to-mouth transit is not adopted until a score says clean." Topics are empty. The language badge is MATLAB. The warp-shell narrative that followed the schedule on the landing page is [PARENT.md](PARENT.md). `.gitattributes` marks the `.m` sources as Octave.
 
-The functioning gap is one equation that writes the scalar law into Φ or into b(r), and a crossing whose time changes when the call is shut down. That equation was left open. The coast remains the lateral-load coast. The throat stays at 20 m.
+The functioning gap is one equation that writes the scalar law into Φ or into b(r), and a crossing whose time changes when the call is shut down. That equation is the next section. The throat stays at 20 m.
+
+## The join, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The seated potential is dimensionless,
+
+V = κ γ (E₁ − E₂)² / (2 (2κ + γ)) = 0.08793387074603902.
+
+The shape tension at zero redshift is τ(r) = b(r) c⁴ / (8π G r³). The added tension is V times that tension. The redshift derivative which produces it is
+
+Φ'(r) = −V b(r) / (2 r (r − b(r))).
+
+c and G cancel. No new constant enters. V = 0 returns Φ' = 0.
+
+Since r − b(r) = (r − r₀)(r + r₀ − Rs) / r, Φ' has a simple pole at the throat. The weight −(r − r₀) Φ' / V there is r₀ / (2 (2 r₀ − Rs)). Lean proves that weight equal to 3/11 on the one-sixth mouth and 1/3 on the half-compact mouth, and proves that cancelling the gap leaves the residue 1/2. The coefficient of ln(r − r₀) is negative, and that logarithm goes to −∞ as r approaches r₀ from above, so Φ goes to +∞. The throat redshift is infinite while the call is on. Adding a constant to Φ does not remove that logarithm.
+
+The lateral acceleration per meter, with the same omission of the Lorentz factor the coast already uses, is
+
+κ(r) v² + c² V b(r) / (2 r³).
+
+At the throat the second term is c² V / (2 r₀²) = 9.8788777149220645×10¹² m/s² per meter, the same on both mouths. The 1 g load of the 10 m ship is g/W with g = 9.80665 m/s² and W = 10 m. The static piece is 1.0073651771932379×10¹³ times that load. The velocity term is positive, so a faster coast adds to the static piece. g/W minus the static piece is −9.8788777149210840×10¹². There is no real 1 g speed while the seated call is on.
+
+Putting the Lorentz factor back multiplies both terms by γ², and γ² ≥ 1, so the tide is larger. The proper acceleration a static observer needs at the throat has magnitude c² V / (2 r₀) = 1.9757755429844131×10¹⁴ m/s². The radial curvature diverges at the throat while V ≠ 0, because Φ' diverges as 1/(r − r₀).
+
+The antiderivative is
+
+Φ(r) = V / (2 (Rs − 2 r₀)) [ r₀ ln(r − r₀) + (Rs − 2 r₀) ln r − (Rs − r₀) ln(r + r₀ − Rs) ],
+
+up to a constant. From 25 m to 40 m that logarithm equals −1.8726515999694673×10⁻² on the one-sixth mouth and −2.5196758599871052×10⁻² on the half-compact mouth. Octave's integral of Φ' on that interval matches those values. From r₀ + 10⁻⁶ m to 40 m the same logarithm equals −3.8139089617420829×10⁻¹ and −4.6977014152602592×10⁻¹. Those are cutoff checks. They are not a throat redshift.
+
+Shutting the call off sets the two equilibria equal. Then V = 0, Φ' = 0, and the static piece is 0. The lateral law returns to κ(r) v². The closed ship times 2.1294485056590506 s and 2.1647638999709788 s return with it. b(r) is unchanged. The throat stays at 20 m. The redshift of that call-off shape stays 0.

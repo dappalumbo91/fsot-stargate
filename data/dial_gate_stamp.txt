@@ -147,6 +147,25 @@ PASS depth5_shutdown_seconds got 3.9040587565700679e-06 want 3.9040587565700679e
 PASS gate_h_optics got 1.0001300937604073e-01 want 1.0001300937604073e-01 residual 0.000e+00
 PASS gate_h_depth5 got 9.8587139727597098e-02 want 9.8587139727597098e-02 residual 0.000e+00
 PASS gate_h_product_depth5 got -9.8587139727597098e-02 want -9.8587139727597098e-02 residual 0.000e+00
+PASS join_weight_sixth got 2.7272727272727276e-01 want 2.7272727272727271e-01 residual 5.551e-17
+PASS join_weight_half got 3.3333333333333331e-01 want 3.3333333333333331e-01 residual 0.000e+00
+PASS join_residue got 5.0000000000000000e-01 want 5.0000000000000000e-01 residual 0.000e+00
+PASS join_static_tide got 9.8788777149220645e+12 want 9.8788777149220645e+12 residual 0.000e+00
+PASS join_static_accel got 1.9757755429844131e+14 want 1.9757755429844131e+14 residual 0.000e+00
+PASS join_tide_off got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS join_coast_radicand got -9.8788777149210840e+12 want -9.8788777149210840e+12 residual 0.000e+00
+PASS join_tide_over_load got 1.0073651771932379e+13 want 1.0073651771932379e+13 residual 0.000e+00
+PASS join_coast_radicand_negative got -9.8788777149210840e+12 upper 0.0000000000000000e+00 margin 9.879e+12
+PASS join_load_under_tide got 9.8066499999999990e-01 upper 9.8788777149220645e+12 margin 9.879e+12
+PASS join_pole_thirty_sixth got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS join_pole_thirty_half got 5.5511151231257827e-17 want 0.0000000000000000e+00 residual 5.551e-17
+PASS join_cutoff_sixth got -3.8139089617420829e-01 want -3.8139089617420829e-01 residual 0.000e+00
+PASS join_cutoff_half got -4.6977014152602592e-01 want -4.6977014152602592e-01 residual 0.000e+00
+PASS join_span_sixth got -1.8726515999694673e-02 want -1.8726515999694673e-02 residual 0.000e+00
+PASS join_span_half got -2.5196758599871052e-02 want -2.5196758599871052e-02 residual 0.000e+00
+PASS join_span_quad_sixth got -1.8726515999694684e-02 want -1.8726515999694673e-02 residual -1.041e-17
+PASS join_span_quad_half got -2.5196758599871062e-02 want -2.5196758599871052e-02 residual -1.041e-17
+PASS join_phi_off got -0.0000000000000000e+00 want 0.0000000000000000e+00 residual -0.000e+00
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

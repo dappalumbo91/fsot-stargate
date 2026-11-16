@@ -158,4 +158,8 @@ Lean 4.31.0 accepted `lean/GateLedger.lean`, including the numerator split Rs u 
 
 The landing page had carried the warp-shell ledger after the schedule. That ledger is `docs/PARENT.md`. The gate record leads the landing page. The repository About line, read on this date, is "Gate-to-gate ledger. Parent is fsot-warp-shell. A mouth-to-mouth transit is not adopted until a score says clean." Topics are empty. The language badge is MATLAB. `.gitattributes` marks the `.m` sources as Octave.
 
-The scalar law and the shape remain two records. The coast formula has no scalar argument. The join of the scalar law to Φ and to b(r) stays open. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
+The pages through the schedule keep the scalar law and the shape as two records. The coast formula on those pages has no scalar argument. The join is the next section. The throat stays at 20 m.
+
+## The join, 2026-11-16
+
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including the pole identity (r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs)), the residue 1/2, and the weights 3/11 and 1/3. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The static lateral piece is 9.8788777149220645×10¹² m/s² per meter. The coast radicand is −9.8788777149210840×10¹². The integral of Φ' from 25 m to 40 m matches the logarithm to a residual of −1.041×10⁻¹⁷ on each mouth. The pin files were not edited. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r).

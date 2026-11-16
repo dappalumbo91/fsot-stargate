@@ -185,19 +185,27 @@ where W = 10 m and a = 9.80665 m/s². R_F and R_J are Carlson's elliptic integra
 
 The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above those values. Dividing the infinite-arm energy by the closed time gives mean sweeps of −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The hold rate at a fixed radius remains 0.
 
+## The join
+
+The call and the shape meet in one product. The seated potential V is a pure number, 0.08793387074603902. The tension of the shape, at zero redshift, is τ(r) = b(r) c⁴ / (8π G r³). Their product is an added tension, and the redshift derivative that tension requires is
+
+Φ'(r) = −V b(r) / (2 r (r − b(r))).
+
+Nothing new is put in by hand. When the call is shut off, the two equilibria agree, V is 0, and Φ' is 0. The closed crossing times come back with that zero.
+
+While the call is on, r − b(r) vanishes at the throat and Φ' does not. The weight of that pole is 3/11 on the one-sixth mouth and 1/3 on the half-compact mouth. The throat redshift is infinite. A body at rest already feels a sideways tide of 9.8788777149220645×10¹² m/s² per meter, 1.0073651771932379×10¹³ times the 1 g load of a 10 m ship. Moving faster adds to that tide. The 1 g coast has no real speed. The curvature on the radial separation diverges at the throat for the same reason.
+
+In the unified-concept reading, V is the call stored in the medium, and the tension is the conduit. The product is the call pressing on the conduit. The press is singular at the throat. Taking the call away takes the press away. The shape of the conduit is the same shape as before.
+
 ## The audit
 
-The simulation is two records. The scalar law writes the call, the flux, and the shutdown. The shape writes the corridor and the ship time. No equation writes the scalar law into Φ or into b(r). The coast formula has no scalar argument, so the crossing time stays 2.1294485056590506 s and 2.1647638999709788 s for every value of the call. The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) are two objects. On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger. The warp-shell ledger is [PARENT.md](PARENT.md).
-
-A functioning simulation of this gate is one state in which the call changes the conduit, and a crossing whose time changes when the call is shut down. That equation is still open.
+The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The coast remains the lateral-load coast.
+The 1 g coast has no real speed while the call is on.
 
-The join of the scalar law to Φ and to b(r) stays open.
-
-The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
+The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r).
 
 ## Where the numbers live
 

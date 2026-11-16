@@ -10,9 +10,9 @@
 
 Two mouths, one conduit. The seated call is the scalar law between quantum optics and quantum computing. The leakage is κ = 0.10001300937604073. The restore is γ = 0.4280434460598068. The settled flux is 0.10948671535321428. The corridor is b(r) = Rs + (20 m − Rs) × 20 m / r, with throat 20 m and redshift 0. A 10 m ship on the lateral-load coast crosses the 40 m faces in 2.1294485056590506 s and 2.1647638999709788 s. The coast uses the tidal coefficient κ(r) = (b/r − b')/(2 r²). At the throat that coefficient is 11/4800 on the one-sixth mouth and 3/1600 on the half-compact mouth. The leakage and the tidal coefficient are two objects.
 
-The scalar law and the shape are two records. No equation writes the scalar law into Φ or into b(r). The coast formula has no scalar argument, so the ship time is the same for every value of the call. The audit is the section after the schedule. The claim is [docs/CLAIM.md](docs/CLAIM.md). The reading is [docs/PAPER.md](docs/PAPER.md).
+The call enters the shape as an added tension. That tension is the seated potential times the shape tension, so Φ'(r) = −V b(r) / (2 r (r − b(r))). While the call is on, Φ' has a pole at the throat, the throat redshift is infinite, and the 1 g lateral coast has no real speed. Shutting the call off sets V = 0, returns Φ' = 0, and returns the closed ship times. The join is the section after the audit. The claim is [docs/CLAIM.md](docs/CLAIM.md). The reading is [docs/PAPER.md](docs/PAPER.md).
 
-The sections from the one-way funnel through the schedule are the dated record, in the order they were written. A sentence in an early section describes that day. The current account is this opening, the audit, the claim, and the paper. The parent shell record, cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`, is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The one-way funnel is the next section.
+The sections from the one-way funnel through the schedule are the dated record, in the order they were written. A sentence in an early section describes that day. The current account is this opening, the join, the claim, and the paper. The parent shell record, cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`, is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The one-way funnel is the next section.
 
 ## The one-way funnel
 
@@ -184,7 +184,11 @@ The repository About line, read on this date, is "Gate-to-gate ledger. Parent is
 
 `python/claim_check.py` returned 0 failures. Octave 11.3.0 rewrote the stamp with 0 failures. Lean 4.31.0 accepted [lean/GateLedger.lean](lean/GateLedger.lean) with no warning. The pin files were not edited.
 
-A simulation in which the call changes the conduit needs one equation that writes the scalar law into Φ or into b(r), and a crossing whose time changes when the call is shut down. That equation was left open. The coast remains the lateral-load coast. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The check is the next section.
+A simulation in which the call changes the conduit needs one equation that writes the scalar law into Φ or into b(r), and a crossing whose time changes when the call is shut down. That equation is the next section. The throat stays at 20 m. The full table is in [docs/RESULTS.md](docs/RESULTS.md). The join is the next section.
+
+## The join
+
+The added tension is the seated potential times the shape tension. The redshift derivative is Φ'(r) = −V b(r) / (2 r (r − b(r))), with V = 0.08793387074603902. The throat weights are 3/11 and 1/3. The throat redshift is infinite while the call is on. The static lateral piece at the throat is 9.8788777149220645×10¹² m/s² per meter, and g/W minus that piece is −9.8788777149210840×10¹². The 1 g coast has no real speed while the call is on. Shutting the call off returns Φ' = 0 and the closed ship times. Lean 4.31.0 accepted the pole identity, the residue 1/2, and the two weights. Octave 11.3.0 rewrote the stamp with 0 failures. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The full table is in [docs/RESULTS.md](docs/RESULTS.md). The check is the next section.
 
 ## Check
 

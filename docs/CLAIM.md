@@ -15,7 +15,7 @@ A reading applies the unified concept, or a published paper kept as a citation, 
 
 ## Proved
 
-Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, and the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9.
+Lean accepted the throat value of the shape b(r) = Rs + (r₀ − Rs) r₀ / r at r₀ = 20 m, the slopes −5/6 and −1/2, the coordinate ratios −5 and −1, the six coordinate masses, the sign of the settled flux, the potential and its product coefficient −κ, the shutdown integral, the unique inverse-power shape, the density factor (r₀/r)⁴, the 40 m tension ratios 7/96 and 3/32, the negative sign of b′ r − b, the steady balance of pressure gradient and observer source, the six coordinate energies, the half-energy at 40 m, κ(40 m) = 1/6400, the critical-point polynomials of the two supply rates, the product written as −h with h = κ, the cancellation on one undirected edge, the integral of one decay mode, the ship-time numerator split, the schedule arguments 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9, the join identity (r − r₀) b / (2 r (r − b)) = b / (2 (r + r₀ − Rs)), the residue 1/2, and the throat weights 3/11 and 1/3.
 
 ## Checked
 
@@ -31,13 +31,15 @@ The gate's h on a pair is that pair's κ. On the depth-5 pair, h = A_BLEED · PO
 
 The 40 m ship times are 2.1294485056590506 s and 2.1647638999709788 s. Each is 2 √(W / (2 a)) times a Carlson combination, with arguments 17/11, 12/11 and coefficient 20/33 on the one-sixth mouth, and arguments 5/3, 4/3 and coefficient 4/9 on the half-compact mouth. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them.
 
+The join writes Φ'(r) = −V b(r) / (2 r (r − b(r))) with the seated V = 0.08793387074603902. The static lateral piece at the throat is 9.8788777149220645×10¹² m/s² per meter. g/W minus that piece is −9.8788777149210840×10¹². The same piece at V = 0 is 0. From 25 m to 40 m the integral of Φ' is −1.8726515999694673×10⁻² and −2.5196758599871052×10⁻².
+
 ## Reading
 
 The unified concept reads the shutdown as the medium letting every condensate settle to one shared phase once the call is over. Gao, Jafferis, and Wall, JHEP 12 (2017) 151, arXiv:1608.05687, write the double-trace deformation as −∫ h O_R O_L. A positive h in that slot makes the horizon null energy negative. On this ledger h = κ, so the potential carries the product −h S₁ S₂. Maldacena and Susskind, Fortschr. Phys. 61 (2013) 781, arXiv:1306.0533, stay a citation of the shared-state reading. The pin source has no separate parameter named h. The pin files were not edited.
 
-## The open join
+## The join
 
-The scalar law and the shape are two records. No equation on this ledger writes the scalar law into Φ or into b(r).
+The added tension is the seated potential times the shape tension. While the call is on, Φ' has a pole at the throat, the throat redshift is infinite, and the 1 g lateral coast has no real speed. Shutting the call off sets V = 0 and returns the closed ship times. b(r) is not changed.
 
 ## Energy
 
@@ -53,7 +55,7 @@ A radial light ray gathers that inventory at a signed peak of −5.5967323357299
 
 ## Still open
 
-The 40 m ship times are the closed values 2.1294485056590506 s and 2.1647638999709788 s. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r). The join of the scalar law to Φ and to b(r) stays open. The audit of 2026-11-16 reran the claim check, the Octave stamp, and GateLedger.lean. All three passed. The coast formula has no scalar argument, so the stamped ship time is the same for every value of the call.
+The 1 g lateral coast has no real speed while the seated call is on. That is the score of the join. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). Shutting the call off returns the closed ship times 2.1294485056590506 s and 2.1647638999709788 s. The repository About line remains the sentence recorded in the audit, and the topics remain empty.
 
 ## How to check
 

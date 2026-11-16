@@ -8,6 +8,7 @@
 % The supply page reads dE/dt along the null ray and the lateral-load coast.
 % The shutdown page sets every sector equilibrium to the mean of the clock.
 % The schedule page evaluates the 40 m crossing as a Carlson integral.
+% The join multiplies the shape tension by the seated potential.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -396,6 +397,40 @@ fails = lineout(fid, fails, 'gate_h_optics', kap, 1.0001300937604073e-01, 0);
 fails = lineout(fid, fails, 'gate_h_depth5', k5, 9.8587139727597098e-02, 0);
 fails = lineout(fid, fails, 'gate_h_product_depth5', -k5, -9.8587139727597098e-02, 0);
 
+% Join. Added tension V * tau. Phi' = -V b / (2 r (r - b)).
+fails = lineout(fid, fails, 'join_weight_sixth', r0 / (2 * (2 * r0 - Rs6)), 3 / 11, 1e-15);
+fails = lineout(fid, fails, 'join_weight_half', r0 / (2 * (2 * r0 - Rsh)), 1 / 3, 0);
+fails = lineout(fid, fails, 'join_residue', r0 / (2 * r0), 1 / 2, 0);
+tide = c ^ 2 * Vpot / (2 * r0 ^ 2);
+accel = c ^ 2 * Vpot / (2 * r0);
+fails = lineout(fid, fails, 'join_static_tide', tide, 9.8788777149220645e+12, 0);
+fails = lineout(fid, fails, 'join_static_accel', accel, 1.9757755429844131e+14, 0);
+fails = lineout(fid, fails, 'join_tide_off', 0 * tide, 0, 0);
+fails = lineout(fid, fails, 'join_coast_radicand', g / 10 - tide, -9.8788777149210840e+12, 0);
+fails = lineout(fid, fails, 'join_tide_over_load', tide / (g / 10), 1.0073651771932379e+13, 0);
+fails = boundout(fid, fails, 'join_coast_radicand_negative', g / 10 - tide, 0);
+fails = boundout(fid, fails, 'join_load_under_tide', g / 10, tide);
+r30 = 30;
+b30s = Rs6 + (r0 - Rs6) * r0 / r30;
+b30h = Rsh + (r0 - Rsh) * r0 / r30;
+pole6 = (r30 - r0) * b30s / (2 * r30 * (r30 - b30s)) - b30s / (2 * (r30 + r0 - Rs6));
+poleh = (r30 - r0) * b30h / (2 * r30 * (r30 - b30h)) - b30h / (2 * (r30 + r0 - Rsh));
+fails = lineout(fid, fails, 'join_pole_thirty_sixth', pole6, 0, 1e-15);
+fails = lineout(fid, fails, 'join_pole_thirty_half', poleh, 0, 1e-15);
+cut6 = join_log(40, Rs6, Vpot) - join_log(r0 + 1e-6, Rs6, Vpot);
+cuth = join_log(40, Rsh, Vpot) - join_log(r0 + 1e-6, Rsh, Vpot);
+fails = lineout(fid, fails, 'join_cutoff_sixth', cut6, -3.8139089617420829e-01, 0);
+fails = lineout(fid, fails, 'join_cutoff_half', cuth, -4.6977014152602592e-01, 0);
+span6 = join_log(40, Rs6, Vpot) - join_log(25, Rs6, Vpot);
+spanh = join_log(40, Rsh, Vpot) - join_log(25, Rsh, Vpot);
+quad6 = integral(@(rr) join_phi(rr, Rs6, Vpot), 25, 40, 'AbsTol', 1e-14, 'RelTol', 1e-14);
+quadh = integral(@(rr) join_phi(rr, Rsh, Vpot), 25, 40, 'AbsTol', 1e-14, 'RelTol', 1e-14);
+fails = lineout(fid, fails, 'join_span_sixth', span6, -1.8726515999694673e-02, 0);
+fails = lineout(fid, fails, 'join_span_half', spanh, -2.5196758599871052e-02, 0);
+fails = lineout(fid, fails, 'join_span_quad_sixth', quad6, span6, 1e-15);
+fails = lineout(fid, fails, 'join_span_quad_half', quadh, spanh, 1e-15);
+fails = lineout(fid, fails, 'join_phi_off', join_phi(r30, Rs6, 0), 0, 0);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');
@@ -477,4 +512,17 @@ end
 
 function q = quad_cosh(A, B)
   q = integral(@(t) 2 ./ (B .* t .^ 2 + 2 .* A .* t + B), 0, 1);
+end
+
+function y = join_phi(r, Rs, V)
+  r0 = 20;
+  b = Rs + (r0 - Rs) .* r0 ./ r;
+  y = -V .* b ./ (2 .* r .* (r - b));
+end
+
+function y = join_log(r, Rs, V)
+  r0 = 20;
+  y = V ./ (2 .* (Rs - 2 .* r0)) .* ( ...
+    r0 .* log(r - r0) + (Rs - 2 .* r0) .* log(r) ...
+    - (Rs - r0) .* log(r + r0 - Rs));
 end
