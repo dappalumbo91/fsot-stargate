@@ -26,7 +26,7 @@ The raw 83.4 m difference misses that bar on four samples at 59 m. Those samples
 
 The green marks are under the clean bar. The red marks are over it. At the published 20 m radius, their cabin is clean at 0.04c and fails at 0.06c. The flat FSOT wall is clean at 0.04c for compactness 1/5 and 1/4, and the flat compactness 1/6 wall fails at 0.04c. That same one-sixth mass is clean at 0.04c when the foot stays the wall and the outer slope is held to the bend-window chord. At their mass the wall is clean at 0.06c. At compactness 1/2 it is clean at 0.10c and fails at 0.11c. The condensate shell is clean at 0.095c and 0.10c, and the 0.10c mark also holds on the 83.4 m grid after the flat-ball restoration. A 50–110 m Fuchs-type shell in this port still fails at 0.10c.
 
-A fresh run of that 20 m wall reproduced the stored 0.10c line. With the shift turned off, the same shell is clean at compactness 1/2 and at compactness 1/3. The remaining violation sits at 26.47 m, near 2×10⁻⁵. The smoothed density ends at 26.57 m, so that cell is the tip of the mass smooth. The chain from the pin through the mix is written out in [docs/AUDIT.md](AUDIT.md).
+A fresh run of that 20 m wall reproduced the stored 0.10c line. With the shift turned off, the same shell is clean at compactness 1/2 and at compactness 1/3. The remaining violation sits at 26.47 m, near 2×10⁻⁵. The smoothed density ends at 26.57 m, so that cell is the tip of the mass smooth. The chain from the pin through the mix is written out in [PARENT_AUDIT.md](PARENT_AUDIT.md).
 
 The mass smooth is four passes of a 3.29 m window. On the 0.10c ship, density is zero only out to 0.18 m and stays under 1% of the wall only out to 0.42 m. At the unsmoothed inner radius, 2.85 m, the density is already half the wall and the shift is still 0.994. Their 10 m cabin, through the same smooth, is empty out to 3.43 m and under 1% out to 5.72 m. At 9.78 m, the cell that fails when the speed goes from 0.04c to 0.06c, the density is 46% of the wall and the shift is still 0.985. A larger empty cabin at 0.10c is the same thick wall built at a larger radius, and the mass grows with that radius. The profile is `data/dial_cabin_vacuum.txt`.
 
@@ -101,7 +101,7 @@ The shell metric is built from a smoothed density. That density is exactly zero 
 
 ![Flat ball](../figures/flatball.png)
 
-Full tables are in [docs/RESULTS.md](RESULTS.md). How the shell and the shift are built is in [docs/METHOD.md](METHOD.md).
+Full tables are in [PARENT_RESULTS.md](PARENT_RESULTS.md). How the shell and the shift are built is in [PARENT_METHOD.md](PARENT_METHOD.md).
 
 ## Reproduce
 

@@ -12,7 +12,7 @@ Two mouths, one conduit. The seated call is the scalar law between quantum optic
 
 The scalar law and the shape are two records. No equation writes the scalar law into Φ or into b(r). The coast formula has no scalar argument, so the ship time is the same for every value of the call. The audit is the section after the schedule. The claim is [docs/CLAIM.md](docs/CLAIM.md). The reading is [docs/PAPER.md](docs/PAPER.md).
 
-The sections from the one-way funnel through the schedule are the dated record, in the order they were written. A sentence in an early section describes that day. The current account is this opening, the audit, the claim, and the paper. The parent shell record, cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`, is [docs/PARENT.md](docs/PARENT.md). The one-way funnel is the next section.
+The sections from the one-way funnel through the schedule are the dated record, in the order they were written. A sentence in an early section describes that day. The current account is this opening, the audit, the claim, and the paper. The parent shell record, cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912`, is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The one-way funnel is the next section.
 
 ## The one-way funnel
 
@@ -208,7 +208,7 @@ On 2026-11-16 the claim check returned 0 failures, the stamp returned 0 failures
 
 ## The parent record
 
-The warp-shell ledger cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912` is [docs/PARENT.md](docs/PARENT.md). The shell scripts, figures, and logs remain in this tree. They score that shell.
+The warp-shell ledger cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912` is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check of 2026-10-29 is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The shell scripts, figures, and logs remain in this tree. They score that shell. The About line on GitHub remains the sentence recorded in the audit, and the topics remain empty.
 
 ## License
 
