@@ -212,7 +212,7 @@ On 2026-11-16 the claim check returned 0 failures, the stamp returned 0 failures
 
 ## The parent record
 
-The warp-shell ledger cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912` is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check of 2026-10-29 is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The shell scripts, figures, and logs remain in this tree. They score that shell. The About line on GitHub remains the sentence recorded in the audit, and the topics remain empty.
+The warp-shell ledger cloned from [fsot-warp-shell](https://github.com/dappalumbo91/fsot-warp-shell) at `5a3f912` is [docs/PARENT.md](docs/PARENT.md). The shell score is [docs/PARENT_RESULTS.md](docs/PARENT_RESULTS.md). The shell construction is [docs/PARENT_METHOD.md](docs/PARENT_METHOD.md). The shell check of 2026-10-29 is [docs/PARENT_AUDIT.md](docs/PARENT_AUDIT.md). The shell scripts, figures, and logs remain in this tree. They score that shell. The About line on GitHub, read back on 2026-11-16, is "The scalar call enters the 20 m shape through the redshift. While the call is on, the throat redshift is infinite." The topics remain empty.
 
 ## License
 

@@ -55,7 +55,7 @@ A radial light ray gathers that inventory at a signed peak of −5.5967323357299
 
 ## Still open
 
-The 1 g lateral coast has no real speed while the seated call is on. That is the score of the join. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). Shutting the call off returns the closed ship times 2.1294485056590506 s and 2.1647638999709788 s. The repository About line remains the sentence recorded in the audit, and the topics remain empty.
+The 1 g lateral coast has no real speed while the seated call is on. That is the score of the join. The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). Shutting the call off returns the closed ship times 2.1294485056590506 s and 2.1647638999709788 s. The repository About line, read back on 2026-11-16, is "The scalar call enters the 20 m shape through the redshift. While the call is on, the throat redshift is infinite." The topics remain empty.
 
 ## How to check
 
