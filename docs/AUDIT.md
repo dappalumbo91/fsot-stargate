@@ -1,5 +1,7 @@
 # Audit, 2026-10-29
 
+The opening of this file is the parent shell check of 2026-10-29. The gate checks are the dated sections that follow. The simulation audit is "The audit, 2026-11-16" at the end of this file.
+
 The chain from the pin through the wall, the mix, and the Warp Factory score was checked again. No scored claim changed.
 
 ## What was checked
@@ -400,4 +402,12 @@ Lean 4.31.0 accepted `lean/GateLedger.lean`, including the product written as �
 
 ## The schedule, 2026-11-16
 
-Lean 4.31.0 accepted `lean/GateLedger.lean`, including the numerator split Rs u + r₀ (2 r₀ − Rs) = Rs (u + r₀) + 2 r₀ (r₀ − Rs) and the six rationals 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The closed crossings are 2.1294485056590506 s and 2.1647638999709788 s. The trapezoid gaps are 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s. The closed mean rates are −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The pin files were not edited.
+Lean 4.31.0 accepted `lean/GateLedger.lean`, including the numerator split Rs u + r₀ (2 r₀ − Rs) = Rs (u + r₀) + 2 r₀ (r₀ − Rs) and the six rationals 17/11, 12/11, 20/33, 5/3, 4/3, and 4/9. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. The closed crossings are 2.1294485056590506 s and 2.1647638999709788 s. The trapezoid gaps are 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s. The closed mean rates are −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The pin files were not edited. The audit is the next section.
+
+## The audit, 2026-11-16
+
+`python/claim_check.py` returned 0 failures. Octave 11.3.0 rewrote `data/dial_gate_stamp.txt` with 0 failures. Lean 4.31.0 accepted `lean/GateLedger.lean` with no warning. The pin files were not edited.
+
+The landing page had carried the warp-shell ledger after the schedule. That ledger is `docs/PARENT.md`. The gate record leads the landing page. The repository About line, read on this date, is "Gate-to-gate ledger. Parent is fsot-warp-shell. A mouth-to-mouth transit is not adopted until a score says clean." Topics are empty. The language badge is MATLAB. `.gitattributes` marks the `.m` sources as Octave.
+
+The scalar law and the shape remain two records. The coast formula has no scalar argument. The join of the scalar law to Φ and to b(r) stays open. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r).

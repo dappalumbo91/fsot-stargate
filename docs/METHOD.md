@@ -1,5 +1,7 @@
 # How the 0.10c shell is built
 
+The opening of this file is the parent shell construction cloned from fsot-warp-shell at `5a3f912`. The gate derivations follow that construction. The audit of the two-mouth simulation is at the end of this file.
+
 This is a constant-speed metric in Warp Factory. The ship speed is the amplitude of the shift. It does not enter the shape of the shell or the shape of the shift profile.
 
 ## The shell
@@ -525,4 +527,8 @@ The first integral is a Carlson R_F. The second is a Carlson R_J. At the upper l
 
 I = 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − [4 (r₀ − Rs) / (3 B)] R_J(1, (3 r₀ − Rs) / B, 2 r₀ / B, 2).
 
-For Rs = r₀/6 the arguments are 17/11 and 12/11 and the coefficient is 20/33. For Rs = r₀/2 the arguments are 5/3 and 4/3 and the coefficient is 4/9. Lean proves those six rationals and the numerator split. Octave evaluates the definite integral. The values are 2.1294485056590506 s and 2.1647638999709788 s. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+For Rs = r₀/6 the arguments are 17/11 and 12/11 and the coefficient is 20/33. For Rs = r₀/2 the arguments are 5/3 and 4/3 and the coefficient is 4/9. Lean proves those six rationals and the numerator split. Octave evaluates the definite integral. The values are 2.1294485056590506 s and 2.1647638999709788 s. The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above them. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The audit is the next section.
+
+## The audit, 2026-11-16
+
+The two-mouth law is dSᵢ/dt = κ (Sⱼ − Sᵢ) − γ (Sᵢ − Eᵢ). Its unknowns are the two scalars. The crossing time is the integral of 1/v(r) along b(r), with v(r) = √(a / (κ(r) W)) and κ(r) = (b/r − b')/(2 r²). The integrand has no scalar, no flux, and no h. Setting the two equilibria equal changes the scalar trajectory and leaves the integral where it is. The hold rate at fixed radius is the time derivative of an energy that depends on r and not on t, so that rate is 0. The watt figures divide that energy by a ship time. They do not enter the momentum call. The pin files were not edited. The reading is in [RESULTS.md](RESULTS.md).

@@ -185,12 +185,20 @@ where W = 10 m and a = 9.80665 m/s². R_F and R_J are Carlson's elliptic integra
 
 The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above those values. Dividing the infinite-arm energy by the closed time gives mean sweeps of −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The hold rate at a fixed radius remains 0.
 
+## The audit
+
+The simulation is two records. The scalar law writes the call, the flux, and the shutdown. The shape writes the corridor and the ship time. No equation writes the scalar law into Φ or into b(r). The coast formula has no scalar argument, so the crossing time stays 2.1294485056590506 s and 2.1647638999709788 s for every value of the call. The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) are two objects. On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger. The warp-shell ledger is [PARENT.md](PARENT.md).
+
+A functioning simulation of this gate is one state in which the call changes the conduit, and a crossing whose time changes when the call is shut down. That equation is still open.
+
 ## What is still open
 
 The coast remains the lateral-load coast.
+
+The join of the scalar law to Φ and to b(r) stays open.
 
 The throat stays at 20 m. The redshift stays 0. The shape stays b(r).
 
 ## Where the numbers live
 
-The chain, the proofs, and the stamp are in this repository. [docs/RESULTS.md](RESULTS.md) holds the tables. [docs/METHOD.md](METHOD.md) holds the derivations. [docs/AUDIT.md](AUDIT.md) holds the check record. [README.md](../README.md) holds the short form of each page. The one-page claim is [docs/CLAIM.md](CLAIM.md). The unified concept used as the lens is the note *Fluid Spacetime Theory, The Unified Concept*, by the same author. That note is the picture. This paper is the picture applied to the numbers the ledger has fixed.
+The chain, the proofs, and the stamp are in this repository. [docs/RESULTS.md](RESULTS.md) holds the tables. [docs/METHOD.md](METHOD.md) holds the derivations. [docs/AUDIT.md](AUDIT.md) holds the check record. [README.md](../README.md) holds the short form of each gate page. [PARENT.md](PARENT.md) holds the parent shell record. The one-page claim is [docs/CLAIM.md](CLAIM.md). The unified concept used as the lens is the note *Fluid Spacetime Theory, The Unified Concept*, by the same author. That note is the picture. This paper is the picture applied to the numbers the ledger has fixed.

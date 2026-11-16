@@ -53,7 +53,7 @@ A radial light ray gathers that inventory at a signed peak of −5.5967323357299
 
 ## Still open
 
-The 40 m ship times are the closed values 2.1294485056590506 s and 2.1647638999709788 s. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r). The join of the scalar law to Φ and to b(r) stays open.
+The 40 m ship times are the closed values 2.1294485056590506 s and 2.1647638999709788 s. The coast remains the lateral-load coast. The throat stays at 20 m. The redshift stays 0. The shape stays b(r). The join of the scalar law to Φ and to b(r) stays open. The audit of 2026-11-16 reran the claim check, the Octave stamp, and GateLedger.lean. All three passed. The coast formula has no scalar argument, so the stamped ship time is the same for every value of the call.
 
 ## How to check
 

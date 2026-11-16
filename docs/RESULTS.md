@@ -1,5 +1,7 @@
 # Results
 
+The gate record in this file begins at "Gate to gate, 2026-11-09". The audit of the two-mouth simulation is "The audit, 2026-11-16". The sections before the gate record are the parent shell score cloned from fsot-warp-shell at `5a3f912`.
+
 Scored in an Octave port of Warp Factory, upstream commit `03b10cb`. Date of the clean log: 2026-10-28. Pin AEB2AD.
 
 The published positive-mass pass is 0.02c. This condensate shell is clean at 0.10c on the 166.8 m grid. The 83.4 m grid is clean at the same speed after cells inside the flat ball are restored to zero stress-energy. The 0.11c join fails in the outer wall. At the published 20 m outer radius the FSOT wall is also clean at 0.10c when the compactness is 1/2.
@@ -1195,7 +1197,25 @@ I = 2 R_F(1, (3 r₀ − Rs) / B, 2 r₀ / B) − [4 (r₀ − Rs) / (3 B)] R_J(
 | One-sixth | 1, 17/11, 12/11, and p = 2 | 20/33 | 2.1294485056590506 s |
 | Half-compact | 1, 5/3, 4/3, and p = 2 | 4/9 | 2.1647638999709788 s |
 
-The crossing multiplies one side by 2 √(W / (2 a)), with W = 10 m and a = 9.80665 m/s². The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above these values. Dividing the infinite-arm side by the closed time gives −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The supply page keeps the quotients of the trapezoid times. The coast remains the lateral-load coast. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m.
+The crossing multiplies one side by 2 √(W / (2 a)), with W = 10 m and a = 9.80665 m/s². The 400000-step trapezoid sits 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s above these values. Dividing the infinite-arm side by the closed time gives −4.7361854533459755×10⁴⁴ W and −2.7953523346227991×10⁴⁴ W. The supply page keeps the quotients of the trapezoid times. The coast remains the lateral-load coast. The redshift stays 0 and b(r) stays the shape page. The throat stays at 20 m. The audit is the next section.
+
+## The audit, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). The job is two mouths, one conduit, a call from one side, and a crossing.
+
+The call is the scalar law on the seated pair. The leakage is κ = 0.10001300937604073. The restore is γ = 0.4280434460598068. The settled flux is 0.10948671535321428. The shutdown mean is 0.73407640288136422. The largest edge current reaches the open-page roundoff in 4.6174303925072154×10⁻⁶ s. That law writes scalars.
+
+The crossing is b(r) with throat 20 m and redshift 0. The closed ship times are 2.1294485056590506 s and 2.1647638999709788 s. The coast is v(r) = √(a / (κ(r) W)) with κ(r) = (b/r − b')/(2 r²). The throat values of that coefficient are 11/4800 and 3/1600. The leakage and the tidal coefficient share a letter. The haul page records that the steady flux is not an argument of the momentum call. The coast formula has no scalar argument, so the ship time is the same for every value of the call. The hold rate at a fixed radius is 0.
+
+The pages from the funnel through the clock record the day on which no throat radius had been introduced. The shape page seats the throat at 20 m. The current shape is the seated shape.
+
+The passage, the haul, and the pace print the trapezoid 2.1294485057269195 s and 2.1647639000180656 s. The current ship time is the closed value. The stamp keeps both, and the gaps are 6.7996719366192337×10⁻¹¹ s and 4.7098325239858241×10⁻¹¹ s.
+
+`python/claim_check.py` returned 0 failures. Octave 11.3.0 rewrote the stamp with 0 failures. Lean 4.31.0 accepted the ledger. The pin files were not edited.
+
+The repository About line, read on this date, is "Gate-to-gate ledger. Parent is fsot-warp-shell. A mouth-to-mouth transit is not adopted until a score says clean." Topics are empty. The language badge is MATLAB. The warp-shell narrative that followed the schedule on the landing page is [PARENT.md](PARENT.md). `.gitattributes` marks the `.m` sources as Octave.
+
+The functioning gap is one equation that writes the scalar law into Φ or into b(r), and a crossing whose time changes when the call is shut down. That equation was left open. The coast remains the lateral-load coast. The throat stays at 20 m.
 
 ## Audit of the 20 m shell
 
