@@ -1105,4 +1105,14 @@ The metric is −e^{2Φ(t,r)} c² dt² + dr² / (1 − b(r)/r) + r² dΩ². The 
 
 At the switch the call's share of (τ − ρ) is 9.3085582894219476×10⁻² and 1.1146552718828318×10⁻¹. The exoticities are 2.4258077261808451 and 3.3763462103014086. At the floor the shares are 1.6490497137111542×10⁻³³ and 2.0155052056469660×10⁻³³. The addends are 3.6279093701645387×10⁻³³ and 6.0465156169408980×10⁻³³. Subtracting them returns 11/5 and 3 at residual 0. The one-side mass over the floor press is −5.1793574465724044×10³² and −2.7722398203838213×10³². The floor press sits under the absolute value of each one-side mass.
 
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The bleed is the next section.
+
+## The bleed, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+Exchanging the mouths negates the settled flux and leaves the seated potential on its value. A retarget sets both equilibria to one domain scalar. Onto computing the sum offset is 1.6062929728480064. Onto optics it is −1.6062929728480064. The squares match at 2.5801771146208865, residual 0. Lean proves that the path potential squares the offset, so both addresses pay one value. That value is 4.6428008104744767×10⁻¹, and it is 5.2798776752172163 times the seated potential. The sum piece is 5.9469916364670894×10⁻¹ of it and the difference piece is 4.0530083635329101×10⁻¹.
+
+At one difference e-fold the flux on either path is 4.0277911659837240×10⁻². The optics-target scalars are 7.4875415555572422×10⁻¹ and 3.4602743119134094×10⁻¹. The sum offsets are −8.1253731787715067×10⁻¹ and 8.1253731787715067×10⁻¹, and their sum is 0. The potential at that e-fold is 9.6116838983637876×10⁻² on both paths. The throat tides differ by 0.
+
 The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.

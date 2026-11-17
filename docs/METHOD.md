@@ -564,4 +564,22 @@ so the bracket is (1 + V) b / r³. The radial tension is (1 + V) times τ(r) = b
 
 At the throat, ρ = b′ τ₀ with τ₀ = c⁴ / (8π G r₀²), and the full tension is (1 + V) τ₀. The exoticity (τ − ρ)/|ρ| is (1 + V − b′)/(−b′). For b′ = −5/6 that is 11/5 + (6/5) V. For b′ = −1/2 it is 3 + 2 V. Lean proves both, and proves that subtracting the V piece returns 11/5 and 3.
 
-Octave evaluates the shares V / (1 − b′ + V). At the switch they are 9.3085582894219476×10⁻² and 1.1146552718828318×10⁻¹. At the floor they are 1.6490497137111542×10⁻³³ and 2.0155052056469660×10⁻³³. The floor addends (6/5) V and 2 V are 3.6279093701645387×10⁻³³ and 6.0465156169408980×10⁻³³. The one-side mass divided by the floor press is −5.1793574465724044×10³² and −2.7722398203838213×10³². The floor press sits under the absolute mass on both mouths. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+Octave evaluates the shares V / (1 − b′ + V). At the switch they are 9.3085582894219476×10⁻² and 1.1146552718828318×10⁻¹. At the floor they are 1.6490497137111542×10⁻³³ and 2.0155052056469660×10⁻³³. The floor addends (6/5) V and 2 V are 3.6279093701645387×10⁻³³ and 6.0465156169408980×10⁻³³. The one-side mass divided by the floor press is −5.1793574465724044×10³² and −2.7722398203838213×10³². The floor press sits under the absolute mass on both mouths. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The bleed is the next section.
+
+## The bleed, 2026-11-16
+
+The two-mouth law is dSᵢ/dt = κ (Sⱼ − Sᵢ) − γ (Sᵢ − Eᵢ). The coupling is A_BLEED · POOF · |Sᵢ| · |Sⱼ| / (1 + |Dᵢ − Dⱼ|/25). Exchanging the two names leaves κ on its value and negates the settled flux κ γ (E₁ − E₂) / (2κ + γ). The seated potential is κ γ (E₁ − E₂)² / (2 (2κ + γ)). The square leaves that potential on its value.
+
+A retarget sets both equilibria to one domain scalar and leaves the seated scalars where they stand. Their sum is E_o + E_c. Onto computing the sum offset is E_o − E_c. Onto optics it is E_c − E_o. Along the path to a common equilibrium the potential is
+
+γ/4 (offset)² + (2κ + γ) Δ² / 4.
+
+Lean proves the two offsets, proves that this expression squares the offset, and proves the exchange of the flux and of the seated potential.
+
+With the seated difference Δ = γ (E_o − E_c) / (2κ + γ) the retarget potential is
+
+γ (E_o − E_c)² (κ + γ) / (2 (2κ + γ)).
+
+Lean proves that closed form, and proves that the form times κ equals (κ + γ) times the seated potential.
+
+Octave prints the offsets 1.6062929728480064 and −1.6062929728480064. The squares match at 2.5801771146208865, residual 0. The potential is 4.6428008104744767×10⁻¹ on both paths, residual 0. That value over the seated potential is 5.2798776752172163. The sum piece is 5.9469916364670894×10⁻¹ of it and the difference piece is 4.0530083635329101×10⁻¹. At one difference e-fold the flux on either path is 4.0277911659837240×10⁻². The optics-target scalars are 7.4875415555572422×10⁻¹ and 3.4602743119134094×10⁻¹. The sum offsets are −8.1253731787715067×10⁻¹ and 8.1253731787715067×10⁻¹, and their sum is 0. The potential at that e-fold is 9.6116838983637876×10⁻² on both paths. The throat tide c² V / (2 r₀²) differs by 0. The observer source remains the momentum balance already on the ledger. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

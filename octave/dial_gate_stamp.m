@@ -708,6 +708,39 @@ fails = lineout(fid, fails, 'density_mass_over_floor_half', Ehs / (Vfloor * Phr)
 fails = boundout(fid, fails, 'density_floor_under_mass_sixth', Vfloor * P6r, abs(E6s));
 fails = boundout(fid, fails, 'density_floor_under_mass_half', Vfloor * Phr, abs(Ehs));
 
+% Bleed. A retarget onto one mouth squares the sum offset.
+offC = (Eo + Ec) - 2 * Ec;
+offO = (Eo + Ec) - 2 * Eo;
+fails = lineout(fid, fails, 'bleed_offset_computing', offC, 1.6062929728480064e+00, 0);
+fails = lineout(fid, fails, 'bleed_offset_optics', offO, -1.6062929728480064e+00, 0);
+fails = lineout(fid, fails, 'bleed_offset_square', offC ^ 2, offO ^ 2, 0);
+fails = lineout(fid, fails, 'bleed_offset_square_value', offC ^ 2, 2.5801771146208865e+00, 0);
+Vcall = gam / 4 * offC ^ 2 + den / 4 * dlt ^ 2;
+VcallO = gam / 4 * offO ^ 2 + den / 4 * dlt ^ 2;
+fails = lineout(fid, fails, 'bleed_call', Vcall, 4.6428008104744767e-01, 0);
+fails = lineout(fid, fails, 'bleed_call_match', Vcall, VcallO, 0);
+fails = lineout(fid, fails, 'bleed_call_form', gam * gap ^ 2 * (kap + gam) / (2 * den), Vcall, 0);
+fails = lineout(fid, fails, 'bleed_call_ratio', Vcall / Vpot, (kap + gam) / kap, 0);
+fails = lineout(fid, fails, 'bleed_call_ratio_value', (kap + gam) / kap, 5.2798776752172163e+00, 0);
+tfold = 1 / den;
+dltF = dlt * exp(-den * tfold);
+fails = lineout(fid, fails, 'bleed_flux_fold', kap * dltF, 4.0277911659837240e-02, 0);
+offCt = offC * exp(-gam * tfold);
+offOt = offO * exp(-gam * tfold);
+sigO = 2 * Eo + offOt;
+fails = lineout(fid, fails, 'bleed_scalar_optics_high', (sigO + dltF) / 2, 7.4875415555572422e-01, 0);
+fails = lineout(fid, fails, 'bleed_scalar_optics_low', (sigO - dltF) / 2, 3.4602743119134094e-01, 0);
+fails = lineout(fid, fails, 'bleed_sum_optics', offOt, -8.1253731787715067e-01, 0);
+fails = lineout(fid, fails, 'bleed_sum_computing', offCt, 8.1253731787715067e-01, 0);
+fails = lineout(fid, fails, 'bleed_sum_cancel', offOt + offCt, 0, 0);
+VcF = gam / 4 * offCt ^ 2 + den / 4 * dltF ^ 2;
+VoF = gam / 4 * offOt ^ 2 + den / 4 * dltF ^ 2;
+fails = lineout(fid, fails, 'bleed_fold', VcF, 9.6116838983637876e-02, 0);
+fails = lineout(fid, fails, 'bleed_fold_match', VcF, VoF, 0);
+fails = lineout(fid, fails, 'bleed_share_sum', (gam / 4 * gap ^ 2) / Vcall, 5.9469916364670894e-01, 0);
+fails = lineout(fid, fails, 'bleed_share_diff', Vswitch / Vcall, 4.0530083635329101e-01, 0);
+fails = lineout(fid, fails, 'bleed_tide_gap', c ^ 2 * (Vcall - VcallO) / (2 * r0 ^ 2), 0, 0);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');

@@ -42,7 +42,10 @@ the 30 m ratios are 184/891 and 56/243. The lane to the
 face speed at 1 g is 320 m. The squared speed is 640 g, and
 the time square is 12800000/196133. The call multiplies
 the radial tension by 1 + V. Removing that piece leaves the
-throat exoticity 11/5 and 3. The 400000-step
+throat exoticity 11/5 and 3. A one-sided retarget squares the
+sum offset, so either mouth as the common equilibrium pays the
+same potential, and that potential over the seated potential is
+(κ + γ) / κ. The 400000-step
 crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
@@ -872,5 +875,43 @@ theorem density_remainder_sixth (V : ℚ) :
 theorem density_remainder_half (V : ℚ) :
     ((3 : ℚ) + (2 : ℚ) * V) - (2 : ℚ) * V = (3 : ℚ) := by
   ring
+
+/-- Exchanging the mouths negates the settled flux. -/
+theorem bleed_swap_flux (κ γ E1 E2 : ℚ) :
+    steadyFlux κ γ E2 E1 = -steadyFlux κ γ E1 E2 := by
+  unfold steadyFlux
+  field_simp
+  ring
+
+/-- The seated potential depends on the squared gap. -/
+theorem bleed_swap_potential (κ γ E1 E2 : ℚ) :
+    κ * γ * (E2 - E1) ^ 2 / (2 * (2 * κ + γ)) =
+      κ * γ * (E1 - E2) ^ 2 / (2 * (2 * κ + γ)) := by
+  field_simp
+  ring
+
+/-- Onto mouth 2 the sum offset is the gap. Onto mouth 1 it is the negative. -/
+theorem bleed_offsets (E1 E2 : ℚ) :
+    (E1 + E2 - 2 * E2 = E1 - E2) ∧ (E1 + E2 - 2 * E1 = E2 - E1) := by
+  constructor <;> ring
+
+/-- A common-equilibrium path squares the sum offset. -/
+theorem bleed_potential_even (κ γ off Δ : ℚ) :
+    γ / 4 * (-off) ^ 2 + (2 * κ + γ) / 4 * Δ ^ 2 =
+      γ / 4 * off ^ 2 + (2 * κ + γ) / 4 * Δ ^ 2 := by
+  ring
+
+/-- The seated difference turns that path into `(κ + γ)` times `γ gap² / (2 (2κ + γ))`. -/
+theorem bleed_call_form (κ γ gap : ℚ) (hd : 2 * κ + γ ≠ 0) :
+    γ / 4 * gap ^ 2 + (2 * κ + γ) / 4 * (γ * gap / (2 * κ + γ)) ^ 2 =
+      γ * gap ^ 2 * (κ + γ) / (2 * (2 * κ + γ)) := by
+  field_simp
+  ring
+
+/-- That value times `κ` equals `(κ + γ)` times the seated potential. -/
+theorem bleed_call_ratio (κ γ gap : ℚ) :
+    (γ * gap ^ 2 * (κ + γ) / (2 * (2 * κ + γ))) * κ =
+      (κ + γ) * (κ * γ * gap ^ 2 / (2 * (2 * κ + γ))) := by
+  field_simp
 
 end GateLedger

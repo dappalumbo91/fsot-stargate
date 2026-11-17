@@ -374,6 +374,26 @@ PASS density_mass_over_floor_sixth got -5.1793574465724044e+32 want -5.179357446
 PASS density_mass_over_floor_half got -2.7722398203838213e+32 want -2.7722398203838213e+32 residual 0.000e+00
 PASS density_floor_under_mass_sixth got 1.9472421319030759e+12 upper 1.0085463036151720e+45 margin 1.009e+45
 PASS density_floor_under_mass_half got 2.1828118105789353e+12 upper 6.0512778216910312e+44 margin 6.051e+44
+PASS bleed_offset_computing got 1.6062929728480064e+00 want 1.6062929728480064e+00 residual 0.000e+00
+PASS bleed_offset_optics got -1.6062929728480064e+00 want -1.6062929728480064e+00 residual 0.000e+00
+PASS bleed_offset_square got 2.5801771146208865e+00 want 2.5801771146208865e+00 residual 0.000e+00
+PASS bleed_offset_square_value got 2.5801771146208865e+00 want 2.5801771146208865e+00 residual 0.000e+00
+PASS bleed_call got 4.6428008104744767e-01 want 4.6428008104744767e-01 residual 0.000e+00
+PASS bleed_call_match got 4.6428008104744767e-01 want 4.6428008104744767e-01 residual 0.000e+00
+PASS bleed_call_form got 4.6428008104744767e-01 want 4.6428008104744767e-01 residual 0.000e+00
+PASS bleed_call_ratio got 5.2798776752172163e+00 want 5.2798776752172163e+00 residual 0.000e+00
+PASS bleed_call_ratio_value got 5.2798776752172163e+00 want 5.2798776752172163e+00 residual 0.000e+00
+PASS bleed_flux_fold got 4.0277911659837240e-02 want 4.0277911659837240e-02 residual 0.000e+00
+PASS bleed_scalar_optics_high got 7.4875415555572422e-01 want 7.4875415555572422e-01 residual 0.000e+00
+PASS bleed_scalar_optics_low got 3.4602743119134094e-01 want 3.4602743119134094e-01 residual 0.000e+00
+PASS bleed_sum_optics got -8.1253731787715067e-01 want -8.1253731787715067e-01 residual 0.000e+00
+PASS bleed_sum_computing got 8.1253731787715067e-01 want 8.1253731787715067e-01 residual 0.000e+00
+PASS bleed_sum_cancel got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS bleed_fold got 9.6116838983637876e-02 want 9.6116838983637876e-02 residual 0.000e+00
+PASS bleed_fold_match got 9.6116838983637876e-02 want 9.6116838983637876e-02 residual 0.000e+00
+PASS bleed_share_sum got 5.9469916364670894e-01 want 5.9469916364670894e-01 residual 0.000e+00
+PASS bleed_share_diff got 4.0530083635329101e-01 want 4.0530083635329101e-01 residual 0.000e+00
+PASS bleed_tide_gap got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.
