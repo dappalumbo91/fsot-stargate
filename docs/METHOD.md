@@ -488,4 +488,26 @@ The infinite-window integral ∫₀^∞ (1 − √(1 − e^{−u})) du, divided 
 
 The coordinate step inward is the proper distance times √(1 − b/40). The schedule credit is the closed-coast time of the shell between that radius and 40 m. The schedule's full crossing is 2 √(W / (2 a)) times one side. This shell is a piece of one side, so the factor is √(W / (2 a)), with the same geom integrand, from s = √(r_fin − r₀) to s = √(r₀). Octave prints 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s for the face-clears, and 2.2249306967009249×10⁻⁶ s and 2.2249296652070691×10⁻⁶ s for a start at the throat instant. Credit minus gain is inside 1×10⁻¹⁰ on each of the four shells. Each credit is positive and shorter than the window from its start to the floor.
 
-The floor plan arrives at the floor time plus the closed ship time. The face-clear plan arrives earlier by its credit. The throat-start plan arrives earlier than the floor plan by the smaller credit, so the face-clear plan arrives first. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy depends on r and on Rs. The departure holds the inventory where the inventory page left it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+The floor plan arrives at the floor time plus the closed ship time. The face-clear plan arrives earlier by its credit. The throat-start plan arrives earlier than the floor plan by the smaller credit, so the face-clear plan arrives first. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy depends on r and on Rs. The departure holds the inventory where the inventory page left it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The release is the next section.
+
+## The release, 2026-11-16
+
+The inventory left two statements in place. The coordinate mass E(r) = (c⁴ / (2G)) (b(r) − r₀) has no V. The factor 1 + V is not a joule account of that mass. The object that follows V is the added tension on the join page, δτ = V τ, with
+
+τ(r) = b(r) c⁴ / (8π G r³).
+
+Integrate δτ through the shell 4π r² dr from the throat to a finite radius R:
+
+δE(R) = V (c⁴ / (2G)) ∫_{r₀}^{R} b(s) / s ds.
+
+The prefactor c⁴ / (2G) is the measure already used for the mass. The integrand is b/s. Lean proves, for r ≠ 0,
+
+b(r) / r = Rs / r + (r₀ − Rs) r₀ / r².
+
+The second term has antiderivative −(r₀ − Rs) r₀ / r. Evaluated from r₀ to R it equals (r₀ − Rs)(1 − r₀/R). Lean proves that evaluation. At R = 2 r₀ the piece is (r₀ − Rs)/2. Lean proves the reduction, and proves 25/3 on the one-sixth mouth and 5 on the half-compact mouth. The first term integrates to Rs ln(R/r₀). At the face that is Rs ln 2. Octave prints 2.3104906018664844 and 6.9314718055994531. The arms are the sum, 1.0643823935199819×10¹ m and 1.1931471805599454×10¹ m. The numerical integral of b/r from 20 m to 40 m matches each arm at residual 0.
+
+The base integral is that arm times c⁴ / (2G), the shape tension at V = 0: 6.4408735717058822×10⁴⁴ J and 7.2200650717355826×10⁴⁴ J. Dividing by the one-side mass energy returns −6.3862943611198908×10⁻¹ and −1.1931471805599456×10⁰. The one-sixth quotient matches −(arm) / (r₀ − Rs) at residual 0. The half-compact quotient differs by one unit in the last place, inside 1×10⁻¹⁵. The base has no V, so it stays while the call falls.
+
+The piece that follows the call is V times the base. At the seated potential it is 5.6637094414596373×10⁴³ J and 6.3488826879598768×10⁴³ J. At the switch it is 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J. Those switch values over the one-side mass energy are −1.2017288403383629×10⁻¹ and −2.2451820986777293×10⁻¹. At the floor it is 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J. The floor over the switch is V_floor / V_switch = 1.6066365095315717×10⁻³². The floor press stays positive.
+
+Rs ln(R/r₀) grows with R. The arm continued past every finite radius is not a finite energy. This page stops at 40 m. The mass integrals stay −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The product (1 + V) times that mass is a different object from δE. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

@@ -554,6 +554,44 @@ fails = lineout(fid, fails, 'depart_arrival_floor_half', tfloor + thc, 2.1647677
 fails = lineout(fid, fails, 'depart_arrival_face_half', tfloor + thc - credh, 2.1647654373895047e+00, 0);
 fails = lineout(fid, fails, 'depart_arrival_gate_half', tfloor + thc - credgh, 2.1647655631070695e+00, 0);
 
+% Release. The added tension through the 40 m face follows V.
+% The coordinate mass is a different integral.
+measure = c ^ 4 / (2 * G);
+arm = @(Rs, R) Rs .* log(R ./ r0) + (r0 - Rs) .* (1 - r0 ./ R);
+arm6 = arm(Rs6, 40);
+armh = arm(Rsh, 40);
+n6 = integral(@(r) (Rs6 + (r0 - Rs6) * r0 ./ r) ./ r, r0, 40, 'AbsTol', 1e-14, 'RelTol', 1e-14);
+nh = integral(@(r) (Rsh + (r0 - Rsh) * r0 ./ r) ./ r, r0, 40, 'AbsTol', 1e-14, 'RelTol', 1e-14);
+fails = lineout(fid, fails, 'release_arm_sixth', arm6, 1.0643823935199819e+01, 0);
+fails = lineout(fid, fails, 'release_arm_half', armh, 1.1931471805599454e+01, 0);
+fails = lineout(fid, fails, 'release_arm_num_sixth', n6, arm6, 0);
+fails = lineout(fid, fails, 'release_arm_num_half', nh, armh, 0);
+fails = lineout(fid, fails, 'release_rational_sixth', (r0 - Rs6) / 2, 25 / 3, 0);
+fails = lineout(fid, fails, 'release_rational_half', (r0 - Rsh) / 2, 5, 0);
+fails = lineout(fid, fails, 'release_log_sixth', Rs6 * log(2), 2.3104906018664844e+00, 0);
+fails = lineout(fid, fails, 'release_log_half', Rsh * log(2), 6.9314718055994531e+00, 0);
+fails = lineout(fid, fails, 'release_split_sixth', (r0 - Rs6) / 2 + Rs6 * log(2), arm6, 0);
+fails = lineout(fid, fails, 'release_split_half', (r0 - Rsh) / 2 + Rsh * log(2), armh, 0);
+P6r = measure * arm6;
+Phr = measure * armh;
+fails = lineout(fid, fails, 'release_base_sixth', P6r, 6.4408735717058822e+44, 0);
+fails = lineout(fid, fails, 'release_base_half', Phr, 7.2200650717355826e+44, 0);
+fails = lineout(fid, fails, 'release_base_ratio_sixth', P6r / E6s, -6.3862943611198908e-01, 0);
+fails = lineout(fid, fails, 'release_base_ratio_half', Phr / Ehs, -1.1931471805599456e+00, 0);
+fails = lineout(fid, fails, 'release_base_over_span_sixth', P6r / E6s, -arm6 / (r0 - Rs6), 0);
+fails = lineout(fid, fails, 'release_base_over_span_half', Phr / Ehs, -armh / (r0 - Rsh), 1e-15);
+fails = lineout(fid, fails, 'release_seated_sixth', Vpot * P6r, 5.6637094414596373e+43, 0);
+fails = lineout(fid, fails, 'release_seated_half', Vpot * Phr, 6.3488826879598768e+43, 0);
+fails = lineout(fid, fails, 'release_switch_sixth', Vswitch * P6r, 1.2119991798710031e+44, 0);
+fails = lineout(fid, fails, 'release_switch_half', Vswitch * Phr, 1.3586220639386268e+44, 0);
+fails = lineout(fid, fails, 'release_switch_ratio_sixth', Vswitch * P6r / E6s, -1.2017288403383629e-01, 0);
+fails = lineout(fid, fails, 'release_switch_ratio_half', Vswitch * Phr / Ehs, -2.2451820986777293e-01, 0);
+fails = lineout(fid, fails, 'release_floor_sixth', Vfloor * P6r, 1.9472421319030759e+12, 0);
+fails = lineout(fid, fails, 'release_floor_half', Vfloor * Phr, 2.1828118105789353e+12, 0);
+fails = lineout(fid, fails, 'release_floor_over_switch', Vfloor / Vswitch, 1.6066365095315717e-32, 0);
+fails = boundout(fid, fails, 'release_floor_pos_sixth', 0, Vfloor * P6r);
+fails = boundout(fid, fails, 'release_floor_pos_half', 0, Vfloor * Phr);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');

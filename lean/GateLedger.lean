@@ -29,7 +29,11 @@ and the crossing is one side of four. The departure scores the face
 leaving while V falls. At the throat gate the face keeps 89/96 and
 29/32 of its closed squared speed, the face potentials stand in the
 order 96/7 > 32/3 > 1, and a positive press removes S/κ from the
-squared speed. The 400000-step crossings stay with the Octave log.
+squared speed. The release integrates the added tension out to the
+40 m face. The integrand splits as Rs/r + (r₀ − Rs) r₀/r². The
+rational piece at that face is (r₀ − Rs)/2, equal to 25/3 on the
+one-sixth mouth and 5 on the half-compact mouth. The 400000-step
+crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -668,5 +672,34 @@ theorem depart_press (κ load S : ℚ) (hk : κ ≠ 0) :
     load / κ - (load - S) / κ = S / κ := by
   field_simp
   ring
+
+/-- The tension integrand splits into the logarithm piece and the rational piece. -/
+theorem release_integrand (Rs r : ℚ) (hr : r ≠ 0) :
+    shape Rs r / r = Rs / r + (r0 - Rs) * r0 / r ^ 2 := by
+  unfold shape
+  field_simp
+
+/-- The evaluated rational piece is `(r₀ − Rs) (1 − r₀/R)`. -/
+theorem release_rational (Rs R : ℚ) (hR : R ≠ 0) :
+    (r0 - Rs) * r0 * (1 / r0 - 1 / R) = (r0 - Rs) * (1 - r0 / R) := by
+  unfold r0
+  field_simp
+
+/-- At the 40 m face the rational piece is half of `(r₀ − Rs)`. -/
+theorem release_face (Rs : ℚ) :
+    (r0 - Rs) * (1 - r0 / (2 * r0)) = (r0 - Rs) / 2 := by
+  unfold r0
+  field_simp
+  ring
+
+theorem release_face_sixth : (r0 - rsSixth) / 2 = 25 / 3 := by
+  unfold rsSixth
+  unfold r0
+  norm_num
+
+theorem release_face_half : (r0 - rsHalf) / 2 = 5 := by
+  unfold rsHalf
+  unfold r0
+  norm_num
 
 end GateLedger

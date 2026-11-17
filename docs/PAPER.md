@@ -231,13 +231,23 @@ The floor-wait arrivals are 2.1294523937248067 s and 2.1647677880367349 s. The f
 
 In the unified-concept reading, the call falls on its own clock. During that fall the ship eases off the face by a fraction of a millimeter. The throat is open while the ship is still in that shell. Leaving when the face clears arrives earlier than waiting for the floor, by the closed-coast time of the shell. The two-second coasts remain. The thinning stays in the conduit.
 
+## The release
+
+The thinning and the press are two stores. Lean 4.31.0 accepts the split of the tension integrand, b(r)/r = Rs/r + (r₀ − Rs) r₀/r². It accepts that the rational piece evaluates to (r₀ − Rs)(1 − r₀/R), that the 40 m face keeps half of (r₀ − Rs), and that those halves are 25/3 and 5.
+
+Octave 11.3.0 prints the arms 1.0643823935199819×10¹ m and 1.1931471805599454×10¹ m. The logarithm pieces are 2.3104906018664844 and 6.9314718055994531. The numerical integral of b/r from 20 m to 40 m matches each arm at residual 0. The base, the arm at V = 0, is 6.4408735717058822×10⁴⁴ J and 7.2200650717355826×10⁴⁴ J. The call multiplies that base. At the seated potential the press is 5.6637094414596373×10⁴³ J and 6.3488826879598768×10⁴³ J. At the switch it is 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J. At the floor it is 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J, a fraction 1.6066365095315717×10⁻³² of the switch press. The floor press stays positive. At that same floor the ship has moved 1.8728157745384816×10⁻⁴ m and 1.8622417731044248×10⁻⁴ m.
+
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. Continuing the arm to infinity grows as Rs ln(R/r₀). The account stops at 40 m.
+
+In the unified-concept reading, the call is a press that powers up with the switch and falls with V. The thinning of the conduit is the mass, and that thinning stays for the whole coast. By the time the ship has eased a fraction of a millimeter off the face, the press is at its floor. The two-second coasts still carry the mass.
+
 ## The audit
 
 The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate inventory is the same at the switch, at the gate, at the floor, and at the departure. The joule inventory stays in the shape. The 40 m crossing sweeps one side of four, and three sides remain.
+The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate mass is the same at the switch, at the gate, at the floor, and at the departure. The added tension through the 40 m face follows V, from 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J at the switch to 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J at the floor. The 40 m crossing sweeps one side of four, and three sides remain.
 
 The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 

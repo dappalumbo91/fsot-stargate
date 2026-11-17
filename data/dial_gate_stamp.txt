@@ -254,6 +254,33 @@ PASS depart_arrival_gate_sixth got 2.1294501687941101e+00 want 2.129450168794110
 PASS depart_arrival_floor_half got 2.1647677880367349e+00 want 2.1647677880367349e+00 residual 0.000e+00
 PASS depart_arrival_face_half got 2.1647654373895047e+00 want 2.1647654373895047e+00 residual 0.000e+00
 PASS depart_arrival_gate_half got 2.1647655631070695e+00 want 2.1647655631070695e+00 residual 0.000e+00
+PASS release_arm_sixth got 1.0643823935199819e+01 want 1.0643823935199819e+01 residual 0.000e+00
+PASS release_arm_half got 1.1931471805599454e+01 want 1.1931471805599454e+01 residual 0.000e+00
+PASS release_arm_num_sixth got 1.0643823935199819e+01 want 1.0643823935199819e+01 residual 0.000e+00
+PASS release_arm_num_half got 1.1931471805599454e+01 want 1.1931471805599454e+01 residual 0.000e+00
+PASS release_rational_sixth got 8.3333333333333339e+00 want 8.3333333333333339e+00 residual 0.000e+00
+PASS release_rational_half got 5.0000000000000000e+00 want 5.0000000000000000e+00 residual 0.000e+00
+PASS release_log_sixth got 2.3104906018664844e+00 want 2.3104906018664844e+00 residual 0.000e+00
+PASS release_log_half got 6.9314718055994531e+00 want 6.9314718055994531e+00 residual 0.000e+00
+PASS release_split_sixth got 1.0643823935199819e+01 want 1.0643823935199819e+01 residual 0.000e+00
+PASS release_split_half got 1.1931471805599454e+01 want 1.1931471805599454e+01 residual 0.000e+00
+PASS release_base_sixth got 6.4408735717058822e+44 want 6.4408735717058822e+44 residual 0.000e+00
+PASS release_base_half got 7.2200650717355826e+44 want 7.2200650717355826e+44 residual 0.000e+00
+PASS release_base_ratio_sixth got -6.3862943611198908e-01 want -6.3862943611198908e-01 residual 0.000e+00
+PASS release_base_ratio_half got -1.1931471805599456e+00 want -1.1931471805599456e+00 residual 0.000e+00
+PASS release_base_over_span_sixth got -6.3862943611198908e-01 want -6.3862943611198908e-01 residual 0.000e+00
+PASS release_base_over_span_half got -1.1931471805599456e+00 want -1.1931471805599454e+00 residual -2.220e-16
+PASS release_seated_sixth got 5.6637094414596373e+43 want 5.6637094414596373e+43 residual 0.000e+00
+PASS release_seated_half got 6.3488826879598768e+43 want 6.3488826879598768e+43 residual 0.000e+00
+PASS release_switch_sixth got 1.2119991798710031e+44 want 1.2119991798710031e+44 residual 0.000e+00
+PASS release_switch_half got 1.3586220639386268e+44 want 1.3586220639386268e+44 residual 0.000e+00
+PASS release_switch_ratio_sixth got -1.2017288403383629e-01 want -1.2017288403383629e-01 residual 0.000e+00
+PASS release_switch_ratio_half got -2.2451820986777293e-01 want -2.2451820986777293e-01 residual 0.000e+00
+PASS release_floor_sixth got 1.9472421319030759e+12 want 1.9472421319030759e+12 residual 0.000e+00
+PASS release_floor_half got 2.1828118105789353e+12 want 2.1828118105789353e+12 residual 0.000e+00
+PASS release_floor_over_switch got 1.6066365095315717e-32 want 1.6066365095315717e-32 residual 0.000e+00
+PASS release_floor_pos_sixth got 0.0000000000000000e+00 upper 1.9472421319030759e+12 margin 1.947e+12
+PASS release_floor_pos_half got 0.0000000000000000e+00 upper 2.1828118105789353e+12 margin 2.183e+12
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

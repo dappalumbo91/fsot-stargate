@@ -1033,4 +1033,20 @@ Over each window the proper distance is 1.8728157745384816×10⁻⁴ m, 1.862241
 
 The arrival advantage is the closed-coast time of that outer shell. The coordinate step inward is the proper distance times √(1 − b/40). The credit is √(W / (2 a)) times the schedule integrand from that radius back to 40 m. Octave prints 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s for the two face-clears, and 2.2249306967009249×10⁻⁶ s and 2.2249296652070691×10⁻⁶ s when the ship waits for the throat and only then leaves the face. Credit minus gain is 1.0571066344191226×10⁻¹¹ s, 9.3006937134854279×10⁻¹² s, 9.3639635738581532×10⁻¹² s, and 8.3324697180403432×10⁻¹² s, each inside 1×10⁻¹⁰. Each credit is positive and shorter than its window. The face-clear credit is the larger of the two on each mouth.
 
-A plan that waits at the face until the floor, then flies the closed coast, arrives at 2.1294523937248067 s and 2.1647677880367349 s. A plan that leaves at face-clear arrives at 2.1294500297291408 s and 2.1647654373895047 s. A plan that leaves at the throat gate arrives at 2.1294501687941101 s and 2.1647655631070695 s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy has no V, so the departure moves 0 J of the inventory. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
+A plan that waits at the face until the floor, then flies the closed coast, arrives at 2.1294523937248067 s and 2.1647677880367349 s. A plan that leaves at face-clear arrives at 2.1294500297291408 s and 2.1647654373895047 s. A plan that leaves at the throat gate arrives at 2.1294501687941101 s and 2.1647655631070695 s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy has no V, so the departure moves 0 J of the inventory. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The release is the next section.
+
+## The release, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The added tension is δτ = V τ, with τ(r) = b(r) c⁴ / (8π G r³). Its integral from the throat to a finite radius R is
+
+δE(R) = V (c⁴ / (2G)) ∫_{r₀}^{R} b(s) / s ds.
+
+At R = 40 m the arm ∫ b/s ds equals Rs ln 2 + (r₀ − Rs)/2. The rational piece is 25/3 on the one-sixth mouth and 5 on the half-compact mouth. The logarithm piece is 2.3104906018664844 and 6.9314718055994531. The arms are 1.0643823935199819×10¹ m and 1.1931471805599454×10¹ m. The numerical integral of b/r on that interval matches each arm at residual 0.
+
+The base is that arm times c⁴ / (2G): 6.4408735717058822×10⁴⁴ J and 7.2200650717355826×10⁴⁴ J. Over the one-side mass energy those quotients are −6.3862943611198908×10⁻¹ and −1.1931471805599456×10⁰. The one-sixth quotient matches −(arm) / (r₀ − Rs) at residual 0. The half-compact quotient differs by one unit in the last place, inside 1×10⁻¹⁵. The base stays while V falls.
+
+At the seated potential the added piece is 5.6637094414596373×10⁴³ J and 6.3488826879598768×10⁴³ J. At the switch it is 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J, which is −1.2017288403383629×10⁻¹ and −2.2451820986777293×10⁻¹ of the one-side mass energy. At the floor it is 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J. That floor press is 1.6066365095315717×10⁻³² of the switch press, and it stays positive. By that same floor the departure has moved the ship 1.8728157745384816×10⁻⁴ m and 1.8622417731044248×10⁻⁴ m.
+
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. δE is the press that follows the call. The product (1 + V) times the mass is a different object. Rs ln(R/r₀) grows with R, so the arm continued to infinity is not a finite energy. The page stops at 40 m. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
