@@ -1015,4 +1015,22 @@ The evaluation (c⁴ / (2G)) (Rs − r₀) is −1.0085463036151720×10⁴⁵ J 
 
 The join writes the added tension as V times the shape tension, so the tension factor is 1 + V. At the switch it is 1.1881731051507043. At the gate it is 1.0000000000000087. At the floor, 1 + 3.0232578084704490×10⁻³³ prints as 1, because that addition sits below one unit in the last place of 1. The floor potential remains 3.0232578084704490×10⁻³³. The factor is not given a joule conversion.
 
-The same radius at the switch and at the floor gives the same E(r). The difference stamped for the 40 m face is 0. The closed mean rate times the entry time, 1.6305508506416028×10⁻⁶ s, is −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J. Dividing by the one-side energy returns 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷, the entry time over the closed ship time. The hold rate at fixed radius is 0, so that product is not removed from the shape. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
+The same radius at the switch and at the floor gives the same E(r). The difference stamped for the 40 m face is 0. The closed mean rate times the entry time, 1.6305508506416028×10⁻⁶ s, is −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J. Dividing by the one-side energy returns 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷, the entry time over the closed ship time. The hold rate at fixed radius is 0, so that product is not removed from the shape. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The departure is the next section.
+
+## The departure, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The ship leaves the 40 m face. V keeps the entry decay, V(t) = V_switch exp(−2 (2κ + γ) t), whether or not the ship moves. In seconds that rate is λ = 2 (2κ + γ) c / r₀ = 1.8829048865070052×10⁷ s⁻¹. The floor recomputed from V_floor is 3.8880657558015190×10⁻⁶ s, the shutdown time already stamped.
+
+At fixed radius the squared 1 g speed is (g/W − S) / κ(r), with S the static piece c² V b(r) / (2 r³). The closed squared speed is (g/W) / κ(r). Their difference is S/κ. At the 40 m face the closed speed is 79.222824993810960 m/s on both mouths. From the instant that face's radicand reaches 0,
+
+v(t) = 79.222824993810960 √(1 − exp(−λ (t − t₀))) m/s.
+
+The one-sixth face reaches that instant at 1.4914871060426914×10⁻⁶ s. The half-compact face reaches it at 1.5048342713765240×10⁻⁶ s. The throat reaches it at 1.6305508506416028×10⁻⁶ s. At the throat instant the faces retain 89/96 and 29/32 of the closed squared speed. Those floats match the rationals at residual 0. The windows from those three instants to the floor are 2.3965786497588276×10⁻⁶ s, 2.3832314844249952×10⁻⁶ s, and 2.2575149051599162×10⁻⁶ s.
+
+Over each window the proper distance is 1.8728157745384816×10⁻⁴ m, 1.8622417731044248×10⁻⁴ m, and 1.7626455336844780×10⁻⁴ m. The throat-instant distance is the same on both mouths. Dividing by the closed face speed is the face-model gain: 2.3639850948066918×10⁻⁶ s, 2.3506379294728594×10⁻⁶ s, and 2.2249213327373510×10⁻⁶ s. The part of an infinite window spent below the closed face speed is 3.2593554942009756×10⁻⁸ s.
+
+The arrival advantage is the closed-coast time of that outer shell. The coordinate step inward is the proper distance times √(1 − b/40). The credit is √(W / (2 a)) times the schedule integrand from that radius back to 40 m. Octave prints 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s for the two face-clears, and 2.2249306967009249×10⁻⁶ s and 2.2249296652070691×10⁻⁶ s when the ship waits for the throat and only then leaves the face. Credit minus gain is 1.0571066344191226×10⁻¹¹ s, 9.3006937134854279×10⁻¹² s, 9.3639635738581532×10⁻¹² s, and 8.3324697180403432×10⁻¹² s, each inside 1×10⁻¹⁰. Each credit is positive and shorter than its window. The face-clear credit is the larger of the two on each mouth.
+
+A plan that waits at the face until the floor, then flies the closed coast, arrives at 2.1294523937248067 s and 2.1647677880367349 s. A plan that leaves at face-clear arrives at 2.1294500297291408 s and 2.1647654373895047 s. A plan that leaves at the throat gate arrives at 2.1294501687941101 s and 2.1647655631070695 s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy has no V, so the departure moves 0 J of the inventory. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.

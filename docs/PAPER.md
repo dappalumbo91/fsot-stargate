@@ -221,13 +221,23 @@ The closed mean rate times 1.6305508506416028×10⁻⁶ s is −7.72259121974966
 
 In the unified-concept reading, the inventory is the thinning already in the conduit. The call is the press on that conduit. The press rises by γ/(2κ) and then falls on the shutdown clock. The thinning stays. A crossing sweeps one side of it. The microseconds while a ship waits outside sweep none.
 
+## The departure
+
+The ship starts at the 40 m face, at the instant that face's radicand reaches 0. Lean 4.31.0 accepts 1 − 7/96 = 89/96 and 1 − 3/32 = 29/32, which are the fractions of the closed squared speed still available at the throat instant. It accepts 96/7 > 32/3 > 1, so on a decaying call the one-sixth face clears first, then the half-compact face, then the throat. It accepts that the difference of the squared 1 g speeds is the static piece over κ, so a positive press makes the speed smaller than the closed speed.
+
+Octave 11.3.0 prints the decay in seconds, λ = 1.8829048865070052×10⁷ s⁻¹. While the ship is still at the face the speed is the closed face speed, 79.222824993810960 m/s, times √(1 − exp(−λ (t − t₀))). By the floor, 3.8880657558015190×10⁻⁶ s, the proper distances are 1.8728157745384816×10⁻⁴ m and 1.8622417731044248×10⁻⁴ m. The closed-coast time of that shell is 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The face-model gain, the same distance divided by the closed face speed, sits 1.0571066344191226×10⁻¹¹ s and 9.3006937134854279×10⁻¹² s under those credits. A start that waits until the throat instant covers 1.7626455336844780×10⁻⁴ m and credits 2.2249306967009249×10⁻⁶ s and 2.2249296652070691×10⁻⁶ s. The startup spent below the closed face speed, on an infinite window, is 3.2593554942009756×10⁻⁸ s.
+
+The floor-wait arrivals are 2.1294523937248067 s and 2.1647677880367349 s. The face-clear arrivals are 2.1294500297291408 s and 2.1647654373895047 s. The throat-start arrivals are 2.1294501687941101 s and 2.1647655631070695 s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight.
+
+In the unified-concept reading, the call falls on its own clock. During that fall the ship eases off the face by a fraction of a millimeter. The throat is open while the ship is still in that shell. Leaving when the face clears arrives earlier than waiting for the floor, by the closed-coast time of the shell. The two-second coasts remain. The thinning stays in the conduit.
+
 ## The audit
 
 The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The 1 g coast has no real speed while the seated call stays on. At the mean-equilibrium switch the radicand is still negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. A positive 1 g speed exists only after that instant. The closed ship times are the coast after the seated flux reaches roundoff. They are not the crossing at the gate. The coordinate inventory is the same at the switch, at the gate, and at the floor. The entry moves 0 J of it. The 40 m crossing sweeps one side of four, and three sides remain.
+The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate inventory is the same at the switch, at the gate, at the floor, and at the departure. The joule inventory stays in the shape. The 40 m crossing sweeps one side of four, and three sides remain.
 
 The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 

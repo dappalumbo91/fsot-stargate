@@ -11,6 +11,7 @@
 % The join multiplies the shape tension by the seated potential.
 % The entry follows the seated shutdown into that tide.
 % The inventory splits the shape energy. The entry moves none of it.
+% The departure scores the face leaving while V falls.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -498,6 +499,61 @@ fails = lineout(fid, fails, 'inventory_tension_switch', 1 + Vswitch, 1.188173105
 fails = lineout(fid, fails, 'inventory_tension_gate', 1 + Vgate, 1.0000000000000087, 0);
 fails = lineout(fid, fails, 'inventory_tension_floor', 1 + Vfloor, 1, 0);
 
+% Departure. The ship leaves the 40 m face while V falls.
+lam = 2 * den * c / r0;
+fails = lineout(fid, fails, 'depart_rate', lam, 1.8829048865070052e+07, 0);
+Cinf = integral(@(u) 1 - sqrt(1 - exp(-u)), 0, Inf);
+fails = lineout(fid, fails, 'depart_startup', Cinf / lam, 3.2593554942009756e-08, 0);
+vface = sqrt(g / ((1 / 6400) * 10));
+tfloor = log(Vswitch / Vfloor) / (2 * den) * r0 / c;
+fails = lineout(fid, fails, 'depart_floor', tfloor, 3.8880657558015190e-06, 0);
+t6s = tf6 * r0 / c;
+ths = tfh * r0 / c;
+tgate = tpin * r0 / c;
+fails = lineout(fid, fails, 'depart_fraction_sixth', 1 - 7 / 96, 89 / 96, 0);
+fails = lineout(fid, fails, 'depart_fraction_half', 1 - 3 / 32, 29 / 32, 0);
+fails = boundout(fid, fails, 'depart_order_half', 1, 32 / 3);
+fails = boundout(fid, fails, 'depart_order_sixth', 32 / 3, 96 / 7);
+[gain6, cred6, dl6] = depart_shell(t6s, tfloor, lam, vface, r0, Rs6, g);
+[gainh, credh, dlh] = depart_shell(ths, tfloor, lam, vface, r0, Rsh, g);
+[gaing6, credg6, dlg6] = depart_shell(tgate, tfloor, lam, vface, r0, Rs6, g);
+[gaingh, credgh, dlgh] = depart_shell(tgate, tfloor, lam, vface, r0, Rsh, g);
+fails = lineout(fid, fails, 'depart_gain_sixth', gain6, 2.3639850948066918e-06, 0);
+fails = lineout(fid, fails, 'depart_gain_half', gainh, 2.3506379294728594e-06, 0);
+fails = lineout(fid, fails, 'depart_gain_gate_sixth', gaing6, 2.2249213327373510e-06, 0);
+fails = lineout(fid, fails, 'depart_gain_gate_half', gaingh, 2.2249213327373510e-06, 0);
+fails = lineout(fid, fails, 'depart_length_sixth', dl6, 1.8728157745384816e-04, 0);
+fails = lineout(fid, fails, 'depart_length_half', dlh, 1.8622417731044248e-04, 0);
+fails = lineout(fid, fails, 'depart_length_gate_sixth', dlg6, 1.7626455336844780e-04, 0);
+fails = lineout(fid, fails, 'depart_length_gate_half', dlgh, 1.7626455336844780e-04, 0);
+fails = lineout(fid, fails, 'depart_credit_sixth', cred6, 2.3639956658730360e-06, 0);
+fails = lineout(fid, fails, 'depart_credit_half', credh, 2.3506472301665728e-06, 0);
+fails = lineout(fid, fails, 'depart_credit_gate_sixth', credg6, 2.2249306967009249e-06, 0);
+fails = lineout(fid, fails, 'depart_credit_gate_half', credgh, 2.2249296652070691e-06, 0);
+fails = lineout(fid, fails, 'depart_gap_sixth', cred6 - gain6, 0, 1e-10);
+fails = lineout(fid, fails, 'depart_gap_half', credh - gainh, 0, 1e-10);
+fails = lineout(fid, fails, 'depart_gap_gate_sixth', credg6 - gaing6, 0, 1e-10);
+fails = lineout(fid, fails, 'depart_gap_gate_half', credgh - gaingh, 0, 1e-10);
+fails = lineout(fid, fails, 'depart_window_sixth', tfloor - t6s, 2.3965786497588276e-06, 0);
+fails = lineout(fid, fails, 'depart_window_half', tfloor - ths, 2.3832314844249952e-06, 0);
+fails = lineout(fid, fails, 'depart_window_gate', tfloor - tgate, 2.2575149051599162e-06, 0);
+fails = boundout(fid, fails, 'depart_credit_pos_sixth', 0, cred6);
+fails = boundout(fid, fails, 'depart_credit_pos_half', 0, credh);
+fails = boundout(fid, fails, 'depart_credit_pos_gate_sixth', 0, credg6);
+fails = boundout(fid, fails, 'depart_credit_pos_gate_half', 0, credgh);
+fails = boundout(fid, fails, 'depart_credit_inside_sixth', cred6, tfloor - t6s);
+fails = boundout(fid, fails, 'depart_credit_inside_half', credh, tfloor - ths);
+fails = boundout(fid, fails, 'depart_credit_inside_gate_sixth', credg6, tfloor - tgate);
+fails = boundout(fid, fails, 'depart_credit_inside_gate_half', credgh, tfloor - tgate);
+fails = boundout(fid, fails, 'depart_face_before_gate_sixth', credg6, cred6);
+fails = boundout(fid, fails, 'depart_face_before_gate_half', credgh, credh);
+fails = lineout(fid, fails, 'depart_arrival_floor_sixth', tfloor + t6c, 2.1294523937248067e+00, 0);
+fails = lineout(fid, fails, 'depart_arrival_face_sixth', tfloor + t6c - cred6, 2.1294500297291408e+00, 0);
+fails = lineout(fid, fails, 'depart_arrival_gate_sixth', tfloor + t6c - credg6, 2.1294501687941101e+00, 0);
+fails = lineout(fid, fails, 'depart_arrival_floor_half', tfloor + thc, 2.1647677880367349e+00, 0);
+fails = lineout(fid, fails, 'depart_arrival_face_half', tfloor + thc - credh, 2.1647654373895047e+00, 0);
+fails = lineout(fid, fails, 'depart_arrival_gate_half', tfloor + thc - credgh, 2.1647655631070695e+00, 0);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');
@@ -592,4 +648,15 @@ function y = join_log(r, Rs, V)
   y = V ./ (2 .* (Rs - 2 .* r0)) .* ( ...
     r0 .* log(r - r0) + (Rs - 2 .* r0) .* log(r) ...
     - (Rs - r0) .* log(r + r0 - Rs));
+end
+
+function [gain, cred, dl] = depart_shell(t0, tfloor, lam, vface, r0, Rs, g)
+  gain = (tfloor - t0) - integral(@(t) 1 - sqrt(1 - exp(-lam * (t - t0))), t0, tfloor);
+  dl = gain * vface;
+  b = Rs + (r0 - Rs) * r0 / 40;
+  gp = 1 - b / 40;
+  rfin = 40 - dl * sqrt(gp);
+  scale = sqrt(10 / (2 * g));
+  geom = @(ss) 2 * sqrt(Rs * ss .^ 2 + r0 * (2 * r0 - Rs)) ./ ((ss .^ 2 + r0) .* sqrt(ss .^ 2 + (2 * r0 - Rs)));
+  cred = scale * integral(geom, sqrt(rfin - r0), sqrt(r0), 'AbsTol', 1e-16, 'RelTol', 1e-14);
 end

@@ -460,4 +460,32 @@ Octave evaluates (c⁴ / (2G)) (Rs − r₀) as −1.0085463036151720×10⁴⁵ 
 
 The added tension on the join page is V times the shape tension. The tension factor is therefore 1 + V. Octave prints 1.1881731051507043 at the switch and 1.0000000000000087 at the gate. At the floor, 1 + 3.0232578084704490×10⁻³³ is 1 in float64. No factor converts that 1 + V into joules.
 
-Because E(r) depends on r and on Rs, a clock that holds r fixed changes E by 0. The closed mean rate times the entry time equals the one-side energy times the entry time over the closed ship time: −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J, fractions 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷. The hold rate is 0, so those products are not a change in the inventory. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+Because E(r) depends on r and on Rs, a clock that holds r fixed changes E by 0. The closed mean rate times the entry time equals the one-side energy times the entry time over the closed ship time: −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J, fractions 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷. The hold rate is 0, so those products are not a change in the inventory. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The departure is the next section.
+
+## The departure, 2026-11-16
+
+The entry writes V(t) = V_switch exp(−2 (2κ + γ) t) with t in pin-time. One pin-time unit is r₀/c seconds, so the decay in seconds is
+
+λ = 2 (2κ + γ) c / r₀.
+
+Octave prints 1.8829048865070052×10⁷ s⁻¹. The floor recomputed from V_floor = V_switch (roundoff / flux)² is the shutdown time already stamped, 3.8880657558015190×10⁻⁶ s. The seated flux used there is the literal 0.10948671535321428. The graph current is a different object.
+
+At a fixed radius the squared 1 g speed is (g/W − S) / κ(r), where S = c² V b(r) / (2 r³). Lean proves
+
+load / κ − (load − S) / κ = S / κ.
+
+The closed squared speed is the load over κ. A nonnegative static piece removes that much from it. At 40 m, κ = 1/6400 on both mouths, and the closed speed is 79.222824993810960 m/s.
+
+The face radicand reaches 0 when V equals V_gate times the tension ratio already proved, 96/7 on the one-sixth mouth and 32/3 on the half-compact mouth. Lean proves 96/7 > 32/3 > 1. On this decaying V the one-sixth face clears first, then the half-compact face, then the throat. At the throat instant the remaining fraction of the closed squared speed is 1 − 7/96 = 89/96 and 1 − 3/32 = 29/32. Lean proves both.
+
+While the ship is still at the face,
+
+v(t) = v_face √(1 − exp(−λ (t − t₀))),
+
+with t₀ the instant that face's radicand reaches 0. The proper distance from t₀ to the floor is v_face times the integral of the square root. Octave prints 1.8728157745384816×10⁻⁴ m, 1.8622417731044248×10⁻⁴ m, and 1.7626455336844780×10⁻⁴ m. The third distance belongs to a start at the throat instant, and it is the same on both mouths because v_face, that instant, and the floor do not depend on Rs. Dividing by v_face is the face-model gain: 2.3639850948066918×10⁻⁶ s, 2.3506379294728594×10⁻⁶ s, and 2.2249213327373510×10⁻⁶ s.
+
+The infinite-window integral ∫₀^∞ (1 − √(1 − e^{−u})) du, divided by λ, is 3.2593554942009756×10⁻⁸ s. That is the startup spent below the closed face speed. The finite-window gain is the proper distance over v_face.
+
+The coordinate step inward is the proper distance times √(1 − b/40). The schedule credit is the closed-coast time of the shell between that radius and 40 m. The schedule's full crossing is 2 √(W / (2 a)) times one side. This shell is a piece of one side, so the factor is √(W / (2 a)), with the same geom integrand, from s = √(r_fin − r₀) to s = √(r₀). Octave prints 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s for the face-clears, and 2.2249306967009249×10⁻⁶ s and 2.2249296652070691×10⁻⁶ s for a start at the throat instant. Credit minus gain is inside 1×10⁻¹⁰ on each of the four shells. Each credit is positive and shorter than the window from its start to the floor.
+
+The floor plan arrives at the floor time plus the closed ship time. The face-clear plan arrives earlier by its credit. The throat-start plan arrives earlier than the floor plan by the smaller credit, so the face-clear plan arrives first. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate energy depends on r and on Rs. The departure holds the inventory where the inventory page left it. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

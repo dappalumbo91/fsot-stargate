@@ -25,7 +25,11 @@ and the residue 1/2. The entry writes the seated shutdown into that join.
 The switch potential is γ/(2κ) times the seated potential, and the throat
 gate is the load g/10. The inventory writes the one-side energy as the
 infinite-arm side times (1 − r₀/r). The face and the outer arm are equal,
-and the crossing is one side of four. The 400000-step crossings stay with the Octave log.
+and the crossing is one side of four. The departure scores the face
+leaving while V falls. At the throat gate the face keeps 89/96 and
+29/32 of its closed squared speed, the face potentials stand in the
+order 96/7 > 32/3 > 1, and a positive press removes S/κ from the
+squared speed. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -645,5 +649,24 @@ theorem inventory_remainder (Rs : ℚ) :
 theorem inventory_share (Rs : ℚ) (h : Rs - r0 ≠ 0) :
     (Rs - r0) / (4 * (Rs - r0)) = 1 / 4 := by
   field_simp
+
+/-- At the throat gate the one-sixth face keeps 89/96 of its closed squared speed. -/
+theorem depart_face_sixth : (1 : ℚ) - (7 : ℚ) / 96 = (89 : ℚ) / 96 := by
+  norm_num
+
+/-- At the throat gate the half-compact face keeps 29/32 of its closed squared speed. -/
+theorem depart_face_half : (1 : ℚ) - (3 : ℚ) / 32 = (29 : ℚ) / 32 := by
+  norm_num
+
+/-- A larger face potential is reached sooner while V decays. -/
+theorem depart_potential_order :
+    ((96 : ℚ) / 7 > (32 : ℚ) / 3) ∧ ((32 : ℚ) / 3 > 1) := by
+  norm_num
+
+/-- The difference of the squared 1 g speeds is the static piece over κ. -/
+theorem depart_press (κ load S : ℚ) (hk : κ ≠ 0) :
+    load / κ - (load - S) / κ = S / κ := by
+  field_simp
+  ring
 
 end GateLedger
