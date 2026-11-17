@@ -351,6 +351,15 @@ PASS fit_ballistic_sixth got 2.6551795636519170e+01 want 2.6551795636519170e+01 
 PASS fit_ballistic_half got 2.7684721307209220e+01 want 2.7684721307209220e+01 residual 0.000e+00
 PASS fit_ballistic_under_sixth got 2.6551795636519170e+01 upper 7.9222824993810960e+01 margin 5.267e+01
 PASS fit_ballistic_under_half got 2.7684721307209220e+01 upper 7.9222824993810960e+01 margin 5.154e+01
+PASS lane_length got 3.1999999999999994e+02 want 3.2000000000000000e+02 residual -5.684e-14
+PASS lane_speed_square got 6.2762559999999985e+03 want 6.2762559999999994e+03 residual -9.095e-13
+PASS lane_time got 8.0784799084102072e+00 want 8.0784799084102072e+00 residual 0.000e+00
+PASS lane_one_sixth got 8.9859175557918292e+00 want 8.9859175557918292e+00 residual 0.000e+00
+PASS lane_one_half got 9.0650076710773586e+00 want 9.0650076710773586e+00 residual 0.000e+00
+PASS lane_door_sixth got 1.7064397464202035e+01 want 1.7064397464202035e+01 residual 0.000e+00
+PASS lane_door_half got 1.7143487579487566e+01 want 1.7143487579487566e+01 residual 0.000e+00
+PASS lane_rest_under_door_sixth got 5.4150592988470425e+00 upper 1.7064397464202035e+01 margin 1.165e+01
+PASS lane_rest_under_door_half got 5.6461118337473488e+00 upper 1.7143487579487566e+01 margin 1.150e+01
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

@@ -534,4 +534,16 @@ The along-path acceleration of the pace coast is v dv/dl, evaluated from dκ/dr 
 
 The coast that holds both accelerations at g takes, at proper distance σ from the throat, the minimum of the pace speed and √(v_throat² + 2 g σ). The crossing time is twice the integral of dσ/v. On the fit beams Octave prints 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The same integral on the 10 m beam returns 2.6731954448396604 s and 2.6834241126114819 s, which sit 5.255×10⁻¹¹ s and 3.768×10⁻¹¹ s under the dash-page times, inside 1×10⁻¹⁰. The face speed of the fit run is √(v_face² + 2 g L), 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s.
 
-A start from rest at acceleration g reaches √(2 g L) at the throat, 2.6551795636519170×10¹ m/s and 2.7684721307209220×10¹ m/s. Both sit under the throat speed of this beam. The lateral cap stays above that run, so the from-rest crossing remains the buffer rest time. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+A start from rest at acceleration g reaches √(2 g L) at the throat, 2.6551795636519170×10¹ m/s and 2.7684721307209220×10¹ m/s. Both sit under the throat speed of this beam. The lateral cap stays above that run, so the from-rest crossing remains the buffer rest time. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The lane is the next section.
+
+## The lane, 2026-11-16
+
+The face speed is √(g / (κ(40 m) · 10)). κ(40 m) = 1/(16 r₀²) = 1/6400 is already proved, and it does not depend on Rs. With W = 10 m the squared speed is g / (κ W) = 16 r₀² g / 10 = 640 g. A constant acceleration g from rest covers v²/(2g). The g cancels, and Lean proves (16 r₀² / 10) / 2 = 320. The same proof gives the factor 640. The time is v/g, so its square is 640/g. Lean proves 640/g = 12800000/196133, with g = 980665/100000.
+
+Octave evaluates v/g as 8.0784799084102072 s. The float of v²/(2g) is 3.1999999999999994×10² m, under 320 by 5.684×10⁻¹⁴, inside 1×10⁻¹⁵. v² sits 9.095×10⁻¹³ under 640 g, inside 1×10⁻¹⁵.
+
+The level crossing enters and leaves at this speed. Its times stay 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s. One lane plus that crossing is the arrival that is still at 79.222824993810960 m/s: 8.9859175557918292 s and 9.0650076710773586 s. Stopped door to door is a lane at each mouth plus the level crossing: 1.7064397464202035×10¹ s and 1.7143487579487566×10¹ s. The two lengths are equal. The two sums differ by the two level times.
+
+Both door-to-door sums sit above the buffer rest times 5.4150592988470425 s and 5.6461118337473488 s. The buffer rest coast remains the shorter rest-to-rest. The lane is the flat face-speed ride.
+
+The coast that holds both accelerations at g leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. Its crossing stays 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

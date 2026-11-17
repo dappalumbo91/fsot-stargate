@@ -1079,4 +1079,20 @@ Holding both accelerations at g, the crossing takes 8.8329624284095409×10⁻¹ 
 
 A 1 g run from rest reaches 2.6551795636519170×10¹ m/s and 2.7684721307209220×10¹ m/s at the throat. Both sit under 79.222824993810960 m/s, so the lateral cap stays above that run. The from-rest crossing remains the buffer rest time.
 
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The lane is the next section.
+
+## The lane, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The face speed 79.222824993810960 m/s is the 1 g speed at κ(40 m) = 1/6400 on the 10 m beam. The squared speed is 640 g. A 1 g run from rest to that speed covers v²/(2g). Lean proves the length 320 m, the factor 640, and the time square 640/g = 12800000/196133. κ(40 m) is proved for every Rs, so the lane is the same length on both mouths.
+
+Octave prints v²/(2g) as 3.1999999999999994×10² m, under 320 by 5.684×10⁻¹⁴, inside 1×10⁻¹⁵. v² is 6.2762559999999985×10³, under 640 g by 9.095×10⁻¹³, inside 1×10⁻¹⁵. The time v/g is 8.0784799084102072 s at residual 0.
+
+The level crossing enters and leaves at this speed. One lane plus that crossing arrives still at 79.222824993810960 m/s, in 8.9859175557918292 s and 9.0650076710773586 s, at residual 0. Stopped door to door is two lanes plus the level crossing: 1.7064397464202035×10¹ s and 1.7143487579487566×10¹ s, at residual 0. The sums differ by the level times 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s.
+
+Both door-to-door sums sit above the buffer rest times 5.4150592988470425 s and 5.6461118337473488 s. The buffer rest coast remains the shorter rest-to-rest. The lane is the flat face-speed ride.
+
+The coast that holds both accelerations at g leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. Its times stay 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s.
+
 The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.

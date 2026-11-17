@@ -680,6 +680,18 @@ fails = lineout(fid, fails, 'fit_ballistic_half', sqrt(2 * g * Lh), 2.7684721307
 fails = boundout(fid, fails, 'fit_ballistic_under_sixth', sqrt(2 * g * L6), vface);
 fails = boundout(fid, fails, 'fit_ballistic_under_half', sqrt(2 * g * Lh), vface);
 
+% Lane. The 1 g run outside the face, up to the face speed.
+laneT = vface / g;
+fails = lineout(fid, fails, 'lane_length', vface ^ 2 / (2 * g), 320, 1e-15);
+fails = lineout(fid, fails, 'lane_speed_square', vface ^ 2, 640 * g, 1e-15);
+fails = lineout(fid, fails, 'lane_time', laneT, 8.0784799084102072e+00, 0);
+fails = lineout(fid, fails, 'lane_one_sixth', laneT + (2 * L6) / vface, 8.9859175557918292e+00, 0);
+fails = lineout(fid, fails, 'lane_one_half', laneT + (2 * Lh) / vface, 9.0650076710773586e+00, 0);
+fails = lineout(fid, fails, 'lane_door_sixth', 2 * laneT + (2 * L6) / vface, 1.7064397464202035e+01, 0);
+fails = lineout(fid, fails, 'lane_door_half', 2 * laneT + (2 * Lh) / vface, 1.7143487579487566e+01, 0);
+fails = boundout(fid, fails, 'lane_rest_under_door_sixth', 2 * sqrt((2 * L6) / g), 2 * laneT + (2 * L6) / vface);
+fails = boundout(fid, fails, 'lane_rest_under_door_half', 2 * sqrt((2 * Lh) / g), 2 * laneT + (2 * Lh) / vface);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');

@@ -38,7 +38,9 @@ on the one-sixth mouth and 12 on the half-compact mouth, and the
 1 g beam at that speed is 15/22 m and 5/6 m. On that beam the
 lateral load at fixed speed scales as κ(r)/κ(r₀). The face ratios
 are 3/44 and 1/12, the 25 m ratios are 576/1375 and 832/1875, and
-the 30 m ratios are 184/891 and 56/243. The 400000-step
+the 30 m ratios are 184/891 and 56/243. The lane to the
+face speed at 1 g is 320 m. The squared speed is 640 g, and
+the time square is 12800000/196133. The 400000-step
 crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
@@ -822,6 +824,24 @@ theorem fit_station_half_30 :
 theorem fit_order :
     ((3 : ℚ) / 44 < (576 : ℚ) / 1375) ∧ ((576 : ℚ) / 1375 < 1) ∧
     ((1 : ℚ) / 12 < (832 : ℚ) / 1875) ∧ ((832 : ℚ) / 1875 < 1) := by
+  norm_num
+
+/-- The 1 g run to the face speed covers 320 m. `v² = 640 g`, so `v²/(2g) = 320`. -/
+theorem lane_length :
+    ((16 : ℚ) * r0 ^ 2 / (10 : ℚ)) / (2 : ℚ) = (320 : ℚ) := by
+  unfold r0
+  norm_num
+
+/-- `1/(κ(2 r₀) W) = 640` at `W = 10`, so the face-speed square is `640 g`. -/
+theorem lane_speed_square :
+    (16 : ℚ) * r0 ^ 2 / (10 : ℚ) = (640 : ℚ) := by
+  unfold r0
+  norm_num
+
+/-- The lane time square is `640/g = 12800000/196133`. -/
+theorem lane_time_square :
+    (640 : ℚ) / gStd = (12800000 : ℚ) / (196133 : ℚ) := by
+  unfold gStd
   norm_num
 
 end GateLedger
