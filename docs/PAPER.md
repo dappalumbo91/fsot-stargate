@@ -253,13 +253,25 @@ The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.05127782169
 
 In the unified-concept reading, the slow part of the crossing is the tight throat. Paying the throat's own multiple of the face load keeps one speed the whole way, and the crossing drops under a second. The thinning of the conduit stays for that shorter coast. The press is already at its floor before the ship has moved a millimeter. The mass is still the inventory.
 
+## The fit
+
+The 10 m ship pays 44/3 g and 12 g at the throat because the beam is wider than the 1 g width. Lean 4.31.0 accepts the beams that bring that throat load down to g, 15/22 m and 5/6 m, and the fractions of the 10 m beam, 3/44 and 1/12. It accepts that a fixed speed makes the lateral load follow κ(r)/κ(r₀). At 25 m the fractions are 576/1375 and 832/1875. At 30 m they are 184/891 and 56/243. At the face they are 3/44 and 1/12. The order puts the face under the 25 m station, and both under 1.
+
+On that beam the level speed stays 79.222824993810960 m/s. The along-path acceleration is 0. The crossing stays 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s.
+
+Octave 11.3.0 prints the pace coast on the same beam, lateral load held at g: 5.5603410651523666×10⁻¹ s and 6.2491351019011432×10⁻¹ s. The face speeds are 3.0340032080844384×10² m/s and 2.7443591601683619×10² m/s. The along-path load at the face is 3.7122525120382929×10³ m/s² and 2.6049534181515801×10³ m/s². Holding both loads at g crosses in 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s and leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. A 1 g run from rest reaches 2.6551795636519170×10¹ m/s and 2.7684721307209220×10¹ m/s at the throat, under the lateral limit, so that crossing stays the longer rest time.
+
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J.
+
+In the unified-concept reading, the vehicle that fits the throat takes the sub-second crossing at one gravity. The wide ship was paying the throat's multiple. The narrow beam pays g at the throat and less after it, and the speed along the path does not have to change. Letting the speed rise shortens the crossing further and moves the load to the along-path direction at the face. The thinning of the conduit stays for every one of these coasts.
+
 ## The audit
 
 The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate mass is the same at the switch, at the gate, at the floor, and at the departure. The added tension through the 40 m face follows V, from 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J at the switch to 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J at the floor. The 40 m crossing sweeps one side of four, and three sides remain. Holding the face speed crosses in 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s. The throat load on that coast is 44/3 g and 12 g. The coordinate mass stays for that coast.
+The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate mass is the same at the switch, at the gate, at the floor, and at the departure. The added tension through the 40 m face follows V, from 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J at the switch to 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J at the floor. The 40 m crossing sweeps one side of four, and three sides remain. Holding the face speed crosses in 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s. The throat load on that coast is 44/3 g and 12 g. On a beam 15/22 m or 5/6 m wide that speed stays inside 1 g, and holding both accelerations at g crosses in 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The coordinate mass stays for that coast.
 
 The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 

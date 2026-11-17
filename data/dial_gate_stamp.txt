@@ -313,6 +313,44 @@ PASS level_share_sixth_35 got 9.1773370968121459e-01 want 9.1773370968121459e-01
 PASS level_share_half_35 got 9.1453298679643724e-01 want 9.1453298679643724e-01 residual 0.000e+00
 PASS level_outer_sixth got 8.2266290318785407e-02 want 8.2266290318785407e-02 residual 0.000e+00
 PASS level_outer_half got 8.5467013203562758e-02 want 8.5467013203562758e-02 residual 0.000e+00
+PASS fit_beam_sixth got 6.8181818181818177e-02 want 6.8181818181818177e-02 residual 0.000e+00
+PASS fit_beam_half got 8.3333333333333343e-02 want 8.3333333333333329e-02 residual 1.388e-17
+PASS fit_span_sixth got 1.4666666666666668e+01 want 1.4666666666666666e+01 residual 1.776e-15
+PASS fit_span_half got 1.2000000000000000e+01 want 1.2000000000000000e+01 residual 0.000e+00
+PASS fit_face_sixth got 6.8181818181818177e-02 want 6.8181818181818177e-02 residual 0.000e+00
+PASS fit_face_half got 8.3333333333333343e-02 want 8.3333333333333329e-02 residual 1.388e-17
+PASS fit_station_sixth_25 got 4.1890909090909090e-01 want 4.1890909090909090e-01 residual 0.000e+00
+PASS fit_station_half_25 got 4.4373333333333337e-01 want 4.4373333333333331e-01 residual 5.551e-17
+PASS fit_station_sixth_30 got 2.0650953984287315e-01 want 2.0650953984287318e-01 residual -2.776e-17
+PASS fit_station_half_30 got 2.3045267489711938e-01 want 2.3045267489711935e-01 residual 2.776e-17
+PASS fit_under_sixth_21 got 8.2644203149548134e-01 upper 1.0000000000000000e+00 margin 1.736e-01
+PASS fit_under_half_21 got 8.3641418270508006e-01 upper 1.0000000000000000e+00 margin 1.636e-01
+PASS fit_under_sixth_35 got 1.1389193896482526e-01 upper 1.0000000000000000e+00 margin 8.861e-01
+PASS fit_under_half_35 got 1.3327780091628488e-01 upper 1.0000000000000000e+00 margin 8.667e-01
+PASS fit_along_throat_sixth got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS fit_along_throat_half got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS fit_along_base_sixth got 2.5310812582079262e+02 want 2.5310812582079262e+02 residual 0.000e+00
+PASS fit_along_base_half got 2.1707945151263164e+02 want 2.1707945151263161e+02 residual 2.842e-14
+PASS fit_along_sixth got 3.7122525120382929e+03 want 3.7122525120382916e+03 residual 1.364e-12
+PASS fit_along_half got 2.6049534181515801e+03 want 2.6049534181515792e+03 residual 9.095e-13
+PASS fit_throat_sixth got 7.9222824993810960e+01 want 7.9222824993810960e+01 residual 0.000e+00
+PASS fit_throat_half got 7.9222824993810960e+01 want 7.9222824993810960e+01 residual 0.000e+00
+PASS fit_pace_sixth got 5.5603410651523666e-01 want 5.5603410651523666e-01 residual 0.000e+00
+PASS fit_pace_half got 6.2491351019011432e-01 want 6.2491351019011432e-01 residual 0.000e+00
+PASS fit_pace_clock_sixth got 5.5603410651523666e-01 want 5.5603410651523666e-01 residual 0.000e+00
+PASS fit_pace_clock_half got 6.2491351019011432e-01 want 6.2491351019011432e-01 residual 0.000e+00
+PASS fit_pace_face_sixth got 3.0340032080844384e+02 want 3.0340032080844389e+02 residual -5.684e-14
+PASS fit_pace_face_half got 2.7443591601683619e+02 want 2.7443591601683625e+02 residual -5.684e-14
+PASS fit_dash_sixth got 8.8329624284095409e-01 want 8.8329624284095409e-01 residual 0.000e+00
+PASS fit_dash_half got 9.5812460832479873e-01 want 9.5812460832479873e-01 residual 0.000e+00
+PASS fit_dash_known_sixth got 2.6731954448396604e+00 want 2.6731954448922068e+00 residual -5.255e-11
+PASS fit_dash_known_half got 2.6834241126114819e+00 want 2.6834241126491603e+00 residual -3.768e-11
+PASS fit_dash_face_sixth got 8.3553897883482833e+01 want 8.3553897883482847e+01 residual -1.421e-14
+PASS fit_dash_face_half got 8.3920794764217064e+01 want 8.3920794764217078e+01 residual -1.421e-14
+PASS fit_ballistic_sixth got 2.6551795636519170e+01 want 2.6551795636519170e+01 residual 0.000e+00
+PASS fit_ballistic_half got 2.7684721307209220e+01 want 2.7684721307209220e+01 residual 0.000e+00
+PASS fit_ballistic_under_sixth got 2.6551795636519170e+01 upper 7.9222824993810960e+01 margin 5.267e+01
+PASS fit_ballistic_under_half got 2.7684721307209220e+01 upper 7.9222824993810960e+01 margin 5.154e+01
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

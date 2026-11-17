@@ -635,6 +635,51 @@ fails = lineout(fid, fails, 'level_share_half_35', ih35 / thc, 9.145329867964372
 fails = lineout(fid, fails, 'level_outer_sixth', 1 - i635 / t6c, 8.2266290318785407e-02, 0);
 fails = lineout(fid, fails, 'level_outer_half', 1 - ih35 / thc, 8.5467013203562758e-02, 0);
 
+% Fit. The level width. Lateral load at the level speed scales as kappa.
+Wfit6 = 15 / 22;
+Wfith = 5 / 6;
+kfit = @(Rs, r) Rs ./ (2 .* r .^ 3) + (r0 - Rs) .* r0 ./ r .^ 4;
+fails = lineout(fid, fails, 'fit_beam_sixth', Wfit6 / 10, 3 / 44, 0);
+fails = lineout(fid, fails, 'fit_beam_half', Wfith / 10, 1 / 12, 1e-15);
+fails = lineout(fid, fails, 'fit_span_sixth', 10 / Wfit6, 44 / 3, 1e-15);
+fails = lineout(fid, fails, 'fit_span_half', 10 / Wfith, 12, 0);
+fails = lineout(fid, fails, 'fit_face_sixth', (1 / 6400) / (11 / 4800), 3 / 44, 0);
+fails = lineout(fid, fails, 'fit_face_half', (1 / 6400) / (3 / 1600), 1 / 12, 1e-15);
+fails = lineout(fid, fails, 'fit_station_sixth_25', kfit(Rs6, 25) / kfit(Rs6, r0), 576 / 1375, 0);
+fails = lineout(fid, fails, 'fit_station_half_25', kfit(Rsh, 25) / kfit(Rsh, r0), 832 / 1875, 1e-15);
+fails = lineout(fid, fails, 'fit_station_sixth_30', kfit(Rs6, 30) / kfit(Rs6, r0), 184 / 891, 1e-15);
+fails = lineout(fid, fails, 'fit_station_half_30', kfit(Rsh, 30) / kfit(Rsh, r0), 56 / 243, 1e-15);
+fails = boundout(fid, fails, 'fit_under_sixth_21', kfit(Rs6, 21) / kfit(Rs6, r0), 1);
+fails = boundout(fid, fails, 'fit_under_half_21', kfit(Rsh, 21) / kfit(Rsh, r0), 1);
+fails = boundout(fid, fails, 'fit_under_sixth_35', kfit(Rs6, 35) / kfit(Rs6, r0), 1);
+fails = boundout(fid, fails, 'fit_under_half_35', kfit(Rsh, 35) / kfit(Rsh, r0), 1);
+fails = lineout(fid, fails, 'fit_along_throat_sixth', fit_along(r0, Rs6, Wfit6), 0, 0);
+fails = lineout(fid, fails, 'fit_along_throat_half', fit_along(r0, Rsh, Wfith), 0, 0);
+fails = lineout(fid, fails, 'fit_along_base_sixth', fit_along(40, Rs6, 10), 253.10812582079262, 0);
+fails = lineout(fid, fails, 'fit_along_base_half', fit_along(40, Rsh, 10), 217.0794515126316, 1e-15);
+fails = lineout(fid, fails, 'fit_along_sixth', fit_along(40, Rs6, Wfit6), (44 / 3) * 253.10812582079262, 1e-15);
+fails = lineout(fid, fails, 'fit_along_half', fit_along(40, Rsh, Wfith), 12 * 217.0794515126316, 1e-15);
+fails = lineout(fid, fails, 'fit_throat_sixth', sqrt(g / (kfit(Rs6, r0) * Wfit6)), vface, 0);
+fails = lineout(fid, fails, 'fit_throat_half', sqrt(g / (kfit(Rsh, r0) * Wfith)), vface, 0);
+fails = lineout(fid, fails, 'fit_pace_sixth', 2.1294485056590506 * sqrt(3 / 44), 5.5603410651523666e-01, 0);
+fails = lineout(fid, fails, 'fit_pace_half', 2.1647638999709788 * sqrt(1 / 12), 6.2491351019011432e-01, 0);
+fails = lineout(fid, fails, 'fit_pace_clock_sixth', t6c * sqrt(3 / 44), 5.5603410651523666e-01, 0);
+fails = lineout(fid, fails, 'fit_pace_clock_half', thc * sqrt(1 / 12), 6.2491351019011432e-01, 0);
+fails = lineout(fid, fails, 'fit_pace_face_sixth', vface * sqrt(44 / 3), 3.0340032080844389e+02, 1e-15);
+fails = lineout(fid, fails, 'fit_pace_face_half', vface * sqrt(12), 2.7443591601683625e+02, 1e-15);
+df6 = fit_dash(Rs6, Wfit6);
+dfh = fit_dash(Rsh, Wfith);
+fails = lineout(fid, fails, 'fit_dash_sixth', df6, 8.8329624284095409e-01, 0);
+fails = lineout(fid, fails, 'fit_dash_half', dfh, 9.5812460832479873e-01, 0);
+fails = lineout(fid, fails, 'fit_dash_known_sixth', fit_dash(Rs6, 10), 2.673195444892207, 1e-10);
+fails = lineout(fid, fails, 'fit_dash_known_half', fit_dash(Rsh, 10), 2.6834241126491603, 1e-10);
+fails = lineout(fid, fails, 'fit_dash_face_sixth', sqrt(vface ^ 2 + 2 * g * L6), 8.3553897883482847e+01, 1e-15);
+fails = lineout(fid, fails, 'fit_dash_face_half', sqrt(vface ^ 2 + 2 * g * Lh), 8.3920794764217078e+01, 1e-15);
+fails = lineout(fid, fails, 'fit_ballistic_sixth', sqrt(2 * g * L6), 2.6551795636519170e+01, 0);
+fails = lineout(fid, fails, 'fit_ballistic_half', sqrt(2 * g * Lh), 2.7684721307209220e+01, 0);
+fails = boundout(fid, fails, 'fit_ballistic_under_sixth', sqrt(2 * g * L6), vface);
+fails = boundout(fid, fails, 'fit_ballistic_under_half', sqrt(2 * g * Lh), vface);
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');
@@ -740,4 +785,42 @@ function [gain, cred, dl] = depart_shell(t0, tfloor, lam, vface, r0, Rs, g)
   scale = sqrt(10 / (2 * g));
   geom = @(ss) 2 * sqrt(Rs * ss .^ 2 + r0 * (2 * r0 - Rs)) ./ ((ss .^ 2 + r0) .* sqrt(ss .^ 2 + (2 * r0 - Rs)));
   cred = scale * integral(geom, sqrt(rfin - r0), sqrt(r0), 'AbsTol', 1e-16, 'RelTol', 1e-14);
+end
+
+function a = fit_along(r, Rs, W)
+  r0 = 20;
+  g = 9.80665;
+  A = (r0 - Rs) * r0;
+  b = Rs + A ./ r;
+  k = Rs ./ (2 .* r .^ 3) + A ./ r .^ 4;
+  kp = -3 .* Rs ./ (2 .* r .^ 4) - 4 .* A ./ r .^ 5;
+  a = -(g ./ (2 .* W)) .* (kp ./ k .^ 2) .* sqrt(1 - b ./ r);
+end
+
+function v = fit_speed(s, Rs, W, vt2)
+  r0 = 20;
+  g = 9.80665;
+  r = r0 + s .^ 2;
+  A = (r0 - Rs) .* r0;
+  k = Rs ./ (2 .* r .^ 3) + A ./ r .^ 4;
+  a = Rs ./ (2 .* r0);
+  d = 1 - a;
+  u = r ./ r0;
+  disc = sqrt((u - a) .^ 2 - d .^ 2);
+  sig = r0 .* (disc + a .* log((u - a + disc) ./ d));
+  sig(s == 0) = 0;
+  b = Rs + A ./ r;
+  raw = 2 .* s ./ sqrt(1 - b ./ r);
+  raw(s == 0) = 2 * r0 / sqrt(2 * r0 - Rs);
+  vp = sqrt(g ./ (k .* W));
+  va = sqrt(vt2 + 2 .* g .* sig);
+  v = raw ./ min(vp, va);
+end
+
+function t = fit_dash(Rs, W)
+  r0 = 20;
+  g = 9.80665;
+  k0 = Rs / (2 * r0 ^ 3) + (r0 - Rs) * r0 / r0 ^ 4;
+  vt2 = g / (k0 * W);
+  t = 2 * integral(@(s) fit_speed(s, Rs, W, vt2), 0, sqrt(r0), 'AbsTol', 1e-12, 'RelTol', 1e-12);
 end

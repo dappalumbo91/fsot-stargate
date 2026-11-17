@@ -35,7 +35,10 @@ rational piece at that face is (r₀ − Rs)/2, equal to 25/3 on the
 one-sixth mouth and 5 on the half-compact mouth. The level coast
 holds the face speed. The throat load over the 40 m load is 44/3
 on the one-sixth mouth and 12 on the half-compact mouth, and the
-1 g beam at that speed is 15/22 m and 5/6 m. The 400000-step
+1 g beam at that speed is 15/22 m and 5/6 m. On that beam the
+lateral load at fixed speed scales as κ(r)/κ(r₀). The face ratios
+are 3/44 and 1/12, the 25 m ratios are 576/1375 and 832/1875, and
+the 30 m ratios are 184/891 and 56/243. The 400000-step
 crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
@@ -745,5 +748,80 @@ theorem level_order : ((44 : ℚ) / 3 > 12) ∧ (12 > 1) := by
 theorem level_match (κ κf load W : ℚ) (hκ : κ ≠ 0) (hf : κf ≠ 0) (hW : W ≠ 0) :
     (load * (κ / κf)) / (κ * W) = load / (κf * W) := by
   field_simp
+
+/-- The one-sixth fit beam is `3/44` of the 10 m beam. -/
+theorem fit_beam_sixth : ((15 : ℚ) / 22) / 10 = 3 / 44 := by
+  norm_num
+
+/-- The half-compact fit beam is `1/12` of the 10 m beam. -/
+theorem fit_beam_half : ((5 : ℚ) / 6) / 10 = 1 / 12 := by
+  norm_num
+
+/-- The squared-speed ratio of the one-sixth fit beam is `44/3`. -/
+theorem fit_span_sixth : (10 : ℚ) / (15 / 22) = 44 / 3 := by
+  norm_num
+
+/-- The squared-speed ratio of the half-compact fit beam is `12`. -/
+theorem fit_span_half : (10 : ℚ) / (5 / 6) = 12 := by
+  norm_num
+
+/-- At fixed speed the lateral load scales as `κ/κ₀`. -/
+theorem fit_load (κ κ0 v W : ℚ) (hκ0 : κ0 ≠ 0) (hv : v ≠ 0) (hW : W ≠ 0) :
+    (κ * v ^ 2 * W) / (κ0 * v ^ 2 * W) = κ / κ0 := by
+  field_simp
+
+/-- The one-sixth face load on the fit beam is `3/44` of the throat load. -/
+theorem fit_face_sixth :
+    (1 / (16 * r0 ^ 2)) / kappa rsSixth r0 = 3 / 44 := by
+  have hk := kappa_sixth
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- The half-compact face load on the fit beam is `1/12` of the throat load. -/
+theorem fit_face_half :
+    (1 / (16 * r0 ^ 2)) / kappa rsHalf r0 = 1 / 12 := by
+  have hk := kappa_half
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- The one-sixth load at 25 m is `576/1375` of the throat load. -/
+theorem fit_station_sixth_25 :
+    kappa rsSixth 25 / kappa rsSixth r0 = 576 / 1375 := by
+  have hk := kappa_sixth
+  rw [hk]
+  unfold kappa rsSixth r0
+  norm_num
+
+/-- The half-compact load at 25 m is `832/1875` of the throat load. -/
+theorem fit_station_half_25 :
+    kappa rsHalf 25 / kappa rsHalf r0 = 832 / 1875 := by
+  have hk := kappa_half
+  rw [hk]
+  unfold kappa rsHalf r0
+  norm_num
+
+/-- The one-sixth load at 30 m is `184/891` of the throat load. -/
+theorem fit_station_sixth_30 :
+    kappa rsSixth 30 / kappa rsSixth r0 = 184 / 891 := by
+  have hk := kappa_sixth
+  rw [hk]
+  unfold kappa rsSixth r0
+  norm_num
+
+/-- The half-compact load at 30 m is `56/243` of the throat load. -/
+theorem fit_station_half_30 :
+    kappa rsHalf 30 / kappa rsHalf r0 = 56 / 243 := by
+  have hk := kappa_half
+  rw [hk]
+  unfold kappa rsHalf r0
+  norm_num
+
+/-- The face load sits under the 25 m load, and both sit under 1. -/
+theorem fit_order :
+    ((3 : ℚ) / 44 < (576 : ℚ) / 1375) ∧ ((576 : ℚ) / 1375 < 1) ∧
+    ((1 : ℚ) / 12 < (832 : ℚ) / 1875) ∧ ((832 : ℚ) / 1875 < 1) := by
+  norm_num
 
 end GateLedger

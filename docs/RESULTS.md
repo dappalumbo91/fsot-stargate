@@ -1061,4 +1061,22 @@ The face speed on that coast is 79.222824993810960 m/s, the 1 g speed at κ = 1/
 
 The load that holds the face speed is g · κ(r)/κ(40). At the throat Lean proves 44/3 and 12. Octave prints 1.4383086666666665×10² m/s² and 1.1767980000000000×10² m/s². The haul page printed 143.83086666667677 m/s² and 117.67980000000821 m/s². The differences are −1.0118128557223827×10⁻¹¹ m/s² and −8.2138740253867581×10⁻¹² m/s². The same speed at 1 g needs a beam 15/22 m wide on the one-sixth throat and 5/6 m wide on the half-compact throat. The one-sixth float sits one unit in the last place from 15/22, inside 1×10⁻¹⁵. The half-compact float matches 5/6 at residual 0. Lean also proves that a load scaled by κ/κ_face returns the face value of a/(κ W), and the order 44/3 > 12 > 1.
 
-The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The level coast spends the throat load. It leaves the mass where the release left it. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The level coast spends the throat load. It leaves the mass where the release left it. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The fit is the next section.
+
+## The fit, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The beam that holds the face speed at 1 g on the throat is 15/22 m and 5/6 m. Over the 10 m beam those widths are 3/44 and 1/12. The half-compact float differs from 1/12 by 1.388×10⁻¹⁷, inside 1×10⁻¹⁵. The reciprocal 10/W is 44/3 and 12. The one-sixth float differs from 44/3 by 1.776×10⁻¹⁵, inside 1×10⁻¹⁵.
+
+On the level coast that beam carries 79.222824993810960 m/s at every radius. The lateral load is κ(r)/κ(r₀) times g. At 25 m the fractions are 576/1375 and 832/1875. The half-compact float differs by 5.551×10⁻¹⁷, inside 1×10⁻¹⁵. At 30 m they are 184/891 and 56/243, and the floats differ by −2.776×10⁻¹⁷ and 2.776×10⁻¹⁷, inside 1×10⁻¹⁵. At the face they are 3/44 and 1/12. At 21 m the fractions are 8.2644203149548134×10⁻¹ and 8.3641418270508006×10⁻¹. At 35 m they are 1.1389193896482526×10⁻¹ and 1.3327780091628488×10⁻¹. Each of those four sits under 1. The speed does not change, so the along-path acceleration is 0. The crossing times stay 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s.
+
+The pace coast on the same beam holds the lateral load at g. The closed times scale by √(3/44) and √(1/12), to 5.5603410651523666×10⁻¹ s and 6.2491351019011432×10⁻¹ s. The closed-integral clocks give the same two numbers at residual 0. The throat speed equals 79.222824993810960 m/s at residual 0. The face speeds are 3.0340032080844384×10² m/s and 2.7443591601683619×10² m/s, each 5.684×10⁻¹⁴ under the speed read from κ at the face, inside 1×10⁻¹⁵.
+
+The along-path formula at the 40 m face with the 10 m beam returns 253.10812582079262 m/s², the dash-page value, at residual 0. The half-compact value differs from 217.0794515126316 m/s² by 2.842×10⁻¹⁴, inside 1×10⁻¹⁵. On the fit beams the face loads are 3.7122525120382929×10³ m/s² and 2.6049534181515801×10³ m/s². They sit 1.364×10⁻¹² and 9.095×10⁻¹³ above (44/3) and 12 times the dash-page values, inside 1×10⁻¹⁵. At the throat the same formula returns 0.
+
+Holding both accelerations at g, the crossing takes 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The same integral on the 10 m beam returns 2.6731954448396604 s and 2.6834241126114819 s, under the dash-page times by 5.255×10⁻¹¹ s and 3.768×10⁻¹¹ s, inside 1×10⁻¹⁰. The fit run leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s.
+
+A 1 g run from rest reaches 2.6551795636519170×10¹ m/s and 2.7684721307209220×10¹ m/s at the throat. Both sit under 79.222824993810960 m/s, so the lateral cap stays above that run. The from-rest crossing remains the buffer rest time.
+
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
