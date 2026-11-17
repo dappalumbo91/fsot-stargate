@@ -23,7 +23,9 @@ and the integral of one decay mode, and the join of the
 dimensionless potential to the shape: the pole weights 3/11 and 1/3
 and the residue 1/2. The entry writes the seated shutdown into that join.
 The switch potential is γ/(2κ) times the seated potential, and the throat
-gate is the load g/10. The 400000-step crossings stay with the Octave log.
+gate is the load g/10. The inventory writes the one-side energy as the
+infinite-arm side times (1 − r₀/r). The face and the outer arm are equal,
+and the crossing is one side of four. The 400000-step crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
 -/
@@ -614,5 +616,34 @@ theorem entry_face_sixth : (96 : ℚ) / 7 * ((7 : ℚ) / 96) = 1 := by
 
 theorem entry_face_half : (32 : ℚ) / 3 * ((3 : ℚ) / 32) = 1 := by
   norm_num
+
+/-- Out to radius r the one-side energy is the infinite-arm side times (1 − r₀/r). -/
+theorem inventory_fraction (Rs r : ℚ) (hr : r ≠ 0) :
+    shape Rs r - r0 = (Rs - r0) * (1 - r0 / r) := by
+  unfold shape
+  field_simp
+  ring
+
+/-- The 40 m face and the arm beyond it each hold half of one side. -/
+theorem inventory_half (Rs : ℚ) :
+    (Rs - r0) * (1 - r0 / (2 * r0)) = (Rs - r0) / 2 := by
+  unfold r0
+  field_simp
+  ring
+
+/-- Two faces equal one side. -/
+theorem inventory_crossing (Rs : ℚ) :
+    2 * ((Rs - r0) / 2) = Rs - r0 := by
+  ring
+
+/-- Four sides minus the crossing leave three sides. -/
+theorem inventory_remainder (Rs : ℚ) :
+    4 * (Rs - r0) - (Rs - r0) = 3 * (Rs - r0) := by
+  ring
+
+/-- The crossing is one quarter of the four-side inventory. -/
+theorem inventory_share (Rs : ℚ) (h : Rs - r0 ≠ 0) :
+    (Rs - r0) / (4 * (Rs - r0)) = 1 / 4 := by
+  field_simp
 
 end GateLedger

@@ -999,4 +999,20 @@ at 24.441342370391848 pin-time units, which is 1.6305508506416028×10⁻⁶ s. T
 
 The static piece at 40 m is 7/96 of the throat piece on the one-sixth mouth and 3/32 on the half-compact mouth. Those faces reach a zero radicand at 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. The throat is the later of the three.
 
-The seated flux reaches the open-page roundoff at the time already stamped, 3.8880657558015190×10⁻⁶ s. The potential there is 3.0232578084704490×10⁻³³, and that value divided by the gate is 3.4634261088385663×10⁻¹⁹. The closed ship times 2.1294485056590506 s and 2.1647638999709788 s are the coast at that floor. They are not the crossing at the gate. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
+The seated flux reaches the open-page roundoff at the time already stamped, 3.8880657558015190×10⁻⁶ s. The potential there is 3.0232578084704490×10⁻³³, and that value divided by the gate is 3.4634261088385663×10⁻¹⁹. The closed ship times 2.1294485056590506 s and 2.1647638999709788 s are the coast at that floor. They are not the crossing at the gate. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The inventory is the next section.
+
+## The inventory, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The density ρ = b′ c⁴ / (8π G r²) uses the slope of the shape. The one-side energy built from that density is
+
+E(r) = (c⁴ / (2G)) (b(r) − r₀) = (c⁴ / (2G)) (Rs − r₀) (1 − r₀/r).
+
+V does not appear. At r = 40 m the factor is 1/2. The face and the arm from 40 m to infinity each hold half of one side, −5.0427315180758600×10⁴⁴ J on the one-sixth mouth and −3.0256389108455156×10⁴⁴ J on the half-compact mouth. Two faces equal one side. One mouth has two sides and two mouths have four. The crossing is one quarter of that four-side inventory. The other three quarters are −3.0256389108455160×10⁴⁵ J and −1.8153833465073093×10⁴⁵ J.
+
+The evaluation (c⁴ / (2G)) (Rs − r₀) is −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The energy-page products −5 M c² and −1 M c² differ from these by −1.585×10²⁹ J and 7.923×10²⁸ J. The relative gap is inside 1×10⁻¹⁵. The four-side products differ by −6.338×10²⁹ J and 3.169×10²⁹ J, inside the same tolerance. Neither float is replaced.
+
+The join writes the added tension as V times the shape tension, so the tension factor is 1 + V. At the switch it is 1.1881731051507043. At the gate it is 1.0000000000000087. At the floor, 1 + 3.0232578084704490×10⁻³³ prints as 1, because that addition sits below one unit in the last place of 1. The floor potential remains 3.0232578084704490×10⁻³³. The factor is not given a joule conversion.
+
+The same radius at the switch and at the floor gives the same E(r). The difference stamped for the 40 m face is 0. The closed mean rate times the entry time, 1.6305508506416028×10⁻⁶ s, is −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J. Dividing by the one-side energy returns 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷, the entry time over the closed ship time. The hold rate at fixed radius is 0, so that product is not removed from the shape. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.

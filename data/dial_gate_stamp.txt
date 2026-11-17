@@ -187,6 +187,31 @@ PASS entry_face_before_throat_sixth got 2.2356829279792255e+01 upper 2.444134237
 PASS entry_face_before_throat_half got 2.2556898254930360e+01 upper 2.4441342370391848e+01 margin 1.884e+00
 PASS entry_floor got 3.0232578084704490e-33 want 3.0232578084704490e-33 residual 0.000e+00
 PASS entry_floor_under_gate got 3.0232578084704490e-33 upper 8.7290957377585730e-15 margin 8.729e-15
+PASS inventory_fraction got 5.0000000000000000e-01 want 5.0000000000000000e-01 residual 0.000e+00
+PASS inventory_side_sixth got -1.0085463036151720e+45 want -1.0085463036151720e+45 residual 0.000e+00
+PASS inventory_side_half got -6.0512778216910312e+44 want -6.0512778216910312e+44 residual 0.000e+00
+PASS inventory_side_match_sixth got -1.0085463036151720e+45 want -1.0085463036151718e+45 residual -1.585e+29
+PASS inventory_side_match_half got -6.0512778216910312e+44 want -6.0512778216910320e+44 residual 7.923e+28
+PASS inventory_outer_sixth got -5.0427315180758600e+44 want -5.0427315180758600e+44 residual 0.000e+00
+PASS inventory_outer_half got -3.0256389108455156e+44 want -3.0256389108455156e+44 residual 0.000e+00
+PASS inventory_cross_sixth got -1.0085463036151720e+45 want -1.0085463036151720e+45 residual 0.000e+00
+PASS inventory_cross_half got -6.0512778216910312e+44 want -6.0512778216910312e+44 residual 0.000e+00
+PASS inventory_rest_sixth got -3.0256389108455160e+45 want -3.0256389108455160e+45 residual 0.000e+00
+PASS inventory_rest_half got -1.8153833465073093e+45 want -1.8153833465073093e+45 residual 0.000e+00
+PASS inventory_rest_float_sixth got -3.0256389108455160e+45 want -3.0256389108455160e+45 residual 0.000e+00
+PASS inventory_rest_float_half got -1.8153833465073093e+45 want -1.8153833465073093e+45 residual 0.000e+00
+PASS inventory_share got 2.5000000000000000e-01 want 2.5000000000000000e-01 residual 0.000e+00
+PASS inventory_share_half got 2.5000000000000000e-01 want 2.5000000000000000e-01 residual 0.000e+00
+PASS inventory_pair_match_sixth got -4.0341852144606880e+45 want -4.0341852144606874e+45 residual -6.338e+29
+PASS inventory_pair_match_half got -2.4205111286764125e+45 want -2.4205111286764128e+45 residual 3.169e+29
+PASS inventory_wait_sixth got -7.7225912197496652e+38 want -7.7225912197496652e+38 residual 0.000e+00
+PASS inventory_wait_half got -4.5579641270621957e+38 want -4.5579641270621957e+38 residual 0.000e+00
+PASS inventory_wait_ratio_sixth got 7.6571508834723282e-07 want 7.6571508834723282e-07 residual 0.000e+00
+PASS inventory_wait_ratio_half got 7.5322341187575335e-07 want 7.5322341187575335e-07 residual 0.000e+00
+PASS inventory_hold got 0.0000000000000000e+00 want 0.0000000000000000e+00 residual 0.000e+00
+PASS inventory_tension_switch got 1.1881731051507043e+00 want 1.1881731051507043e+00 residual 0.000e+00
+PASS inventory_tension_gate got 1.0000000000000087e+00 want 1.0000000000000087e+00 residual 0.000e+00
+PASS inventory_tension_floor got 1.0000000000000000e+00 want 1.0000000000000000e+00 residual 0.000e+00
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

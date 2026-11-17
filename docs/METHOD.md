@@ -446,4 +446,18 @@ pin-time units. One pin-time unit is 20/299792458 s, so the gate is 1.6305508506
 
 The static piece is c² V b(r) / (2 r³). At 40 m, b/r³ over the throat value 1/r₀² is the tension ratio already proved, 7/96 on the one-sixth mouth and 3/32 on the half-compact mouth. The face gate is V_gate times 96/7 and 32/3. Those times are 1.4914871060426914×10⁻⁶ s and 1.5048342713765240×10⁻⁶ s. Both are earlier than the throat.
 
-The seated flux κ Δ(t) reaches the open-page roundoff 1.3877787807814457×10⁻¹⁷ at the shutdown time already stamped, 3.8880657558015190×10⁻⁶ s. Because V scales as Δ², the potential there is V_switch (roundoff / flux)² = 3.0232578084704490×10⁻³³. Dividing by the gate gives 3.4634261088385663×10⁻¹⁹. The closed ship times are the coast at V = 0, which is the coast after that floor. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+The seated flux κ Δ(t) reaches the open-page roundoff 1.3877787807814457×10⁻¹⁷ at the shutdown time already stamped, 3.8880657558015190×10⁻⁶ s. Because V scales as Δ², the potential there is V_switch (roundoff / flux)² = 3.0232578084704490×10⁻³³. Dividing by the gate gives 3.4634261088385663×10⁻¹⁹. The closed ship times are the coast at V = 0, which is the coast after that floor. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The inventory is the next section.
+
+## The inventory, 2026-11-16
+
+The shape density ρ = b′ c⁴ / (8π G r²) depends on the slope of b. The coordinate energy on one side, from the throat out to r, is the integral of ρ 4π r², which is (c⁴ / (2G)) (b(r) − r₀). Substitute b(r) = Rs + (r₀ − Rs) r₀ / r:
+
+b(r) − r₀ = (Rs − r₀) (1 − r₀/r).
+
+Lean proves that identity. V is absent from it. At r = 2 r₀ the factor is 1/2, so the face and the arm beyond the face are equal. Two faces equal one side. Four sides minus that side leave three sides, and the crossing is 1/4 of the four-side inventory. Lean proves the half, the crossing, the remainder, and the share.
+
+Octave evaluates (c⁴ / (2G)) (Rs − r₀) as −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The energy-page products −5 M c² and −1 M c² differ by −1.585×10²⁹ J and 7.923×10²⁸ J. The four-side comparison differs by −6.338×10²⁹ J and 3.169×10²⁹ J. Each gap is inside 1×10⁻¹⁵ of the larger magnitude. The page keeps both evaluations.
+
+The added tension on the join page is V times the shape tension. The tension factor is therefore 1 + V. Octave prints 1.1881731051507043 at the switch and 1.0000000000000087 at the gate. At the floor, 1 + 3.0232578084704490×10⁻³³ is 1 in float64. No factor converts that 1 + V into joules.
+
+Because E(r) depends on r and on Rs, a clock that holds r fixed changes E by 0. The closed mean rate times the entry time equals the one-side energy times the entry time over the closed ship time: −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J, fractions 7.6571508834723282×10⁻⁷ and 7.5322341187575335×10⁻⁷. The hold rate is 0, so those products are not a change in the inventory. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

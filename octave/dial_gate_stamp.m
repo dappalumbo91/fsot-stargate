@@ -10,6 +10,7 @@
 % The schedule page evaluates the 40 m crossing as a Carlson integral.
 % The join multiplies the shape tension by the seated potential.
 % The entry follows the seated shutdown into that tide.
+% The inventory splits the shape energy. The entry moves none of it.
 % Not a Warp Factory metric.
 % The pin is not an input.
 
@@ -467,6 +468,35 @@ rnd = 1.3877787807814457e-17;
 Vfloor = Vswitch * (rnd / seated_flux) ^ 2;
 fails = lineout(fid, fails, 'entry_floor', Vfloor, 3.0232578084704490e-33, 0);
 fails = boundout(fid, fails, 'entry_floor_under_gate', Vfloor, Vgate);
+
+% Inventory. The energy is a function of b(r). The call does not enter it.
+frac = 1 - r0 / 40;
+fails = lineout(fid, fails, 'inventory_fraction', frac, 1 / 2, 0);
+fails = lineout(fid, fails, 'inventory_side_sixth', E6s, -1.0085463036151720e45, 0);
+fails = lineout(fid, fails, 'inventory_side_half', Ehs, -6.0512778216910312e44, 0);
+fails = lineout(fid, fails, 'inventory_side_match_sixth', E6s, -5 * M6 * c ^ 2, 1e-15);
+fails = lineout(fid, fails, 'inventory_side_match_half', Ehs, -1 * Mh * c ^ 2, 1e-15);
+fails = lineout(fid, fails, 'inventory_outer_sixth', E6s - E6s / 2, E6s / 2, 0);
+fails = lineout(fid, fails, 'inventory_outer_half', Ehs - Ehs / 2, Ehs / 2, 0);
+fails = lineout(fid, fails, 'inventory_cross_sixth', E6s / 2 + E6s / 2, E6s, 0);
+fails = lineout(fid, fails, 'inventory_cross_half', Ehs / 2 + Ehs / 2, Ehs, 0);
+fails = lineout(fid, fails, 'inventory_rest_sixth', 4 * E6s - E6s, 3 * E6s, 0);
+fails = lineout(fid, fails, 'inventory_rest_half', 4 * Ehs - Ehs, 3 * Ehs, 0);
+fails = lineout(fid, fails, 'inventory_rest_float_sixth', 3 * E6s, -3.0256389108455160e45, 0);
+fails = lineout(fid, fails, 'inventory_rest_float_half', 3 * Ehs, -1.8153833465073093e45, 0);
+fails = lineout(fid, fails, 'inventory_share', E6s / (4 * E6s), 1 / 4, 0);
+fails = lineout(fid, fails, 'inventory_share_half', Ehs / (4 * Ehs), 1 / 4, 0);
+fails = lineout(fid, fails, 'inventory_pair_match_sixth', 4 * E6s, -20 * M6 * c ^ 2, 1e-15);
+fails = lineout(fid, fails, 'inventory_pair_match_half', 4 * Ehs, -4 * Mh * c ^ 2, 1e-15);
+twait = tpin * r0 / c;
+fails = lineout(fid, fails, 'inventory_wait_sixth', (E6s / t6c) * twait, -7.7225912197496652e38, 0);
+fails = lineout(fid, fails, 'inventory_wait_half', (Ehs / thc) * twait, -4.5579641270621957e38, 0);
+fails = lineout(fid, fails, 'inventory_wait_ratio_sixth', twait / t6c, 7.6571508834723282e-07, 0);
+fails = lineout(fid, fails, 'inventory_wait_ratio_half', twait / thc, 7.5322341187575335e-07, 0);
+fails = lineout(fid, fails, 'inventory_hold', E6s * frac - E6s * frac, 0, 0);
+fails = lineout(fid, fails, 'inventory_tension_switch', 1 + Vswitch, 1.1881731051507043, 0);
+fails = lineout(fid, fails, 'inventory_tension_gate', 1 + Vgate, 1.0000000000000087, 0);
+fails = lineout(fid, fails, 'inventory_tension_floor', 1 + Vfloor, 1, 0);
 
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');

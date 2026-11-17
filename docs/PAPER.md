@@ -209,13 +209,25 @@ Octave 11.3.0 prints the switch potential 0.18817310515070426 and the ratio 2.13
 
 In the unified-concept reading, the entry is that press falling on the shutdown clock. Taking the equilibria to one shared phase takes the press away on that clock, after a jump up by γ/(2κ). A ship waits outside until the throat radicand is non-negative. A real positive 1 g speed exists only after that. The shape is unchanged.
 
+## The inventory
+
+The energy stored in the shape is a different object from the call. The density uses the slope of b(r). Its integral out to radius r, on one side, is the infinite-arm side times (1 − r₀/r). Lean 4.31.0 accepts that identity. At 40 m the factor is 1/2, so the mouth face and the arm beyond the face hold the same energy. Two faces make one side. Two mouths have four sides, and the crossing is one of them. Three sides stay outside that crossing.
+
+Octave 11.3.0 prints the one-side values −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. The three sides left are −3.0256389108455160×10⁴⁵ J and −1.8153833465073093×10⁴⁵ J. The energy-page products −5 M c² and −1 M c² differ from the one-side values by −1.585×10²⁹ J and 7.923×10²⁸ J, inside 1×10⁻¹⁵. Both evaluations stay.
+
+The call multiplies the tension by 1 + V. That factor is 1.1881731051507043 when the equilibria move to their mean, 1.0000000000000087 when the throat radicand reaches 0, and 1 in float64 when the seated flux has reached roundoff. The energy formula has no slot for the factor. The same radius at the switch and at the floor differs by 0 J.
+
+The closed mean rate times 1.6305508506416028×10⁻⁶ s is −7.7225912197496652×10³⁸ J and −4.5579641270621957×10³⁸ J. Each is the swept side times the entry time over the closed ship time. The hold rate at a fixed radius is 0, so those products are not taken out of the shape.
+
+In the unified-concept reading, the inventory is the thinning already in the conduit. The call is the press on that conduit. The press rises by γ/(2κ) and then falls on the shutdown clock. The thinning stays. A crossing sweeps one side of it. The microseconds while a ship waits outside sweep none.
+
 ## The audit
 
 The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The 1 g coast has no real speed while the seated call stays on. At the mean-equilibrium switch the radicand is still negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. A positive 1 g speed exists only after that instant. The closed ship times are the coast after the seated flux reaches roundoff. They are not the crossing at the gate.
+The 1 g coast has no real speed while the seated call stays on. At the mean-equilibrium switch the radicand is still negative. The throat radicand reaches 0 at 1.6305508506416028×10⁻⁶ s, and the 1 g throat speed there is 0. A positive 1 g speed exists only after that instant. The closed ship times are the coast after the seated flux reaches roundoff. They are not the crossing at the gate. The coordinate inventory is the same at the switch, at the gate, and at the floor. The entry moves 0 J of it. The 40 m crossing sweeps one side of four, and three sides remain.
 
 The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 
