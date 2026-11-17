@@ -546,4 +546,22 @@ The level crossing enters and leaves at this speed. Its times stay 9.07437647381
 
 Both door-to-door sums sit above the buffer rest times 5.4150592988470425 s and 5.6461118337473488 s. The buffer rest coast remains the shorter rest-to-rest. The lane is the flat face-speed ride.
 
-The coast that holds both accelerations at g leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. Its crossing stays 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).
+The coast that holds both accelerations at g leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. Its crossing stays 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md). The density is the next section.
+
+## The density, 2026-11-16
+
+The seated metric is
+
+ds² = −e^{2Φ(t,r)} c² dt² + dr² / (1 − b(r)/r) + r² dΩ²,
+
+with b the shape already proved and Φ the join redshift. b is a function of r. Φ may depend on t through V(t). The Einstein tensor of that metric reduces on the tt component to b′/r², and on the tr component to 0. Restoring c⁴/G, the density is ρ = b′ c⁴ / (8π G r²). Φ and ∂t Φ do not appear. The coordinate integral of ρ from the throat to a radius R remains (c⁴ / (2G)) (b(R) − r₀).
+
+The rr component reduces to −b/r³ + 2 (Φ′/r) (1 − b/r). The seated slope is Φ′ = −V b / (2 r (r − b)). Substituting it gives
+
+2 (Φ′/r) (1 − b/r) = −V b / r³,
+
+so the bracket is (1 + V) b / r³. The radial tension is (1 + V) times τ(r) = b(r) c⁴ / (8π G r³). Lean proves that substitution for any V, b, and r outside the throat.
+
+At the throat, ρ = b′ τ₀ with τ₀ = c⁴ / (8π G r₀²), and the full tension is (1 + V) τ₀. The exoticity (τ − ρ)/|ρ| is (1 + V − b′)/(−b′). For b′ = −5/6 that is 11/5 + (6/5) V. For b′ = −1/2 it is 3 + 2 V. Lean proves both, and proves that subtracting the V piece returns 11/5 and 3.
+
+Octave evaluates the shares V / (1 − b′ + V). At the switch they are 9.3085582894219476×10⁻² and 1.1146552718828318×10⁻¹. At the floor they are 1.6490497137111542×10⁻³³ and 2.0155052056469660×10⁻³³. The floor addends (6/5) V and 2 V are 3.6279093701645387×10⁻³³ and 6.0465156169408980×10⁻³³. The one-side mass divided by the floor press is −5.1793574465724044×10³² and −2.7722398203838213×10³². The floor press sits under the absolute mass on both mouths. The coordinate mass stays the release value. The pin is not edited. The reading is in [RESULTS.md](RESULTS.md).

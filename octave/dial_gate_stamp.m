@@ -692,6 +692,22 @@ fails = lineout(fid, fails, 'lane_door_half', 2 * laneT + (2 * Lh) / vface, 1.71
 fails = boundout(fid, fails, 'lane_rest_under_door_sixth', 2 * sqrt((2 * L6) / g), 2 * laneT + (2 * L6) / vface);
 fails = boundout(fid, fails, 'lane_rest_under_door_half', 2 * sqrt((2 * Lh) / g), 2 * laneT + (2 * Lh) / vface);
 
+% Density. Phi(t, r) with b(r) fixed. The tt component is b'.
+fails = lineout(fid, fails, 'density_share_switch_sixth', Vswitch / (11 / 6 + Vswitch), 9.3085582894219476e-02, 0);
+fails = lineout(fid, fails, 'density_share_switch_half', Vswitch / (3 / 2 + Vswitch), 1.1146552718828318e-01, 0);
+fails = lineout(fid, fails, 'density_share_floor_sixth', Vfloor / (11 / 6 + Vfloor), 1.6490497137111542e-33, 0);
+fails = lineout(fid, fails, 'density_share_floor_half', Vfloor / (3 / 2 + Vfloor), 2.0155052056469660e-33, 0);
+fails = lineout(fid, fails, 'density_exotic_switch_sixth', 11 / 5 + (6 / 5) * Vswitch, 2.4258077261808451e+00, 0);
+fails = lineout(fid, fails, 'density_exotic_switch_half', 3 + 2 * Vswitch, 3.3763462103014086e+00, 0);
+fails = lineout(fid, fails, 'density_add_floor_sixth', (6 / 5) * Vfloor, 3.6279093701645387e-33, 0);
+fails = lineout(fid, fails, 'density_add_floor_half', 2 * Vfloor, 6.0465156169408980e-33, 0);
+fails = lineout(fid, fails, 'density_remainder_sixth', (11 / 5 + (6 / 5) * Vfloor) - (6 / 5) * Vfloor, 11 / 5, 0);
+fails = lineout(fid, fails, 'density_remainder_half', (3 + 2 * Vfloor) - 2 * Vfloor, 3, 0);
+fails = lineout(fid, fails, 'density_mass_over_floor_sixth', E6s / (Vfloor * P6r), -5.1793574465724044e+32, 0);
+fails = lineout(fid, fails, 'density_mass_over_floor_half', Ehs / (Vfloor * Phr), -2.7722398203838213e+32, 0);
+fails = boundout(fid, fails, 'density_floor_under_mass_sixth', Vfloor * P6r, abs(E6s));
+fails = boundout(fid, fails, 'density_floor_under_mass_half', Vfloor * Phr, abs(Ehs));
+
 fprintf(fid, 'NOTE the gate h on a pair is that pair kappa. The pin files were not edited.\n');
 fprintf(fid, 'NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.\n');
 fprintf(fid, 'NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.\n');

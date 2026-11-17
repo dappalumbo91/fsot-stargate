@@ -40,7 +40,9 @@ lateral load at fixed speed scales as κ(r)/κ(r₀). The face ratios
 are 3/44 and 1/12, the 25 m ratios are 576/1375 and 832/1875, and
 the 30 m ratios are 184/891 and 56/243. The lane to the
 face speed at 1 g is 320 m. The squared speed is 640 g, and
-the time square is 12800000/196133. The 400000-step
+the time square is 12800000/196133. The call multiplies
+the radial tension by 1 + V. Removing that piece leaves the
+throat exoticity 11/5 and 3. The 400000-step
 crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
@@ -843,5 +845,32 @@ theorem lane_time_square :
     (640 : ℚ) / gStd = (12800000 : ℚ) / (196133 : ℚ) := by
   unfold gStd
   norm_num
+
+/-- The seated redshift slope turns the radial bracket into `(1 + V)` times `b/r³`. -/
+theorem call_bracket (V b r : ℚ) (hr : r ≠ 0) (hg : r - b ≠ 0) :
+    b / r ^ 3 - 2 * ((-V * b / (2 * r * (r - b))) / r) * (1 - b / r) =
+      (1 + V) * (b / r ^ 3) := by
+  field_simp
+  ring
+
+/-- At the one-sixth throat the exoticity is `11/5` plus `(6/5) V`. -/
+theorem density_call_sixth (V : ℚ) :
+    ((11 : ℚ) / 6 + V) / ((5 : ℚ) / 6) = (11 : ℚ) / 5 + ((6 : ℚ) / 5) * V := by
+  field_simp
+
+/-- At the half-compact throat the exoticity is `3` plus `2 V`. -/
+theorem density_call_half (V : ℚ) :
+    ((3 : ℚ) / 2 + V) / ((1 : ℚ) / 2) = (3 : ℚ) + (2 : ℚ) * V := by
+  field_simp
+
+/-- Removing the call's piece leaves the one-sixth exoticity `11/5`. -/
+theorem density_remainder_sixth (V : ℚ) :
+    ((11 : ℚ) / 5 + ((6 : ℚ) / 5) * V) - ((6 : ℚ) / 5) * V = (11 : ℚ) / 5 := by
+  ring
+
+/-- Removing the call's piece leaves the half-compact exoticity `3`. -/
+theorem density_remainder_half (V : ℚ) :
+    ((3 : ℚ) + (2 : ℚ) * V) - (2 : ℚ) * V = (3 : ℚ) := by
+  ring
 
 end GateLedger

@@ -1095,4 +1095,14 @@ Both door-to-door sums sit above the buffer rest times 5.4150592988470425 s and 
 
 The coast that holds both accelerations at g leaves the face at 8.3553897883482833×10¹ m/s and 8.3920794764217064×10¹ m/s. Its times stay 8.8329624284095409×10⁻¹ s and 9.5812460832479873×10⁻¹ s.
 
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0. The density is the next section.
+
+## The density, 2026-11-16
+
+The chain is in [METHOD.md](METHOD.md). Lean 4.31.0 accepted the extended [lean/GateLedger.lean](../lean/GateLedger.lean). Octave 11.3.0 rewrote [data/dial_gate_stamp.txt](../data/dial_gate_stamp.txt) with 0 failures.
+
+The metric is −e^{2Φ(t,r)} c² dt² + dr² / (1 − b(r)/r) + r² dΩ². The tt component reduces to b′/r², and the tr component reduces to 0. The density is ρ = b′ c⁴ / (8π G r²). The rr component, after the seated slope Φ′ = −V b / (2 r (r − b)), is (1 + V) times the shape tension. Lean proves the bracket identity, the throat exoticities 11/5 + (6/5) V and 3 + 2 V, and the remainders 11/5 and 3.
+
+At the switch the call's share of (τ − ρ) is 9.3085582894219476×10⁻² and 1.1146552718828318×10⁻¹. The exoticities are 2.4258077261808451 and 3.3763462103014086. At the floor the shares are 1.6490497137111542×10⁻³³ and 2.0155052056469660×10⁻³³. The addends are 3.6279093701645387×10⁻³³ and 6.0465156169408980×10⁻³³. Subtracting them returns 11/5 and 3 at residual 0. The one-side mass over the floor press is −5.1793574465724044×10³² and −2.7722398203838213×10³². The floor press sits under the absolute value of each one-side mass.
+
 The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J. b(r) is unchanged. The throat stays at 20 m. The redshift of the call-off shape stays 0.
