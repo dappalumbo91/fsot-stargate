@@ -281,6 +281,38 @@ PASS release_floor_half got 2.1828118105789353e+12 want 2.1828118105789353e+12 r
 PASS release_floor_over_switch got 1.6066365095315717e-32 want 1.6066365095315717e-32 residual 0.000e+00
 PASS release_floor_pos_sixth got 0.0000000000000000e+00 upper 1.9472421319030759e+12 margin 1.947e+12
 PASS release_floor_pos_half got 0.0000000000000000e+00 upper 2.1828118105789353e+12 margin 2.183e+12
+PASS level_load_sixth got 1.4666666666666666e+01 want 1.4666666666666666e+01 residual 0.000e+00
+PASS level_load_half got 1.2000000000000000e+01 want 1.2000000000000000e+01 residual 0.000e+00
+PASS level_width_sixth got 6.8181818181818188e-01 want 6.8181818181818177e-01 residual 1.110e-16
+PASS level_width_half got 8.3333333333333337e-01 want 8.3333333333333337e-01 residual 0.000e+00
+PASS level_accel_sixth got 1.4383086666666665e+02 want 1.4383086666666665e+02 residual 0.000e+00
+PASS level_accel_half got 1.1767980000000000e+02 want 1.1767980000000000e+02 residual 0.000e+00
+PASS level_haul_gap_sixth got -1.0118128557223827e-11 want -1.0118128557223827e-11 residual 0.000e+00
+PASS level_haul_gap_half got -8.2138740253867581e-12 want -8.2138740253867581e-12 residual 0.000e+00
+PASS level_time_sixth got 9.0743764738162136e-01 want 9.0743764738162136e-01 residual 0.000e+00
+PASS level_time_half got 9.8652776266715214e-01 want 9.8652776266715214e-01 residual 0.000e+00
+PASS level_save_sixth got 1.2220108582774292e+00 want 1.2220108582774292e+00 residual 0.000e+00
+PASS level_save_half got 1.1782361373038266e+00 want 1.1782361373038266e+00 residual 0.000e+00
+PASS level_fraction_sixth got 4.2613739894159836e-01 want 4.2613739894159836e-01 residual 0.000e+00
+PASS level_fraction_half got 4.5572071978860035e-01 want 4.5572071978860035e-01 residual 0.000e+00
+PASS level_inner_sixth_21 got 6.2600461999639945e-01 want 6.2600461999639945e-01 residual 0.000e+00
+PASS level_inner_half_21 got 6.2663062751189758e-01 want 6.2663062751189758e-01 residual 0.000e+00
+PASS level_inner_sixth_25 got 1.3020395017392921e+00 want 1.3020395017392921e+00 residual 0.000e+00
+PASS level_inner_half_25 got 1.3082905052400311e+00 want 1.3082905052400311e+00 residual 0.000e+00
+PASS level_inner_sixth_30 got 1.7047896534427860e+00 want 1.7047896534427860e+00 residual 0.000e+00
+PASS level_inner_half_30 got 1.7203533049883160e+00 want 1.7203533049883160e+00 residual 0.000e+00
+PASS level_inner_sixth_35 got 1.9542666766735994e+00 want 1.9542666766735994e+00 residual 0.000e+00
+PASS level_inner_half_35 got 1.9797479951495631e+00 want 1.9797479951495631e+00 residual 0.000e+00
+PASS level_share_sixth_21 got 2.9397499790804055e-01 want 2.9397499790804055e-01 residual 0.000e+00
+PASS level_share_half_21 got 2.8946834688082995e-01 want 2.8946834688082995e-01 residual 0.000e+00
+PASS level_share_sixth_25 got 6.1144446474244241e-01 want 6.1144446474244241e-01 residual 0.000e+00
+PASS level_share_half_25 got 6.0435713347657460e-01 want 6.0435713347657460e-01 residual 0.000e+00
+PASS level_share_sixth_30 got 8.0057801299833009e-01 want 8.0057801299833009e-01 residual 0.000e+00
+PASS level_share_half_30 got 7.9470712949868538e-01 want 7.9470712949868538e-01 residual 0.000e+00
+PASS level_share_sixth_35 got 9.1773370968121459e-01 want 9.1773370968121459e-01 residual 0.000e+00
+PASS level_share_half_35 got 9.1453298679643724e-01 want 9.1453298679643724e-01 residual 0.000e+00
+PASS level_outer_sixth got 8.2266290318785407e-02 want 8.2266290318785407e-02 residual 0.000e+00
+PASS level_outer_half got 8.5467013203562758e-02 want 8.5467013203562758e-02 residual 0.000e+00
 NOTE the gate h on a pair is that pair kappa. The pin files were not edited.
 NOTE momentum_rhs takes rho, v, dv_dx, d2v_dx2, dP_dx, D_eff, observed. It does not take the flux.
 NOTE the closed depth-5 value is the unobserved reading of Particle_Physics and Quantum_Mechanics.

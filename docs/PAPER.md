@@ -241,13 +241,25 @@ The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.05127782169
 
 In the unified-concept reading, the call is a press that powers up with the switch and falls with V. The thinning of the conduit is the mass, and that thinning stays for the whole coast. By the time the ship has eased a fraction of a millimeter off the face, the press is at its floor. The two-second coasts still carry the mass.
 
+## The level
+
+Most of the two-second coast is spent where the conduit is tightest. Lean 4.31.0 accepts the throat loads that hold the 40 m speed, 44/3 on the one-sixth mouth and 12 on the half-compact mouth, and the order 44/3 > 12 > 1. It accepts the 1 g beams that carry that same speed, 15/22 m and 5/6 m. It accepts that scaling a load by κ/κ_face returns the face value of a/(κ W).
+
+Octave 11.3.0 prints the closed-coast shares. Inside 21 m the coast has already used 2.9397499790804055×10⁻¹ and 2.8946834688082995×10⁻¹ of its clock. Inside 25 m the shares are 6.1144446474244241×10⁻¹ and 6.0435713347657460×10⁻¹. Inside 30 m they are 8.0057801299833009×10⁻¹ and 7.9470712949868538×10⁻¹. The outer 5 m, from 35 m to 40 m, holds 8.2266290318785407×10⁻² and 8.5467013203562758×10⁻².
+
+Holding the face speed, 79.222824993810960 m/s, on the whole corridor crosses in 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s. Those are the haul times, matched at residual 0. They are 4.2613739894159836×10⁻¹ and 4.5572071978860035×10⁻¹ of the closed coasts, a saving of 1.2220108582774292 s and 1.1782361373038266 s. The throat pays 1.4383086666666665×10² m/s² and 1.1767980000000000×10² m/s².
+
+The coordinate mass stays −1.0085463036151720×10⁴⁵ J and −6.0512778216910312×10⁴⁴ J.
+
+In the unified-concept reading, the slow part of the crossing is the tight throat. Paying the throat's own multiple of the face load keeps one speed the whole way, and the crossing drops under a second. The thinning of the conduit stays for that shorter coast. The press is already at its floor before the ship has moved a millimeter. The mass is still the inventory.
+
 ## The audit
 
 The leakage κ and the tidal coefficient κ(r) = (b/r − b')/(2 r²) remain two objects. The join above is the equation that writes the scalar potential into Φ. It does not write it into b(r). On 2026-11-16 the claim check returned 0 failures, the Octave stamp returned 0 failures, and Lean 4.31.0 accepted the ledger, including the pole identity, the residue 1/2, and the weights 3/11 and 1/3. The stamp records the negative coast radicand. The warp-shell ledger is [PARENT.md](PARENT.md).
 
 ## What is still open
 
-The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate mass is the same at the switch, at the gate, at the floor, and at the departure. The added tension through the 40 m face follows V, from 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J at the switch to 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J at the floor. The 40 m crossing sweeps one side of four, and three sides remain.
+The face-clear departure arrives earlier than waiting for the floor by 2.3639956658730360×10⁻⁶ s and 2.3506472301665728×10⁻⁶ s. The closed coasts 2.1294485056590506 s and 2.1647638999709788 s remain the rest of the flight. The coordinate mass is the same at the switch, at the gate, at the floor, and at the departure. The added tension through the 40 m face follows V, from 1.2119991798710031×10⁴⁴ J and 1.3586220639386268×10⁴⁴ J at the switch to 1.9472421319030759×10¹² J and 2.1828118105789353×10¹² J at the floor. The 40 m crossing sweeps one side of four, and three sides remain. Holding the face speed crosses in 9.0743764738162136×10⁻¹ s and 9.8652776266715214×10⁻¹ s. The throat load on that coast is 44/3 g and 12 g. The coordinate mass stays for that coast.
 
 The throat stays at 20 m. The redshift of the call-off shape stays 0. The shape stays b(r). The hold rate at a fixed radius remains 0. The watt figures remain the sweep of an inventory already in the shape.
 

@@ -32,7 +32,10 @@ order 96/7 > 32/3 > 1, and a positive press removes S/κ from the
 squared speed. The release integrates the added tension out to the
 40 m face. The integrand splits as Rs/r + (r₀ − Rs) r₀/r². The
 rational piece at that face is (r₀ − Rs)/2, equal to 25/3 on the
-one-sixth mouth and 5 on the half-compact mouth. The 400000-step
+one-sixth mouth and 5 on the half-compact mouth. The level coast
+holds the face speed. The throat load over the 40 m load is 44/3
+on the one-sixth mouth and 12 on the half-compact mouth, and the
+1 g beam at that speed is 15/22 m and 5/6 m. The 400000-step
 crossings stay with the Octave log.
 The Einstein tensor of a shell stays with the Warp Factory logs.
 The pin is not an input.
@@ -701,5 +704,46 @@ theorem release_face_half : (r0 - rsHalf) / 2 = 5 := by
   unfold rsHalf
   unfold r0
   norm_num
+
+/-- The throat load that holds the 40 m speed is `44/3` on the one-sixth mouth. -/
+theorem level_load_sixth :
+    kappa rsSixth r0 / (1 / (16 * r0 ^ 2)) = 44 / 3 := by
+  have hk := kappa_sixth
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- The throat load that holds the 40 m speed is `12` on the half-compact mouth. -/
+theorem level_load_half :
+    kappa rsHalf r0 / (1 / (16 * r0 ^ 2)) = 12 := by
+  have hk := kappa_half
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- A 1 g beam at the face speed is `15/22` m wide on the one-sixth throat. -/
+theorem level_width_sixth :
+    (10 : ℚ) * (1 / (16 * r0 ^ 2)) / kappa rsSixth r0 = 15 / 22 := by
+  have hk := kappa_sixth
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- A 1 g beam at the face speed is `5/6` m wide on the half-compact throat. -/
+theorem level_width_half :
+    (10 : ℚ) * (1 / (16 * r0 ^ 2)) / kappa rsHalf r0 = 5 / 6 := by
+  have hk := kappa_half
+  rw [hk]
+  unfold r0
+  norm_num
+
+/-- The one-sixth throat pays a larger multiple than the half-compact throat. -/
+theorem level_order : ((44 : ℚ) / 3 > 12) ∧ (12 > 1) := by
+  norm_num
+
+/-- Scaling the load by `κ/κ_face` returns the face value of `a / (κ W)`. -/
+theorem level_match (κ κf load W : ℚ) (hκ : κ ≠ 0) (hf : κf ≠ 0) (hW : W ≠ 0) :
+    (load * (κ / κf)) / (κ * W) = load / (κf * W) := by
+  field_simp
 
 end GateLedger
